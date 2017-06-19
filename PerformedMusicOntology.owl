@@ -1,0 +1,2855 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/"
+     xml:base="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/"
+     xmlns:rdakit="http://metadataregistry.org/uri/profile/rdakit/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:regap="http://metadataregistry.org/uri/profile/regap/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://performedmusicontology.org/">
+        <owl:versionIRI rdf:resource="http://performedmusicontology.org/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://metadataregistry.org/uri/profile/rdakit/toolkitDefinition -->
+
+    <owl:AnnotationProperty rdf:about="http://metadataregistry.org/uri/profile/rdakit/toolkitDefinition"/>
+    
+
+
+    <!-- http://metadataregistry.org/uri/profile/rdakit/toolkitLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://metadataregistry.org/uri/profile/rdakit/toolkitLabel"/>
+    
+
+
+    <!-- http://metadataregistry.org/uri/profile/regap/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://metadataregistry.org/uri/profile/regap/identifier"/>
+    
+
+
+    <!-- http://metadataregistry.org/uri/profile/regap/status -->
+
+    <owl:AnnotationProperty rdf:about="http://metadataregistry.org/uri/profile/regap/status"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrower -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrower"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://id.loc.gov/ontologies/bibframe/eventContent -->
+
+    <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/eventContent"/>
+    
+
+
+    <!-- http://id.loc.gov/ontologies/bibframe/eventContentOf -->
+
+    <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/eventContentOf"/>
+    
+
+
+    <!-- http://id.loc.gov/ontologies/bibframe/relatedTo -->
+
+    <owl:ObjectProperty rdf:about="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/associatedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/associatedWith">
+        <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+        <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Event"/>
+        <skos:definition>Event a work, instance, or item is created for, e.g., a motet created for the inauguration of Pope Clement VI.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/createdFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/createdFor">
+        <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
+        <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+        <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Event"/>
+        <skos:definition>Event a work is created for, e.g., a motet celebrating the inauguration of a pope.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/eventNameOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/eventNameOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasEventName"/>
+        <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasAlternateMedium -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasAlternateMedium">
+        <rdfs:label>has alternate</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasDoublingMediumOfPerformance -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasDoublingMediumOfPerformance">
+        <rdfs:label>doubling</rdfs:label>
+        <skos:definition>2 (or more) media of performance intended to be performed alternately by a single performer</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasDramaticRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasDramaticRole"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasEventName -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasEventName">
+        <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasIndividualContribution -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasIndividualContribution">
+        <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+        <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+        <rdfs:comment>The contribution of an individual within the context of the contribution of a group (i.e., the individual is a member of that group). Examples: the contribution of the agent performing the Violin 1 part in a string quartet.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasInspiration -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasInspiration">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/inspirationFor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasMedium -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasMedium"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasMediumCount -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasMediumCount"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasMediumOfPerformance -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasMediumOfPerformance"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasMediumPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasMediumPart"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasMediumPartType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasMediumPartType">
+        <rdfs:comment>has Medium Type</rdfs:comment>
+        <skos:definition>The type of pmo:DeclaredMediumPart, e.g., solo, ad lib, optional</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasMember -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasMember"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasMusicPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasMusicPart"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasPerformance -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasPerformance">
+        <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/eventContentOf"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/performanceOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasProxyWork -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasProxyWork">
+        <rdfs:comment>Work that is a duplicate of another work, except that it is included as part of an aggregation/compilation or a work component in multiples works. The proxy work permits numbering within the aggregate or work.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasRecording -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasRecording">
+        <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/eventContent"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/recordingOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/inspirationFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/inspirationFor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/performanceOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/performanceOf">
+        <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/eventContent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/performsMopPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/performsMopPart"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/performsMopRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/performsMopRole">
+        <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/playsDramaticRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/playsDramaticRole"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/recordingOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/recordingOf">
+        <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/eventContentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#hasTopConcept -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#related -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#related"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#topConceptOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://id.loc.gov/ontologies/bibframe/date -->
+
+    <owl:DatatypeProperty rdf:about="http://id.loc.gov/ontologies/bibframe/date"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasOrder -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasOrder">
+        <skos:definition>Order of a Work component within a Work, expressed as a number, or a prefix and a number, e.g., &quot;1&quot;, &quot;Chapter 2&quot;.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/phonogramCopyrightDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/phonogramCopyrightDate">
+        <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://erlangen-crm.org/efrbroo/F31_Performance -->
+
+    <owl:Class rdf:about="http://erlangen-crm.org/efrbroo/F31_Performance"/>
+    
+
+
+    <!-- http://id.loc.gov/ontologies/bibframe/Agent -->
+
+    <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    
+
+
+    <!-- http://id.loc.gov/ontologies/bibframe/Carrier -->
+
+    <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+    
+
+
+    <!-- http://id.loc.gov/ontologies/bibframe/Contribution -->
+
+    <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    
+
+
+    <!-- http://id.loc.gov/ontologies/bibframe/EncodingFormat -->
+
+    <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/EncodingFormat"/>
+    
+
+
+    <!-- http://id.loc.gov/ontologies/bibframe/Event -->
+
+    <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Event"/>
+    
+
+
+    <!-- http://id.loc.gov/ontologies/bibframe/Identifier -->
+
+    <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+    
+
+
+    <!-- http://id.loc.gov/ontologies/bibframe/Person -->
+
+    <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Person">
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://id.loc.gov/ontologies/bibframe/PlayingSpeed -->
+
+    <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+    
+
+
+    <!-- http://id.loc.gov/ontologies/bibframe/Role -->
+
+    <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Role"/>
+    
+
+
+    <!-- http://id.loc.gov/ontologies/bibframe/SoundCharacteristic -->
+
+    <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/SoundCharacteristic"/>
+    
+
+
+    <!-- http://id.loc.gov/ontologies/bibframe/TapeConfig -->
+
+    <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/TapeConfig"/>
+    
+
+
+    <!-- http://id.loc.gov/ontologies/bibframe/Work -->
+
+    <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Work"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Audition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Audition">
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Event"/>
+        <skos:definition>Event in which a performer or actor is applying for a position in an ensemble, cast, film, etc.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/BenefitConcert -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/BenefitConcert">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Concert"/>
+        <skos:definition>Concert held for charitable purposes, i.e., to raise funds or awareness</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Ceremony -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Ceremony">
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Event"/>
+        <skos:definition>Ritual event, performed on special occasions (e.g., death, baptism, wedding, graduation, equinox, coronation, victory)</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/CommandPerformance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/CommandPerformance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Concert"/>
+        <skos:definition>Performance done at the request of a monarch or other head of state.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Concert -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Concert">
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Event"/>
+        <skos:definition>Live musical performance of one or more works in front of an audience</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/ConcertSeries -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/ConcertSeries">
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Event"/>
+        <skos:definition>Group of concerts in the same geographic area by a single performer or brought together by a common theme, usually available for sale as a package. e.g., an orchestra concert season, a series featuring chamber ensembles.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/ConcertTour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/ConcertTour">
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Event"/>
+        <skos:definition>Series of concerts by a performer or group of performers in different cities, countries, or locations.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/DeclaredMedium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/DeclaredMedium">
+        <skos:definition>Intended overall medium of performance of a musical work, as declared by the composer, a reference source, or an Instance of bf:NotatedMusic.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/DeclaredMediumPart -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/DeclaredMediumPart">
+        <skos:definition>Part of the declared medium for a specific instrument/ensemble/other medium. For example, in a work for 2 flute &amp; piano, there would be 2 declared medium parts.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/DiscCutting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/DiscCutting">
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/SoundCharacteristic"/>
+        <skos:definition>Recording process in which a stylus cuts a vertical or lateral groove into an audio disc.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/DramaticRole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/DramaticRole"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/EventName -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/EventName">
+        <skos:definition>Name given to an event.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/FirstPerformance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/FirstPerformance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Performance"/>
+        <skos:definition>The world premiere performance of a work.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/IndividualInstrument -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/IndividualInstrument">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MusicalInstrument"/>
+        <skos:definition>Single musical instrument, e.g., bassoon, bass guitar, synthesizer or group of instruments, e.g., percussion, intended to be played by a single performer.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/IndividualVoice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/IndividualVoice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Voice"/>
+        <rdfs:comment>Single voice, i.e., soprano, male voice, alto.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/InstrumentEnsemble -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/InstrumentEnsemble">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MusicalInstrument"/>
+        <skos:definition>Group of like or unlike musical instruments intended to be played by multiple performers.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/LivePerformance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/LivePerformance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Performance"/>
+        <skos:definition>Performance that is recorded at a concert.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MasterClass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MasterClass">
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Event"/>
+        <skos:definition>Event in which a recognized performer critiques the performances of one or more other performers.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MediumOfPerformance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MediumOfPerformance">
+        <skos:definition>Instruments, voices, ensembles, choruses, and other participants (actors, dancers, etc.) required or used for an event or work, including electronics, computers, installations, etc.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MediumPartType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MediumPartType">
+        <rdfs:label>Medium type</rdfs:label>
+        <skos:definition>The type of pmo:PerformedMediumPart, e.g., solo, ad lib, optional</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MusicPart -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MusicPart">
+        <rdfs:label>Music part</rdfs:label>
+        <skos:definition>The specific music parts of pmo:DeclaredMedium or pmo:DeclaredMediumPart, e.g., Violin 1, Clarinet 2.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MusicalInstrument -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MusicalInstrument">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MediumOfPerformance"/>
+        <skos:definition>Musical instrument(s) or object(s) used as a musical instrument (e.g., drinking glasses, leaves, typewriters).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/OpenMicPerformance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/OpenMicPerformance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Performance"/>
+        <skos:definition>Live performance at a coffee house, night club, or other venue by amateur performers.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Performance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Performance">
+        <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/efrbroo/F31_Performance"/>
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Event"/>
+        <skos:definition>Event in which a performer or group of performers present a work to an audience or in a recording studio.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/PerformedMedium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/PerformedMedium">
+        <skos:definition>The overall medium of performance used in the performance of a musical work. This may or may not be the same as the declared medium of performance.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/PerformedMediumPart -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/PerformedMediumPart">
+        <skos:definition>Part of the performed medium for a specific instrument/ensemble/other medium. For example, a work performed by 2 flutes &amp; a piano would have 2 performed medium parts.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/ProxyWork -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/ProxyWork">
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+        <skos:definition>A work that is aggregated into a compilation or other type of aggregating work. Ordering of the work within the aggregating work is put here.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/RecordingSession -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/RecordingSession">
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Event"/>
+        <skos:definition>Event in which one or more performances are recorded with the aim of producing a recording for issue.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Rehearsal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Rehearsal">
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Event"/>
+        <skos:definition>Event in which a performer or group of performers prepare for a performance in a concert.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Tempo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Tempo">
+        <rdfs:isDefinedBy>The speed or pace of a music work, whether declared (in a score) or performed.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/VideogamePlatformIdentifier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/VideogamePlatformIdentifier">
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+        <skos:definition>Identifier assigned to a video game platform, e.g., CUSA 54321 (a PlayStation 4 number).</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Voice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Voice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MediumOfPerformance"/>
+        <skos:definition>Human voice used as a medium of performance--speaking, singing, intoning, etc.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/VoiceEnsemble -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/VoiceEnsemble">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Voice"/>
+        <rdfs:comment>Group of like or unlike voices performing as an ensemble</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/WorkComponent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/WorkComponent">
+        <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+        <rdfs:isDefinedBy>A work that is an integral part of another work, even when separated from it, e.g., a movement of a symphony, a chapter of a novel.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://metadataregistry.org/uri/RegStatus/1001 -->
+
+    <owl:NamedIndividual rdf:about="http://metadataregistry.org/uri/RegStatus/1001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Published</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://metadataregistry.org/uri/RegStatus/1008 -->
+
+    <owl:NamedIndividual rdf:about="http://metadataregistry.org/uri/RegStatus/1008">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="en">Deprecated</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <skos:hasTopConcept rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1001"/>
+        <skos:hasTopConcept rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1010"/>
+        <skos:hasTopConcept rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1020"/>
+        <skos:hasTopConcept rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1029"/>
+        <skos:hasTopConcept rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1031"/>
+        <skos:hasTopConcept rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1041"/>
+        <skos:hasTopConcept rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1044"/>
+        <skos:hasTopConcept rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1050"/>
+        <dc:title>RDA Carrier Type</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1001 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1001">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <skos:topConceptOf rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/533"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1008"/>
+        <skos:prefLabel xml:lang="en">Audio carriers (Deprecated)</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">Soportes de audio</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Tonträger</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">音频载体</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1002 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1002">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of a cartridge containing an audio tape.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Cartouche contenant une bande audio.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Cartucho que contiene una cinta de audio.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een cartridge die een audiocassette bevat.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Eine Cartridge, die ein Tonband enthält.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">装在单轴盒中的录音带。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Audiocartridge</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">audio cartridge</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">audiocartridge</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">cartouche audio</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">cartuccia audio</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">cartucho sonoro</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="sv">ljudmagasin</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">äänisilmukkakasetti</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">盒式录音带</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/534"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <rdfs:label>Audio cartridge</rdfs:label>
+        <skos:definition xml:lang="en">A carrier type consisting of a cartridge containing an audio tape.</skos:definition>
+        <skos:definition xml:lang="fr">Cartouche contenant une bande audio.</skos:definition>
+        <skos:definition xml:lang="es">Cartucho que contiene una cinta de audio.</skos:definition>
+        <skos:definition xml:lang="nl">Een cartridge die een audiocassette bevat.</skos:definition>
+        <skos:definition xml:lang="de">Eine Cartridge, die ein Tonband enthält.</skos:definition>
+        <skos:definition xml:lang="zh">装在单轴盒中的录音带。</skos:definition>
+        <skos:prefLabel xml:lang="de">Audiocartridge</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">audio cartridge</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">audiocartridge</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">cartouche audio</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">cartuccia audio</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">cartucho sonoro</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">ljudmagasin</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">äänisilmukkakasetti</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">خرطوشة سمعية</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">盒式录音带</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1003 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1003">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of a roller-shaped object on which sound waves are incised or indented in a continuous circular groove.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een rolvormig object waarop geluidsgolven worden ingesneden of ingesprongen in een continue cirkelvormige groef.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Ein rollenförmiges Objekt, auf dem Schallwellen in einer fortlaufend gewundenen Rille graviert oder eingeprägt sind.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Objet en forme de rouleau sur lequel des ondulations sonores ont été gravées au moyen d’une entaille ou d’empreintes en créant un sillon circulaire continu.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Objeto con forma de rollo en el cual se han hecho incisiones o muescas en un surco circular continuo.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">通过刻痕或连续的螺旋式纹槽在其上记录声波的滚筒形物体，包括蜡滚筒、金属丝滚筒等。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Phonographenzylinder</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">audio cylinder</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">audiocilinder</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">cilindro audio</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">cilindro sonoro</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">cylindre audio</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="sv">ljudcylinder</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">录音筒</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/535"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <rdfs:label>Audio cylinder</rdfs:label>
+        <skos:definition xml:lang="en">A carrier type consisting of a roller-shaped object on which sound waves are incised or indented in a continuous circular groove.</skos:definition>
+        <skos:definition xml:lang="nl">Een rolvormig object waarop geluidsgolven worden ingesneden of ingesprongen in een continue cirkelvormige groef.</skos:definition>
+        <skos:definition xml:lang="de">Ein rollenförmiges Objekt, auf dem Schallwellen in einer fortlaufend gewundenen Rille graviert oder eingeprägt sind.</skos:definition>
+        <skos:definition xml:lang="fr">Objet en forme de rouleau sur lequel des ondulations sonores ont été gravées au moyen d’une entaille ou d’empreintes en créant un sillon circulaire continu.</skos:definition>
+        <skos:definition xml:lang="es">Objeto con forma de rollo en el cual se han hecho incisiones o muescas en un surco circular continuo.</skos:definition>
+        <skos:definition xml:lang="zh">通过刻痕或连续的螺旋式纹槽在其上记录声波的滚筒形物体，包括蜡滚筒、金属丝滚筒等。</skos:definition>
+        <skos:prefLabel xml:lang="de">Phonographenzylinder</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">audio cylinder</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">audiocilinder</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">cilindro audio</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">cilindro sonoro</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">cylindre audio</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">ljudcylinder</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">أسطوانة سمعية</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">录音筒</skos:prefLabel>
+        <skos:scopeNote xml:lang="fr">Comprend les cylindres de cire, cylindres de fil, etc.</skos:scopeNote>
+        <skos:scopeNote xml:lang="de">Dazu gehören Wachszylinder, Drahtzylinder usw.</skos:scopeNote>
+        <skos:scopeNote xml:lang="es">Incluye cilindros de cera, cilindros metálicos, etc.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">Wax cylinders, wire cylinders, etc., are included.</skos:scopeNote>
+        <skos:scopeNote xml:lang="zh">包括腊筒、线筒等</skos:scopeNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1010 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1010">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <skos:topConceptOf rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitLabel xml:lang="de">Datenträger</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">Soportes de computadora</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">计算机载体</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/541"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1008"/>
+        <skos:prefLabel xml:lang="en">Computer carriers (Deprecated)</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Datenträger</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">Soportes de computadora</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">计算机载体</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1011 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1011">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of a card containing digitally encoded data designed for use with a computer.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Carte contenant des données encodées numériquement prévues pour une utilisation au moyen d’un ordinateur.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een kaart die digitaal gecodeerde data bevat ontworpen om te gebruiken met een computer.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Eine Karte, die digital kodierte Daten enthält und die für die Anwendung mit einem Computer konzipiert ist.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Tarjeta que contiene datos codificados digitalmente concebida para ser utilizada con una computadora.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">包含可供计算机使用的数字化编码数据的卡片。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Speicherkarte</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">carte informatique</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">computer card</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">computerkaart</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="sv">datorkort</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">scheda per computer</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">tarjeta de computadora</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">tietolevy</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">计算机卡</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/542"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <skos:definition xml:lang="en">A carrier type consisting of a card containing digitally encoded data designed for use with a computer.</skos:definition>
+        <skos:definition xml:lang="fr">Carte contenant des données encodées numériquement prévues pour une utilisation au moyen d’un ordinateur.</skos:definition>
+        <skos:definition xml:lang="nl">Een kaart die digitaal gecodeerde data bevat ontworpen om te gebruiken met een computer.</skos:definition>
+        <skos:definition xml:lang="de">Eine Karte, die digital kodierte Daten enthält und die für die Anwendung mit einem Computer konzipiert ist.</skos:definition>
+        <skos:definition xml:lang="es">Tarjeta que contiene datos codificados digitalmente concebida para ser utilizada con una computadora.</skos:definition>
+        <skos:definition xml:lang="zh">包含可供计算机使用的数字化编码数据的卡片。</skos:definition>
+        <skos:prefLabel xml:lang="de">Speicherkarte</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">carte informatique</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">computer card</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">computerkaart</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">datorkort</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">scheda per computer</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">tarjeta de computadora</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">tietolevy</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">بطاقة حاسوب</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">计算机卡</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1012 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1012">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of a cartridge containing a miniaturized electronic circuit on a small wafer of semiconductor silicon, designed to provide additional processing, memory, or storage capacity.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Cartouche contenant un circuit informatique miniature sur une petite plaque de silicium semi-conducteur.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Cartucho que contiene un circuito electrónico miniaturizado sobre un pequeño disco de silicona semiconductora.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een cartridge die een geminiaturiseerd elektronisch circuit op een klein schijfje van halfgeleidende siliconen.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Eine Cartridge, die ein miniaturisiertes elektronisches Schaltsystem auf einem Mikroplättchen aus Halbleitersilicium enthält.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">装在单轴盒中的小型电路半导体硅晶片。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Computerchip-Cartridge</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">cartouche à puce informatique</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">cartuccia di memoria per computer</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">cartucho de chip para computadora</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">computer chip cartridge</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">computerchipcartridge</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">tietolevykotelo</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">盒式计算机芯片</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/543"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <skos:definition xml:lang="en">A carrier type consisting of a cartridge containing a miniaturized electronic circuit on a small wafer of semiconductor silicon, designed to provide additional processing, memory, or storage capacity.</skos:definition>
+        <skos:definition xml:lang="fr">Cartouche contenant un circuit informatique miniature sur une petite plaque de silicium semi-conducteur.</skos:definition>
+        <skos:definition xml:lang="es">Cartucho que contiene un circuito electrónico miniaturizado sobre un pequeño disco de silicona semiconductora.</skos:definition>
+        <skos:definition xml:lang="nl">Een cartridge die een geminiaturiseerd elektronisch circuit op een klein schijfje van halfgeleidende siliconen.</skos:definition>
+        <skos:definition xml:lang="de">Eine Cartridge, die ein miniaturisiertes elektronisches Schaltsystem auf einem Mikroplättchen aus Halbleitersilicium enthält.</skos:definition>
+        <skos:definition xml:lang="zh">装在单轴盒中的小型电路半导体硅晶片。</skos:definition>
+        <skos:prefLabel xml:lang="de">Computerchip-Cartridge</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">cartouche à puce informatique</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">cartuccia di memoria per computer</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">cartucho de chip para computadora</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">computer chip cartridge</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">computerchipcartridge</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">tietolevykotelo</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">خرطوشة رقاقة حاسوب</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">盒式计算机芯片</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1013 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1013">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of a disc containing digitally encoded data, magnetically or optically recorded.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Disque contenant des données encodées numériquement, enregistrées de façon magnétique ou optique.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een disc die digitaal gecodeerde data bevat, magnetisch of optisch opgenomen.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Eine Disk, die digital kodierte Daten enthält, die magnetisch oder optisch aufgenommen sind.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Un disco que contiene datos codificados digitalmente, registrados en forma magnética u óptica.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">包含磁存储或光存储数字编码数据的盘片。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Computerdisk</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">computer disc</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">computerdisc</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="sv">datorskiva</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">disco de computadora</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">disco magnetico per computer</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">disque informatique</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">tietolevy</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">计算机盘</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/544"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <skos:definition xml:lang="en">A carrier type consisting of a disc containing digitally encoded data, magnetically or optically recorded.</skos:definition>
+        <skos:definition xml:lang="fr">Disque contenant des données encodées numériquement, enregistrées de façon magnétique ou optique.</skos:definition>
+        <skos:definition xml:lang="nl">Een disc die digitaal gecodeerde data bevat, magnetisch of optisch opgenomen.</skos:definition>
+        <skos:definition xml:lang="de">Eine Disk, die digital kodierte Daten enthält, die magnetisch oder optisch aufgenommen sind.</skos:definition>
+        <skos:definition xml:lang="es">Un disco que contiene datos codificados digitalmente, registrados en forma magnética u óptica.</skos:definition>
+        <skos:definition xml:lang="zh">包含通过磁式或光学录制的数字编码数据的盘片。</skos:definition>
+        <skos:prefLabel xml:lang="de">Computerdisk</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">computer disc</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">computerdisc</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">datorskiva</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">disco de computadora</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">disco magnetico per computer</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">disque informatique</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">tietolevy</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">قرص حاسوب</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">计算机盘</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1014 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1014">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of a cartridge containing one or more computer discs.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Cartouche contenant un ou plusieurs disques informatiques.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een cartridge die één of meer computerdiscs bevat.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Eine Cartridge, die eine oder mehrere Computerdisks enthält.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Un cartucho que contiene uno o más discos de computadora.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">装在单轴盒中的一个或多个计算机盘。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Computerdisk-Cartridge</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">cartouche de disque informatique</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">cartuccia di disco magnetico per computer</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">cartucho de discos de computadora</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">computer disc cartridge</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">computerdisccartridge</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="sv">datorskivmagasin</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">盒式计算机盘</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/545"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <skos:definition xml:lang="en">A carrier type consisting of a cartridge containing one or more computer discs.</skos:definition>
+        <skos:definition xml:lang="fr">Cartouche contenant un ou plusieurs disques informatiques.</skos:definition>
+        <skos:definition xml:lang="nl">Een cartridge die één of meer computerdiscs bevat.</skos:definition>
+        <skos:definition xml:lang="de">Eine Cartridge, die eine oder mehrere Computerdisks enthält.</skos:definition>
+        <skos:definition xml:lang="es">Un cartucho que contiene uno o más discos de computadora.</skos:definition>
+        <skos:definition xml:lang="zh">装在单轴盒中的一个或多个计算机盘。</skos:definition>
+        <skos:prefLabel xml:lang="de">Computerdisk-Cartridge</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">cartouche de disque informatique</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">cartuccia di disco magnetico per computer</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">cartucho de discos de computadora</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">computer disc cartridge</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">computerdisccartridge</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">datorskivmagasin</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">خرطوشة قرص حاسوب</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">盒式计算机盘</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1015 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1015">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of a cartridge containing a computer tape.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Cartouche contenant une bande informatique.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een cartridge die een computertape bevat.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Eine Cartridge, die ein Magnetband enthält.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Un cartucho que contiene una cinta de computadora.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">装在单轴盒中的计算机磁带。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Magnetbandcartridge</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">cartouche de bande informatique</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">cartuccia di nastro per computer</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">cartucho de cinta de computadora</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">computer tape cartridge</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">computertapecartridge</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="sv">datorbandmagasin</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">tietokasetti</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">盒式计算机磁带</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/546"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <skos:definition xml:lang="en">A carrier type consisting of a cartridge containing a computer tape.</skos:definition>
+        <skos:definition xml:lang="fr">Cartouche contenant une bande informatique.</skos:definition>
+        <skos:definition xml:lang="nl">Een cartridge die een computertape bevat.</skos:definition>
+        <skos:definition xml:lang="de">Eine Cartridge, die ein Magnetband enthält.</skos:definition>
+        <skos:definition xml:lang="es">Un cartucho que contiene una cinta de computadora.</skos:definition>
+        <skos:definition xml:lang="zh">装在单轴盒中的计算机磁带。</skos:definition>
+        <skos:prefLabel xml:lang="de">Magnetbandcartridge</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">cartouche de bande informatique</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">cartuccia di nastro per computer</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">cartucho de cinta de computadora</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">computer tape cartridge</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">computertapecartridge</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">datorbandmagasin</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">tietokasetti</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">خطوشة شريط حاسوب</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">盒式计算机磁带</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1016 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1016">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of a cassette containing a computer tape.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Cassette contenant une bande informatique.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een cassette die een computertape bevat.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Eine Kassette, die ein Magnetband enthält.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Un casete que contiene una cinta de computadora.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">装在双轴盒中的计算机磁带。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Magnetbandkassette</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">casete de cinta de computadora</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">cassetta di nastro per computer</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">cassette de bande informatique</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">computer tape cassette</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">computertapecassette</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="sv">datorkassett</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">tietonauhan silmukkakasetti</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">卡式计算机磁带</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/547"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <skos:definition xml:lang="en">A carrier type consisting of a cassette containing a computer tape.</skos:definition>
+        <skos:definition xml:lang="fr">Cassette contenant une bande informatique.</skos:definition>
+        <skos:definition xml:lang="nl">Een cassette die een computertape bevat.</skos:definition>
+        <skos:definition xml:lang="de">Eine Kassette, die ein Magnetband enthält.</skos:definition>
+        <skos:definition xml:lang="es">Un casete que contiene una cinta de computadora.</skos:definition>
+        <skos:definition xml:lang="zh">装在双轴盒中的计算机磁带。</skos:definition>
+        <skos:prefLabel xml:lang="de">Magnetbandkassette</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">casete de cinta de computadora</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">cassetta di nastro per computer</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">cassette de bande informatique</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">computer tape cassette</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">computertapecassette</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">datorkassett</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">tietonauhan silmukkakasetti</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">كاسيت شريط حاسوب</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">卡式计算机磁带</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1017 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1017">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of an open reel holding a length of computer tape to be used with a computer tape drive.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Bobine ouverte contenant un métrage de bande informatique à utiliser avec un lecteur de bande informatique.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Carrete abierto que contiene un tramo de cinta para ser usado con una unidad de cinta de computadora.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een open spoel met een lengte computertape om te gebruiken met een computertapedrive.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Eine offene Spule, die ein Stück Magnetband hält, das mit einem Magnetband-Laufwerk verwendet wird.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">装在开放式卷盘中的一段磁带，需与计算机磁带设备配合使用。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Magnetbandspule</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">bobina di nastro per computer</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">bobine de bande informatique</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">carrete de cinta de computadora</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">computer tape reel</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">computertapespoel</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="sv">datorbandspole</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">tietonauhakela</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">开盘计算机磁带</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/548"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <skos:definition xml:lang="en">A carrier type consisting of an open reel holding a length of computer tape to be used with a computer tape drive.</skos:definition>
+        <skos:definition xml:lang="fr">Bobine ouverte contenant un métrage de bande informatique à utiliser avec un lecteur de bande informatique.</skos:definition>
+        <skos:definition xml:lang="es">Carrete abierto que contiene un tramo de cinta para ser usado con una unidad de cinta de computadora.</skos:definition>
+        <skos:definition xml:lang="nl">Een open spoel met een lengte computertape om te gebruiken met een computertapedrive.</skos:definition>
+        <skos:definition xml:lang="de">Eine offene Spule, die ein Stück Magnetband hält, das mit einem Magnetband-Laufwerk verwendet wird.</skos:definition>
+        <skos:definition xml:lang="zh">装在开放式卷盘中的一段磁带，需与计算机磁带设备配合使用。</skos:definition>
+        <skos:prefLabel xml:lang="de">Magnetbandspule</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">bobina di nastro per computer</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">bobine de bande informatique</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">carrete de cinta de computadora</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">computer tape reel</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">computertapespoel</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">datorbandspole</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">tietonauhakela</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">بكرة شريط حاسوب</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">开盘计算机磁带</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1020 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1020">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <skos:topConceptOf rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitLabel xml:lang="de">Datenträger für Mikroformen</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">Soportes de microformas</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">缩微载体</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/550"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1008"/>
+        <skos:prefLabel xml:lang="de">Datenträger für Mikroformen</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Microform carriers (Deprecated)</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">Soportes de microformas</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">缩微载体</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1021 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1021">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of a card with one or more rectangular openings or apertures holding frames of microfilm.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Carte comprenant une ou plusieurs ouvertures ou fenêtres rectangulaires sur lesquelles sont montées des images de microfilm.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een kaart met één of meer rechthoekige openingen of vensters waarin microfilmbeelden geplaatst zijn.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Eine Karte mit einer oder mehreren rechteckigen Öffnungen oder Blenden, die Einzelbilder des Mikrofilms hält.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Una tarjeta con uno o más orificios o aberturas rectangulares que sujetan fotogramas de microfilme.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">带有一个或多个卡住缩微胶卷外框的长方形开口或孔的卡片。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Mikrofilmlochkarte</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">aperture card</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">aperturekaart</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">carte à fenêtre</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">ikkunakortti</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="sv">maskhålkort</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">tarjeta de apertura</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">穿孔卡片</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/551"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <skos:definition xml:lang="en">A carrier type consisting of a card with one or more rectangular openings or apertures holding frames of microfilm.</skos:definition>
+        <skos:definition xml:lang="fr">Carte comprenant une ou plusieurs ouvertures ou fenêtres rectangulaires sur lesquelles sont montées des images de microfilm.</skos:definition>
+        <skos:definition xml:lang="nl">Een kaart met één of meer rechthoekige openingen of vensters waarin microfilmbeelden geplaatst zijn.</skos:definition>
+        <skos:definition xml:lang="de">Eine Karte mit einer oder mehreren rechteckigen Öffnungen oder Blenden, die Einzelbilder des Mikrofilms hält.</skos:definition>
+        <skos:definition xml:lang="es">Una tarjeta con uno o más orificios o aberturas rectangulares que sujetan fotogramas de microfilme.</skos:definition>
+        <skos:definition xml:lang="zh">带有一个或多个卡住缩微胶卷外框的长方形开口或孔的卡片。</skos:definition>
+        <skos:prefLabel xml:lang="de">Mikrofilmlochkarte</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">aperture card</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">aperturekaart</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">carte à fenêtre</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">ikkunakortti</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">maskhålkort</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">tarjeta de apertura</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">بطاقة ذات  منفذ</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">穿孔卡片</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1022 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1022">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of a sheet of film bearing a number of microimages in a two-dimensional array.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een filmvel met een aantal micro-afbeeldingen in een twee-dimensionale reeks.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Ein Blatt Filmmaterial, das einige Mikrobilder in zweidimensionaler Anordnung trägt.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Feuille de film portant une série de micro-images disposées selon deux axes.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Hoja de película que presenta un número de microimágenes forma bidimensional.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">以二维阵列承载一组缩微图像的单张胶片。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Mikrofiche</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">microficha</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">microfiche</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">microfiche</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">microfiche</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">microfiche</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="sv">mikrofiche</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">mikrokortti</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">缩微平片</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/552"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <skos:definition xml:lang="en">A carrier type consisting of a sheet of film bearing a number of microimages in a two-dimensional array.</skos:definition>
+        <skos:definition xml:lang="nl">Een filmvel met een aantal micro-afbeeldingen in een twee-dimensionale reeks.</skos:definition>
+        <skos:definition xml:lang="de">Ein Blatt Filmmaterial, das einige Mikrobilder in zweidimensionaler Anordnung trägt.</skos:definition>
+        <skos:definition xml:lang="fr">Feuille de film portant une série de micro-images disposées selon deux axes.</skos:definition>
+        <skos:definition xml:lang="es">Hoja de película que presenta un número de microimágenes forma bidimensional.</skos:definition>
+        <skos:definition xml:lang="zh">以二维阵列承载一组缩微图像的单张胶片。</skos:definition>
+        <skos:prefLabel xml:lang="de">Mikrofiche</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">microficha</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">microfiche</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">microfiche</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">microfiche</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">microfiche</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">mikrofiche</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">mikrokortti</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">ميكروفيش/ بطاقة مصغرة</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">缩微平片</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1023 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1023">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of a cassette containing uncut microfiches.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Casete que contiene microfichas sin cortar.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Cassette contenant des microfiches non coupées.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een cassette met ongesneden microfiches.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Eine Kassette, die ungeschnittene Mikrofiches enthält.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">装在双轴盒中未切割的缩微平片。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Mikrofichekassette</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">casete de microficha</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">cassetta di microfiche</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">cassette de microfiches</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">microfiche cassette</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">microfilmcassette</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="sv">mikrofichekassett</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">mikrokorttikasetti</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">卡式缩微平片</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/553"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <skos:definition xml:lang="en">A carrier type consisting of a cassette containing uncut microfiches.</skos:definition>
+        <skos:definition xml:lang="es">Casete que contiene microfichas sin cortar.</skos:definition>
+        <skos:definition xml:lang="fr">Cassette contenant des microfiches non coupées.</skos:definition>
+        <skos:definition xml:lang="nl">Een cassette met ongesneden microfiches.</skos:definition>
+        <skos:definition xml:lang="de">Eine Kassette, die ungeschnittene Mikrofiches enthält.</skos:definition>
+        <skos:definition xml:lang="zh">装在双轴盒中未切割的缩微平片。</skos:definition>
+        <skos:prefLabel xml:lang="de">Mikrofichekassette</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">casete de microficha</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">cassetta di microfiche</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">cassette de microfiches</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">microfiche cassette</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">microfilmcassette</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">mikrofichekassett</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">mikrokorttikasetti</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">كاسيت ميكروفيش/ بطاقة مصغرة</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">卡式缩微平片</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1024 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1024">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of a cartridge containing a microfilm.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Cartouche contenant un microfilm.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Cartucho que contiene un microfilme.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een cartridge die een microfilm bevat.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Eine Cartridge, die einen Mikrofilm enthält.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">装在单轴盒中的缩微胶卷。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Mikrofilm-Cartridge</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">cartouche de microfilm</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">cartuccia di microfilm</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">cartucho de microfilme</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">microfilm cartridge</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">microfilmcartridge</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">mikrofilmisilmukkakasetti</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="sv">mikrofilmsmagasin</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">盒式缩微胶卷</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/554"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <skos:definition xml:lang="en">A carrier type consisting of a cartridge containing a microfilm.</skos:definition>
+        <skos:definition xml:lang="fr">Cartouche contenant un microfilm.</skos:definition>
+        <skos:definition xml:lang="es">Cartucho que contiene un microfilme.</skos:definition>
+        <skos:definition xml:lang="nl">Een cartridge die een microfilm bevat.</skos:definition>
+        <skos:definition xml:lang="de">Eine Cartridge, die einen Mikrofilm enthält.</skos:definition>
+        <skos:definition xml:lang="zh">装在单轴盒中的缩微胶卷。</skos:definition>
+        <skos:prefLabel xml:lang="de">Mikrofilm-Cartridge</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">cartouche de microfilm</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">cartuccia di microfilm</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">cartucho de microfilme</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">microfilm cartridge</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">microfilmcartridge</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">mikrofilmisilmukkakasetti</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">mikrofilmsmagasin</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">خرطوشة ميكروفلم (صورة مصغرة)</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">盒式缩微胶卷</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1025 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1025">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of a cassette containing a microfilm.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Casete que contiene un microfilme.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Cassette contenant un microfilm.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een cassette die een microfilm bevat.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Eine Kassette, die einen Mikrofilm enthält.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">装在双轴盒中的缩微胶卷。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Mikrofilmkassette</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">casete de microfilme</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">cassetta di microfilm</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">cassette de microfilm</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">microfilm cassette</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">microfilmcassette</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">mikrofilmikasetti</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="sv">mikrofilmskassett</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">卡式缩微胶卷</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/555"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <skos:definition xml:lang="en">A carrier type consisting of a cassette containing a microfilm.</skos:definition>
+        <skos:definition xml:lang="es">Casete que contiene un microfilme.</skos:definition>
+        <skos:definition xml:lang="fr">Cassette contenant un microfilm.</skos:definition>
+        <skos:definition xml:lang="nl">Een cassette die een microfilm bevat.</skos:definition>
+        <skos:definition xml:lang="de">Eine Kassette, die einen Mikrofilm enthält.</skos:definition>
+        <skos:definition xml:lang="zh">装在双轴盒中的缩微胶卷。</skos:definition>
+        <skos:prefLabel xml:lang="de">Mikrofilmkassette</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">casete de microfilme</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">cassetta di microfilm</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">cassette de microfilm</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">microfilm cassette</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">microfilmcassette</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">mikrofilmikasetti</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">mikrofilmskassett</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">كاسيت ميكروفلم (صورة مصغرة)</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">卡式缩微胶卷</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1026 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1026">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of an open reel holding a microfilm, to be threaded into a microfilm reader.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Bobine ouverte contenant un microfilm, à glisser dans un lecteur de microfilm.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Carrete abierto que contiene microfilme que será insertado en un lector de microfilme.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een open spoel met een microfilm, om in te brengen in een microfilmreader.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Eine offene Spule, die einen Mikrofilm hält, der durch ein Lesegerät eingefädelt wird.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">装在开放式卷盘中可供缩微阅读器使用的缩微胶卷。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Mikrofilmspule</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">bobina di microfilm</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">bobine de microfilm</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">carrete de microfilme</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">microfilm reel</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">microfilmspoel</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">mikrofilmikela</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="sv">mikrofilmsspole</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">开盘缩微胶卷</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/556"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <skos:definition xml:lang="en">A carrier type consisting of an open reel holding a microfilm, to be threaded into a microfilm reader.</skos:definition>
+        <skos:definition xml:lang="fr">Bobine ouverte contenant un microfilm, à glisser dans un lecteur de microfilm.</skos:definition>
+        <skos:definition xml:lang="es">Carrete abierto que contiene microfilme que será insertado en un lector de microfilme.</skos:definition>
+        <skos:definition xml:lang="nl">Een open spoel met een microfilm, om in te brengen in een microfilmreader.</skos:definition>
+        <skos:definition xml:lang="de">Eine offene Spule, die einen Mikrofilm hält, der durch ein Lesegerät eingefädelt wird.</skos:definition>
+        <skos:definition xml:lang="zh">装在开放式卷盘中可供缩微阅读器使用的缩微胶卷。</skos:definition>
+        <skos:prefLabel xml:lang="de">Mikrofilmspule</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">bobina di microfilm</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">bobine de microfilm</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">carrete de microfilme</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">microfilm reel</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">microfilmspoel</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">mikrofilmikela</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">mikrofilmsspole</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">بكرة ميكروفلم</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">开盘缩微胶卷</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1027 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1027">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of a short strip of microfilm cut from a roll.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Courte bande de microfilm découpée dans un rouleau.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een korte strook microfilm die van een rol geknipt is.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Ein kurzer Streifen Mikrofilm, der von einer Rolle geschnitten wird.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Una tira corta de microfilme cortada de un rollo.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">一段从缩微胶卷上切下来的条片。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Mikrofilmstreifen</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">bande de microfilm</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">microfilm slip</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">microfilmstrook</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">mikrofilmiliuska</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="sv">mikrofilmsremsa</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">spezzone di microfilm</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">tira de microfilme</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">缩微条片</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/557"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <skos:definition xml:lang="en">A carrier type consisting of a short strip of microfilm cut from a roll.</skos:definition>
+        <skos:definition xml:lang="fr">Courte bande de microfilm découpée dans un rouleau.</skos:definition>
+        <skos:definition xml:lang="nl">Een korte strook microfilm die van een rol geknipt is.</skos:definition>
+        <skos:definition xml:lang="de">Ein kurzer Streifen Mikrofilm, der von einer Rolle geschnitten wird.</skos:definition>
+        <skos:definition xml:lang="es">Una tira corta de microfilme cortada de un rollo.</skos:definition>
+        <skos:definition xml:lang="zh">一段从缩微胶卷上切下来的条片。</skos:definition>
+        <skos:prefLabel xml:lang="de">Mikrofilmstreifen</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">bande de microfilm</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">microfilm slip</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">microfilmstrook</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">mikrofilmiliuska</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">mikrofilmsremsa</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">spezzone di microfilm</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">tira de microfilme</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">شريحة ميكروفيلمية</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">缩微条片</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1028 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1028">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of a card or sheet of opaque material bearing a number of microimages in a two-dimensional array.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een kaart of vel van ondoorzichtig materiaal waarop een aantal micro-afbeeldingen staan in een tweedimensionale reeks.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Eine Karte oder ein Blatt lichtundurchlässiges Material, das einige Mikrobilder in zweidimensionaler Anordnung trägt.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Fiche ou feuille de matériau opaque comportant une série de micro-images disposées selon deux axes.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Tarjeta u hoja de material opaco que presenta un número de microimágenes en forma bidimensional.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">以二维阵列承载一组缩微图像的卡片或不透明材料。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Lichtundurchlässiger Mikrofiche</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">micro-opaak</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">microopaco</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">microopaco</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">microopaque</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="sv">mikrokort</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">mikrokortti (läpinäkymätön)</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">rouleau de microfilm</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">不透明缩微品</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/558"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <skos:definition xml:lang="en">A carrier type consisting of a card or sheet of opaque material bearing a number of microimages in a two-dimensional array.</skos:definition>
+        <skos:definition xml:lang="nl">Een kaart of vel van ondoorzichtig materiaal waarop een aantal micro-afbeeldingen staan in een tweedimensionale reeks.</skos:definition>
+        <skos:definition xml:lang="de">Eine Karte oder ein Blatt lichtundurchlässiges Material, das einige Mikrobilder in zweidimensionaler Anordnung trägt.</skos:definition>
+        <skos:definition xml:lang="fr">Fiche ou feuille de matériau opaque comportant une série de micro-images disposées selon deux axes.</skos:definition>
+        <skos:definition xml:lang="es">Tarjeta u hoja de material opaco que presenta un número de microimágenes en forma bidimensional.</skos:definition>
+        <skos:definition xml:lang="zh">以二维阵列承载一组缩微图像的卡片或不透明材料。</skos:definition>
+        <skos:prefLabel xml:lang="de">Lichtundurchlässiger Mikrofiche</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">micro-opaak</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">microopaco</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">microopaco</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">microopaque</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">mikrokort</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">mikrokortti (läpinäkymätön)</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">rouleau de microfilm</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">مصغرة غير شفافة (مجهري)</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">不透明缩微品</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1029 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1029">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <skos:topConceptOf rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitLabel xml:lang="es">Soportes microscópicos</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="de">Trägermedien für Mikroskop-Anwendungen</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">显微载体</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/559"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1008"/>
+        <skos:prefLabel xml:lang="en">Microscopic carriers (Deprecated)</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">Soportes microscópicos</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Trägermedien für Mikroskop-Anwendungen</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">显微载体</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1030 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1030">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <skos:related rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1040"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of a small sheet of transparent material, with or without a protective mount, bearing a minute object designed for use with a device such as a microscope.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een klein vel van transparant materiaal (met of zonder een beschermende laag) met een miniscuul object om te gebruiken met een apparaat zoals een microscoop.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Ein kleines Blatt aus transparentem Material (mit oder ohne Schutzfassung), das winzige Objekte trägt und für die Anwendung mit einem Gerät wie einem Mikroskop konzipiert ist.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Petite feuille de matériau transparent (avec ou sans monture de protection) comportant un objet minuscule, conçue pour une utilisation au moyen d’un dispositif tel qu’un microscope.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Placa pequeña de material transparente (con o sin montura protectora) que contiene un objeto diminuto diseñada para utilizarse con un dispositivo tal como un microscopio.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">一小片透明材料（有或没有保护膜），载有需用诸如显微镜等设备才能看到的微小物体。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Objektträger</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">lame pour microscope</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">microscoopdia</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">microscope slide</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="sv">mikroskoperingspreparat</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">portaobjeto de microscopio</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">preparaattilasi</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">vetrino da microscopio</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">显微镜载玻片</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/560"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <skos:definition xml:lang="en">A carrier type consisting of a small sheet of transparent material, with or without a protective mount, bearing a minute object designed for use with a device such as a microscope.</skos:definition>
+        <skos:definition xml:lang="nl">Een klein vel van transparant materiaal (met of zonder een beschermende laag) met een miniscuul object om te gebruiken met een apparaat zoals een microscoop.</skos:definition>
+        <skos:definition xml:lang="de">Ein kleines Blatt aus transparentem Material (mit oder ohne Schutzfassung), das winzige Objekte trägt und für die Anwendung mit einem Gerät wie einem Mikroskop konzipiert ist.</skos:definition>
+        <skos:definition xml:lang="fr">Petite feuille de matériau transparent (avec ou sans monture de protection) comportant un objet minuscule, conçue pour une utilisation au moyen d’un dispositif tel qu’un microscope.</skos:definition>
+        <skos:definition xml:lang="es">Placa pequeña de material transparente (con o sin montura protectora) que contiene un objeto diminuto diseñada para utilizarse con un dispositivo tal como un microscopio.</skos:definition>
+        <skos:definition xml:lang="zh">一小片透明材料（有或没有保护膜），载有需用诸如显微镜等设备才能看到的微小物体。</skos:definition>
+        <skos:prefLabel xml:lang="de">Objektträger</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">lame pour microscope</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">microscoopdia</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">microscope slide</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">mikroskoperingspreparat</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">portaobjeto de microscopio</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">preparaattilasi</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">vetrino da microscopio</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">شريحة مجهرية</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">显微镜载玻片</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1031 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1031">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <skos:topConceptOf rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitLabel xml:lang="de">Datenträger von projizierbaren Bildern</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">Soportes de imagen proyectada</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">投影图像载体</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/561"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1008"/>
+        <skos:prefLabel xml:lang="de">Datenträger von projizierbaren Bildern</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Projected image carriers (Deprecated)</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">Soportes de imagen proyectada</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">投影图像载体</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1032 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1032">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of a cartridge containing a motion picture film.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Cartouche contenant un film cinématographique.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Cartucho que contiene una película cinematográfica.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een cartridge die een speelfilm bevat.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Eine Cartridge, die einen Bewegtbildfilm enthält.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">装在双轴盒中的电影胶片。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Filmdose</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">cartouche de film</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">cartuccia di pellicola</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">cartucho de película</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">film cartridge</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">filmcartridge</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">filmisilmukkakasetti</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="sv">filmmagasin</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">盒式影片</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/562"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <skos:definition xml:lang="en">A carrier type consisting of a cartridge containing a motion picture film.</skos:definition>
+        <skos:definition xml:lang="fr">Cartouche contenant un film cinématographique.</skos:definition>
+        <skos:definition xml:lang="es">Cartucho que contiene una película cinematográfica.</skos:definition>
+        <skos:definition xml:lang="nl">Een cartridge die een speelfilm bevat.</skos:definition>
+        <skos:definition xml:lang="de">Eine Cartridge, die einen Bewegtbildfilm enthält.</skos:definition>
+        <skos:definition xml:lang="zh">装在双轴盒中的电影胶片。</skos:definition>
+        <skos:prefLabel xml:lang="de">Filmdose</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">cartouche de film</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">cartuccia di pellicola</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">cartucho de película</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">film cartridge</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">filmcartridge</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">filmisilmukkakasetti</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">filmmagasin</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">خرطوشة فيلم</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">盒式影片</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1033 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1033">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of a cassette containing a motion picture film.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Casete que contiene una película cinematográfica.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Cassette contenant un film cinématographique.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een cassette die een speelfilm bevat.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Eine Kassette, die einen Bewegtbildfilm enthält.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">包含电影胶卷的卡式磁带。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Filmkassette</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">casete de película</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">cassetta di pellicola</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">cassette de film</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">film cassette</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">filmcassette</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">filmikasetti</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="sv">filmkassett</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">卡式影片</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/563"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <skos:definition xml:lang="en">A carrier type consisting of a cassette containing a motion picture film.</skos:definition>
+        <skos:definition xml:lang="es">Casete que contiene una película cinematográfica.</skos:definition>
+        <skos:definition xml:lang="fr">Cassette contenant un film cinématographique.</skos:definition>
+        <skos:definition xml:lang="nl">Een cassette die een speelfilm bevat.</skos:definition>
+        <skos:definition xml:lang="de">Eine Kassette, die einen Bewegtbildfilm enthält.</skos:definition>
+        <skos:definition xml:lang="zh">包含电影胶卷的卡式磁带。</skos:definition>
+        <skos:prefLabel xml:lang="de">Filmkassette</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">casete de película</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">cassetta di pellicola</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">cassette de film</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">film cassette</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">filmcassette</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">filmikasetti</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">filmkassett</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">كاسيت فيلم</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">卡式影片</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1034 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1034">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of an open reel holding a motion picture film to be used with a motion picture film projector.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Bobine ouverte contenant un film cinématographique à utiliser avec un projecteur de film cinématographique.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Carrete abierto que sujeta una película cinematográfica que se utilizará con un proyector de películas cinematográficas.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een open spoel voor een speelfilm om te gebruiken met een filmprojector.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Eine offene Spule, die einen Bewegtbildfilm enthält, die mit einem Filmprojektor zu verwenden ist.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">装在开放式卷盘中的电影胶片，需与电影放映机配合使用。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Filmspule</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">bobina di pellicola</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">bobine de film</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">carrete de película</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">film reel</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">filmikela</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">filmspoel</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="sv">filmspole</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">开盘电影胶片</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/564"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <skos:definition xml:lang="en">A carrier type consisting of an open reel holding a motion picture film to be used with a motion picture film projector.</skos:definition>
+        <skos:definition xml:lang="fr">Bobine ouverte contenant un film cinématographique à utiliser avec un projecteur de film cinématographique.</skos:definition>
+        <skos:definition xml:lang="es">Carrete abierto que sujeta una película cinematográfica que se utilizará con un proyector de películas cinematográficas.</skos:definition>
+        <skos:definition xml:lang="nl">Een open spoel voor een speelfilm om te gebruiken met een filmprojector.</skos:definition>
+        <skos:definition xml:lang="de">Eine offene Spule, die einen Bewegtbildfilm enthält, die mit einem Filmprojektor zu verwenden ist.</skos:definition>
+        <skos:definition xml:lang="zh">装在开放式卷盘中的电影胶片，需与电影放映机配合使用。</skos:definition>
+        <skos:prefLabel xml:lang="de">Filmspule</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">bobina di pellicola</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">bobine de film</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">carrete de película</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">film reel</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">filmikela</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">filmspoel</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">filmspole</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">بكرة فيلم</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">开盘电影胶片</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1035 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1035">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of a short strip of film, usually in rigid format rather than rolled.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Banda corta de película, usualmente en formato rígido en lugar de enrollado.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Courte bande de film, généralement sous une forme droite plutôt qu’enroulée.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een korte filmstrook, meestal in een stijf formaat, in plaats van opgerold.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Ein kurzer Streifen Film, der in der Regel eher in starrer Form als in aufgerollter ist.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">一截短条片，通常硬而不易卷曲。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Filmstreifen</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">film fixe court</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">filmiliuska</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">filmina</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="sv">filmremsa</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">filmslip</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">filmstrook</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">spezzone di pellicola</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">幻灯条片</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/565"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <skos:definition xml:lang="en">A carrier type consisting of a short strip of film, usually in rigid format rather than rolled.</skos:definition>
+        <skos:definition xml:lang="es">Banda corta de película, usualmente en formato rígido en lugar de enrollado.</skos:definition>
+        <skos:definition xml:lang="fr">Courte bande de film, généralement sous une forme droite plutôt qu’enroulée.</skos:definition>
+        <skos:definition xml:lang="nl">Een korte filmstrook, meestal in een stijf formaat, in plaats van opgerold.</skos:definition>
+        <skos:definition xml:lang="de">Ein kurzer Streifen Film, der in der Regel eher in starrer Form als in aufgerollter ist.</skos:definition>
+        <skos:definition xml:lang="zh">一截短条片，通常硬而不易卷曲。</skos:definition>
+        <skos:prefLabel xml:lang="de">Filmstreifen</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">film fixe court</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">filmiliuska</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">filmina</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">filmremsa</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">filmslip</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">filmstrook</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">spezzone di pellicola</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">منزلقة فيليمة</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">幻灯条片</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1036 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1036">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of a roll of film, with or without recorded sound, containing a succession of images intended for projection one at a time.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een filmrol, met of zonder geluid, waarop een reeks van beelden is opgenomen die bedoeld zijn om één voor één geprojecteerd te worden.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Eine Filmrolle, mit oder ohne aufgenommenen Ton, die eine für Einzelbildvorführungen konzipierte Folge von Bildern enthält.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Rollo de película, con o sin sonido grabado que contiene una sucesión de imágenes que tienen como propósito ser proyectadas una a la vez.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Rouleau de film, avec son enregistré ou non, contenant une succession d’images devant être projetées une par une.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">一段有声或无声的幻灯胶片，载有逐幅放映的连续图像。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Filmstreifen für Einzelbildvorführung</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="sv">bildband</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">film fixe</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">filmina</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">filmstrip</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">filmstrip</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">fotobanda</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">raina</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">幻灯卷片</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/566"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <skos:definition xml:lang="en">A carrier type consisting of a roll of film, with or without recorded sound, containing a succession of images intended for projection one at a time.</skos:definition>
+        <skos:definition xml:lang="nl">Een filmrol, met of zonder geluid, waarop een reeks van beelden is opgenomen die bedoeld zijn om één voor één geprojecteerd te worden.</skos:definition>
+        <skos:definition xml:lang="de">Eine Filmrolle, mit oder ohne aufgenommenen Ton, die eine für Einzelbildvorführungen konzipierte Folge von Bildern enthält.</skos:definition>
+        <skos:definition xml:lang="es">Rollo de película, con o sin sonido grabado que contiene una sucesión de imágenes que tienen como propósito ser proyectadas una a la vez.</skos:definition>
+        <skos:definition xml:lang="fr">Rouleau de film, avec son enregistré ou non, contenant une succession d’images devant être projetées une par une.</skos:definition>
+        <skos:definition xml:lang="zh">一段有声或无声的幻灯胶片，载有逐幅放映的连续图像。</skos:definition>
+        <skos:prefLabel xml:lang="de">Filmstreifen für Einzelbildvorführung</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">bildband</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">film fixe</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">filmina</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">filmstrip</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">filmstrip</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">fotobanda</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">raina</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">شريط صور ساكنة</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">幻灯卷片</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1037 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1037">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of a cartridge containing a filmstrip.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Cartouche contenant un film fixe.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Cartucho que contiene una fotobanda.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een cartridge die een filmstrip bevat.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Eine Cartridge, die einen Filmstreifen enthält.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">装在单轴盒中的幻灯卷片。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Filmstreifen-Cartridge</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="sv">bildbandsmagasin</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">cartouche de film fixe</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">cartuccia di filmina</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">cartucho de fotobanda</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">filmstrip cartridge</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">filmstripcartridge</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">rainakasetti</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">盒式幻灯卷片</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/567"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <skos:definition xml:lang="en">A carrier type consisting of a cartridge containing a filmstrip.</skos:definition>
+        <skos:definition xml:lang="fr">Cartouche contenant un film fixe.</skos:definition>
+        <skos:definition xml:lang="es">Cartucho que contiene una fotobanda.</skos:definition>
+        <skos:definition xml:lang="nl">Een cartridge die een filmstrip bevat.</skos:definition>
+        <skos:definition xml:lang="de">Eine Cartridge, die einen Filmstreifen enthält.</skos:definition>
+        <skos:definition xml:lang="zh">装在单轴盒中的幻灯卷片。</skos:definition>
+        <skos:prefLabel xml:lang="de">Filmstreifen-Cartridge</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">bildbandsmagasin</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">cartouche de film fixe</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">cartuccia di filmina</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">cartucho de fotobanda</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">filmstrip cartridge</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">filmstripcartridge</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">rainakasetti</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">خرطوشة شريط فيلم</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">盒式幻灯卷片</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1039 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1039">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of a sheet of transparent material, with or without a protective mount, bearing an image designed for use with an overhead projector.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een vel van transparant materiaal (met of zonder een beschermende houder) met een afbeelding om te gebruiken met een overheadprojector.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Ein Blatt transparentes Material (mit oder ohne Schutzfassung), das ein Bild trägt und das für die Betrachtung mit einem Overheadprojektor konzipiert ist.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Feuille de matériau transparent (avec ou sans monture de protection) comportant une image et conçue pour être utilisée avec un rétroprojecteur.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Hoja de material transparente (con o sin montura protectora) que presenta una imagen diseñada para utilizarse con un retroproyector.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">载有图像的透明材料片（有或没有保护涂层），需与高射投影仪配合使用。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="sv">OH-bild</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="de">Overheadfolie</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">lucido per proiezione</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">overhead transparency</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">overheadsheet</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">transparencia de retroproyector</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">transparent pour rétroprojecteur</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">高射投影幻灯片</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/568"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <skos:altLabel xml:lang="de">Folie</skos:altLabel>
+        <skos:altLabel xml:lang="de">Overheadprojektion</skos:altLabel>
+        <skos:altLabel xml:lang="en">overhead projectural</skos:altLabel>
+        <skos:altLabel xml:lang="en">transparency</skos:altLabel>
+        <skos:altLabel xml:lang="zh">高射投影</skos:altLabel>
+        <skos:definition xml:lang="en">A carrier type consisting of a sheet of transparent material, with or without a protective mount, bearing an image designed for use with an overhead projector.</skos:definition>
+        <skos:definition xml:lang="nl">Een vel van transparant materiaal (met of zonder een beschermende houder) met een afbeelding om te gebruiken met een overheadprojector.</skos:definition>
+        <skos:definition xml:lang="de">Ein Blatt transparentes Material (mit oder ohne Schutzfassung), das ein Bild trägt und das für die Betrachtung mit einem Overheadprojektor konzipiert ist.</skos:definition>
+        <skos:definition xml:lang="fr">Feuille de matériau transparent (avec ou sans monture de protection) comportant une image et conçue pour être utilisée avec un rétroprojecteur.</skos:definition>
+        <skos:definition xml:lang="es">Hoja de material transparente (con o sin montura protectora) que presenta una imagen diseñada para utilizarse con un retroproyector.</skos:definition>
+        <skos:definition xml:lang="zh">载有图像的透明材料片（有或没有保护涂层），需与高射投影仪配合使用。</skos:definition>
+        <skos:prefLabel xml:lang="sv">OH-bild</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Overheadfolie</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">lucido per proiezione</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">overhead transparency</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">overheadsheet</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">transparencia de retroproyector</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">transparent pour rétroprojecteur</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">شفافية فوق رأسية / علوية</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">高射投影片</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1040 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1040">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <skos:related rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1030"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of a small sheet of transparent material, usually in a protective mount, bearing an image designed for use with a slide projector or viewer.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een klein vel van transparant materiaal (meestal in een beschermende houder) met een afbeelding om te gebruiken met een diaprojector of -kijker.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Ein kleines Blatt aus transparentem Material (in der Regel in einer schützenden Fassung), das ein Bild trägt, das für die Betrachtung mit einem Diaprojektor oder Diabetrachter konzipiert ist.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Hoja pequeña de material transparente (normalmente en una montura protectora) que presenta una imagen diseñada para utilizarse con un proyector o visor de diapositivas.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Petite feuille en matériau transparent (habituellement dans un cadre protecteur) portant une image conçue pour être utilisée avec un projecteur ou une visionneuse.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">载有图像的一小张透明材料（通常有保护层），需与幻灯放映机或浏览器配合使用。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Dia</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">dia</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">dia</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="sv">diabild</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">diapositiva</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">diapositiva</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">diapositive</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">slide</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">幻灯片</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/569"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <skos:definition xml:lang="en">A carrier type consisting of a small sheet of transparent material, usually in a protective mount, bearing an image designed for use with a slide projector or viewer.</skos:definition>
+        <skos:definition xml:lang="nl">Een klein vel van transparant materiaal (meestal in een beschermende houder) met een afbeelding om te gebruiken met een diaprojector of -kijker.</skos:definition>
+        <skos:definition xml:lang="de">Ein kleines Blatt aus transparentem Material (in der Regel in einer schützenden Fassung), das ein Bild trägt, das für die Betrachtung mit einem Diaprojektor oder Diabetrachter konzipiert ist.</skos:definition>
+        <skos:definition xml:lang="es">Hoja pequeña de material transparente (normalmente en una montura protectora) que presenta una imagen diseñada para utilizarse con un proyector o visor de diapositivas.</skos:definition>
+        <skos:definition xml:lang="fr">Petite feuille en matériau transparent (habituellement dans un cadre protecteur) portant une image conçue pour être utilisée avec un projecteur ou une visionneuse.</skos:definition>
+        <skos:definition xml:lang="zh">载有图像的一小张透明材料（通常有保护层），需与幻灯放映机或浏览器配合使用。</skos:definition>
+        <skos:prefLabel xml:lang="de">Dia</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">dia</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">dia</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">diabild</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">diapositiva</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">diapositiva</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">diapositive</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">slide</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">شريحة</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">幻灯片</skos:prefLabel>
+        <skos:scopeNote xml:lang="zh">对于在显微镜下使用的幻灯片，使用显微镜载玻片</skos:scopeNote>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1041 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1041">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <skos:topConceptOf rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitLabel xml:lang="es">Soportes estereográficos</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="de">Stereografische Datenträger</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">立体载体</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/570"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1008"/>
+        <skos:prefLabel xml:lang="es">Soportes estereográficos</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Stereografische Datenträger</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Stereographic carriers (Deprecated)</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">立体载体</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1042 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1042">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of a card bearing stereographic images.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Carte portant des images stéréoscopiques.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een kaart met stereografische afbeeldingen.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Eine Karte mit stereografischen Bildern.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Tarjeta que contiene imágenes estereográficas.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">载有立体图像的卡片。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Stereobild</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">carte stéréoscopique</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">stereografinen kortti</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">stereografische kaart</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="sv">stereografiskt kort</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">stereograph card</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">tarjeta estereográfica</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">立体卡片</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/571"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <skos:definition xml:lang="en">A carrier type consisting of a card bearing stereographic images.</skos:definition>
+        <skos:definition xml:lang="fr">Carte portant des images stéréoscopiques.</skos:definition>
+        <skos:definition xml:lang="nl">Een kaart met stereografische afbeeldingen.</skos:definition>
+        <skos:definition xml:lang="de">Eine Karte mit stereografischen Bildern.</skos:definition>
+        <skos:definition xml:lang="es">Tarjeta que contiene imágenes estereográficas.</skos:definition>
+        <skos:definition xml:lang="zh">载有立体图像的卡片。</skos:definition>
+        <skos:prefLabel xml:lang="de">Stereobild</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">carta stereografica</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">carte stéréoscopique</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">stereografinen kortti</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">stereografische kaart</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">stereografiskt kort</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">stereograph card</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">tarjeta estereográfica</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">بطاقة صور مجسمة</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">立体卡片</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1043 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1043">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of a disc with openings around the perimeter holding pairs of still images designed for use with a stereograph viewer.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Disco con aberturas alrededor de su perímetro en las que sostiene pares de imágenes fijas diseñadas para ser utilizadas con un visor estereográfico.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Disque avec des ouvertures sur sa circonférence, contenant des images fixes montées en paires, conçu pour être utilisé avec une visionneuse stéréoscopique.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een disc met openingen rond de rand met stilstaande beelden ontworpen voor gebruik met stereograafkijker.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Eine Scheibe mit Öffnungen am Rand, die Paare von unbewegten Bildern hält und für die Betrachtung mit einem Stereobild-Betrachter konzipiert ist.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">装有成对静态图像、周边可打开的盘，需与立体浏览器配合使用。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Stereografische Disk</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">disco estereográfico</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">disco stereografico</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">disque stéréoscopique</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">stereografinen levy</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">stereografische disc</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="sv">stereografisk skiva</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">stereograph disc</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">立体盘</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/572"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <skos:altLabel xml:lang="en">stereograph reel</skos:altLabel>
+        <skos:definition xml:lang="en">A carrier type consisting of a disc with openings around the perimeter holding pairs of still images designed for use with a stereograph viewer.</skos:definition>
+        <skos:definition xml:lang="es">Disco con aberturas alrededor de su perímetro en las que sostiene pares de imágenes fijas diseñadas para ser utilizadas con un visor estereográfico.</skos:definition>
+        <skos:definition xml:lang="fr">Disque avec des ouvertures sur sa circonférence, contenant des images fixes montées en paires, conçu pour être utilisé avec une visionneuse stéréoscopique.</skos:definition>
+        <skos:definition xml:lang="nl">Een disc met openingen rond de rand met stilstaande beelden ontworpen voor gebruik met stereograafkijker.</skos:definition>
+        <skos:definition xml:lang="de">Eine Scheibe mit Öffnungen am Rand, die Paare von unbewegten Bildern hält und für die Betrachtung mit einem Stereobild-Betrachter konzipiert ist.</skos:definition>
+        <skos:definition xml:lang="zh">装有成对静态图像、周边可打开的盘，需与立体浏览器配合使用。</skos:definition>
+        <skos:prefLabel xml:lang="de">Stereografische Disk</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">disco estereográfico</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">disco stereografico</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">disque stéréoscopique</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">stereografinen levy</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">stereografische disc</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">stereografisk skiva</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">stereograph disc</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">قرص صورة مجسمة</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">立体盘</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1044 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1044">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <skos:topConceptOf rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitLabel xml:lang="de">Datenträger, die ohne Hilfsmittel zu benutzen sind</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">Soportes sin mediación</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">无中介载体</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/573"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1008"/>
+        <skos:prefLabel xml:lang="de">Datenträger, die ohne Hilfsmittel zu benutzen sind</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">Soportes sin mediación</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Unmediated carriers (Deprecated)</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">无中介载体</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1045 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1045">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of a small sheet of opaque material.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een klein vel van ondoorzichtig materiaal.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Ein kleines Blatt aus lichtundurchlässigem Material.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Petite feuille de matériau opaque.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Una hoja pequeña de material opaco.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">非透明材料的一小张纸。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Karte</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="sv">bildkort</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">card</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">fiche</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">kaart</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">kortti</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">scheda</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">tarjeta</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">卡片</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/574"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <skos:definition xml:lang="en">A carrier type consisting of a small sheet of opaque material.</skos:definition>
+        <skos:definition xml:lang="nl">Een klein vel van ondoorzichtig materiaal.</skos:definition>
+        <skos:definition xml:lang="de">Ein kleines Blatt aus lichtundurchlässigem Material.</skos:definition>
+        <skos:definition xml:lang="fr">Petite feuille de matériau opaque.</skos:definition>
+        <skos:definition xml:lang="es">Una hoja pequeña de material opaco.</skos:definition>
+        <skos:definition xml:lang="zh">非透明材料的一小张纸。</skos:definition>
+        <skos:prefLabel xml:lang="de">Karte</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">bildkort</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">card</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">fiche</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">kaart</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">kortti</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">scheda</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">tarjeta</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">بطاقة</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">卡片</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1046 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1046">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of a hinging device holding two or more sheets designed for use on an easel.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Dispositif à charnière maintenant au moins deux feuilles et conçu pour une utilisation sur chevalet.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Dispositivo con goznes que sujetan dos o más hojas, diseñado para usarse sobre un atril.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een ophangsysteem dat twee of meer vellen bijeenhoudt ontworpen voor gebruik op een ezel.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Eine Hängevorrichtung, die mehrere Blätter hält, die zur Verwendung an einer Staffelei konzipiert sind.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">将两片或两片以上薄板用链串在一起，以便在画架上使用的铰链装置。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Flipchart</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="sv">blädderblock</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">flip-overvel</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">flipchart</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">lavagna a fogli mobili</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">lehtiötaulu</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">rotafolio</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">tableau à feuilles mobiles</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">翻转图</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/575"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <skos:definition xml:lang="en">A carrier type consisting of a hinging device holding two or more sheets designed for use on an easel.</skos:definition>
+        <skos:definition xml:lang="fr">Dispositif à charnière maintenant au moins deux feuilles et conçu pour une utilisation sur chevalet.</skos:definition>
+        <skos:definition xml:lang="es">Dispositivo con goznes que sujetan dos o más hojas, diseñado para usarse sobre un atril.</skos:definition>
+        <skos:definition xml:lang="nl">Een ophangsysteem dat twee of meer vellen bijeenhoudt ontworpen voor gebruik op een ezel.</skos:definition>
+        <skos:definition xml:lang="de">Eine Hängevorrichtung, die mehrere Blätter hält, die zur Verwendung an einer Staffelei konzipiert sind.</skos:definition>
+        <skos:definition xml:lang="zh">将两片或两片以上薄板用链串在一起，以便在画架上使用的铰链装置。</skos:definition>
+        <skos:prefLabel xml:lang="de">Flipchart</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">blädderblock</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">flip-overvel</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">flipchart</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">lavagna a fogli mobili</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">lehtiötaulu</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">rotafolio</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">tableau à feuilles mobiles</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">لوح ورقي قلاب</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">翻转图</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1047 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1047">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of a wound length of paper, film, tape, etc.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een opgerolde lengte van een bepaald materiaal (papier, film, tape etc.).</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Ein aufgerolltes Stück Material (Papier, Film, Band usw.).</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Métrage de matériau enroulé (papier, film, bande magnétique, etc.).</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Tramo largo de material (papel, película, cinta, etc.).</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">一段卷起来的材料（纸、胶片、磁带等）。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Rolle</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">rol</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">roll</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">rollo</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">rotolo</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">rouleau</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">rulla</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="sv">rulle</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">卷</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/576"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <skos:definition xml:lang="en">A carrier type consisting of a wound length of paper, film, tape, etc.</skos:definition>
+        <skos:definition xml:lang="nl">Een opgerolde lengte van een bepaald materiaal (papier, film, tape etc.).</skos:definition>
+        <skos:definition xml:lang="de">Ein aufgerolltes Stück Material (Papier, Film, Band usw.).</skos:definition>
+        <skos:definition xml:lang="fr">Métrage de matériau enroulé (papier, film, bande magnétique, etc.).</skos:definition>
+        <skos:definition xml:lang="es">Tramo largo de material (papel, película, cinta, etc.).</skos:definition>
+        <skos:definition xml:lang="zh">一段卷起来的材料（纸、胶片、磁带等）。</skos:definition>
+        <skos:prefLabel xml:lang="de">Rolle</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">rol</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">roll</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">rollo</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">rotolo</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">rouleau</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">rulla</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">rulle</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">لفافة</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">卷</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1048 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1048">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of a flat, thin piece of paper, plastic, etc.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een plat stuk van dun materiaal (papier, plastic etc.).</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Ein flaches Stück dünnes Material (Papier, Plastik usw.).</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Morceau plat de matériau fin (papier, plastique, etc.).</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Una pieza plana de un material delgado (papel, plástico, etc.).</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">一片薄的材料（纸、塑料等）。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Blatt</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="sv">ark</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">arkki</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">feuille</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">foglio</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">hoja</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">sheet</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">vel</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">张</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/577"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <skos:definition xml:lang="en">A carrier type consisting of a flat, thin piece of paper, plastic, etc.</skos:definition>
+        <skos:definition xml:lang="nl">Een plat stuk van dun materiaal (papier, plastic etc.).</skos:definition>
+        <skos:definition xml:lang="de">Ein flaches Stück dünnes Material (Papier, Plastik usw.).</skos:definition>
+        <skos:definition xml:lang="fr">Morceau plat de matériau fin (papier, plastique, etc.).</skos:definition>
+        <skos:definition xml:lang="es">Una pieza plana de un material delgado (papel, plástico, etc.).</skos:definition>
+        <skos:definition xml:lang="zh">一片薄的材料（纸、塑料等）。</skos:definition>
+        <skos:prefLabel xml:lang="de">Blatt</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">ark</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">arkki</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">feuille</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">foglio</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">hoja</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">sheet</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">vel</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">ورقة</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">张</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1049 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1049">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of one or more sheets bound or fastened together to form a single unit.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Ein oder mehrere Blätter, die geheftet oder zusammengebunden sind, um eine einzelne Einheit zu bilden.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Eén of meer vellen gebonden of gehecht om een eenheid te vormen.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Una o más hojas encuadernadas o atadas juntas para que formen una unidad individual.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Une ou plusieurs feuilles reliées ou attachées ensemble pour former une seule unité.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">一张或多张合订或固定在一起构成的独立单元。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Band</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">band</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">nide</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">volume</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">volume</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">volume</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">volumen</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="sv">volym</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">卷/册</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/578"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <skos:definition xml:lang="en">A carrier type consisting of one or more sheets bound or fastened together to form a single unit.</skos:definition>
+        <skos:definition xml:lang="de">Ein oder mehrere Blätter, die geheftet oder zusammengebunden sind, um eine einzelne Einheit zu bilden.</skos:definition>
+        <skos:definition xml:lang="nl">Eén of meer vellen gebonden of gehecht om een eenheid te vormen.</skos:definition>
+        <skos:definition xml:lang="es">Una o más hojas encuadernadas o atadas juntas para que formen una unidad individual.</skos:definition>
+        <skos:definition xml:lang="fr">Une ou plusieurs feuilles reliées ou attachées ensemble pour former une seule unité.</skos:definition>
+        <skos:definition xml:lang="zh">一张或多张合订或固定在一起构成的独立单元。</skos:definition>
+        <skos:prefLabel xml:lang="de">Band</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">band</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">nide</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">volume</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">volume</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">volume</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">volumen</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">volym</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">مجلد</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">卷/册</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1050 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1050">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <skos:topConceptOf rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitLabel xml:lang="es">Soportes de video</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="de">Video-Datenträger</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">视频载体</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/579"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1008"/>
+        <skos:prefLabel xml:lang="es">Soportes de video</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Video carriers (Deprecated)</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Video-Datenträger</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">视频载体</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1056 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1056">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of a wound length of microfilm.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een opgerolde lengte microfilm.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Ein gewickeltes Stück Mikrofilm.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Métrage de microfilm enroulé.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Un tramo enrollado de microfilme.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">一段卷绕起来的缩微胶卷。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Mikrofilmrolle</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">microfilm roll</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">microfilmrol</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">mikrofilmirulla</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="sv">mikrofilmsrulle</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">rollo de microfilme</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">rouleau de microfilm</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">rullino di microfilm</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">缩微卷</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/1083"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <skos:definition xml:lang="en">A carrier type consisting of a wound length of microfilm.</skos:definition>
+        <skos:definition xml:lang="nl">Een opgerolde lengte microfilm.</skos:definition>
+        <skos:definition xml:lang="de">Ein gewickeltes Stück Mikrofilm.</skos:definition>
+        <skos:definition xml:lang="fr">Métrage de microfilm enroulé.</skos:definition>
+        <skos:definition xml:lang="es">Un tramo enrollado de microfilme.</skos:definition>
+        <skos:definition xml:lang="zh">一段卷绕起来的缩微胶卷。</skos:definition>
+        <skos:prefLabel xml:lang="de">Mikrofilmrolle</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">microfilm roll</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">microfilmrol</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">mikrofilmirulla</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">mikrofilmsrulle</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">rollo de microfilme</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">rouleau de microfilm</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">rullino di microfilm</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">لفافة ميكروفيلم (مصغرة فيلمية)</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">缩微卷</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1059 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1059">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of a three-dimensional artifact, a replica of an artifact, or a naturally-occurring object.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Artefact tridimensionnel (ou réplique d’un artefact) ou objet naturel.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Artefacto tridimensional (o una réplica de un artefacto) o un objeto natural.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een driedimensionaal artefact (of een replica van een artefact) of een natuurlijk voorkomend object.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="de">Ein dreidimensionales Artefakt (oder eine Kopie eines Artefakts) oder ein natürlich vorkommendes Objekt.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">三维艺术品（或艺术品的复制品），或天然的物体。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="de">Gegenstand</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="sv">föremål</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="en">object</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">object</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">objekti</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">objet</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">objeto</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">oggetto</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">物体</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/1112"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <skos:definition xml:lang="en">A carrier type consisting of a three-dimensional artifact, a replica of an artifact, or a naturally-occurring object.</skos:definition>
+        <skos:definition xml:lang="fr">Artefact tridimensionnel (ou réplique d’un artefact) ou objet naturel.</skos:definition>
+        <skos:definition xml:lang="es">Artefacto tridimensional (o una réplica de un artefacto) o un objeto natural.</skos:definition>
+        <skos:definition xml:lang="nl">Een driedimensionaal artefact (of een replica van een artefact) of een natuurlijk voorkomend object.</skos:definition>
+        <skos:definition xml:lang="de">Ein dreidimensionales Artefakt (oder eine Kopie eines Artefakts) oder ein natürlich vorkommendes Objekt.</skos:definition>
+        <skos:definition xml:lang="zh">三维艺术品（或艺术品的复制品），或天然的物体。</skos:definition>
+        <skos:prefLabel xml:lang="de">Gegenstand</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">föremål</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">object</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">object</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">objekti</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">objet</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">objeto</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">oggetto</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">كيان</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">物体</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://rdaregistry.info/termList/RDACarrierType/1069 -->
+
+    <owl:NamedIndividual rdf:about="http://rdaregistry.info/termList/RDACarrierType/1069">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
+        <rdakit:toolkitDefinition xml:lang="en">A carrier type consisting of a wound length of film.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="nl">Een opgerolde lengte film.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="fr">Métrage de film enroulé.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="es">Tramo enrollado de película.</rdakit:toolkitDefinition>
+        <rdakit:toolkitDefinition xml:lang="zh">一段卷起来的胶片。</rdakit:toolkitDefinition>
+        <rdakit:toolkitLabel xml:lang="en">film roll</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fi">filmirulla</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="nl">filmrol</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="sv">filmrulle</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="es">rollo de película</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="fr">rouleau de film</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="it">rullino di pellicola</rdakit:toolkitLabel>
+        <rdakit:toolkitLabel xml:lang="zh">胶卷</rdakit:toolkitLabel>
+        <regap:identifier rdf:resource="http://metadataregistry.org/concepts/4656"/>
+        <regap:status rdf:resource="http://metadataregistry.org/uri/RegStatus/1001"/>
+        <skos:definition xml:lang="en">A carrier type consisting of a wound length of film.</skos:definition>
+        <skos:definition xml:lang="nl">Een opgerolde lengte film.</skos:definition>
+        <skos:definition xml:lang="fr">Métrage de film enroulé.</skos:definition>
+        <skos:definition xml:lang="es">Tramo enrollado de película.</skos:definition>
+        <skos:definition xml:lang="zh">一段卷起来的胶片。</skos:definition>
+        <skos:prefLabel xml:lang="en">film roll</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">filmirulla</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">filmrol</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">filmrulle</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">rollo de película</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">rouleau de film</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">rullino di pellicola</skos:prefLabel>
+        <skos:prefLabel xml:lang="ar">لفافة فيلم</skos:prefLabel>
+        <skos:prefLabel xml:lang="zh">胶卷</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <rdfs:comment>For cylinders. The units are equal to the feet per minute x 10.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</rdfs:label>
+        <rdfs:label>45 recording</rdfs:label>
+        <rdfs:label>78 recording</rdfs:label>
+        <skos:definition>Colloquial term representing 7&quot; diameter vinyl audio discs with a playing speed of 45 rpm. The term does not necessarily accurately describe the carrier.</skos:definition>
+        <skos:definition>Colloquial term representing audio discs from the 78 rpm disc era, with actual playing speeds ranging from around 60 rpm to 130 rpm.The term does not necessarily accurately describe the carrier.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/AAC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/AAC">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/EncodingFormat"/>
+        <terms:description>Advanced Audio Coding format.</terms:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/AIFF -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/AIFF">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/EncodingFormat"/>
+        <terms:description>Standard audio file format used by Apple.</terms:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/CdAudio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/CdAudio">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <rdfs:label>CD Audio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/DAT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/DAT">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <rdfs:label>DAT (Digital Audio Tape)</rdfs:label>
+        <skos:definition>Sony&apos;s proprietary Digital Audio Tape format, characterized by magnetic media enclosed in a protective shell, with the dimensions of 8 x 6 cm, 4 mm tape or 2 7/8 x 2 1/8 in., 1/8 in. tape</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/DvdAudio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/DvdAudio">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <rdfs:label>DVD Audio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/DvdVideo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/DvdVideo">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <rdfs:label>DVD Video</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/EightTrack -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/EightTrack">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/TapeConfig"/>
+        <rdfs:label>8-track</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/EnhancedCdAudio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/EnhancedCdAudio">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <rdfs:label>Enhanced CD Audio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/EpRecord -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/EpRecord">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <rdfs:label>EP (Extended play)</rdfs:label>
+        <skos:definition>Extended play recording.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/FLAC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/FLAC">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/EncodingFormat"/>
+        <rdfs:comment>File format for Free Lossless Audio Codec.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/FullTrack -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/FullTrack">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/TapeConfig"/>
+        <rdfs:label>full track</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/HalfTrack -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/HalfTrack">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/TapeConfig"/>
+        <rdfs:label>half track</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/HybridSacd -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/HybridSacd">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <rdfs:label>Hybrid SACD</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/IPS.9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/IPS.9">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <terms:description>15/16 inches per second</terms:description>
+        <rdfs:comment>Speed occurs on half-speed mini-cassettes used in small portable recorders.</rdfs:comment>
+        <rdfs:label>15/16 ips</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/IPS1.8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/IPS1.8">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <terms:description>1 7/8 inches per second.</terms:description>
+        <rdfs:comment>Speed occurs on standard audiocassettes.</rdfs:comment>
+        <rdfs:label>1 7/8 ips</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/IPS15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/IPS15">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <terms:description>15 inches per second</terms:description>
+        <rdfs:comment>Occcurs on reel-to-reel, studio tapes.</rdfs:comment>
+        <rdfs:label>15 ips</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/IPS3.75 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/IPS3.75">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <terms:description>3.75 inches per second</terms:description>
+        <rdfs:comment>Speed occurs on consumer and nonprofessional reel-to-reel tapes, cartridges and very unusual cassette tapes.</rdfs:comment>
+        <rdfs:label>3.75 ips</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/IPS30 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/IPS30">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <terms:description>30 inches per second</terms:description>
+        <rdfs:comment>Occurs on reel-to-reel, studio tapes, but is rarely used.</rdfs:comment>
+        <rdfs:label>30 ips</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/IPS7.5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/IPS7.5">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <terms:description>7.5 inches per second</terms:description>
+        <rdfs:comment>Speed occurs in reel-to-reel, nonprofessional, and studio tapes.</rdfs:comment>
+        <rdfs:label>7.5 ips</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/LP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/LP">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <rdfs:label>LP/Vinyl</rdfs:label>
+        <skos:definition>Colloquial term representing 12&quot; diameter vinyl audio discs with a playing speed of 33 1/3 rpm. The term does not necessarily accurately describe the carrier.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/LateralCut -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/LateralCut">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/DiscCutting"/>
+        <terms:description>Recording process in which a stylus cuts a side-to-side groove into a phonograph record.</terms:description>
+        <rdfs:label>Lateral cut</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MP3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MP3">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/EncodingFormat"/>
+        <rdfs:comment>MPEG Layer III Audio.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MPS1.4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MPS1.4">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <terms:description>1.4 meters per second</terms:description>
+        <rdfs:comment>Speed is calculated from the distance the playback mechanism covers on the surface of the disc per second, and not the number of revolutions of the disc. It is associated with compact discs (CDs)</rdfs:comment>
+        <rdfs:label>1.4 mps</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/OrganRoll -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/OrganRoll">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <rdfs:label>Organ roll</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/PianoRoll -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/PianoRoll">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <rdfs:label>Piano roll</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/QuarterTrack -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/QuarterTrack">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/TapeConfig"/>
+        <rdfs:label>quarter track</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/RPM16 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/RPM16">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <terms:description>16 revolutions per minute</terms:description>
+        <rdfs:comment>For audio discs</rdfs:comment>
+        <rdfs:label>16 rpm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/RPM33 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/RPM33">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <terms:description>33 1/3 revolutions per minute</terms:description>
+        <rdfs:comment>For audio discs.</rdfs:comment>
+        <rdfs:label>33 1/3 rpm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/RPM45 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/RPM45">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <terms:description>45 revolutions per minute</terms:description>
+        <rdfs:comment>For audio discs.</rdfs:comment>
+        <rdfs:label>45 rpm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/RPM78 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/RPM78">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <terms:description>78 revolutions per minute</terms:description>
+        <rdfs:comment>For audio discs</rdfs:comment>
+        <rdfs:label>78 rpm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/RPM8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/RPM8">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <terms:description>8 revolutions per minute</terms:description>
+        <rdfs:comment>For audio discs</rdfs:comment>
+        <rdfs:label>8 rpm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Sacd -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Sacd">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <rdfs:label>SACD</rdfs:label>
+        <rdfs:label>SACD (Super audio compact disc)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/SixteenTrack -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/SixteenTrack">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/TapeConfig"/>
+        <rdfs:label>16-track</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/TwelveTrack -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/TwelveTrack">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/TapeConfig"/>
+        <rdfs:label>12-track</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Vertical -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Vertical">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/DiscCutting"/>
+        <terms:description>Recording process in which a stylus cuts a vertical groove into a phonograph record.</terms:description>
+        <rdfs:label>Vertical cut</rdfs:label>
+        <skos:altLabel>Hill and dale</skos:altLabel>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
