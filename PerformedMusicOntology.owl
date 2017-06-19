@@ -1,15 +1,16 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/"
-     xml:base="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/"
-     xmlns:rdakit="http://metadataregistry.org/uri/profile/rdakit/"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
+<rdf:RDF xmlns="http://performedmusicontology.org/"
+     xml:base="http://performedmusicontology.org/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:regap="http://metadataregistry.org/uri/profile/regap/"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdakit="http://metadataregistry.org/uri/profile/rdakit/"
+     xmlns:pmo="http://performedmusicontology.org/ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:regap="http://metadataregistry.org/uri/profile/regap/"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://performedmusicontology.org/">
@@ -130,21 +131,40 @@
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/associatedWith -->
+    <!-- http://performedmusicontology.org/hasDoublingMediumOfPerformance -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/associatedWith">
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/hasDoublingMediumOfPerformance">
+        <skos:definition>2 (or more) media of performance intended to be performed alternately by a single performer</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://performedmusicontology.org/hasEnsembleCount -->
+
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/hasEnsembleCount"/>
+    
+
+
+    <!-- http://performedmusicontology.org/hasIndividualCount -->
+
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/hasIndividualCount"/>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/associatedWith -->
+
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/associatedWith">
         <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
         <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Event"/>
         <skos:definition>Event a work, instance, or item is created for, e.g., a motet created for the inauguration of Pope Clement VI.</skos:definition>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/createdFor -->
+    <!-- http://performedmusicontology.org/ontology/createdFor -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/createdFor">
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/createdFor">
         <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
         <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
         <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Event"/>
@@ -153,49 +173,40 @@
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/eventNameOf -->
+    <!-- http://performedmusicontology.org/ontology/eventNameOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/eventNameOf">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasEventName"/>
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/eventNameOf">
+        <owl:inverseOf rdf:resource="http://performedmusicontology.org/ontology/hasEventName"/>
         <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Event"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasAlternateMedium -->
+    <!-- http://performedmusicontology.org/ontology/hasAlternateMedium -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasAlternateMedium">
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/hasAlternateMedium">
         <rdfs:label>has alternate</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasDoublingMediumOfPerformance -->
+    <!-- http://performedmusicontology.org/ontology/hasDramaticRole -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasDoublingMediumOfPerformance">
-        <rdfs:label>doubling</rdfs:label>
-        <skos:definition>2 (or more) media of performance intended to be performed alternately by a single performer</skos:definition>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/hasDramaticRole"/>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasDramaticRole -->
+    <!-- http://performedmusicontology.org/ontology/hasEventName -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasDramaticRole"/>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasEventName -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasEventName">
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/hasEventName">
         <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Event"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasIndividualContribution -->
+    <!-- http://performedmusicontology.org/ontology/hasIndividualContribution -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasIndividualContribution">
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/hasIndividualContribution">
         <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
         <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
         <rdfs:comment>The contribution of an individual within the context of the contribution of a group (i.e., the individual is a member of that group). Examples: the contribution of the agent performing the Violin 1 part in a string quartet.</rdfs:comment>
@@ -203,122 +214,110 @@
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasInspiration -->
+    <!-- http://performedmusicontology.org/ontology/hasInspiration -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasInspiration">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/inspirationFor"/>
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/hasInspiration">
+        <owl:inverseOf rdf:resource="http://performedmusicontology.org/ontology/inspirationFor"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasMedium -->
+    <!-- http://performedmusicontology.org/ontology/hasMedium -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasMedium"/>
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/hasMedium"/>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasMediumCount -->
+    <!-- http://performedmusicontology.org/ontology/hasMediumOfPerformance -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasMediumCount"/>
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/hasMediumOfPerformance"/>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasMediumOfPerformance -->
+    <!-- http://performedmusicontology.org/ontology/hasMediumPart -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasMediumOfPerformance"/>
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/hasMediumPart"/>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasMediumPart -->
+    <!-- http://performedmusicontology.org/ontology/hasMediumPartType -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasMediumPart"/>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasMediumPartType -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasMediumPartType">
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/hasMediumPartType">
         <rdfs:comment>has Medium Type</rdfs:comment>
         <skos:definition>The type of pmo:DeclaredMediumPart, e.g., solo, ad lib, optional</skos:definition>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasMember -->
+    <!-- http://performedmusicontology.org/ontology/hasMusicPart -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasMember"/>
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/hasMusicPart"/>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasMusicPart -->
+    <!-- http://performedmusicontology.org/ontology/hasPerformance -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasMusicPart"/>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasPerformance -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasPerformance">
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/hasPerformance">
         <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/eventContentOf"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/performanceOf"/>
+        <owl:inverseOf rdf:resource="http://performedmusicontology.org/ontology/performanceOf"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasProxyWork -->
+    <!-- http://performedmusicontology.org/ontology/hasProxyWork -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasProxyWork">
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/hasProxyWork">
         <rdfs:comment>Work that is a duplicate of another work, except that it is included as part of an aggregation/compilation or a work component in multiples works. The proxy work permits numbering within the aggregate or work.</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasRecording -->
+    <!-- http://performedmusicontology.org/ontology/hasRecording -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasRecording">
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/hasRecording">
         <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/eventContent"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/recordingOf"/>
+        <owl:inverseOf rdf:resource="http://performedmusicontology.org/ontology/recordingOf"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/inspirationFor -->
+    <!-- http://performedmusicontology.org/ontology/inspirationFor -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/inspirationFor"/>
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/inspirationFor"/>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/performanceOf -->
+    <!-- http://performedmusicontology.org/ontology/performanceOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/performanceOf">
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/performanceOf">
         <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/eventContent"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/performsMopPart -->
+    <!-- http://performedmusicontology.org/ontology/performsMopPart -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/performsMopPart"/>
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/performsMopPart"/>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/performsMopRole -->
+    <!-- http://performedmusicontology.org/ontology/performsMopRole -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/performsMopRole">
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/performsMopRole">
         <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Role"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/playsDramaticRole -->
+    <!-- http://performedmusicontology.org/ontology/playsDramaticRole -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/playsDramaticRole"/>
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/playsDramaticRole"/>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/recordingOf -->
+    <!-- http://performedmusicontology.org/ontology/recordingOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/recordingOf">
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/recordingOf">
         <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/eventContentOf"/>
     </owl:ObjectProperty>
     
@@ -365,17 +364,15 @@
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasOrder -->
+    <!-- http://performedmusicontology.org/hasOrder -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/hasOrder">
-        <skos:definition>Order of a Work component within a Work, expressed as a number, or a prefix and a number, e.g., &quot;1&quot;, &quot;Chapter 2&quot;.</skos:definition>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://performedmusicontology.org/hasOrder"/>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/phonogramCopyrightDate -->
+    <!-- http://performedmusicontology.org/ontology/phonogramCopyrightDate -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/phonogramCopyrightDate">
+    <owl:DatatypeProperty rdf:about="http://performedmusicontology.org/ontology/phonogramCopyrightDate">
         <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/date"/>
     </owl:DatatypeProperty>
     
@@ -472,209 +469,209 @@
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Audition -->
+    <!-- http://performedmusicontology.org/ontology/Audition -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Audition">
+    <owl:Class rdf:about="http://performedmusicontology.org/ontology/Audition">
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Event"/>
         <skos:definition>Event in which a performer or actor is applying for a position in an ensemble, cast, film, etc.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/BenefitConcert -->
+    <!-- http://performedmusicontology.org/ontology/BenefitConcert -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/BenefitConcert">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Concert"/>
+    <owl:Class rdf:about="http://performedmusicontology.org/ontology/BenefitConcert">
+        <rdfs:subClassOf rdf:resource="http://performedmusicontology.org/ontology/Concert"/>
         <skos:definition>Concert held for charitable purposes, i.e., to raise funds or awareness</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Ceremony -->
+    <!-- http://performedmusicontology.org/ontology/Ceremony -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Ceremony">
+    <owl:Class rdf:about="http://performedmusicontology.org/ontology/Ceremony">
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Event"/>
         <skos:definition>Ritual event, performed on special occasions (e.g., death, baptism, wedding, graduation, equinox, coronation, victory)</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/CommandPerformance -->
+    <!-- http://performedmusicontology.org/ontology/CommandPerformance -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/CommandPerformance">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Concert"/>
+    <owl:Class rdf:about="http://performedmusicontology.org/ontology/CommandPerformance">
+        <rdfs:subClassOf rdf:resource="http://performedmusicontology.org/ontology/Concert"/>
         <skos:definition>Performance done at the request of a monarch or other head of state.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Concert -->
+    <!-- http://performedmusicontology.org/ontology/Concert -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Concert">
+    <owl:Class rdf:about="http://performedmusicontology.org/ontology/Concert">
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Event"/>
         <skos:definition>Live musical performance of one or more works in front of an audience</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/ConcertSeries -->
+    <!-- http://performedmusicontology.org/ontology/ConcertSeries -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/ConcertSeries">
+    <owl:Class rdf:about="http://performedmusicontology.org/ontology/ConcertSeries">
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Event"/>
         <skos:definition>Group of concerts in the same geographic area by a single performer or brought together by a common theme, usually available for sale as a package. e.g., an orchestra concert season, a series featuring chamber ensembles.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/ConcertTour -->
+    <!-- http://performedmusicontology.org/ontology/ConcertTour -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/ConcertTour">
+    <owl:Class rdf:about="http://performedmusicontology.org/ontology/ConcertTour">
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Event"/>
         <skos:definition>Series of concerts by a performer or group of performers in different cities, countries, or locations.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/DeclaredMedium -->
+    <!-- http://performedmusicontology.org/ontology/DeclaredMedium -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/DeclaredMedium">
+    <owl:Class rdf:about="http://performedmusicontology.org/ontology/DeclaredMedium">
         <skos:definition>Intended overall medium of performance of a musical work, as declared by the composer, a reference source, or an Instance of bf:NotatedMusic.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/DeclaredMediumPart -->
+    <!-- http://performedmusicontology.org/ontology/DeclaredMediumPart -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/DeclaredMediumPart">
+    <owl:Class rdf:about="http://performedmusicontology.org/ontology/DeclaredMediumPart">
         <skos:definition>Part of the declared medium for a specific instrument/ensemble/other medium. For example, in a work for 2 flute &amp; piano, there would be 2 declared medium parts.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/DiscCutting -->
+    <!-- http://performedmusicontology.org/ontology/DiscCutting -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/DiscCutting">
+    <owl:Class rdf:about="http://performedmusicontology.org/ontology/DiscCutting">
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/SoundCharacteristic"/>
         <skos:definition>Recording process in which a stylus cuts a vertical or lateral groove into an audio disc.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/DramaticRole -->
+    <!-- http://performedmusicontology.org/ontology/DramaticRole -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/DramaticRole"/>
+    <owl:Class rdf:about="http://performedmusicontology.org/ontology/DramaticRole"/>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/EventName -->
+    <!-- http://performedmusicontology.org/ontology/EventName -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/EventName">
+    <owl:Class rdf:about="http://performedmusicontology.org/ontology/EventName">
         <skos:definition>Name given to an event.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/FirstPerformance -->
+    <!-- http://performedmusicontology.org/ontology/FirstPerformance -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/FirstPerformance">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Performance"/>
+    <owl:Class rdf:about="http://performedmusicontology.org/ontology/FirstPerformance">
+        <rdfs:subClassOf rdf:resource="http://performedmusicontology.org/ontology/Performance"/>
         <skos:definition>The world premiere performance of a work.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/IndividualInstrument -->
+    <!-- http://performedmusicontology.org/ontology/IndividualInstrument -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/IndividualInstrument">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MusicalInstrument"/>
+    <owl:Class rdf:about="http://performedmusicontology.org/ontology/IndividualInstrument">
+        <rdfs:subClassOf rdf:resource="http://performedmusicontology.org/ontology/MusicalInstrument"/>
         <skos:definition>Single musical instrument, e.g., bassoon, bass guitar, synthesizer or group of instruments, e.g., percussion, intended to be played by a single performer.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/IndividualVoice -->
+    <!-- http://performedmusicontology.org/ontology/IndividualVoice -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/IndividualVoice">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Voice"/>
+    <owl:Class rdf:about="http://performedmusicontology.org/ontology/IndividualVoice">
+        <rdfs:subClassOf rdf:resource="http://performedmusicontology.org/ontology/Voice"/>
         <rdfs:comment>Single voice, i.e., soprano, male voice, alto.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/InstrumentEnsemble -->
+    <!-- http://performedmusicontology.org/ontology/InstrumentEnsemble -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/InstrumentEnsemble">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MusicalInstrument"/>
+    <owl:Class rdf:about="http://performedmusicontology.org/ontology/InstrumentEnsemble">
+        <rdfs:subClassOf rdf:resource="http://performedmusicontology.org/ontology/MusicalInstrument"/>
         <skos:definition>Group of like or unlike musical instruments intended to be played by multiple performers.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/LivePerformance -->
+    <!-- http://performedmusicontology.org/ontology/LivePerformance -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/LivePerformance">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Performance"/>
+    <owl:Class rdf:about="http://performedmusicontology.org/ontology/LivePerformance">
+        <rdfs:subClassOf rdf:resource="http://performedmusicontology.org/ontology/Performance"/>
         <skos:definition>Performance that is recorded at a concert.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MasterClass -->
+    <!-- http://performedmusicontology.org/ontology/MasterClass -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MasterClass">
+    <owl:Class rdf:about="http://performedmusicontology.org/ontology/MasterClass">
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Event"/>
         <skos:definition>Event in which a recognized performer critiques the performances of one or more other performers.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MediumOfPerformance -->
+    <!-- http://performedmusicontology.org/ontology/MediumOfPerformance -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MediumOfPerformance">
+    <owl:Class rdf:about="http://performedmusicontology.org/ontology/MediumOfPerformance">
         <skos:definition>Instruments, voices, ensembles, choruses, and other participants (actors, dancers, etc.) required or used for an event or work, including electronics, computers, installations, etc.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MediumPartType -->
+    <!-- http://performedmusicontology.org/ontology/MediumPartType -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MediumPartType">
+    <owl:Class rdf:about="http://performedmusicontology.org/ontology/MediumPartType">
         <rdfs:label>Medium type</rdfs:label>
         <skos:definition>The type of pmo:PerformedMediumPart, e.g., solo, ad lib, optional</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MusicPart -->
+    <!-- http://performedmusicontology.org/ontology/MusicPart -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MusicPart">
+    <owl:Class rdf:about="http://performedmusicontology.org/ontology/MusicPart">
         <rdfs:label>Music part</rdfs:label>
         <skos:definition>The specific music parts of pmo:DeclaredMedium or pmo:DeclaredMediumPart, e.g., Violin 1, Clarinet 2.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MusicalInstrument -->
+    <!-- http://performedmusicontology.org/ontology/MusicalInstrument -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MusicalInstrument">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MediumOfPerformance"/>
+    <owl:Class rdf:about="http://performedmusicontology.org/ontology/MusicalInstrument">
+        <rdfs:subClassOf rdf:resource="http://performedmusicontology.org/ontology/MediumOfPerformance"/>
         <skos:definition>Musical instrument(s) or object(s) used as a musical instrument (e.g., drinking glasses, leaves, typewriters).</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/OpenMicPerformance -->
+    <!-- http://performedmusicontology.org/ontology/OpenMicPerformance -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/OpenMicPerformance">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Performance"/>
+    <owl:Class rdf:about="http://performedmusicontology.org/ontology/OpenMicPerformance">
+        <rdfs:subClassOf rdf:resource="http://performedmusicontology.org/ontology/Performance"/>
         <skos:definition>Live performance at a coffee house, night club, or other venue by amateur performers.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Performance -->
+    <!-- http://performedmusicontology.org/ontology/Performance -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Performance">
+    <owl:Class rdf:about="http://performedmusicontology.org/ontology/Performance">
         <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/efrbroo/F31_Performance"/>
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Event"/>
         <skos:definition>Event in which a performer or group of performers present a work to an audience or in a recording studio.</skos:definition>
@@ -682,87 +679,87 @@
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/PerformedMedium -->
+    <!-- http://performedmusicontology.org/ontology/PerformedMedium -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/PerformedMedium">
+    <owl:Class rdf:about="http://performedmusicontology.org/ontology/PerformedMedium">
         <skos:definition>The overall medium of performance used in the performance of a musical work. This may or may not be the same as the declared medium of performance.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/PerformedMediumPart -->
+    <!-- http://performedmusicontology.org/ontology/PerformedMediumPart -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/PerformedMediumPart">
+    <owl:Class rdf:about="http://performedmusicontology.org/ontology/PerformedMediumPart">
         <skos:definition>Part of the performed medium for a specific instrument/ensemble/other medium. For example, a work performed by 2 flutes &amp; a piano would have 2 performed medium parts.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/ProxyWork -->
+    <!-- http://performedmusicontology.org/ontology/ProxyWork -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/ProxyWork">
+    <owl:Class rdf:about="http://performedmusicontology.org/ontology/ProxyWork">
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
         <skos:definition>A work that is aggregated into a compilation or other type of aggregating work. Ordering of the work within the aggregating work is put here.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/RecordingSession -->
+    <!-- http://performedmusicontology.org/ontology/RecordingSession -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/RecordingSession">
+    <owl:Class rdf:about="http://performedmusicontology.org/ontology/RecordingSession">
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Event"/>
         <skos:definition>Event in which one or more performances are recorded with the aim of producing a recording for issue.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Rehearsal -->
+    <!-- http://performedmusicontology.org/ontology/Rehearsal -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Rehearsal">
+    <owl:Class rdf:about="http://performedmusicontology.org/ontology/Rehearsal">
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Event"/>
         <skos:definition>Event in which a performer or group of performers prepare for a performance in a concert.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Tempo -->
+    <!-- http://performedmusicontology.org/ontology/Tempo -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Tempo">
+    <owl:Class rdf:about="http://performedmusicontology.org/ontology/Tempo">
         <rdfs:isDefinedBy>The speed or pace of a music work, whether declared (in a score) or performed.</rdfs:isDefinedBy>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/VideogamePlatformIdentifier -->
+    <!-- http://performedmusicontology.org/ontology/VideogamePlatformIdentifier -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/VideogamePlatformIdentifier">
+    <owl:Class rdf:about="http://performedmusicontology.org/ontology/VideogamePlatformIdentifier">
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
         <skos:definition>Identifier assigned to a video game platform, e.g., CUSA 54321 (a PlayStation 4 number).</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Voice -->
+    <!-- http://performedmusicontology.org/ontology/Voice -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Voice">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MediumOfPerformance"/>
+    <owl:Class rdf:about="http://performedmusicontology.org/ontology/Voice">
+        <rdfs:subClassOf rdf:resource="http://performedmusicontology.org/ontology/MediumOfPerformance"/>
         <skos:definition>Human voice used as a medium of performance--speaking, singing, intoning, etc.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/VoiceEnsemble -->
+    <!-- http://performedmusicontology.org/ontology/VoiceEnsemble -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/VoiceEnsemble">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Voice"/>
+    <owl:Class rdf:about="http://performedmusicontology.org/ontology/VoiceEnsemble">
+        <rdfs:subClassOf rdf:resource="http://performedmusicontology.org/ontology/Voice"/>
         <rdfs:comment>Group of like or unlike voices performing as an ensemble</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/WorkComponent -->
+    <!-- http://performedmusicontology.org/ontology/WorkComponent -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/WorkComponent">
+    <owl:Class rdf:about="http://performedmusicontology.org/ontology/WorkComponent">
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
         <rdfs:isDefinedBy>A work that is an integral part of another work, even when separated from it, e.g., a movement of a symphony, a chapter of a novel.</rdfs:isDefinedBy>
     </owl:Class>
@@ -806,6 +803,367 @@
     <owl:NamedIndividual rdf:about="http://metadataregistry.org/uri/RegStatus/1008">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <skos:prefLabel xml:lang="en">Deprecated</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/ -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <rdfs:comment>For cylinders. The units are equal to the feet per minute x 10.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</rdfs:label>
+        <rdfs:label>45 recording</rdfs:label>
+        <rdfs:label>78 recording</rdfs:label>
+        <skos:definition>Colloquial term representing 7&quot; diameter vinyl audio discs with a playing speed of 45 rpm. The term does not necessarily accurately describe the carrier.</skos:definition>
+        <skos:definition>Colloquial term representing audio discs from the 78 rpm disc era, with actual playing speeds ranging from around 60 rpm to 130 rpm.The term does not necessarily accurately describe the carrier.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/AAC -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/AAC">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/EncodingFormat"/>
+        <terms:description>Advanced Audio Coding format.</terms:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/AIFF -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/AIFF">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/EncodingFormat"/>
+        <terms:description>Standard audio file format used by Apple.</terms:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/CdAudio -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/CdAudio">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <rdfs:label>CD Audio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/DAT -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/DAT">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <rdfs:label>DAT (Digital Audio Tape)</rdfs:label>
+        <skos:definition>Sony&apos;s proprietary Digital Audio Tape format, characterized by magnetic media enclosed in a protective shell, with the dimensions of 8 x 6 cm, 4 mm tape or 2 7/8 x 2 1/8 in., 1/8 in. tape</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/DvdAudio -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/DvdAudio">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <rdfs:label>DVD Audio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/DvdVideo -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/DvdVideo">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <rdfs:label>DVD Video</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/EightTrack -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/EightTrack">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/TapeConfig"/>
+        <rdfs:label>8-track</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/EnhancedCdAudio -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/EnhancedCdAudio">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <rdfs:label>Enhanced CD Audio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/EpRecord -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/EpRecord">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <rdfs:label>EP (Extended play)</rdfs:label>
+        <skos:definition>Extended play recording.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/FLAC -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/FLAC">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/EncodingFormat"/>
+        <rdfs:comment>File format for Free Lossless Audio Codec.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/FullTrack -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/FullTrack">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/TapeConfig"/>
+        <rdfs:label>full track</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/HalfTrack -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/HalfTrack">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/TapeConfig"/>
+        <rdfs:label>half track</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/HybridSacd -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/HybridSacd">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <rdfs:label>Hybrid SACD</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/IPS.9 -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/IPS.9">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <terms:description>15/16 inches per second</terms:description>
+        <rdfs:comment>Speed occurs on half-speed mini-cassettes used in small portable recorders.</rdfs:comment>
+        <rdfs:label>15/16 ips</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/IPS1.8 -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/IPS1.8">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <terms:description>1 7/8 inches per second.</terms:description>
+        <rdfs:comment>Speed occurs on standard audiocassettes.</rdfs:comment>
+        <rdfs:label>1 7/8 ips</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/IPS15 -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/IPS15">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <terms:description>15 inches per second</terms:description>
+        <rdfs:comment>Occcurs on reel-to-reel, studio tapes.</rdfs:comment>
+        <rdfs:label>15 ips</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/IPS3.75 -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/IPS3.75">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <terms:description>3.75 inches per second</terms:description>
+        <rdfs:comment>Speed occurs on consumer and nonprofessional reel-to-reel tapes, cartridges and very unusual cassette tapes.</rdfs:comment>
+        <rdfs:label>3.75 ips</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/IPS30 -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/IPS30">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <terms:description>30 inches per second</terms:description>
+        <rdfs:comment>Occurs on reel-to-reel, studio tapes, but is rarely used.</rdfs:comment>
+        <rdfs:label>30 ips</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/IPS7.5 -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/IPS7.5">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <terms:description>7.5 inches per second</terms:description>
+        <rdfs:comment>Speed occurs in reel-to-reel, nonprofessional, and studio tapes.</rdfs:comment>
+        <rdfs:label>7.5 ips</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/LP -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/LP">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <rdfs:label>LP/Vinyl</rdfs:label>
+        <skos:definition>Colloquial term representing 12&quot; diameter vinyl audio discs with a playing speed of 33 1/3 rpm. The term does not necessarily accurately describe the carrier.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/LateralCut -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/LateralCut">
+        <rdf:type rdf:resource="http://performedmusicontology.org/ontology/DiscCutting"/>
+        <terms:description>Recording process in which a stylus cuts a side-to-side groove into a phonograph record.</terms:description>
+        <rdfs:label>Lateral cut</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/MP3 -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/MP3">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/EncodingFormat"/>
+        <rdfs:comment>MPEG Layer III Audio.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/MPS1.4 -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/MPS1.4">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <terms:description>1.4 meters per second</terms:description>
+        <rdfs:comment>Speed is calculated from the distance the playback mechanism covers on the surface of the disc per second, and not the number of revolutions of the disc. It is associated with compact discs (CDs)</rdfs:comment>
+        <rdfs:label>1.4 mps</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/OrganRoll -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/OrganRoll">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <rdfs:label>Organ roll</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/PianoRoll -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/PianoRoll">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <rdfs:label>Piano roll</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/QuarterTrack -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/QuarterTrack">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/TapeConfig"/>
+        <rdfs:label>quarter track</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/RPM16 -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/RPM16">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <terms:description>16 revolutions per minute</terms:description>
+        <rdfs:comment>For audio discs</rdfs:comment>
+        <rdfs:label>16 rpm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/RPM33 -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/RPM33">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <terms:description>33 1/3 revolutions per minute</terms:description>
+        <rdfs:comment>For audio discs.</rdfs:comment>
+        <rdfs:label>33 1/3 rpm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/RPM45 -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/RPM45">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <terms:description>45 revolutions per minute</terms:description>
+        <rdfs:comment>For audio discs.</rdfs:comment>
+        <rdfs:label>45 rpm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/RPM78 -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/RPM78">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <terms:description>78 revolutions per minute</terms:description>
+        <rdfs:comment>For audio discs</rdfs:comment>
+        <rdfs:label>78 rpm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/RPM8 -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/RPM8">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <terms:description>8 revolutions per minute</terms:description>
+        <rdfs:comment>For audio discs</rdfs:comment>
+        <rdfs:label>8 rpm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/Sacd -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/Sacd">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <rdfs:label>SACD</rdfs:label>
+        <rdfs:label>SACD (Super audio compact disc)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/SixteenTrack -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/SixteenTrack">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/TapeConfig"/>
+        <rdfs:label>16-track</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/TwelveTrack -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/TwelveTrack">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/TapeConfig"/>
+        <rdfs:label>12-track</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/Vertical -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/Vertical">
+        <rdf:type rdf:resource="http://performedmusicontology.org/ontology/DiscCutting"/>
+        <terms:description>Recording process in which a stylus cuts a vertical groove into a phonograph record.</terms:description>
+        <rdfs:label>Vertical cut</rdfs:label>
+        <skos:altLabel>Hill and dale</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -2485,367 +2843,6 @@
         <skos:prefLabel xml:lang="it">rullino di pellicola</skos:prefLabel>
         <skos:prefLabel xml:lang="ar">لفافة فيلم</skos:prefLabel>
         <skos:prefLabel xml:lang="zh">胶卷</skos:prefLabel>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/ -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
-        <rdfs:comment>For cylinders. The units are equal to the feet per minute x 10.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</rdfs:label>
-        <rdfs:label>45 recording</rdfs:label>
-        <rdfs:label>78 recording</rdfs:label>
-        <skos:definition>Colloquial term representing 7&quot; diameter vinyl audio discs with a playing speed of 45 rpm. The term does not necessarily accurately describe the carrier.</skos:definition>
-        <skos:definition>Colloquial term representing audio discs from the 78 rpm disc era, with actual playing speeds ranging from around 60 rpm to 130 rpm.The term does not necessarily accurately describe the carrier.</skos:definition>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/AAC -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/AAC">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/EncodingFormat"/>
-        <terms:description>Advanced Audio Coding format.</terms:description>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/AIFF -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/AIFF">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/EncodingFormat"/>
-        <terms:description>Standard audio file format used by Apple.</terms:description>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/CdAudio -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/CdAudio">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
-        <rdfs:label>CD Audio</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/DAT -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/DAT">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
-        <rdfs:label>DAT (Digital Audio Tape)</rdfs:label>
-        <skos:definition>Sony&apos;s proprietary Digital Audio Tape format, characterized by magnetic media enclosed in a protective shell, with the dimensions of 8 x 6 cm, 4 mm tape or 2 7/8 x 2 1/8 in., 1/8 in. tape</skos:definition>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/DvdAudio -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/DvdAudio">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
-        <rdfs:label>DVD Audio</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/DvdVideo -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/DvdVideo">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
-        <rdfs:label>DVD Video</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/EightTrack -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/EightTrack">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/TapeConfig"/>
-        <rdfs:label>8-track</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/EnhancedCdAudio -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/EnhancedCdAudio">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
-        <rdfs:label>Enhanced CD Audio</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/EpRecord -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/EpRecord">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
-        <rdfs:label>EP (Extended play)</rdfs:label>
-        <skos:definition>Extended play recording.</skos:definition>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/FLAC -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/FLAC">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/EncodingFormat"/>
-        <rdfs:comment>File format for Free Lossless Audio Codec.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/FullTrack -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/FullTrack">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/TapeConfig"/>
-        <rdfs:label>full track</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/HalfTrack -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/HalfTrack">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/TapeConfig"/>
-        <rdfs:label>half track</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/HybridSacd -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/HybridSacd">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
-        <rdfs:label>Hybrid SACD</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/IPS.9 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/IPS.9">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
-        <terms:description>15/16 inches per second</terms:description>
-        <rdfs:comment>Speed occurs on half-speed mini-cassettes used in small portable recorders.</rdfs:comment>
-        <rdfs:label>15/16 ips</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/IPS1.8 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/IPS1.8">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
-        <terms:description>1 7/8 inches per second.</terms:description>
-        <rdfs:comment>Speed occurs on standard audiocassettes.</rdfs:comment>
-        <rdfs:label>1 7/8 ips</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/IPS15 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/IPS15">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
-        <terms:description>15 inches per second</terms:description>
-        <rdfs:comment>Occcurs on reel-to-reel, studio tapes.</rdfs:comment>
-        <rdfs:label>15 ips</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/IPS3.75 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/IPS3.75">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
-        <terms:description>3.75 inches per second</terms:description>
-        <rdfs:comment>Speed occurs on consumer and nonprofessional reel-to-reel tapes, cartridges and very unusual cassette tapes.</rdfs:comment>
-        <rdfs:label>3.75 ips</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/IPS30 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/IPS30">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
-        <terms:description>30 inches per second</terms:description>
-        <rdfs:comment>Occurs on reel-to-reel, studio tapes, but is rarely used.</rdfs:comment>
-        <rdfs:label>30 ips</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/IPS7.5 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/IPS7.5">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
-        <terms:description>7.5 inches per second</terms:description>
-        <rdfs:comment>Speed occurs in reel-to-reel, nonprofessional, and studio tapes.</rdfs:comment>
-        <rdfs:label>7.5 ips</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/LP -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/LP">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
-        <rdfs:label>LP/Vinyl</rdfs:label>
-        <skos:definition>Colloquial term representing 12&quot; diameter vinyl audio discs with a playing speed of 33 1/3 rpm. The term does not necessarily accurately describe the carrier.</skos:definition>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/LateralCut -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/LateralCut">
-        <rdf:type rdf:resource="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/DiscCutting"/>
-        <terms:description>Recording process in which a stylus cuts a side-to-side groove into a phonograph record.</terms:description>
-        <rdfs:label>Lateral cut</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MP3 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MP3">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/EncodingFormat"/>
-        <rdfs:comment>MPEG Layer III Audio.</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MPS1.4 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/MPS1.4">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
-        <terms:description>1.4 meters per second</terms:description>
-        <rdfs:comment>Speed is calculated from the distance the playback mechanism covers on the surface of the disc per second, and not the number of revolutions of the disc. It is associated with compact discs (CDs)</rdfs:comment>
-        <rdfs:label>1.4 mps</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/OrganRoll -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/OrganRoll">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
-        <rdfs:label>Organ roll</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/PianoRoll -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/PianoRoll">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
-        <rdfs:label>Piano roll</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/QuarterTrack -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/QuarterTrack">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/TapeConfig"/>
-        <rdfs:label>quarter track</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/RPM16 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/RPM16">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
-        <terms:description>16 revolutions per minute</terms:description>
-        <rdfs:comment>For audio discs</rdfs:comment>
-        <rdfs:label>16 rpm</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/RPM33 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/RPM33">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
-        <terms:description>33 1/3 revolutions per minute</terms:description>
-        <rdfs:comment>For audio discs.</rdfs:comment>
-        <rdfs:label>33 1/3 rpm</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/RPM45 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/RPM45">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
-        <terms:description>45 revolutions per minute</terms:description>
-        <rdfs:comment>For audio discs.</rdfs:comment>
-        <rdfs:label>45 rpm</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/RPM78 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/RPM78">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
-        <terms:description>78 revolutions per minute</terms:description>
-        <rdfs:comment>For audio discs</rdfs:comment>
-        <rdfs:label>78 rpm</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/RPM8 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/RPM8">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
-        <terms:description>8 revolutions per minute</terms:description>
-        <rdfs:comment>For audio discs</rdfs:comment>
-        <rdfs:label>8 rpm</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Sacd -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Sacd">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
-        <rdfs:label>SACD</rdfs:label>
-        <rdfs:label>SACD (Super audio compact disc)</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/SixteenTrack -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/SixteenTrack">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/TapeConfig"/>
-        <rdfs:label>16-track</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/TwelveTrack -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/TwelveTrack">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/TapeConfig"/>
-        <rdfs:label>12-track</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Vertical -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/Vertical">
-        <rdf:type rdf:resource="http://www.semanticweb.org/nlorimer/ontologies/2017/3/PerformedMusicOntology/DiscCutting"/>
-        <terms:description>Recording process in which a stylus cuts a vertical groove into a phonograph record.</terms:description>
-        <rdfs:label>Vertical cut</rdfs:label>
-        <skos:altLabel>Hill and dale</skos:altLabel>
     </owl:NamedIndividual>
 </rdf:RDF>
 
