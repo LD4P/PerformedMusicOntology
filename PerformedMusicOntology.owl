@@ -131,6 +131,14 @@
     
 
 
+    <!-- http://performedmusicontology.org/alternateOf -->
+
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/alternateOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://performedmusicontology.org/hasDoublingMediumOfPerformance -->
 
     <owl:ObjectProperty rdf:about="http://performedmusicontology.org/hasDoublingMediumOfPerformance">
@@ -148,6 +156,18 @@
     <!-- http://performedmusicontology.org/hasIndividualCount -->
 
     <owl:ObjectProperty rdf:about="http://performedmusicontology.org/hasIndividualCount"/>
+    
+
+
+    <!-- http://performedmusicontology.org/performsMediumOfPerformancePart -->
+
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/performsMediumOfPerformancePart"/>
+    
+
+
+    <!-- http://performedmusicontology.org/performsMediumOfPerformanceRole -->
+
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/performsMediumOfPerformanceRole"/>
     
 
 
@@ -182,14 +202,6 @@
     
 
 
-    <!-- http://performedmusicontology.org/ontology/hasAlternateMedium -->
-
-    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/hasAlternateMedium">
-        <rdfs:label>has alternate</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://performedmusicontology.org/ontology/hasDramaticRole -->
 
     <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/hasDramaticRole"/>
@@ -217,6 +229,7 @@
     <!-- http://performedmusicontology.org/ontology/hasInspiration -->
 
     <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/hasInspiration">
+        <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
         <owl:inverseOf rdf:resource="http://performedmusicontology.org/ontology/inspirationFor"/>
     </owl:ObjectProperty>
     
@@ -283,7 +296,9 @@
 
     <!-- http://performedmusicontology.org/ontology/inspirationFor -->
 
-    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/inspirationFor"/>
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/inspirationFor">
+        <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
+    </owl:ObjectProperty>
     
 
 
@@ -291,20 +306,6 @@
 
     <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/performanceOf">
         <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/eventContent"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://performedmusicontology.org/ontology/performsMopPart -->
-
-    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/performsMopPart"/>
-    
-
-
-    <!-- http://performedmusicontology.org/ontology/performsMopRole -->
-
-    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/performsMopRole">
-        <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Role"/>
     </owl:ObjectProperty>
     
 
@@ -466,6 +467,22 @@
     <!-- http://id.loc.gov/ontologies/bibframe/Work -->
 
     <owl:Class rdf:about="http://id.loc.gov/ontologies/bibframe/Work"/>
+    
+
+
+    <!-- http://performedmusicontology.org/AlternateMedium -->
+
+    <owl:Class rdf:about="http://performedmusicontology.org/AlternateMedium">
+        <rdfs:subClassOf rdf:resource="http://performedmusicontology.org/ontology/DeclaredMedium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://performedmusicontology.org/AlternateMediumPart -->
+
+    <owl:Class rdf:about="http://performedmusicontology.org/AlternateMediumPart">
+        <rdfs:subClassOf rdf:resource="http://performedmusicontology.org/ontology/DeclaredMediumPart"/>
+    </owl:Class>
     
 
 
@@ -803,6 +820,42 @@
     <owl:NamedIndividual rdf:about="http://metadataregistry.org/uri/RegStatus/1008">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <skos:prefLabel xml:lang="en">Deprecated</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/adLib -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/adLib">
+        <rdf:type rdf:resource="http://performedmusicontology.org/ontology/MediumPartType"/>
+        <rdfs:label>ad lib</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/divisi -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/divisi">
+        <rdf:type rdf:resource="http://performedmusicontology.org/ontology/MediumPartType"/>
+        <rdfs:label>divisi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/optional -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/optional">
+        <rdf:type rdf:resource="http://performedmusicontology.org/ontology/MediumPartType"/>
+        <rdfs:label>optional</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/solo -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/solo">
+        <rdf:type rdf:resource="http://performedmusicontology.org/ontology/MediumPartType"/>
+        <rdfs:label>solo</rdfs:label>
     </owl:NamedIndividual>
     
 
