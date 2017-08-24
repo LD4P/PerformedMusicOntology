@@ -1,0 +1,3259 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://performedmusicontology.org/ontology/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://performedmusicontology.org/ontology/"
+     versionIRI="http://performedmusicontology.org/ontology/">
+    <Prefix name="" IRI="http://performedmusicontology.org/ontology/"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
+    <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
+    <Prefix name="regap" IRI="http://metadataregistry.org/uri/profile/regap/"/>
+    <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="rdakit" IRI="http://metadataregistry.org/uri/profile/rdakit/"/>
+    <Import>http://id.loc.gov/ontologies/bibframe/</Import>
+    <Declaration>
+        <NamedIndividual IRI="IPS1.8"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MediumPart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Audition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="DvdVideo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Mode"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://performedmusicontology.org/FPM12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="RPM16"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Concert"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="performanceOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasNumberOfHands"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Sacd"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://rdaregistry.info/termList/RDACarrierType/1003"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ThematicCatalogNumber"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="inspirationFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="associatedWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPerformance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://performedmusicontology.org/solo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CommandPerformance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="FirstPerformance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="LP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="IPS15"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="KeyMode"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="PianoRoll"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://rdaregistry.info/termList/RDACarrierType/1004"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Rehearsal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="RPM45"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Vertical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Tempo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="IPS7.5"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DeclaredMedium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="DvdAudio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://rdaregistry.info/termList/RDACarrierType/1060"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="RPM33"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="AAC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MusicPart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="recordingOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ConcertTour"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasMediumPart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasEventName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="OpusNumberStatement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasDramaticRole"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="obligato"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="EnsembleMediumOfPerformance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasMusicPart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="OpusNumber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ConcertSeries"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="TonalCenter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="HybridSacd"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="EightTrack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="LivePerformance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasMediumPartType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="OrganRoll"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="EpRecord"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="SixteenTrack"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasMedium"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasRecording"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DiscCutting"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://performedmusicontology.org/45"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="MP3"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasPerformerCount"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://performedmusicontology.org/optional"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="WorkComponent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ThematicCatalogStatement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasDoublingMediumOfPerformance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="OpusNumberPart"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="IPS.9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="AIFF"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="CdAudio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasDistinctPartCount"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="amplified"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://rdaregistry.info/termList/RDACarrierType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://rdaregistry.info/termList/RDACarrierType/1007"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="OpenMicPerformance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MasterClass"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="DAT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="TwelveTrack"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="IPS3.75"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="IndividualMediumOfPerformance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="phonogramCopyrightDate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://performedmusicontology.org/offstage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="createdFor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DramaticRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PerformedMedium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="HalfTrack"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasMediumOfPerformance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="BenefitConcert"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MediumOfPerformance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Ceremony"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="VideogamePlatformIdentifier"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="LateralCut"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="QuarterTrack"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="FullTrack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="EventName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="IPS30"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="EnhancedCdAudio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="FLAC"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasEnsembleCount"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="RPM8"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="RecordingSession"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="RPM78"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://performedmusicontology.org/78recording"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Performance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MediumPartType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://performedmusicontology.org/adLib"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ThematicCatalogPrefix"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://performedmusicontology.org/Laserdisc"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasInspiration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasCompiledWork"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://rdaregistry.info/termList/RDACarrierType/1006"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasRequiredPerformerCount"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="MPS1.4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F31_Performance"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="regap:identifier"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="skos:ConceptScheme"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="skos:Concept"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:narrower"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:inScheme"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:broader"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="Audition"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="BenefitConcert"/>
+        <Class IRI="Concert"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Ceremony"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CommandPerformance"/>
+        <Class IRI="Concert"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Concert"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ConcertSeries"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ConcertTour"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DiscCutting"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/SoundCharacteristic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EnsembleMediumOfPerformance"/>
+        <Class IRI="MediumOfPerformance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FirstPerformance"/>
+        <Class IRI="Performance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="IndividualMediumOfPerformance"/>
+        <Class IRI="MediumOfPerformance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LivePerformance"/>
+        <Class IRI="Performance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MasterClass"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OpenMicPerformance"/>
+        <Class IRI="Performance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OpusNumber"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OpusNumberPart"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OpusNumberStatement"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Performance"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F31_Performance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Performance"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="RecordingSession"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Rehearsal"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ThematicCatalogNumber"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ThematicCatalogPrefix"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ThematicCatalogStatement"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="VideogamePlatformIdentifier"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="WorkComponent"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Work"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <NamedIndividual IRI="http://performedmusicontology.org/FPM12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <NamedIndividual IRI="http://performedmusicontology.org/Laserdisc"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="MediumPartType"/>
+        <NamedIndividual IRI="http://performedmusicontology.org/adLib"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="MediumPartType"/>
+        <NamedIndividual IRI="http://performedmusicontology.org/offstage"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="MediumPartType"/>
+        <NamedIndividual IRI="http://performedmusicontology.org/optional"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="MediumPartType"/>
+        <NamedIndividual IRI="http://performedmusicontology.org/solo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <NamedIndividual IRI="http://performedmusicontology.org/45"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <NamedIndividual IRI="http://performedmusicontology.org/78recording"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/EncodingFormat"/>
+        <NamedIndividual IRI="AAC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/EncodingFormat"/>
+        <NamedIndividual IRI="AIFF"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <NamedIndividual IRI="CdAudio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <NamedIndividual IRI="DAT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <NamedIndividual IRI="DvdAudio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <NamedIndividual IRI="DvdVideo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/TapeConfig"/>
+        <NamedIndividual IRI="EightTrack"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <NamedIndividual IRI="EnhancedCdAudio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <NamedIndividual IRI="EpRecord"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/EncodingFormat"/>
+        <NamedIndividual IRI="FLAC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/TapeConfig"/>
+        <NamedIndividual IRI="FullTrack"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/TapeConfig"/>
+        <NamedIndividual IRI="HalfTrack"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <NamedIndividual IRI="HybridSacd"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <NamedIndividual IRI="IPS.9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <NamedIndividual IRI="IPS1.8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <NamedIndividual IRI="IPS15"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <NamedIndividual IRI="IPS3.75"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <NamedIndividual IRI="IPS30"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <NamedIndividual IRI="IPS7.5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <NamedIndividual IRI="LP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="DiscCutting"/>
+        <NamedIndividual IRI="LateralCut"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/EncodingFormat"/>
+        <NamedIndividual IRI="MP3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <NamedIndividual IRI="MPS1.4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <NamedIndividual IRI="OrganRoll"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <NamedIndividual IRI="PianoRoll"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/TapeConfig"/>
+        <NamedIndividual IRI="QuarterTrack"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <NamedIndividual IRI="RPM16"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <NamedIndividual IRI="RPM33"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <NamedIndividual IRI="RPM45"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <NamedIndividual IRI="RPM78"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <NamedIndividual IRI="RPM8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <NamedIndividual IRI="Sacd"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/TapeConfig"/>
+        <NamedIndividual IRI="SixteenTrack"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/TapeConfig"/>
+        <NamedIndividual IRI="TwelveTrack"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="DiscCutting"/>
+        <NamedIndividual IRI="Vertical"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="MediumPartType"/>
+        <NamedIndividual IRI="amplified"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="MediumPartType"/>
+        <NamedIndividual IRI="obligato"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="skos:ConceptScheme"/>
+        <NamedIndividual IRI="http://rdaregistry.info/termList/RDACarrierType"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="skos:Concept"/>
+        <NamedIndividual IRI="http://rdaregistry.info/termList/RDACarrierType/1003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="skos:Concept"/>
+        <NamedIndividual IRI="http://rdaregistry.info/termList/RDACarrierType/1004"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="skos:Concept"/>
+        <NamedIndividual IRI="http://rdaregistry.info/termList/RDACarrierType/1006"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="skos:Concept"/>
+        <NamedIndividual IRI="http://rdaregistry.info/termList/RDACarrierType/1007"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="skos:Concept"/>
+        <NamedIndividual IRI="http://rdaregistry.info/termList/RDACarrierType/1060"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="associatedWith"/>
+        <ObjectProperty IRI="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="createdFor"/>
+        <ObjectProperty IRI="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasEventName"/>
+        <ObjectProperty IRI="hasMedium"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasInspiration"/>
+        <ObjectProperty IRI="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasMediumPartType"/>
+        <ObjectProperty IRI="hasMusicPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasPerformance"/>
+        <ObjectProperty IRI="http://id.loc.gov/ontologies/bibframe/eventContentOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasRecording"/>
+        <ObjectProperty IRI="http://id.loc.gov/ontologies/bibframe/eventContent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="inspirationFor"/>
+        <ObjectProperty IRI="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="performanceOf"/>
+        <ObjectProperty IRI="http://id.loc.gov/ontologies/bibframe/eventContent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="recordingOf"/>
+        <ObjectProperty IRI="http://id.loc.gov/ontologies/bibframe/eventContentOf"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasInspiration"/>
+        <ObjectProperty IRI="inspirationFor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasPerformance"/>
+        <ObjectProperty IRI="performanceOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasRecording"/>
+        <ObjectProperty IRI="recordingOf"/>
+    </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="associatedWith"/>
+    </SymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="createdFor"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasCompiledWork"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasEventName"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasMedium"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasMediumPartType"/>
+        <Class IRI="MediumPart"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPerformance"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasRecording"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="performanceOf"/>
+        <Class IRI="Performance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="recordingOf"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="createdFor"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasCompiledWork"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasDoublingMediumOfPerformance"/>
+        <Class IRI="MediumOfPerformance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasDramaticRole"/>
+        <Class IRI="DramaticRole"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasMediumOfPerformance"/>
+        <Class IRI="MediumOfPerformance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasMediumPart"/>
+        <Class IRI="MediumPart"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasMediumPartType"/>
+        <Class IRI="MediumPartType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasMusicPart"/>
+        <Class IRI="MusicPart"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPerformance"/>
+        <Class IRI="Performance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasRecording"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="performanceOf"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="recordingOf"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Event"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="phonogramCopyrightDate"/>
+        <DataProperty IRI="http://id.loc.gov/ontologies/bibframe/date"/>
+    </SubDataPropertyOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://performedmusicontology.org/FPM12</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Traditional way of describing the speed of audio cylinders.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://performedmusicontology.org/FPM12</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">120</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://performedmusicontology.org/FPM12</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Playing speed of 12 feet per minute x 10.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://performedmusicontology.org/Laserdisc</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Laser disc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:broader"/>
+        <IRI>http://performedmusicontology.org/Laserdisc</IRI>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://performedmusicontology.org/Laserdisc</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Optical video disc, 30 cm (12 in.) in diameter. It was the first commercial optical disc storage medium.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://performedmusicontology.org/adLib</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">For mediums of performance marked &quot;ad lib&quot; or &quot;ad libitum&quot; in a score or otherwise.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://performedmusicontology.org/adLib</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ad lib</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>http://performedmusicontology.org/adLib</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ad libitum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://performedmusicontology.org/offstage</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">offstage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://performedmusicontology.org/offstage</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A declared or performed medium that is to be performed or is performed offstage, i.e., out of sight of the audience.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://performedmusicontology.org/optional</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">optional</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://performedmusicontology.org/optional</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">For mediums of performance marked &quot;optional&quot; in a score or otherwise.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://performedmusicontology.org/solo</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">solo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://performedmusicontology.org/solo</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">For mediums of performance marked &quot;solo&quot; in a score or is clearly a solo part in the context of the work, e.g., a concerto for oboe and orchestra.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://performedmusicontology.org/45</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">45 recording</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:broader"/>
+        <IRI>http://performedmusicontology.org/45</IRI>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://performedmusicontology.org/45</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Colloquial term representing 7&quot; diameter vinyl audio discs with a playing speed of 45 rpm. The term does not necessarily accurately describe the carrier.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://performedmusicontology.org/78recording</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">78 recording</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:broader"/>
+        <IRI>http://performedmusicontology.org/78recording</IRI>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://performedmusicontology.org/78recording</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Colloquial term representing audio discs from the 78 rpm disc era, with actual playing speeds ranging from around 60 rpm to 130 rpm.The term does not necessarily accurately describe the carrier.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AAC</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">AAC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>AAC</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Advanced Audio Coding format, a proprietary audio coding standard for lossy digital audio compression.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AIFF</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">AIFF</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>AIFF</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Standard audio file format used by Apple.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>Audition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event in which a performer or actor is applying for a position in an ensemble, cast, film, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>BenefitConcert</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Concert held for charitable purposes, i.e., to raise funds or awareness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>CdAudio</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CD Audio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:broader"/>
+        <IRI>CdAudio</IRI>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>CdAudio</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Optical discs that use the standard compact disc format for audio. They are 12 cm (4 3/4 in.) in diameter, and encoded as 2-channel signed 16-bit Linear PCM sampled at 44,100 Hz.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>Ceremony</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ritual event, performed on special occasions (e.g., death, baptism, wedding, graduation, equinox, coronation, victory)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>CommandPerformance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Performance done at the request of a monarch or other head of state.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>Concert</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Live musical performance of one or more works in front of an audience</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>ConcertSeries</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Group of concerts in the same geographic area by a single performer or brought together by a common theme, usually available for sale as a package. e.g., an orchestra concert season, a series featuring chamber ensembles.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>ConcertTour</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Series of concerts by a performer or group of performers in different cities, countries, or locations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DAT</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">DAT (Digital Audio Tape)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:broader"/>
+        <IRI>DAT</IRI>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DAT</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sony&apos;s proprietary Digital Audio Tape format, characterized by magnetic media enclosed in a protective shell, with the dimensions of 8 x 6 cm, 4 mm tape or 2 7/8 x 2 1/8 in., 1/8 in. tape</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DeclaredMedium</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Intended overall medium of performance of a musical work, as declared by the composer, a reference source, or other source.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DiscCutting</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Recording process in which a stylus cuts a vertical or lateral groove into an audio disc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DramaticRole</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Character of a performer in a dramatic work (e.g., an opera, play, video), e.g., &quot;Carmen&quot; in the opera or video &quot;Carmen&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DvdAudio</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">DVD Audio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>DvdAudio</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">DVD-A</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:broader"/>
+        <IRI>DvdAudio</IRI>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DvdAudio</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">DVD optical discs that use the the DVD audio format. Different bit depth/sampling rate/channel combinations can be used on a single disc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DvdVideo</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">DVD Video</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:broader"/>
+        <IRI>DvdVideo</IRI>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DvdVideo</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">DVD optical discs that use the DVD format to store digital video. From 2003, it has been the dominant consumer video format.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>EightTrack</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">8-track</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>EightTrack</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Magnetic tape divided into 8 audio tracks that run parallel with each other, on which sound and other electro-acoustic signals are captured.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>EnhancedCdAudio</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Enhanced CD Audio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:broader"/>
+        <IRI>EnhancedCdAudio</IRI>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>EnhancedCdAudio</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An optical disc containing a combination of audio and computer data for use in both CD and CD-ROM players. Usually music CDs combined with short videos or other content.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>EnsembleMediumOfPerformance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Named group of like or unlike mediums of performance intended to be played by multiple performers, e.g., orchestra, jazz combo, string quartet, percussion ensemble.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>EpRecord</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">EP (Extended play)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:broader"/>
+        <IRI>EpRecord</IRI>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>EpRecord</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A music disc that contains more tracks than a single but not as many as on a typical album/LP/disc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>EventName</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Name given to an event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>FLAC</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">FLAC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>FLAC</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Free Lossless Audio Codec, an open audio coding format for lossless compression of digital audio.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>FirstPerformance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The world premiere performance of a work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>FullTrack</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">full track</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>FullTrack</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Magnetic tape with 1 audio track on which sound and other electro-acoustic signals are captured.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>HalfTrack</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">half track</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>HalfTrack</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Magnetic tape divided into 2 audio tracks that run parallel with each other, on which sound and other electro-acoustic signals are captured.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>HybridSacd</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Hybrid SACD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:broader"/>
+        <IRI>HybridSacd</IRI>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>HybridSacd</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An SACD that also is also encoded with a PCM audio layer readable by compact disc players.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>IPS.9</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Speed occurs on half-speed mini-cassettes used in small portable recorders.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>IPS.9</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">15/16 ips</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>IPS.9</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Playing speed of 15/16 inches per second.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>IPS1.8</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Speed occurs on standard audiocassettes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>IPS1.8</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">1 7/8 ips</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>IPS1.8</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Playing speed of 1 7/8 inches per second.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>IPS15</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Occcurs on reel-to-reel, studio tapes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>IPS15</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">15 ips</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>IPS15</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Playing speed of 15 inches per second.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>IPS3.75</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Speed occurs on consumer and nonprofessional reel-to-reel tapes, cartridges and very unusual cassette tapes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>IPS3.75</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">3.75 ips</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>IPS3.75</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Playing speed of 3.75 inches per second</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>IPS30</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Occurs on reel-to-reel, studio tapes, but is rarely used.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>IPS30</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">30 ips</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>IPS30</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Playing speed of 30 inches per second.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>IPS7.5</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Speed occurs in reel-to-reel, nonprofessional, and studio tapes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>IPS7.5</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">7.5 ips</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>IPS7.5</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Playing speed of 7.5 inches per second.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>IndividualMediumOfPerformance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Individual musical instrument, voice, or other object used as a medium of performance (e.g., flute, keyboards, pi pa, drinking glass, typewriter).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>KeyMode</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Key and mode of a music work when used in combination, e.g., C major, B-flat major.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>LP</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LP/Vinyl</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:broader"/>
+        <IRI>LP</IRI>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>LP</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Colloquial term representing 12&quot; diameter vinyl audio discs with a playing speed of 33 1/3 rpm. The term does not necessarily accurately describe the carrier.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>LateralCut</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Lateral cut</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>LateralCut</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Recording process in which a stylus cuts a side-to-side groove into a phonograph record.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>LivePerformance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Performance that is recorded at a concert.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>MP3</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MPEG Layer III Audio, and audio encoding format for digital audio.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MP3</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MP3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>MPS1.4</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Speed is calculated from the distance the playback mechanism covers on the surface of the disc per second, and not the number of revolutions of the disc. It is associated with compact discs (CDs)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MPS1.4</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">1.4 mps</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>MPS1.4</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Playing speed of 1.4 meters per second.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>MasterClass</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event in which a recognized performer critiques the performances of one or more other performers.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>MediumOfPerformance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Instruments, voices, ensembles, choruses, and other participants (actors, dancers, etc.) required for, or performing in, an event or work, including electronics, computers, installations, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>MediumPart</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Use with DeclaredMedium, PerformedMedium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>MediumPart</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Medium of performance, type, etc., of a specific part of the declared or performed medium.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MediumPartType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Part type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>MediumPartType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specific role or type of a medium part, e.g., solo, ad lib, optional, offstage, amplified</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>Mode</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Musical mode of a music work, e.g., Dorian, Dhaivata.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>MusicPart</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specific element within an overall declared or performed medium, e.g., Violin 1, Trumpet 2.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>OpenMicPerformance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Live performance at a coffee house, night club, or other venue by amateur performers.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>OpusNumber</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Opus number for a   musical work, e.g. “45” of Op. 45. No. 1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>OpusNumberPart</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Number for a   portion of an opus number, e.g., no. 1   of Op. 45, no. 1.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>OpusNumberStatement</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Statement about the opus number for a musical work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>OrganRoll</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Organ roll</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:broader"/>
+        <IRI>OrganRoll</IRI>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>OrganRoll</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An audio roll used to operate a player piano or reproducing organ.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>Performance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event in which a performer or group of performers present a work to an audience or in a recording studio.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>PerformedMedium</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The overall medium of performance used in the performance of a musical work. This may or may not be the same as the declared medium of performance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>PianoRoll</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Piano roll</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:broader"/>
+        <IRI>PianoRoll</IRI>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>PianoRoll</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Audio roll used to operate a player piano or reproducing piano.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>QuarterTrack</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">quarter track</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>QuarterTrack</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Magnetic tape divided into 4 audio tracks that run parallel with each other, in which sound and other electro-acoustic signals are captured.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>RPM16</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">For audio discs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>RPM16</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">16 rpm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>RPM16</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Playing speed of 16 revolutions per minute.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>RPM33</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">For audio discs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>RPM33</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">33 1/3 rpm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>RPM33</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Playing speed of 33 1/3 revolutions per minute. Often shortened to &quot;33&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>RPM45</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">For audio discs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>RPM45</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">45 rpm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>RPM45</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Playing speed of 45 revolutions per minute.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>RPM78</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">For audio discs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>RPM78</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">78 rpm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>RPM78</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Playing speed of 78 revolutions per minute.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>RPM8</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">For audio discs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>RPM8</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">8 rpm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>RPM8</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Playing speed of 8 revolutions per minute.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>RecordingSession</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event in which one or more performances are recorded with the aim of producing a recording for issue.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>Rehearsal</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event in which a performer or group of performers prepare for a performance in a concert.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Sacd</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SACD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>Sacd</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Super audio compact disc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:broader"/>
+        <IRI>Sacd</IRI>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>Sacd</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Optical audio disc with more channels and longer playing time than a conventional CD.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>SixteenTrack</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">16-track</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>SixteenTrack</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Magnetic tape divided into 16 audio tracks that run parallel with each other, on which sound and other electro-acoustic signals are captured.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>Tempo</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The speed or pace of a music work, whether declared (in a score) or performed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>ThematicCatalogNumber</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Numeric or alphanumericdesignation of a   musical work as found in a thematic index for the composer.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>ThematicCatalogPrefix</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Prefix assigned to a   thematic catalog number denoting thework from which the number originated, e.g., BWV for Bach, M.S. for Paganini.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>ThematicCatalogStatement</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Statement about the thematic catalog number for a musical work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>TonalCenter</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The tonal center of a music work, without mode, e.g., D, C##.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>TwelveTrack</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">12-track</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>TwelveTrack</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Magnetic tape divided into 12 audio tracks that run parallel with each other, on which sound and other electro-acoustic signals are captured.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Vertical</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Vertical cut</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>Vertical</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Hill and dale</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>Vertical</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Recording process in which a stylus cuts a vertical groove into a phonograph record.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>VideogamePlatformIdentifier</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifier assigned to a video game platform, e.g., CUSA 54321 (a PlayStation 4 number).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>WorkComponent</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A work that is an integral part of another work, even when separated from it, e.g., a movement of a symphony, a chapter of a novel.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>amplified</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">For mediums of performance marked &quot;amplified&quot; in a score or otherwise.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>associatedWith</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event or Work that is associated in a general way with another event or work, instance or item, e.g., the Bible used at a presidential inauguration.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>createdFor</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event a work is created for, e.g., a motet celebrating the inauguration of a pope.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>hasCompiledWork</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Property connecting a bf:Work or its subclasses to a bf:Work that is exactly the same except that it is in an instance of a compilation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>hasDistinctPartCount</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Number of distinct music parts in a performed or declared medium, or medium part that is not a named ensemble, e.g, a performed work for 2 flutes and bassoon has a count of “3”.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>hasDoublingMediumOfPerformance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">2 (or more) mediums of performance intended to be performed alternately by a single performer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>hasDramaticRole</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Property connecting a bf:Contribution to the character of a performer in a dramatic work (e.g., an opera, play, video), e.g., &quot;Carmen&quot; in the opera or video &quot;Carmen&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>hasEnsembleCount</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Number of named ensembles in a specified declared or performed medium, e.g., a string quartet has a count of “1”; a jazz combo has a count of “1”; a work for 2 choruses and orchestra has a count of “3”.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>hasEventName</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Name of an event, whether formal or created for metadata purposes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>hasInspiration</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event that inspired the creation of a work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>hasMedium</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Property that links a Work or Performance to the declared or performed medium.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>hasMediumOfPerformance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specific medium of performance, e.g., bass guitar.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>hasMediumPart</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specific element within an overall declared or performed medium, e.g., er hu, mixed chorus.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>hasMediumPartType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Property that links a a pmo:MediumPart to a specific role or type of part, e.g., solo, ad lib, optional, offstage, amplified.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>hasMusicPart</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Property linking MediumPart or bf:Contribution to the specific music parts within a single medium part e.g., Violin 1, Clarinet 2.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>hasNumberOfHands</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Number of hands required for performance in works where more than one performer shares an instrument (e.g., piano, 4 hands) or where an atypical number of hands is specified (e.g., viola, 1 hand).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>hasPerformance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event that is a performance of a work</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>hasPerformerCount</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Actual number of performers participating in a performed music event or work, e.g., a quartet for 4 serpents, performed by 8 bassoons, has a count of &quot;8&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>hasRecording</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Audio or video work created from the recording of event content.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>hasRequiredPerformerCount</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Minimum or suggested number of performers required to perform a declared medium, e.g., a work for a percussion ensemble for 3 performers has a a count of “3”.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>inspirationFor</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Work that is inspired by an event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obligato</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">obligato</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>obligato</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">For mediums of performance marked &quot;obligato&quot; in a score or otherwise.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>performanceOf</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Work that is realized through a performance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>phonogramCopyrightDate</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Phonogram copyright date for a sound recording. Indicated by a &quot;p&quot; or a &quot;p&quot; in a circle.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>recordingOf</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event content of an audio or video work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">RDA Carrier Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A carrier type consisting of a roller-shaped object on which sound waves are incised or indented in a continuous circular groove.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="da" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Bærertype, der består af et rulleformet genstand, hvorpå lydbølger er indskåret eller indtrykt i en uafbrudt cirkulær rille.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="nl" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Een rolvormig object waarop geluidsgolven worden ingesneden of ingesprongen in een continue cirkelvormige groef.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ein Datenträgertyp, der aus einem rollenförmigen Objekt besteht, auf dem Schallwellen in einer fortlaufend gewundenen Rille graviert oder eingeprägt sind.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="no" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">En bærertype som består av en sylinderformet gjenstand der lydopptak er gravert inn i et uavbrutt, sirkulært spor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="vi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Loại hộp chứa gồm có vật thể hình trục lăn trên đó sóng âm được vạch hoặc rập trong đường rãnh xoắn ốc liên tục.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Objeto con forma de rollo en el cual se han hecho incisiones o muescas en un surco circular continuo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="fi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Rullamuotoinen tallennetyyppi, johon ääniaallot on kaiverrettu tai uurrettu yhtenäisenä pyöreänä urana.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="ca" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tipus de suport físic que consisteix en un objecte en forma de rotlle en el qual s’han gravat ones sonores per mitjà d’incisions o marques tot creant un solc circular continu.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Type de support matériel qui consiste en un objet en forme de rouleau sur lequel des ondulations sonores ont été gravées au moyen d’une entaille ou d’empreintes en créant un sillon circulaire continu.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="zh" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">通过刻痕或连续的螺旋式纹槽在其上记录声波的滚筒形物体，包括蜡滚筒、金属丝滚筒等。</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Phonographenzylinder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audio cylinder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="nl" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audiocilinder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="ca" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">cilindre àudio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="it" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">cilindro audio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">cilindro sonoro</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">cylindre audio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="no" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">fonografrull</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="sv" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ljudcylinder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="da" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">lydvalse</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="vi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">trục lăn audio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="fi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">äänisylinteri</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="zh" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">录音筒</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="regap:identifier"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <IRI>http://metadataregistry.org/concepts/535</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audio cylinder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A carrier type consisting of a roller-shaped object on which sound waves are incised or indented in a continuous circular groove.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="da" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Bærertype, der består af et rulleformet genstand, hvorpå lydbølger er indskåret eller indtrykt i en uafbrudt cirkulær rille.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="nl" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Een rolvormig object waarop geluidsgolven worden ingesneden of ingesprongen in een continue cirkelvormige groef.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ein Datenträgertyp, der aus einem rollenförmigen Objekt besteht, auf dem Schallwellen in einer fortlaufend gewundenen Rille graviert oder eingeprägt sind.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="no" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">En bærertype som består av en sylinderformet gjenstand der lydopptak er gravert inn i et uavbrutt, sirkulært spor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="vi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Loại hộp chứa gồm có vật thể hình trục lăn trên đó sóng âm được vạch hoặc rập trong đường rãnh xoắn ốc liên tục.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Objeto con forma de rollo en el cual se han hecho incisiones o muescas en un surco circular continuo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="fi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Rullamuotoinen tallennetyyppi, johon ääniaallot on kaiverrettu tai uurrettu yhtenäisenä pyöreänä urana.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="ca" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tipus de suport físic que consisteix en un objecte en forma de rotlle en el qual s’han gravat ones sonores per mitjà d’incisions o marques tot creant un solc circular continu.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Type de support matériel qui consiste en un objet en forme de rouleau sur lequel des ondulations sonores ont été gravées au moyen d’une entaille ou d’empreintes en créant un sillon circulaire continu.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="zh" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">通过刻痕或连续的螺旋式纹槽在其上记录声波的滚筒形物体，包括蜡滚筒、金属丝滚筒等。</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:inScheme"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Phonographenzylinder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audio cylinder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="nl" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audiocilinder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="ca" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">cilindre àudio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="it" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">cilindro audio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">cilindro sonoro</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">cylindre audio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="no" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">fonografrull</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="sv" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ljudcylinder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="da" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">lydvalse</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="vi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">trục lăn audio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="fi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">äänisylinteri</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="ar" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">أسطوانة سمعية</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="zh" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">录音筒</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Comprend les cylindres de cire, cylindres de fil, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Dazu gehören Wachszylinder, Drahtzylinder usw.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="fi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Esim. vahasylinteri, vaijerisylinteri.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="ca" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Inclou cilindres de cera, de filferro, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Incluye cilindros de cera, cilindros metálicos, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="vi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Trục lăn sáp, trục lăn dây, v.v..., được bao gồm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="no" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Vokssylindre, sylindre med metalltråd, etc. er inkludert.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Wax cylinders, wire cylinders, etc., are included.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1003</IRI>
+        <Literal xml:lang="zh" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">包括腊筒、线筒等</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A carrier type consisting of a disc on which sound waves, recorded as modulations, pulses, etc., are incised or indented in a continuous spiral groove.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="da" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Bærertype, der består af en disc eller plade, hvorpå lydbølger optaget som modulationer, rytmer etc. er ridset eller indtrykt i en uafbrudt cirkulær rille.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Disco en el que las ondas sonoras, registradas como modulaciones, pulsos, etc., se registraron mediante incisiones o muescas en un surco en espiral continua.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="nl" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Een disc waarop geluidsgolven, opgeslagen als modulaties, pulsen etc., ingesneden of ingesprongen zijn in een continue spiraalvormige groef.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ein Datenträgertyp, der aus einer Disk besteht, auf der als Modulation, Pulse usw. aufgenommene Schallwellen in einer fortlaufend gewundenen Rille graviert oder eingeprägt sind.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="no" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">En bærertype som består av en plate der lydbølger, registrert som modulasjoner, pulser, etc. er gravert inn i et uavbrutt, spiralformet spor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="fi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Levy, jolle on kaiverrettu tai uurrettu modulaatioiksi tai pulsseiksi tallennettuja äänisignaaleja yhtenäiseksi spiraalimaiseksi uraksi.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="vi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Loại hộp chứa gồm có đĩa trên đó sóng âm ghi lại như là chuyển giọng, nhịp điệu, vv... được vạch hoặc rập trong đường rãnh xoắn ốc liên tục.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="ca" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tipus de suport físic que consisteix en un disc en el qual s’han gravat ones sonores, enregistrades com a modulacions, impulsos, etc., per mitjà d’incisions o marques en un solc continu en espiral.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Type de support matériel qui consiste en un disque sur lequel des ondulations sonores, enregistrées sous forme de modulations, d’impulsions, etc., ont été gravées au moyen d’une entaille ou d’empreintes en créant un sillon continu en spirale.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="zh" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">通过刻痕或连续的螺旋式纹槽在其上将声波记录为音调、节奏等的盘片。</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Audiodisk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audio disc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="nl" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audiodisc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="ca" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">disc àudio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="it" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">disco audio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">disco sonoro</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">disque audio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="no" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">grammofonplate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="sv" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ljudskiva</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="da" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">lyddisc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="fi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">äänilevy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="vi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">đĩa audio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="zh" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">录音盘</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="regap:identifier"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <IRI>http://metadataregistry.org/concepts/536</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audio disc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="da" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audiodisc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="ca" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">disc sonor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">disco de audio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">disque sonore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">sound disc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="vi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">đĩa âm thanh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="zh" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">声音盘</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A carrier type consisting of a disc on which sound waves, recorded as modulations, pulses, etc., are incised or indented in a continuous spiral groove.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="da" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Bærertype, der består af en disc eller plade, hvorpå lydbølger optaget som modulationer, rytmer etc. er ridset eller indtrykt i en uafbrudt cirkulær rille.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Disco en el que las ondas sonoras, registradas como modulaciones, pulsos, etc., se registraron mediante incisiones o muescas en un surco en espiral continua.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="nl" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Een disc waarop geluidsgolven, opgeslagen als modulaties, pulsen etc., ingesneden of ingesprongen zijn in een continue spiraalvormige groef.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ein Datenträgertyp, der aus einer Disk besteht, auf der als Modulation, Pulse usw. aufgenommene Schallwellen in einer fortlaufend gewundenen Rille graviert oder eingeprägt sind.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="no" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">En bærertype som består av en plate der lydbølger, registrert som modulasjoner, pulser, etc. er gravert inn i et uavbrutt, spiralformet spor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="fi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Levy, jolle on kaiverrettu tai uurrettu modulaatioiksi tai pulsseiksi tallennettuja äänisignaaleja yhtenäiseksi spiraalimaiseksi uraksi.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="vi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Loại hộp chứa gồm có đĩa trên đó sóng âm ghi lại như là chuyển giọng, nhịp điệu, vv... được vạch hoặc rập trong đường rãnh xoắn ốc liên tục.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="ca" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tipus de suport físic que consisteix en un disc en el qual s’han gravat ones sonores, enregistrades com a modulacions, impulsos, etc., per mitjà d’incisions o marques en un solc continu en espiral.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Type de support matériel qui consiste en un disque sur lequel des ondulations sonores, enregistrées sous forme de modulations, d’impulsions, etc., ont été gravées au moyen d’une entaille ou d’empreintes en créant un sillon continu en spirale.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="zh" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">通过刻痕或连续的螺旋式纹槽在其上将声波记录为音调、节奏等的盘片。</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:inScheme"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:narrower"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <IRI>http://performedmusicontology.org/45</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:narrower"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <IRI>http://performedmusicontology.org/78recording</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:narrower"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <IRI>CdAudio</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:narrower"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <IRI>DvdAudio</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:narrower"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <IRI>EnhancedCdAudio</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:narrower"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <IRI>EpRecord</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:narrower"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <IRI>HybridSacd</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:narrower"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <IRI>Sacd</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Audiodisk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audio disc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="nl" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audiodisc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="ca" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">disc àudio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="it" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">disco audio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">disco sonoro</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">disque audio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="no" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">grammofonplate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="sv" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ljudskiva</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="da" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">lyddisc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="fi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">äänilevy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="vi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">đĩa audio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="ar" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">قرص صوتي</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1004</IRI>
+        <Literal xml:lang="zh" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">录音盘</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A carrier type consisting of a roll of paper on which musical notes are represented by perforations, designed to mechanically reproduce the music when used in a player piano, player organ, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="da" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Bærertype, der består af en papirrulle, hvorpå musiknoder repræsenteres af huller skabt til at gengive musikken mekanisk, når rullen bruges i et pianola, mekanisk klaver etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="nl" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Een rol papier waarop muzieknoten voorgesteld worden door perforaties, ontworpen om mechanisch de muziek weer te geven wanneer deze gebruikt wordt in een pianola e.d.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ein Datenträgertyp, der aus einer Papierrolle besteht, auf der Musiknoten in Form von Perforationen repräsentiert werden und die konzipiert ist, um Musik in einem mechanischen Klavier, einer mechanischen Orgel usw. wiederzugeben.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="no" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">En bærertype som består av en papirrull der musikknoter representeres av hull, utformet for å gjengi musikken mekanisk ved bruk i pianola og lignende mekaniske instrumenter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="vi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Loại hộp chứa gồm có cuốn giấy trên đó nốt nhạc được trình bày bởi các lỗ răng cưa để tái tạo một cách cơ học âm nhạc khi dùng với piano tự động, organ tự động, vv...</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="fi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Paperirulla, jossa olevat rei’itykset edustavat toistettavia säveliä. Suunniteltu toistamaan musiikkia mekaanisesti automaattipianon, automaattiurkujen yms. avulla.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Rollo de papel en el que las notas musicales están representadas mediante perforaciones, diseñado para reproducir en forma mecánica la música cuando se utiliza en una pianola, órgano mecánico, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="ca" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tipus de suport físic que consisteix en un rotlle de paper sobre el qual es representen les notes musicals amb perforacions, concebut per reproduir la música mecànicament quan s’usa en una pianola, un orgue mecànic, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Type de support matériel qui consiste en un rouleau de papier sur lequel les notes de musique sont représentées par des perforations, destiné à reproduire mécaniquement la musique lorsqu’il est utilisé avec un piano mécanique, un orgue mécanique, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="zh" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">通过穿孔方式表示音符的纸卷，用于钢琴、风琴等时，以机械方式重现音乐。</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Notenrolle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audio roll</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="nl" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audiorol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="vi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">cuốn audio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="sv" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ljudrulle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="da" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">lydrulle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="no" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">pianorull</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">rollo sonoro</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="ca" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">rotlle àudio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">rouleau audio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="it" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">rullo audio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="fi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">äänirulla</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="zh" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">录音卷</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="regap:identifier"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <IRI>http://metadataregistry.org/concepts/538</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audio roll</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="vi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">cuốn piano</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">piano roll</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="da" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">pianolarulle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="fi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">pianorulla</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">rollo de piano</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">rouleau pour piano</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="zh" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">钢琴滚筒</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A carrier type consisting of a roll of paper on which musical notes are represented by perforations, designed to mechanically reproduce the music when used in a player piano, player organ, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="da" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Bærertype, der består af en papirrulle, hvorpå musiknoder repræsenteres af huller skabt til at gengive musikken mekanisk, når rullen bruges i et pianola, mekanisk klaver etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="nl" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Een rol papier waarop muzieknoten voorgesteld worden door perforaties, ontworpen om mechanisch de muziek weer te geven wanneer deze gebruikt wordt in een pianola e.d.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ein Datenträgertyp, der aus einer Papierrolle besteht, auf der Musiknoten in Form von Perforationen repräsentiert werden und die konzipiert ist, um Musik in einem mechanischen Klavier, einer mechanischen Orgel usw. wiederzugeben.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="no" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">En bærertype som består av en papirrull der musikknoter representeres av hull, utformet for å gjengi musikken mekanisk ved bruk i pianola og lignende mekaniske instrumenter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="vi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Loại hộp chứa gồm có cuốn giấy trên đó nốt nhạc được trình bày bởi các lỗ răng cưa để tái tạo một cách cơ học âm nhạc khi dùng với piano tự động, organ tự động, vv...</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="fi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Paperirulla, jossa olevat rei’itykset edustavat toistettavia säveliä. Suunniteltu toistamaan musiikkia mekaanisesti automaattipianon, automaattiurkujen yms. avulla.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Rollo de papel en el que las notas musicales están representadas mediante perforaciones, diseñado para reproducir en forma mecánica la música cuando se utiliza en una pianola, órgano mecánico, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="ca" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tipus de suport físic que consisteix en un rotlle de paper sobre el qual es representen les notes musicals amb perforacions, concebut per reproduir la música mecànicament quan s’usa en una pianola, un orgue mecànic, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Type de support matériel qui consiste en un rouleau de papier sur lequel les notes de musique sont représentées par des perforations, destiné à reproduire mécaniquement la musique lorsqu’il est utilisé avec un piano mécanique, un orgue mécanique, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="zh" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">通过穿孔方式表示音符的纸卷，用于钢琴、风琴等时，以机械方式重现音乐。</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:inScheme"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:narrower"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <IRI>OrganRoll</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:narrower"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <IRI>PianoRoll</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Notenrolle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audio roll</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="nl" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audiorol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="vi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">cuốn audio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="sv" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ljudrulle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="da" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">lydrulle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="no" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">pianorull</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">rollo sonoro</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="ca" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">rotlle àudio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">rouleau audio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="it" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">rullo audio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="fi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">äänirulla</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="ar" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">لفافة سمعية</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="zh" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">录音卷</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Incluye rollos de pianola, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1006</IRI>
+        <Literal xml:lang="zh" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">用于钢琴滚筒等。</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A carrier type consisting of a cassette containing an audiotape.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="da" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Bærertype, der består af en kassette, der indeholder et lydbånd.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Casete que contiene una cinta de audio.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="nl" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Een cassette die een audiotape bevat.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ein Datenträgertyp, der aus einer Kassette besteht, die ein Tonband enthält.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="no" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">En bærertype som består av en kassett som inneholder et lydbånd.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="fi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Kasetti, joka sisältää ääninauhan.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="vi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Loại hộp chứa gồm có cassette chứa một băng audio.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="ca" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tipus de suport físic que consisteix en una casset que conté una cinta àudio.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Type de support matériel qui consiste en une cassette contenant une bande audio.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="zh" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">装在双轴盒中的录音带。</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Audiokassette</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audiocasete</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="it" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audiocassetta</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audiocassette</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="nl" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audiocassette</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="vi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audiocassette</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="ca" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">casset àudio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">cassette audio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="da" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">kassettebånd</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="sv" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ljudkassett</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="no" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">lydkassett</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="fi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">äänikasetti</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="zh" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">卡式录音带</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="regap:identifier"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <IRI>http://metadataregistry.org/concepts/539</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audiocassette</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A carrier type consisting of a cassette containing an audiotape.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="da" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Bærertype, der består af en kassette, der indeholder et lydbånd.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Casete que contiene una cinta de audio.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="nl" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Een cassette die een audiotape bevat.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ein Datenträgertyp, der aus einer Kassette besteht, die ein Tonband enthält.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="no" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">En bærertype som består av en kassett som inneholder et lydbånd.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="fi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Kasetti, joka sisältää ääninauhan.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="vi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Loại hộp chứa gồm có cassette chứa một băng audio.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="ca" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tipus de suport físic que consisteix en una casset que conté una cinta àudio.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Type de support matériel qui consiste en une cassette contenant une bande audio.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="zh" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">装在双轴盒中的录音带。</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:inScheme"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:narrower"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <IRI>DAT</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Audiokassette</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audiocasete</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="it" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audiocassetta</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audiocassette</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="nl" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audiocassette</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="vi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">audiocassette</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="ca" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">casset àudio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">cassette audio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="da" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">kassettebånd</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="sv" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ljudkassett</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="no" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">lydkassett</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="fi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">äänikasetti</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="ar" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">كاسيت صوتي</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1007</IRI>
+        <Literal xml:lang="zh" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">卡式录音带</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A carrier type consisting of a disc on which video signals, with or without sound, are recorded.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="da" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Bærertype, der består af en disc, hvorpå der er optaget videosignaler med eller uden lyd.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Disco sobre el que se han grabado señales de video, con o sin sonido.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="nl" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Een disc waarop videosignalen, met of zonder geluid, worden opgenomen.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ein Datenträgertyp, der aus eine Disk besteht, auf der Video-Signale mit oder ohne Ton aufgezeichnet sind.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="no" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">En bærertype som består av en plate der videosignaler med eller uten lyd registreres.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="fi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Levy, jolle tallennetaan videosignaaleja, sisältäen ääntä tai ilman ääntä.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="vi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Loại hộp chứa gồm có đĩa trên đó tín hiệu video, có hoặc không có âm thanh, được ghi lại.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="ca" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tipus de suport físic que consisteix en un disc en el qual hi ha enregistrats senyals de vídeo, amb o sense so.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Type de support matériel qui consiste en un disque sur lequel des signaux vidéo, accompagnés ou non de son, sont enregistrés.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="zh" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">记录视频信号的盘片，有无声音均可。</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Videodisk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="ca" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">videodisc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="da" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">videodisc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">videodisc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="nl" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">videodisc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">videodisco</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="it" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">videodisco</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="no" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">videodisk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="fi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">videolevy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="sv" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">videoskiva</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">vidéodisque</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="vi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">đĩa video</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="zh" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">视盘</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="regap:identifier"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <IRI>http://metadataregistry.org/concepts/1113</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">videodisc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A carrier type consisting of a disc on which video signals, with or without sound, are recorded.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="da" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Bærertype, der består af en disc, hvorpå der er optaget videosignaler med eller uden lyd.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Disco sobre el que se han grabado señales de video, con o sin sonido.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="nl" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Een disc waarop videosignalen, met of zonder geluid, worden opgenomen.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ein Datenträgertyp, der aus eine Disk besteht, auf der Video-Signale mit oder ohne Ton aufgezeichnet sind.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="no" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">En bærertype som består av en plate der videosignaler med eller uten lyd registreres.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="fi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Levy, jolle tallennetaan videosignaaleja, sisältäen ääntä tai ilman ääntä.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="vi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Loại hộp chứa gồm có đĩa trên đó tín hiệu video, có hoặc không có âm thanh, được ghi lại.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="ca" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tipus de suport físic que consisteix en un disc en el qual hi ha enregistrats senyals de vídeo, amb o sense so.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Type de support matériel qui consiste en un disque sur lequel des signaux vidéo, accompagnés ou non de son, sont enregistrés.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="zh" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">记录视频信号的盘片，有无声音均可。</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:inScheme"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:narrower"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <IRI>http://performedmusicontology.org/Laserdisc</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:narrower"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <IRI>DvdVideo</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="de" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Videodisk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="ca" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">videodisc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="da" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">videodisc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">videodisc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="nl" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">videodisc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="es" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">videodisco</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="it" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">videodisco</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="no" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">videodisk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="fi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">videolevy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="sv" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">videoskiva</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">vidéodisque</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="vi" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">đĩa video</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="ar" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">قرص فيديو</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://rdaregistry.info/termList/RDACarrierType/1060</IRI>
+        <Literal xml:lang="zh" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">视盘</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
