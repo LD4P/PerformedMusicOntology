@@ -19,7 +19,6 @@
     <Prefix name="regap" IRI="http://metadataregistry.org/uri/profile/regap/"/>
     <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
     <Prefix name="rdakit" IRI="http://metadataregistry.org/uri/profile/rdakit/"/>
-    <Import>http://id.loc.gov/ontologies/bibframe/</Import>
     <Declaration>
         <NamedIndividual IRI="IPS1.8"/>
     </Declaration>
@@ -357,31 +356,67 @@
         <Class IRI="http://erlangen-crm.org/efrbroo/F31_Performance"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Event"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty abbreviatedIRI="regap:identifier"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/EncodingFormat"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://id.loc.gov/ontologies/bibframe/eventContentOf"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="skos:ConceptScheme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Work"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="http://id.loc.gov/ontologies/bibframe/date"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="skos:Concept"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://id.loc.gov/ontologies/bibframe/eventContent"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty abbreviatedIRI="skos:narrower"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/SoundCharacteristic"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/TapeConfig"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
