@@ -13,27 +13,92 @@
 @base <http://performedmusicontology.org/ontology/> .
 
 <http://performedmusicontology.org/ontology/> rdf:type owl:Ontology ;
-                                               owl:versionIRI <http://performedmusicontology.org/ontology/> ;
-                                               owl:imports <http://id.loc.gov/ontologies/bibframe/> .
+                                               owl:versionIRI <http://performedmusicontology.org/ontology/> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://metadataregistry.org/uri/profile/rdakit/toolkitDefinition
+rdakit:toolkitDefinition rdf:type owl:AnnotationProperty .
+
+
+###  http://metadataregistry.org/uri/profile/rdakit/toolkitLabel
+rdakit:toolkitLabel rdf:type owl:AnnotationProperty .
+
+
+###  http://metadataregistry.org/uri/profile/regap/identifier
+regap:identifier rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+skos:altLabel rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#broader
+skos:broader rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+skos:definition rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+skos:inScheme rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#narrower
+skos:narrower rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+skos:prefLabel rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#scopeNote
+skos:scopeNote rdf:type owl:AnnotationProperty .
 
 
 #################################################################
 #    Object Properties
 #################################################################
 
+###  http://id.loc.gov/ontologies/bibframe/eventContent
+<http://id.loc.gov/ontologies/bibframe/eventContent> rdf:type owl:ObjectProperty .
+
+
+###  http://id.loc.gov/ontologies/bibframe/eventContentOf
+<http://id.loc.gov/ontologies/bibframe/eventContentOf> rdf:type owl:ObjectProperty .
+
+
+###  http://id.loc.gov/ontologies/bibframe/relatedTo
+<http://id.loc.gov/ontologies/bibframe/relatedTo> rdf:type owl:ObjectProperty .
+
 
 ###  http://performedmusicontology.org/ontology/associatedWith
 :associatedWith rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/relatedTo> ;
                 rdf:type owl:SymmetricProperty ;
+                rdfs:label "associated with" ;
                 skos:definition "Event or Work that is associated in a general way with another event or work, instance or item, e.g., the Bible used at a presidential inauguration." .
+
+
+###  http://performedmusicontology.org/ontology/composedOf
+:composedOf rdf:type owl:ObjectProperty ;
+            rdfs:label "composed of" ;
+            skos:definition "Portion of a multi-level identifier, such as a prefix, e.g., BWV of BWV 464, or a hierarchical number, e.g., 2, of op. 45, no. 2." .
 
 
 ###  http://performedmusicontology.org/ontology/createdFor
 :createdFor rdf:type owl:ObjectProperty ;
-            rdfs:subPropertyOf :hasInspiration ;
+            rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/relatedTo> ;
             rdfs:domain <http://id.loc.gov/ontologies/bibframe/Work> ;
             rdfs:range <http://id.loc.gov/ontologies/bibframe/Event> ;
+            rdfs:label "created for" ;
             skos:definition "Event a work is created for, e.g., a motet celebrating the inauguration of a pope." .
 
 
@@ -41,25 +106,29 @@
 :hasCompiledWork rdf:type owl:ObjectProperty ;
                  rdfs:domain <http://id.loc.gov/ontologies/bibframe/Work> ;
                  rdfs:range <http://id.loc.gov/ontologies/bibframe/Work> ;
+                 rdfs:label "has Compiled Work" ;
                  skos:definition "Property connecting a bf:Work or its subclasses to a bf:Work that is exactly the same except that it is in an instance of a compilation." .
 
 
 ###  http://performedmusicontology.org/ontology/hasDoublingMediumOfPerformance
 :hasDoublingMediumOfPerformance rdf:type owl:ObjectProperty ;
                                 rdfs:range :MediumOfPerformance ;
+                                rdfs:label "has Doubling Medium of Performance" ;
                                 skos:definition "2 (or more) mediums of performance intended to be performed alternately by a single performer" .
 
 
 ###  http://performedmusicontology.org/ontology/hasDramaticRole
 :hasDramaticRole rdf:type owl:ObjectProperty ;
                  rdfs:range :DramaticRole ;
+                 rdfs:label "has Dramatic Role" ;
                  skos:definition "Property connecting a bf:Contribution to the character of a performer in a dramatic work (e.g., an opera, play, video), e.g., \"Carmen\" in the opera or video \"Carmen\"." .
 
 
 ###  http://performedmusicontology.org/ontology/hasEventName
 :hasEventName rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf :hasMedium ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
               rdfs:domain <http://id.loc.gov/ontologies/bibframe/Event> ;
+              rdfs:label "has Event Name" ;
               skos:definition "Name of an event, whether formal or created for metadata purposes" .
 
 
@@ -67,38 +136,58 @@
 :hasInspiration rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/relatedTo> ;
                 owl:inverseOf :inspirationFor ;
+                rdfs:label "has as Inspiration" ;
                 skos:definition "Event that inspired the creation of a work." .
+
+
+###  http://performedmusicontology.org/ontology/hasKeyMode
+:hasKeyMode rdf:type owl:ObjectProperty ;
+            rdfs:range :KeyMode ;
+            rdfs:label "has Key and Mode" ;
+            skos:definition "Property linking Work to KeyMode." .
 
 
 ###  http://performedmusicontology.org/ontology/hasMedium
 :hasMedium rdf:type owl:ObjectProperty ;
            rdfs:domain <http://id.loc.gov/ontologies/bibframe/Work> ;
+           rdfs:label "has Medium" ;
            skos:definition "Property that links a Work or Performance to the declared or performed medium." .
 
 
 ###  http://performedmusicontology.org/ontology/hasMediumOfPerformance
 :hasMediumOfPerformance rdf:type owl:ObjectProperty ;
                         rdfs:range :MediumOfPerformance ;
+                        rdfs:label "has Medium Of Performance" ;
                         skos:definition "Specific medium of performance, e.g., bass guitar." .
 
 
 ###  http://performedmusicontology.org/ontology/hasMediumPart
 :hasMediumPart rdf:type owl:ObjectProperty ;
                rdfs:range :MediumPart ;
+               rdfs:label "has Medium Part" ;
                skos:definition "Specific element within an overall declared or performed medium, e.g., er hu, mixed chorus." .
 
 
 ###  http://performedmusicontology.org/ontology/hasMediumPartType
 :hasMediumPartType rdf:type owl:ObjectProperty ;
-                   rdfs:subPropertyOf :hasMusicPart ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
                    rdfs:domain :MediumPart ;
                    rdfs:range :MediumPartType ;
+                   rdfs:label "has Medium Part Type" ;
                    skos:definition "Property that links a a pmo:MediumPart to a specific role or type of part, e.g., solo, ad lib, optional, offstage, amplified." .
+
+
+###  http://performedmusicontology.org/ontology/hasMode
+:hasMode rdf:type owl:ObjectProperty ;
+         rdfs:range :Mode ;
+         rdfs:label "has Mode" ;
+         skos:definition "Property linking Work to Mode." .
 
 
 ###  http://performedmusicontology.org/ontology/hasMusicPart
 :hasMusicPart rdf:type owl:ObjectProperty ;
               rdfs:range :MusicPart ;
+              rdfs:label "has Music Part" ;
               skos:definition "Property linking MediumPart or bf:Contribution to the specific music parts within a single medium part e.g., Violin 1, Clarinet 2." .
 
 
@@ -108,6 +197,7 @@
                 owl:inverseOf :performanceOf ;
                 rdfs:domain <http://id.loc.gov/ontologies/bibframe/Work> ;
                 rdfs:range :Performance ;
+                rdfs:label "has Performance" ;
                 skos:definition "Event that is a performance of a work" .
 
 
@@ -117,12 +207,27 @@
               owl:inverseOf :recordingOf ;
               rdfs:domain <http://id.loc.gov/ontologies/bibframe/Event> ;
               rdfs:range <http://id.loc.gov/ontologies/bibframe/Work> ;
+              rdfs:label "has Recording" ;
               skos:definition "Audio or video work created from the recording of event content." .
+
+
+###  http://performedmusicontology.org/ontology/hasTempo
+:hasTempo rdf:type owl:ObjectProperty ;
+          rdfs:range :Tempo ;
+          rdfs:label "has Tempo" .
+
+
+###  http://performedmusicontology.org/ontology/hasTonalCenter
+:hasTonalCenter rdf:type owl:ObjectProperty ;
+                rdfs:range :TonalCenter ;
+                rdfs:label "has Tonal Center" ;
+                skos:definition "Property linking Work to Tonal Center" .
 
 
 ###  http://performedmusicontology.org/ontology/inspirationFor
 :inspirationFor rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/relatedTo> ;
+                rdfs:label "Inspiration for" ;
                 skos:definition "Work that is inspired by an event." .
 
 
@@ -131,6 +236,7 @@
                rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/eventContent> ;
                rdfs:domain :Performance ;
                rdfs:range <http://id.loc.gov/ontologies/bibframe/Work> ;
+               rdfs:label "Performance of" ;
                skos:definition "Work that is realized through a performance." .
 
 
@@ -139,6 +245,7 @@
              rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/eventContentOf> ;
              rdfs:domain <http://id.loc.gov/ontologies/bibframe/Work> ;
              rdfs:range <http://id.loc.gov/ontologies/bibframe/Event> ;
+             rdfs:label "Recording of" ;
              skos:definition "Event content of an audio or video work." .
 
 
@@ -146,41 +253,86 @@
 #    Data properties
 #################################################################
 
+###  http://id.loc.gov/ontologies/bibframe/date
+<http://id.loc.gov/ontologies/bibframe/date> rdf:type owl:DatatypeProperty .
+
 
 ###  http://performedmusicontology.org/ontology/hasDistinctPartCount
 :hasDistinctPartCount rdf:type owl:DatatypeProperty ;
+                      rdfs:comment "has Distinct Part Count" ;
                       skos:definition "Number of distinct music parts in a performed or declared medium, or medium part that is not a named ensemble, e.g, a performed work for 2 flutes and bassoon has a count of “3”." .
 
 
 ###  http://performedmusicontology.org/ontology/hasEnsembleCount
 :hasEnsembleCount rdf:type owl:DatatypeProperty ;
+                  rdfs:comment "has Ensemble Count" ;
                   skos:definition "Number of named ensembles in a specified declared or performed medium, e.g., a string quartet has a count of “1”; a jazz combo has a count of “1”; a work for 2 choruses and orchestra has a count of “3”." .
 
 
 ###  http://performedmusicontology.org/ontology/hasNumberOfHands
 :hasNumberOfHands rdf:type owl:DatatypeProperty ;
+                  rdfs:comment "has Number of Hands" ;
                   skos:definition "Number of hands required for performance in works where more than one performer shares an instrument (e.g., piano, 4 hands) or where an atypical number of hands is specified (e.g., viola, 1 hand)." .
 
 
 ###  http://performedmusicontology.org/ontology/hasPerformerCount
 :hasPerformerCount rdf:type owl:DatatypeProperty ;
+                   rdfs:comment "has Performer Count" ;
                    skos:definition "Actual number of performers participating in a performed music event or work, e.g., a quartet for 4 serpents, performed by 8 bassoons, has a count of \"8\"." .
 
 
 ###  http://performedmusicontology.org/ontology/hasRequiredPerformerCount
 :hasRequiredPerformerCount rdf:type owl:DatatypeProperty ;
+                           rdfs:comment "has Suggested Performer Count" ;
                            skos:definition "Minimum or suggested number of performers required to perform a declared medium, e.g., a work for a percussion ensemble for 3 performers has a a count of “3”." .
 
 
 ###  http://performedmusicontology.org/ontology/phonogramCopyrightDate
 :phonogramCopyrightDate rdf:type owl:DatatypeProperty ;
                         rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/date> ;
+                        rdfs:comment "Phonogram Copyright Date" ;
                         skos:definition "Phonogram copyright date for a sound recording. Indicated by a \"p\" or a \"p\" in a circle." .
 
 
 #################################################################
 #    Classes
 #################################################################
+
+###  http://erlangen-crm.org/efrbroo/F31_Performance
+<http://erlangen-crm.org/efrbroo/F31_Performance> rdf:type owl:Class .
+
+
+###  http://id.loc.gov/ontologies/bibframe/Carrier
+<http://id.loc.gov/ontologies/bibframe/Carrier> rdf:type owl:Class .
+
+
+###  http://id.loc.gov/ontologies/bibframe/EncodingFormat
+<http://id.loc.gov/ontologies/bibframe/EncodingFormat> rdf:type owl:Class .
+
+
+###  http://id.loc.gov/ontologies/bibframe/Event
+<http://id.loc.gov/ontologies/bibframe/Event> rdf:type owl:Class .
+
+
+###  http://id.loc.gov/ontologies/bibframe/Identifier
+<http://id.loc.gov/ontologies/bibframe/Identifier> rdf:type owl:Class .
+
+
+###  http://id.loc.gov/ontologies/bibframe/PlayingSpeed
+<http://id.loc.gov/ontologies/bibframe/PlayingSpeed> rdf:type owl:Class .
+
+
+###  http://id.loc.gov/ontologies/bibframe/SoundCharacteristic
+<http://id.loc.gov/ontologies/bibframe/SoundCharacteristic> rdf:type owl:Class .
+
+
+###  http://id.loc.gov/ontologies/bibframe/TapeConfig
+<http://id.loc.gov/ontologies/bibframe/TapeConfig> rdf:type owl:Class .
+
+
+###  http://id.loc.gov/ontologies/bibframe/Work
+<http://id.loc.gov/ontologies/bibframe/Work> rdf:type owl:Class .
+
 
 ###  http://performedmusicontology.org/ontology/Audition
 :Audition rdf:type owl:Class ;
@@ -226,17 +378,27 @@
 
 ###  http://performedmusicontology.org/ontology/DeclaredMedium
 :DeclaredMedium rdf:type owl:Class ;
+                rdfs:label "Declared medium" ;
                 skos:definition "Intended overall medium of performance of a musical work, as declared by the composer, a reference source, or other source." .
 
 
 ###  http://performedmusicontology.org/ontology/DiscCutting
 :DiscCutting rdf:type owl:Class ;
              rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/SoundCharacteristic> ;
+             rdfs:label "Disc cutting process" ;
              skos:definition "Recording process in which a stylus cuts a vertical or lateral groove into an audio disc." .
+
+
+###  http://performedmusicontology.org/ontology/Discogs
+:Discogs rdf:type owl:Class ;
+         rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Identifier> ;
+         rdfs:label "Discogs ID" ;
+         skos:definition "Identifier from Discogs." .
 
 
 ###  http://performedmusicontology.org/ontology/DramaticRole
 :DramaticRole rdf:type owl:Class ;
+              rdfs:label "Dramatic role" ;
               skos:definition "Character of a performer in a dramatic work (e.g., an opera, play, video), e.g., \"Carmen\" in the opera or video \"Carmen\"." .
 
 
@@ -248,6 +410,7 @@
 
 ###  http://performedmusicontology.org/ontology/EventName
 :EventName rdf:type owl:Class ;
+           rdfs:label "Event name" ;
            skos:definition "Name given to an event." .
 
 
@@ -265,6 +428,7 @@
 
 ###  http://performedmusicontology.org/ontology/KeyMode
 :KeyMode rdf:type owl:Class ;
+         rdfs:label "Music key and mode" ;
          skos:definition "Key and mode of a music work when used in combination, e.g., C major, B-flat major." .
 
 
@@ -282,12 +446,14 @@
 
 ###  http://performedmusicontology.org/ontology/MediumOfPerformance
 :MediumOfPerformance rdf:type owl:Class ;
+                     rdfs:label "Medium of performance" ;
                      skos:definition "Instruments, voices, ensembles, choruses, and other participants (actors, dancers, etc.) required for, or performing in, an event or work, including electronics, computers, installations, etc." .
 
 
 ###  http://performedmusicontology.org/ontology/MediumPart
 :MediumPart rdf:type owl:Class ;
             rdfs:comment "Use with DeclaredMedium, PerformedMedium" ;
+            rdfs:label "Medium part" ;
             skos:definition "Medium of performance, type, etc., of a specific part of the declared or performed medium." .
 
 
@@ -299,11 +465,20 @@
 
 ###  http://performedmusicontology.org/ontology/Mode
 :Mode rdf:type owl:Class ;
+      rdfs:label "Music mode" ;
       skos:definition "Musical mode of a music work, e.g., Dorian, Dhaivata." .
+
+
+###  http://performedmusicontology.org/ontology/MusicBrainz
+:MusicBrainz rdf:type owl:Class ;
+             rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Identifier> ;
+             rdfs:label "MusicBrainz ID" ;
+             skos:definition "Identifier from MusicBrainz" .
 
 
 ###  http://performedmusicontology.org/ontology/MusicPart
 :MusicPart rdf:type owl:Class ;
+           rdfs:label "Music part" ;
            skos:definition "Specific element within an overall declared or performed medium, e.g., Violin 1, Trumpet 2." .
 
 
@@ -316,18 +491,21 @@
 ###  http://performedmusicontology.org/ontology/OpusNumber
 :OpusNumber rdf:type owl:Class ;
             rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Identifier> ;
+            rdfs:label "Opus number" ;
             skos:definition "Opus number for a   musical work, e.g. “45” of Op. 45. No. 1" .
 
 
 ###  http://performedmusicontology.org/ontology/OpusNumberPart
 :OpusNumberPart rdf:type owl:Class ;
                 rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Identifier> ;
+                rdfs:label "Opus number part" ;
                 skos:definition "Number for a   portion of an opus number, e.g., no. 1   of Op. 45, no. 1." .
 
 
 ###  http://performedmusicontology.org/ontology/OpusNumberStatement
 :OpusNumberStatement rdf:type owl:Class ;
                      rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Identifier> ;
+                     rdfs:label "Opus number statement" ;
                      skos:definition "Statement about the opus number for a musical work." .
 
 
@@ -340,6 +518,7 @@
 
 ###  http://performedmusicontology.org/ontology/PerformedMedium
 :PerformedMedium rdf:type owl:Class ;
+                 rdfs:label "Performed medium" ;
                  skos:definition "The overall medium of performance used in the performance of a musical work. This may or may not be the same as the declared medium of performance." .
 
 
@@ -355,44 +534,66 @@
            skos:definition "Event in which a performer or group of performers prepare for a performance in a concert." .
 
 
+###  http://performedmusicontology.org/ontology/RismNumber
+:RismNumber rdf:type owl:Class ;
+            rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Identifier> ;
+            rdfs:label "RISM number" ;
+            skos:definition "Number from the Repertoire Internationale des Sources Musicales (RISM) online version." .
+
+
 ###  http://performedmusicontology.org/ontology/Tempo
 :Tempo rdf:type owl:Class ;
+       rdfs:label "Tempo" ;
        skos:definition "The speed or pace of a music work, whether declared (in a score) or performed." .
 
 
 ###  http://performedmusicontology.org/ontology/ThematicCatalogNumber
 :ThematicCatalogNumber rdf:type owl:Class ;
                        rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Identifier> ;
+                       rdfs:label "Thematic catalog number" ;
                        skos:definition "Numeric or alphanumericdesignation of a   musical work as found in a thematic index for the composer." .
 
 
 ###  http://performedmusicontology.org/ontology/ThematicCatalogPrefix
 :ThematicCatalogPrefix rdf:type owl:Class ;
                        rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Identifier> ;
+                       rdfs:label "Thematic catalog prefix" ;
                        skos:definition "Prefix assigned to a   thematic catalog number denoting thework from which the number originated, e.g., BWV for Bach, M.S. for Paganini." .
 
 
 ###  http://performedmusicontology.org/ontology/ThematicCatalogStatement
 :ThematicCatalogStatement rdf:type owl:Class ;
                           rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Identifier> ;
+                          rdfs:label "Thematic catalog number statement" ;
                           skos:definition "Statement about the thematic catalog number for a musical work." .
 
 
 ###  http://performedmusicontology.org/ontology/TonalCenter
 :TonalCenter rdf:type owl:Class ;
+             rdfs:label "Tonal center" ;
              skos:definition "The tonal center of a music work, without mode, e.g., D, C##." .
 
 
 ###  http://performedmusicontology.org/ontology/VideogamePlatformIdentifier
 :VideogamePlatformIdentifier rdf:type owl:Class ;
                              rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Identifier> ;
+                             rdfs:label "Videogame platform identifier" ;
                              skos:definition "Identifier assigned to a video game platform, e.g., CUSA 54321 (a PlayStation 4 number)." .
 
 
 ###  http://performedmusicontology.org/ontology/WorkComponent
 :WorkComponent rdf:type owl:Class ;
                rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Work> ;
+               rdfs:label "Work component" ;
                skos:definition "A work that is an integral part of another work, even when separated from it, e.g., a movement of a symphony, a chapter of a novel." .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+skos:Concept rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+skos:ConceptScheme rdf:type owl:Class .
 
 
 #################################################################
@@ -753,7 +954,6 @@
 ###  http://rdaregistry.info/termList/RDACarrierType/1003
 <http://rdaregistry.info/termList/RDACarrierType/1003> rdf:type owl:NamedIndividual ,
                                                                 skos:Concept ;
-                                                       skos:inScheme <http://rdaregistry.info/termList/RDACarrierType> ;
                                                        rdakit:toolkitDefinition "A carrier type consisting of a roller-shaped object on which sound waves are incised or indented in a continuous circular groove."@en ,
                                                                                 "Bærertype, der består af et rulleformet genstand, hvorpå lydbølger er indskåret eller indtrykt i en uafbrudt cirkulær rille."@da ,
                                                                                 "Een rolvormig object waarop geluidsgolven worden ingesneden of ingesprongen in een continue cirkelvormige groef."@nl ,
@@ -791,6 +991,7 @@
                                                                        "Tipus de suport físic que consisteix en un objecte en forma de rotlle en el qual s’han gravat ones sonores per mitjà d’incisions o marques tot creant un solc circular continu."@ca ,
                                                                        "Type de support matériel qui consiste en un objet en forme de rouleau sur lequel des ondulations sonores ont été gravées au moyen d’une entaille ou d’empreintes en créant un sillon circulaire continu."@fr ,
                                                                        "通过刻痕或连续的螺旋式纹槽在其上记录声波的滚筒形物体，包括蜡滚筒、金属丝滚筒等。"@zh ;
+                                                       skos:inScheme <http://rdaregistry.info/termList/RDACarrierType> ;
                                                        skos:prefLabel "Phonographenzylinder"@de ,
                                                                       "audio cylinder"@en ,
                                                                       "audiocilinder"@nl ,
@@ -819,7 +1020,6 @@
 ###  http://rdaregistry.info/termList/RDACarrierType/1004
 <http://rdaregistry.info/termList/RDACarrierType/1004> rdf:type owl:NamedIndividual ,
                                                                 skos:Concept ;
-                                                       skos:inScheme <http://rdaregistry.info/termList/RDACarrierType> ;
                                                        rdakit:toolkitDefinition "A carrier type consisting of a disc on which sound waves, recorded as modulations, pulses, etc., are incised or indented in a continuous spiral groove."@en ,
                                                                                 "Bærertype, der består af en disc eller plade, hvorpå lydbølger optaget som modulationer, rytmer etc. er ridset eller indtrykt i en uafbrudt cirkulær rille."@da ,
                                                                                 "Disco en el que las ondas sonoras, registradas como modulaciones, pulsos, etc., se registraron mediante incisiones o muescas en un surco en espiral continua."@es ,
@@ -864,6 +1064,7 @@
                                                                        "Tipus de suport físic que consisteix en un disc en el qual s’han gravat ones sonores, enregistrades com a modulacions, impulsos, etc., per mitjà d’incisions o marques en un solc continu en espiral."@ca ,
                                                                        "Type de support matériel qui consiste en un disque sur lequel des ondulations sonores, enregistrées sous forme de modulations, d’impulsions, etc., ont été gravées au moyen d’une entaille ou d’empreintes en créant un sillon continu en spirale."@fr ,
                                                                        "通过刻痕或连续的螺旋式纹槽在其上将声波记录为音调、节奏等的盘片。"@zh ;
+                                                       skos:inScheme <http://rdaregistry.info/termList/RDACarrierType> ;
                                                        skos:narrower <http://performedmusicontology.org/45> ,
                                                                      <http://performedmusicontology.org/78recording> ,
                                                                      :CdAudio ,
@@ -891,7 +1092,6 @@
 ###  http://rdaregistry.info/termList/RDACarrierType/1006
 <http://rdaregistry.info/termList/RDACarrierType/1006> rdf:type owl:NamedIndividual ,
                                                                 skos:Concept ;
-                                                       skos:inScheme <http://rdaregistry.info/termList/RDACarrierType> ;
                                                        rdakit:toolkitDefinition "A carrier type consisting of a roll of paper on which musical notes are represented by perforations, designed to mechanically reproduce the music when used in a player piano, player organ, etc."@en ,
                                                                                 "Bærertype, der består af en papirrulle, hvorpå musiknoder repræsenteres af huller skabt til at gengive musikken mekanisk, når rullen bruges i et pianola, mekanisk klaver etc."@da ,
                                                                                 "Een rol papier waarop muzieknoten voorgesteld worden door perforaties, ontworpen om mechanisch de muziek weer te geven wanneer deze gebruikt wordt in een pianola e.d."@nl ,
@@ -936,6 +1136,7 @@
                                                                        "Tipus de suport físic que consisteix en un rotlle de paper sobre el qual es representen les notes musicals amb perforacions, concebut per reproduir la música mecànicament quan s’usa en una pianola, un orgue mecànic, etc."@ca ,
                                                                        "Type de support matériel qui consiste en un rouleau de papier sur lequel les notes de musique sont représentées par des perforations, destiné à reproduire mécaniquement la musique lorsqu’il est utilisé avec un piano mécanique, un orgue mécanique, etc."@fr ,
                                                                        "通过穿孔方式表示音符的纸卷，用于钢琴、风琴等时，以机械方式重现音乐。"@zh ;
+                                                       skos:inScheme <http://rdaregistry.info/termList/RDACarrierType> ;
                                                        skos:narrower :OrganRoll ,
                                                                      :PianoRoll ;
                                                        skos:prefLabel "Notenrolle"@de ,
@@ -959,7 +1160,6 @@
 ###  http://rdaregistry.info/termList/RDACarrierType/1007
 <http://rdaregistry.info/termList/RDACarrierType/1007> rdf:type owl:NamedIndividual ,
                                                                 skos:Concept ;
-                                                       skos:inScheme <http://rdaregistry.info/termList/RDACarrierType> ;
                                                        rdakit:toolkitDefinition "A carrier type consisting of a cassette containing an audiotape."@en ,
                                                                                 "Bærertype, der består af en kassette, der indeholder et lydbånd."@da ,
                                                                                 "Casete que contiene una cinta de audio."@es ,
@@ -997,6 +1197,7 @@
                                                                        "Tipus de suport físic que consisteix en una casset que conté una cinta àudio."@ca ,
                                                                        "Type de support matériel qui consiste en une cassette contenant une bande audio."@fr ,
                                                                        "装在双轴盒中的录音带。"@zh ;
+                                                       skos:inScheme <http://rdaregistry.info/termList/RDACarrierType> ;
                                                        skos:narrower :DAT ;
                                                        skos:prefLabel "Audiokassette"@de ,
                                                                       "audiocasete"@es ,
@@ -1017,7 +1218,6 @@
 ###  http://rdaregistry.info/termList/RDACarrierType/1060
 <http://rdaregistry.info/termList/RDACarrierType/1060> rdf:type owl:NamedIndividual ,
                                                                 skos:Concept ;
-                                                       skos:inScheme <http://rdaregistry.info/termList/RDACarrierType> ;
                                                        rdakit:toolkitDefinition "A carrier type consisting of a disc on which video signals, with or without sound, are recorded."@en ,
                                                                                 "Bærertype, der består af en disc, hvorpå der er optaget videosignaler med eller uden lyd."@da ,
                                                                                 "Disco sobre el que se han grabado señales de video, con o sin sonido."@es ,
@@ -1055,6 +1255,7 @@
                                                                        "Tipus de suport físic que consisteix en un disc en el qual hi ha enregistrats senyals de vídeo, amb o sense so."@ca ,
                                                                        "Type de support matériel qui consiste en un disque sur lequel des signaux vidéo, accompagnés ou non de son, sont enregistrés."@fr ,
                                                                        "记录视频信号的盘片，有无声音均可。"@zh ;
+                                                       skos:inScheme <http://rdaregistry.info/termList/RDACarrierType> ;
                                                        skos:narrower <http://performedmusicontology.org/Laserdisc> ,
                                                                      :DvdVideo ;
                                                        skos:prefLabel "Videodisk"@de ,
