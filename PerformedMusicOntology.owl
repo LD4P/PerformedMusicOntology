@@ -29,13 +29,19 @@
         <Class IRI="Audition"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="DvdVideo"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Mode"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="DvdVideo"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="http://performedmusicontology.org/FPM12"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="RPM16"/>
@@ -44,13 +50,16 @@
         <Class IRI="Concert"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="performanceOf"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="hasNumberOfHands"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="performanceOf"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="Sacd"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://rdaregistry.info/termList/RDACarrierType/1003"/>
@@ -68,6 +77,9 @@
         <ObjectProperty IRI="hasPerformance"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Event"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="http://performedmusicontology.org/solo"/>
     </Declaration>
     <Declaration>
@@ -80,7 +92,19 @@
         <NamedIndividual IRI="LP"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/SoundCharacteristic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasMode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasKeyMode"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="IPS15"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasTempo"/>
     </Declaration>
     <Declaration>
         <Class IRI="KeyMode"/>
@@ -92,10 +116,13 @@
         <NamedIndividual IRI="http://rdaregistry.info/termList/RDACarrierType/1004"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Rehearsal"/>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="RPM45"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Rehearsal"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="Vertical"/>
@@ -110,13 +137,19 @@
         <Class IRI="DeclaredMedium"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="http://id.loc.gov/ontologies/bibframe/date"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="DvdAudio"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://rdaregistry.info/termList/RDACarrierType/1060"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Identifier"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="RPM33"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://rdaregistry.info/termList/RDACarrierType/1060"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="AAC"/>
@@ -131,25 +164,34 @@
         <Class IRI="ConcertTour"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="hasEventName"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="hasMediumPart"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasEventName"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:inScheme"/>
     </Declaration>
     <Declaration>
         <Class IRI="OpusNumberStatement"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasDramaticRole"/>
+        <ObjectProperty IRI="http://id.loc.gov/ontologies/bibframe/eventContent"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="obligato"/>
     </Declaration>
     <Declaration>
-        <Class IRI="EnsembleMediumOfPerformance"/>
+        <ObjectProperty IRI="hasDramaticRole"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasMusicPart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="EnsembleMediumOfPerformance"/>
     </Declaration>
     <Declaration>
         <Class IRI="OpusNumber"/>
@@ -176,25 +218,28 @@
         <NamedIndividual IRI="OrganRoll"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="EpRecord"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="SixteenTrack"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasMedium"/>
+        <NamedIndividual IRI="EpRecord"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasRecording"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="hasMedium"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="DiscCutting"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://performedmusicontology.org/45"/>
+        <Class IRI="http://erlangen-crm.org/efrbroo/F31_Performance"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="MP3"/>
+        <ObjectProperty IRI="composedOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://performedmusicontology.org/45"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="hasPerformerCount"/>
@@ -203,16 +248,19 @@
         <NamedIndividual IRI="http://performedmusicontology.org/optional"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="MP3"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="WorkComponent"/>
     </Declaration>
     <Declaration>
         <Class IRI="ThematicCatalogStatement"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasDoublingMediumOfPerformance"/>
+        <Class IRI="OpusNumberPart"/>
     </Declaration>
     <Declaration>
-        <Class IRI="OpusNumberPart"/>
+        <ObjectProperty IRI="hasDoublingMediumOfPerformance"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="IPS.9"/>
@@ -224,13 +272,19 @@
         <NamedIndividual IRI="CdAudio"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:broader"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="hasDistinctPartCount"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="amplified"/>
+        <NamedIndividual IRI="http://rdaregistry.info/termList/RDACarrierType"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://rdaregistry.info/termList/RDACarrierType"/>
+        <Class abbreviatedIRI="skos:Concept"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="amplified"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://rdaregistry.info/termList/RDACarrierType/1007"/>
@@ -239,13 +293,28 @@
         <Class IRI="OpenMicPerformance"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/TapeConfig"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="MasterClass"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="DAT"/>
+        <Class IRI="RismNumber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Work"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasTonalCenter"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="skos:ConceptScheme"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="TwelveTrack"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="DAT"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="IPS3.75"/>
@@ -257,7 +326,13 @@
         <DataProperty IRI="phonogramCopyrightDate"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="http://performedmusicontology.org/offstage"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="createdFor"/>
@@ -275,25 +350,34 @@
         <ObjectProperty IRI="hasMediumOfPerformance"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Ceremony"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="BenefitConcert"/>
     </Declaration>
     <Declaration>
         <Class IRI="MediumOfPerformance"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Ceremony"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="VideogamePlatformIdentifier"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="LateralCut"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="QuarterTrack"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="LateralCut"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="FullTrack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MusicBrainz"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
     </Declaration>
     <Declaration>
         <Class IRI="EventName"/>
@@ -311,7 +395,13 @@
         <DataProperty IRI="hasEnsembleCount"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty abbreviatedIRI="regap:identifier"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="RPM8"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/EncodingFormat"/>
     </Declaration>
     <Declaration>
         <Class IRI="RecordingSession"/>
@@ -321,6 +411,12 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://performedmusicontology.org/78recording"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Discogs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://id.loc.gov/ontologies/bibframe/eventContentOf"/>
     </Declaration>
     <Declaration>
         <Class IRI="Performance"/>
@@ -338,13 +434,16 @@
         <NamedIndividual IRI="http://performedmusicontology.org/Laserdisc"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="hasInspiration"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasCompiledWork"/>
+        <NamedIndividual IRI="http://rdaregistry.info/termList/RDACarrierType/1006"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://rdaregistry.info/termList/RDACarrierType/1006"/>
+        <ObjectProperty IRI="hasCompiledWork"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="hasRequiredPerformerCount"/>
@@ -353,82 +452,7 @@
         <NamedIndividual IRI="MPS1.4"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://erlangen-crm.org/efrbroo/F31_Performance"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://id.loc.gov/ontologies/bibframe/Identifier"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://id.loc.gov/ontologies/bibframe/Event"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="regap:identifier"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://id.loc.gov/ontologies/bibframe/Carrier"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://id.loc.gov/ontologies/bibframe/EncodingFormat"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://id.loc.gov/ontologies/bibframe/eventContentOf"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="skos:ConceptScheme"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://id.loc.gov/ontologies/bibframe/Work"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dc:title"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://id.loc.gov/ontologies/bibframe/date"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="skos:Concept"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://id.loc.gov/ontologies/bibframe/eventContent"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
-    </Declaration>
-    <Declaration>
         <AnnotationProperty abbreviatedIRI="skos:narrower"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://id.loc.gov/ontologies/bibframe/SoundCharacteristic"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="rdakit:toolkitDefinition"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://id.loc.gov/ontologies/bibframe/TapeConfig"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="skos:scopeNote"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="skos:inScheme"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="skos:broader"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="rdakit:toolkitLabel"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="Audition"/>
@@ -463,6 +487,10 @@
         <Class IRI="http://id.loc.gov/ontologies/bibframe/SoundCharacteristic"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="Discogs"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="EnsembleMediumOfPerformance"/>
         <Class IRI="MediumOfPerformance"/>
     </SubClassOf>
@@ -481,6 +509,10 @@
     <SubClassOf>
         <Class IRI="MasterClass"/>
         <Class IRI="http://id.loc.gov/ontologies/bibframe/Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MusicBrainz"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Identifier"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="OpenMicPerformance"/>
@@ -513,6 +545,10 @@
     <SubClassOf>
         <Class IRI="Rehearsal"/>
         <Class IRI="http://id.loc.gov/ontologies/bibframe/Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="RismNumber"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Identifier"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ThematicCatalogNumber"/>
@@ -756,7 +792,7 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasMediumPartType"/>
-        <ObjectProperty IRI="hasMusicPart"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasPerformance"/>
@@ -846,6 +882,10 @@
         <Class IRI="DramaticRole"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="hasKeyMode"/>
+        <Class IRI="KeyMode"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="hasMediumOfPerformance"/>
         <Class IRI="MediumOfPerformance"/>
     </ObjectPropertyRange>
@@ -858,6 +898,10 @@
         <Class IRI="MediumPartType"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="hasMode"/>
+        <Class IRI="Mode"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="hasMusicPart"/>
         <Class IRI="MusicPart"/>
     </ObjectPropertyRange>
@@ -868,6 +912,14 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasRecording"/>
         <Class IRI="http://id.loc.gov/ontologies/bibframe/Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasTempo"/>
+        <Class IRI="Tempo"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasTonalCenter"/>
+        <Class IRI="TonalCenter"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="performanceOf"/>
@@ -1072,14 +1124,39 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sony&apos;s proprietary Digital Audio Tape format, characterized by magnetic media enclosed in a protective shell, with the dimensions of 8 x 6 cm, 4 mm tape or 2 7/8 x 2 1/8 in., 1/8 in. tape</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DeclaredMedium</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Declared medium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>DeclaredMedium</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Intended overall medium of performance of a musical work, as declared by the composer, a reference source, or other source.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DiscCutting</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Disc cutting process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>DiscCutting</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Recording process in which a stylus cuts a vertical or lateral groove into an audio disc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Discogs</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Discogs ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>Discogs</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifier from Discogs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DramaticRole</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Dramatic role</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
@@ -1165,6 +1242,11 @@
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>EpRecord</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A music disc that contains more tracks than a single but not as many as on a typical album/LP/disc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>EventName</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event name</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
@@ -1317,6 +1399,11 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Individual musical instrument, voice, or other object used as a medium of performance (e.g., flute, keyboards, pi pa, drinking glass, typewriter).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>KeyMode</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Music key and mode</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>KeyMode</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Key and mode of a music work when used in combination, e.g., C major, B-flat major.</Literal>
@@ -1382,6 +1469,11 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event in which a recognized performer critiques the performances of one or more other performers.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MediumOfPerformance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Medium of performance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>MediumOfPerformance</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Instruments, voices, ensembles, choruses, and other participants (actors, dancers, etc.) required for, or performing in, an event or work, including electronics, computers, installations, etc.</Literal>
@@ -1390,6 +1482,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>MediumPart</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Use with DeclaredMedium, PerformedMedium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MediumPart</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Medium part</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
@@ -1407,9 +1504,29 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specific role or type of a medium part, e.g., solo, ad lib, optional, offstage, amplified</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Mode</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Music mode</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>Mode</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Musical mode of a music work, e.g., Dorian, Dhaivata.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MusicBrainz</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MusicBrainz ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>MusicBrainz</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifier from MusicBrainz</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MusicPart</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Music part</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
@@ -1422,14 +1539,29 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Live performance at a coffee house, night club, or other venue by amateur performers.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>OpusNumber</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Opus number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>OpusNumber</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Opus number for a   musical work, e.g. “45” of Op. 45. No. 1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>OpusNumberPart</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Opus number part</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>OpusNumberPart</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Number for a   portion of an opus number, e.g., no. 1   of Op. 45, no. 1.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>OpusNumberStatement</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Opus number statement</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
@@ -1455,6 +1587,11 @@
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>Performance</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event in which a performer or group of performers present a work to an audience or in a recording studio.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>PerformedMedium</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Performed medium</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
@@ -1573,6 +1710,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>RismNumber</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">RISM number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>RismNumber</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Number from the Repertoire Internationale des Sources Musicales (RISM) online version.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Sacd</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SACD</Literal>
     </AnnotationAssertion>
@@ -1602,9 +1749,19 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Magnetic tape divided into 16 audio tracks that run parallel with each other, on which sound and other electro-acoustic signals are captured.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Tempo</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tempo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>Tempo</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The speed or pace of a music work, whether declared (in a score) or performed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ThematicCatalogNumber</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Thematic catalog number</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
@@ -1612,14 +1769,29 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Numeric or alphanumericdesignation of a   musical work as found in a thematic index for the composer.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ThematicCatalogPrefix</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Thematic catalog prefix</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>ThematicCatalogPrefix</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Prefix assigned to a   thematic catalog number denoting thework from which the number originated, e.g., BWV for Bach, M.S. for Paganini.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ThematicCatalogStatement</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Thematic catalog number statement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>ThematicCatalogStatement</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Statement about the thematic catalog number for a musical work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>TonalCenter</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tonal center</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
@@ -1652,9 +1824,19 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Recording process in which a stylus cuts a vertical groove into a phonograph record.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>VideogamePlatformIdentifier</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Videogame platform identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>VideogamePlatformIdentifier</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifier assigned to a video game platform, e.g., CUSA 54321 (a PlayStation 4 number).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>WorkComponent</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Work component</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
@@ -1667,9 +1849,29 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">For mediums of performance marked &quot;amplified&quot; in a score or otherwise.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>associatedWith</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">associated with</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>associatedWith</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event or Work that is associated in a general way with another event or work, instance or item, e.g., the Bible used at a presidential inauguration.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>composedOf</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">composed of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>composedOf</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Portion of a multi-level identifier, such as a prefix, e.g., BWV of BWV 464, or a hierarchical number, e.g., 2, of op. 45, no. 2.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>createdFor</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">created for</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
@@ -1677,9 +1879,19 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event a work is created for, e.g., a motet celebrating the inauguration of a pope.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasCompiledWork</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has Compiled Work</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>hasCompiledWork</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Property connecting a bf:Work or its subclasses to a bf:Work that is exactly the same except that it is in an instance of a compilation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasDistinctPartCount</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has Distinct Part Count</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
@@ -1687,9 +1899,19 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Number of distinct music parts in a performed or declared medium, or medium part that is not a named ensemble, e.g, a performed work for 2 flutes and bassoon has a count of “3”.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasDoublingMediumOfPerformance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has Doubling Medium of Performance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>hasDoublingMediumOfPerformance</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">2 (or more) mediums of performance intended to be performed alternately by a single performer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasDramaticRole</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has Dramatic Role</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
@@ -1697,9 +1919,19 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Property connecting a bf:Contribution to the character of a performer in a dramatic work (e.g., an opera, play, video), e.g., &quot;Carmen&quot; in the opera or video &quot;Carmen&quot;.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasEnsembleCount</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has Ensemble Count</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>hasEnsembleCount</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Number of named ensembles in a specified declared or performed medium, e.g., a string quartet has a count of “1”; a jazz combo has a count of “1”; a work for 2 choruses and orchestra has a count of “3”.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasEventName</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has Event Name</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
@@ -1707,9 +1939,29 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Name of an event, whether formal or created for metadata purposes</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasInspiration</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has as Inspiration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>hasInspiration</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event that inspired the creation of a work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasKeyMode</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has Key and Mode</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>hasKeyMode</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Property linking Work to KeyMode.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasMedium</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has Medium</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
@@ -1717,9 +1969,19 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Property that links a Work or Performance to the declared or performed medium.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasMediumOfPerformance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has Medium Of Performance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>hasMediumOfPerformance</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specific medium of performance, e.g., bass guitar.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasMediumPart</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has Medium Part</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
@@ -1727,9 +1989,29 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specific element within an overall declared or performed medium, e.g., er hu, mixed chorus.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasMediumPartType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has Medium Part Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>hasMediumPartType</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Property that links a a pmo:MediumPart to a specific role or type of part, e.g., solo, ad lib, optional, offstage, amplified.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasMode</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has Mode</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>hasMode</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Property linking Work to Mode.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasMusicPart</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has Music Part</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
@@ -1737,9 +2019,19 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Property linking MediumPart or bf:Contribution to the specific music parts within a single medium part e.g., Violin 1, Clarinet 2.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasNumberOfHands</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has Number of Hands</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>hasNumberOfHands</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Number of hands required for performance in works where more than one performer shares an instrument (e.g., piano, 4 hands) or where an atypical number of hands is specified (e.g., viola, 1 hand).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasPerformance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has Performance</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
@@ -1747,9 +2039,19 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event that is a performance of a work</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasPerformerCount</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has Performer Count</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>hasPerformerCount</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Actual number of performers participating in a performed music event or work, e.g., a quartet for 4 serpents, performed by 8 bassoons, has a count of &quot;8&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasRecording</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has Recording</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
@@ -1757,9 +2059,34 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Audio or video work created from the recording of event content.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasRequiredPerformerCount</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has Suggested Performer Count</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>hasRequiredPerformerCount</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Minimum or suggested number of performers required to perform a declared medium, e.g., a work for a percussion ensemble for 3 performers has a a count of “3”.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasTempo</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has Tempo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasTonalCenter</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has Tonal Center</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>hasTonalCenter</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Property linking Work to Tonal Center</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>inspirationFor</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Inspiration for</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
@@ -1777,14 +2104,29 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">For mediums of performance marked &quot;obligato&quot; in a score or otherwise.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>performanceOf</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Performance of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>performanceOf</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Work that is realized through a performance.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>phonogramCopyrightDate</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Phonogram Copyright Date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>phonogramCopyrightDate</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Phonogram copyright date for a sound recording. Indicated by a &quot;p&quot; or a &quot;p&quot; in a circle.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>recordingOf</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Recording of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
