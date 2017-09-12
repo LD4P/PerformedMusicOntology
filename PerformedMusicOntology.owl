@@ -415,6 +415,14 @@
     
 
 
+    <!-- http://performedmusicontology.org/ontology/hasOrder -->
+
+    <owl:DatatypeProperty rdf:about="http://performedmusicontology.org/ontology/hasOrder">
+        <rdfs:comment>Order a compiled work has in a compilation.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://performedmusicontology.org/ontology/hasPerformerCount -->
 
     <owl:DatatypeProperty rdf:about="http://performedmusicontology.org/ontology/hasPerformerCount">
@@ -429,6 +437,14 @@
     <owl:DatatypeProperty rdf:about="http://performedmusicontology.org/ontology/hasRequiredPerformerCount">
         <rdfs:comment>has Suggested Performer Count</rdfs:comment>
         <skos:definition>Minimum or suggested number of performers required to perform a declared medium, e.g., a work for a percussion ensemble for 3 performers has a a count of “3”.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/hasTrackNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://performedmusicontology.org/ontology/hasTrackNumber">
+        <rdfs:comment>Track number(s) of a compiled audio work on a sound recording.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
