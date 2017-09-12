@@ -79,6 +79,14 @@ skos:scopeNote rdf:type owl:AnnotationProperty .
 <http://id.loc.gov/ontologies/bibframe/relatedTo> rdf:type owl:ObjectProperty .
 
 
+###  http://performedmusicontology.org/ontology/asMemberOf
+:asMemberOf rdf:type owl:ObjectProperty ;
+            rdfs:domain <http://id.loc.gov/ontologies/bibframe/Contribution> ;
+            rdfs:range <http://id.loc.gov/ontologies/bibframe/Organization> ;
+            rdfs:label "as Member of" ;
+            skos:definition "Organization through which a person makes a contribution to a work or instance." .
+
+
 ###  http://performedmusicontology.org/ontology/associatedWith
 :associatedWith rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/relatedTo> ;
@@ -275,6 +283,11 @@ skos:scopeNote rdf:type owl:AnnotationProperty .
                   skos:definition "Number of hands required for performance in works where more than one performer shares an instrument (e.g., piano, 4 hands) or where an atypical number of hands is specified (e.g., viola, 1 hand)." .
 
 
+###  http://performedmusicontology.org/ontology/hasOrder
+:hasOrder rdf:type owl:DatatypeProperty ;
+          rdfs:comment "Order a compiled work has in a compilation." .
+
+
 ###  http://performedmusicontology.org/ontology/hasPerformerCount
 :hasPerformerCount rdf:type owl:DatatypeProperty ;
                    rdfs:comment "has Performer Count" ;
@@ -285,6 +298,11 @@ skos:scopeNote rdf:type owl:AnnotationProperty .
 :hasRequiredPerformerCount rdf:type owl:DatatypeProperty ;
                            rdfs:comment "has Suggested Performer Count" ;
                            skos:definition "Minimum or suggested number of performers required to perform a declared medium, e.g., a work for a percussion ensemble for 3 performers has a a count of “3”." .
+
+
+###  http://performedmusicontology.org/ontology/hasTrackNumber
+:hasTrackNumber rdf:type owl:DatatypeProperty ;
+                rdfs:comment "Track number(s) of a compiled audio work on a sound recording." .
 
 
 ###  http://performedmusicontology.org/ontology/phonogramCopyrightDate
@@ -306,6 +324,10 @@ skos:scopeNote rdf:type owl:AnnotationProperty .
 <http://id.loc.gov/ontologies/bibframe/Carrier> rdf:type owl:Class .
 
 
+###  http://id.loc.gov/ontologies/bibframe/Contribution
+<http://id.loc.gov/ontologies/bibframe/Contribution> rdf:type owl:Class .
+
+
 ###  http://id.loc.gov/ontologies/bibframe/EncodingFormat
 <http://id.loc.gov/ontologies/bibframe/EncodingFormat> rdf:type owl:Class .
 
@@ -316,6 +338,10 @@ skos:scopeNote rdf:type owl:AnnotationProperty .
 
 ###  http://id.loc.gov/ontologies/bibframe/Identifier
 <http://id.loc.gov/ontologies/bibframe/Identifier> rdf:type owl:Class .
+
+
+###  http://id.loc.gov/ontologies/bibframe/Organization
+<http://id.loc.gov/ontologies/bibframe/Organization> rdf:type owl:Class .
 
 
 ###  http://id.loc.gov/ontologies/bibframe/PlayingSpeed
