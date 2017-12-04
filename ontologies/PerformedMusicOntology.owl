@@ -191,7 +191,6 @@
     <!-- http://performedmusicontology.org/ontology/hasDramaticRole -->
 
     <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/hasDramaticRole">
-        <rdfs:range rdf:resource="http://performedmusicontology.org/ontology/DramaticRole"/>
         <rdfs:label>has Dramatic Role</rdfs:label>
         <skos:definition>Property connecting a bf:Contribution to the character of a performer in a dramatic work (e.g., an opera, play, video), e.g., &quot;Carmen&quot; in the opera or video &quot;Carmen&quot;.</skos:definition>
     </owl:ObjectProperty>
@@ -223,7 +222,6 @@
     <!-- http://performedmusicontology.org/ontology/hasKeyMode -->
 
     <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/hasKeyMode">
-        <rdfs:range rdf:resource="http://performedmusicontology.org/ontology/KeyMode"/>
         <rdfs:label>has Key and Mode</rdfs:label>
         <skos:definition>Property linking Work to KeyMode.</skos:definition>
     </owl:ObjectProperty>
@@ -243,7 +241,6 @@
     <!-- http://performedmusicontology.org/ontology/hasMediumOfPerformance -->
 
     <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/hasMediumOfPerformance">
-        <rdfs:range rdf:resource="http://performedmusicontology.org/ontology/MediumOfPerformance"/>
         <rdfs:label>has Medium Of Performance</rdfs:label>
         <skos:definition>Specific medium of performance, e.g., bass guitar.</skos:definition>
     </owl:ObjectProperty>
@@ -275,7 +272,6 @@
     <!-- http://performedmusicontology.org/ontology/hasMode -->
 
     <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/hasMode">
-        <rdfs:range rdf:resource="http://performedmusicontology.org/ontology/Mode"/>
         <rdfs:label>has Mode</rdfs:label>
         <skos:definition>Property linking Work to Mode.</skos:definition>
     </owl:ObjectProperty>
@@ -285,7 +281,6 @@
     <!-- http://performedmusicontology.org/ontology/hasMusicPart -->
 
     <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/hasMusicPart">
-        <rdfs:range rdf:resource="http://performedmusicontology.org/ontology/MusicPart"/>
         <rdfs:label>has Music Part</rdfs:label>
         <skos:definition>Property linking MediumPart or bf:Contribution to the specific music parts within a single medium part e.g., Violin 1, Clarinet 2.</skos:definition>
     </owl:ObjectProperty>
@@ -321,7 +316,6 @@
     <!-- http://performedmusicontology.org/ontology/hasTempo -->
 
     <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/hasTempo">
-        <rdfs:range rdf:resource="http://performedmusicontology.org/ontology/Tempo"/>
         <rdfs:label>has Tempo</rdfs:label>
     </owl:ObjectProperty>
     
@@ -330,7 +324,6 @@
     <!-- http://performedmusicontology.org/ontology/hasTonalCenter -->
 
     <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/hasTonalCenter">
-        <rdfs:range rdf:resource="http://performedmusicontology.org/ontology/TonalCenter"/>
         <rdfs:label>has Tonal Center</rdfs:label>
         <skos:definition>Property linking Work to Tonal Center</skos:definition>
     </owl:ObjectProperty>
@@ -933,28 +926,6 @@
     
 
 
-    <!-- http://performedmusicontology.org/FPM12 -->
-
-    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/FPM12">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
-        <rdfs:comment>Traditional way of describing the speed of audio cylinders.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</rdfs:label>
-        <skos:definition>Playing speed of 12 feet per minute x 10.</skos:definition>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://performedmusicontology.org/Laserdisc -->
-
-    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/Laserdisc">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
-        <rdfs:label>Laser disc</rdfs:label>
-        <skos:broader rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1060"/>
-        <skos:definition>Optical video disc, 30 cm (12 in.) in diameter. It was the first commercial optical disc storage medium.</skos:definition>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://performedmusicontology.org/adLib -->
 
     <owl:NamedIndividual rdf:about="http://performedmusicontology.org/adLib">
@@ -992,28 +963,6 @@
         <rdf:type rdf:resource="http://performedmusicontology.org/ontology/MediumPartType"/>
         <rdfs:label>solo</rdfs:label>
         <skos:definition>For mediums of performance marked &quot;solo&quot; in a score or is clearly a solo part in the context of the work, e.g., a concerto for oboe and orchestra.</skos:definition>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://performedmusicontology.org/45 -->
-
-    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/45">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
-        <rdfs:label>45 recording</rdfs:label>
-        <skos:broader rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1004"/>
-        <skos:definition>Colloquial term representing 7&quot; diameter vinyl audio discs with a playing speed of 45 rpm. The term does not necessarily accurately describe the carrier.</skos:definition>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://performedmusicontology.org/78recording -->
-
-    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/78recording">
-        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
-        <rdfs:label>78 recording</rdfs:label>
-        <skos:broader rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1004"/>
-        <skos:definition>Colloquial term representing audio discs from the 78 rpm disc era, with actual playing speeds ranging from around 60 rpm to 130 rpm.The term does not necessarily accurately describe the carrier.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -1056,6 +1005,28 @@
         <rdfs:label>DAT (Digital Audio Tape)</rdfs:label>
         <skos:broader rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1007"/>
         <skos:definition>Sony&apos;s proprietary Digital Audio Tape format, characterized by magnetic media enclosed in a protective shell, with the dimensions of 8 x 6 cm, 4 mm tape or 2 7/8 x 2 1/8 in., 1/8 in. tape</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/Disc45 -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/Disc45">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <rdfs:label>45 recording</rdfs:label>
+        <skos:broader rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1004"/>
+        <skos:definition>Colloquial term representing 7&quot; diameter vinyl audio discs with a playing speed of 45 rpm. The term does not necessarily describe the carrier accurately.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/Disc78 -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/Disc78">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
+        <rdfs:label>78 recording</rdfs:label>
+        <skos:broader rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1004"/>
+        <skos:definition>Colloquial term representing audio discs from the 78 rpm disc era with playing speeds ranging from around 60 rpm to 130 rpm. The term does not necessarily describe the carrier accurately.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -1121,6 +1092,16 @@
         <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/EncodingFormat"/>
         <rdfs:label>FLAC</rdfs:label>
         <skos:definition>Free Lossless Audio Codec, an open audio coding format for lossless compression of digital audio.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/FPM12 -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/FPM12">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PlayingSpeed"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</rdfs:label>
+        <skos:definition>Playing speed of 12 feet per minute x 10.</skos:definition>
     </owl:NamedIndividual>
     
 
@@ -1229,6 +1210,14 @@
         <rdfs:label>LP/Vinyl</rdfs:label>
         <skos:broader rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1004"/>
         <skos:definition>Colloquial term representing 12&quot; diameter vinyl audio discs with a playing speed of 33 1/3 rpm. The term does not necessarily accurately describe the carrier.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://performedmusicontology.org/ontology/Laserdisc -->
+
+    <owl:NamedIndividual rdf:about="http://performedmusicontology.org/ontology/Laserdisc">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Carrier"/>
     </owl:NamedIndividual>
     
 
@@ -1540,8 +1529,6 @@
         <skos:definition xml:lang="fr">Type de support matériel qui consiste en un disque sur lequel des ondulations sonores, enregistrées sous forme de modulations, d’impulsions, etc., ont été gravées au moyen d’une entaille ou d’empreintes en créant un sillon continu en spirale.</skos:definition>
         <skos:definition xml:lang="zh">通过刻痕或连续的螺旋式纹槽在其上将声波记录为音调、节奏等的盘片。</skos:definition>
         <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
-        <skos:narrower rdf:resource="http://performedmusicontology.org/45"/>
-        <skos:narrower rdf:resource="http://performedmusicontology.org/78recording"/>
         <skos:narrower rdf:resource="http://performedmusicontology.org/ontology/CdAudio"/>
         <skos:narrower rdf:resource="http://performedmusicontology.org/ontology/DvdAudio"/>
         <skos:narrower rdf:resource="http://performedmusicontology.org/ontology/EnhancedCdAudio"/>
@@ -1740,7 +1727,6 @@
         <skos:definition xml:lang="fr">Type de support matériel qui consiste en un disque sur lequel des signaux vidéo, accompagnés ou non de son, sont enregistrés.</skos:definition>
         <skos:definition xml:lang="zh">记录视频信号的盘片，有无声音均可。</skos:definition>
         <skos:inScheme rdf:resource="http://rdaregistry.info/termList/RDACarrierType"/>
-        <skos:narrower rdf:resource="http://performedmusicontology.org/Laserdisc"/>
         <skos:narrower rdf:resource="http://performedmusicontology.org/ontology/DvdVideo"/>
         <skos:prefLabel xml:lang="de">Videodisk</skos:prefLabel>
         <skos:prefLabel xml:lang="ca">videodisc</skos:prefLabel>

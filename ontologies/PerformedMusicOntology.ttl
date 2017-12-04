@@ -127,7 +127,6 @@ skos:scopeNote rdf:type owl:AnnotationProperty .
 
 ###  http://performedmusicontology.org/ontology/hasDramaticRole
 :hasDramaticRole rdf:type owl:ObjectProperty ;
-                 rdfs:range :DramaticRole ;
                  rdfs:label "has Dramatic Role" ;
                  skos:definition "Property connecting a bf:Contribution to the character of a performer in a dramatic work (e.g., an opera, play, video), e.g., \"Carmen\" in the opera or video \"Carmen\"." .
 
@@ -150,7 +149,6 @@ skos:scopeNote rdf:type owl:AnnotationProperty .
 
 ###  http://performedmusicontology.org/ontology/hasKeyMode
 :hasKeyMode rdf:type owl:ObjectProperty ;
-            rdfs:range :KeyMode ;
             rdfs:label "has Key and Mode" ;
             skos:definition "Property linking Work to KeyMode." .
 
@@ -164,7 +162,6 @@ skos:scopeNote rdf:type owl:AnnotationProperty .
 
 ###  http://performedmusicontology.org/ontology/hasMediumOfPerformance
 :hasMediumOfPerformance rdf:type owl:ObjectProperty ;
-                        rdfs:range :MediumOfPerformance ;
                         rdfs:label "has Medium Of Performance" ;
                         skos:definition "Specific medium of performance, e.g., bass guitar." .
 
@@ -187,14 +184,12 @@ skos:scopeNote rdf:type owl:AnnotationProperty .
 
 ###  http://performedmusicontology.org/ontology/hasMode
 :hasMode rdf:type owl:ObjectProperty ;
-         rdfs:range :Mode ;
          rdfs:label "has Mode" ;
          skos:definition "Property linking Work to Mode." .
 
 
 ###  http://performedmusicontology.org/ontology/hasMusicPart
 :hasMusicPart rdf:type owl:ObjectProperty ;
-              rdfs:range :MusicPart ;
               rdfs:label "has Music Part" ;
               skos:definition "Property linking MediumPart or bf:Contribution to the specific music parts within a single medium part e.g., Violin 1, Clarinet 2." .
 
@@ -221,13 +216,11 @@ skos:scopeNote rdf:type owl:AnnotationProperty .
 
 ###  http://performedmusicontology.org/ontology/hasTempo
 :hasTempo rdf:type owl:ObjectProperty ;
-          rdfs:range :Tempo ;
           rdfs:label "has Tempo" .
 
 
 ###  http://performedmusicontology.org/ontology/hasTonalCenter
 :hasTonalCenter rdf:type owl:ObjectProperty ;
-                rdfs:range :TonalCenter ;
                 rdfs:label "has Tonal Center" ;
                 skos:definition "Property linking Work to Tonal Center" .
 
@@ -626,22 +619,6 @@ skos:ConceptScheme rdf:type owl:Class .
 #    Individuals
 #################################################################
 
-###  http://performedmusicontology.org/FPM12
-<http://performedmusicontology.org/FPM12> rdf:type owl:NamedIndividual ,
-                                                   <http://id.loc.gov/ontologies/bibframe/PlayingSpeed> ;
-                                          rdfs:comment "Traditional way of describing the speed of audio cylinders." ;
-                                          rdfs:label 120 ;
-                                          skos:definition "Playing speed of 12 feet per minute x 10." .
-
-
-###  http://performedmusicontology.org/Laserdisc
-<http://performedmusicontology.org/Laserdisc> rdf:type owl:NamedIndividual ,
-                                                       <http://id.loc.gov/ontologies/bibframe/Carrier> ;
-                                              rdfs:label "Laser disc" ;
-                                              skos:broader <http://rdaregistry.info/termList/RDACarrierType/1060> ;
-                                              skos:definition "Optical video disc, 30 cm (12 in.) in diameter. It was the first commercial optical disc storage medium." .
-
-
 ###  http://performedmusicontology.org/adLib
 <http://performedmusicontology.org/adLib> rdf:type owl:NamedIndividual ,
                                                    :MediumPartType ;
@@ -669,22 +646,6 @@ skos:ConceptScheme rdf:type owl:Class .
                                                   :MediumPartType ;
                                          rdfs:label "solo" ;
                                          skos:definition "For mediums of performance marked \"solo\" in a score or is clearly a solo part in the context of the work, e.g., a concerto for oboe and orchestra." .
-
-
-###  http://performedmusicontology.org/45
-<http://performedmusicontology.org/45> rdf:type owl:NamedIndividual ,
-                                                <http://id.loc.gov/ontologies/bibframe/Carrier> ;
-                                       rdfs:label "45 recording" ;
-                                       skos:broader <http://rdaregistry.info/termList/RDACarrierType/1004> ;
-                                       skos:definition "Colloquial term representing 7\" diameter vinyl audio discs with a playing speed of 45 rpm. The term does not necessarily accurately describe the carrier." .
-
-
-###  http://performedmusicontology.org/78recording
-<http://performedmusicontology.org/78recording> rdf:type owl:NamedIndividual ,
-                                                         <http://id.loc.gov/ontologies/bibframe/Carrier> ;
-                                                rdfs:label "78 recording" ;
-                                                skos:broader <http://rdaregistry.info/termList/RDACarrierType/1004> ;
-                                                skos:definition "Colloquial term representing audio discs from the 78 rpm disc era, with actual playing speeds ranging from around 60 rpm to 130 rpm.The term does not necessarily accurately describe the carrier." .
 
 
 ###  http://performedmusicontology.org/ontology/AAC
@@ -715,6 +676,22 @@ skos:ConceptScheme rdf:type owl:Class .
      rdfs:label "DAT (Digital Audio Tape)" ;
      skos:broader <http://rdaregistry.info/termList/RDACarrierType/1007> ;
      skos:definition "Sony's proprietary Digital Audio Tape format, characterized by magnetic media enclosed in a protective shell, with the dimensions of 8 x 6 cm, 4 mm tape or 2 7/8 x 2 1/8 in., 1/8 in. tape" .
+
+
+###  http://performedmusicontology.org/ontology/Disc45
+:Disc45 rdf:type owl:NamedIndividual ,
+                 <http://id.loc.gov/ontologies/bibframe/Carrier> ;
+        rdfs:label "45 recording" ;
+        skos:broader <http://rdaregistry.info/termList/RDACarrierType/1004> ;
+        skos:definition "Colloquial term representing 7\" diameter vinyl audio discs with a playing speed of 45 rpm. The term does not necessarily describe the carrier accurately." .
+
+
+###  http://performedmusicontology.org/ontology/Disc78
+:Disc78 rdf:type owl:NamedIndividual ,
+                 <http://id.loc.gov/ontologies/bibframe/Carrier> ;
+        rdfs:label "78 recording" ;
+        skos:broader <http://rdaregistry.info/termList/RDACarrierType/1004> ;
+        skos:definition "Colloquial term representing audio discs from the 78 rpm disc era with playing speeds ranging from around 60 rpm to 130 rpm. The term does not necessarily describe the carrier accurately." .
 
 
 ###  http://performedmusicontology.org/ontology/DvdAudio
@@ -762,6 +739,13 @@ skos:ConceptScheme rdf:type owl:Class .
                <http://id.loc.gov/ontologies/bibframe/EncodingFormat> ;
       rdfs:label "FLAC" ;
       skos:definition "Free Lossless Audio Codec, an open audio coding format for lossless compression of digital audio." .
+
+
+###  http://performedmusicontology.org/ontology/FPM12
+:FPM12 rdf:type owl:NamedIndividual ,
+                <http://id.loc.gov/ontologies/bibframe/PlayingSpeed> ;
+       rdfs:label 120 ;
+       skos:definition "Playing speed of 12 feet per minute x 10." .
 
 
 ###  http://performedmusicontology.org/ontology/FullTrack
@@ -840,6 +824,11 @@ skos:ConceptScheme rdf:type owl:Class .
     rdfs:label "LP/Vinyl" ;
     skos:broader <http://rdaregistry.info/termList/RDACarrierType/1004> ;
     skos:definition "Colloquial term representing 12\" diameter vinyl audio discs with a playing speed of 33 1/3 rpm. The term does not necessarily accurately describe the carrier." .
+
+
+###  http://performedmusicontology.org/ontology/Laserdisc
+:Laserdisc rdf:type owl:NamedIndividual ,
+                    <http://id.loc.gov/ontologies/bibframe/Carrier> .
 
 
 ###  http://performedmusicontology.org/ontology/LateralCut
@@ -1091,9 +1080,7 @@ skos:ConceptScheme rdf:type owl:Class .
                                                                        "Type de support matériel qui consiste en un disque sur lequel des ondulations sonores, enregistrées sous forme de modulations, d’impulsions, etc., ont été gravées au moyen d’une entaille ou d’empreintes en créant un sillon continu en spirale."@fr ,
                                                                        "通过刻痕或连续的螺旋式纹槽在其上将声波记录为音调、节奏等的盘片。"@zh ;
                                                        skos:inScheme <http://rdaregistry.info/termList/RDACarrierType> ;
-                                                       skos:narrower <http://performedmusicontology.org/45> ,
-                                                                     <http://performedmusicontology.org/78recording> ,
-                                                                     :CdAudio ,
+                                                       skos:narrower :CdAudio ,
                                                                      :DvdAudio ,
                                                                      :EnhancedCdAudio ,
                                                                      :EpRecord ,
@@ -1282,8 +1269,7 @@ skos:ConceptScheme rdf:type owl:Class .
                                                                        "Type de support matériel qui consiste en un disque sur lequel des signaux vidéo, accompagnés ou non de son, sont enregistrés."@fr ,
                                                                        "记录视频信号的盘片，有无声音均可。"@zh ;
                                                        skos:inScheme <http://rdaregistry.info/termList/RDACarrierType> ;
-                                                       skos:narrower <http://performedmusicontology.org/Laserdisc> ,
-                                                                     :DvdVideo ;
+                                                       skos:narrower :DvdVideo ;
                                                        skos:prefLabel "Videodisk"@de ,
                                                                       "videodisc"@ca ,
                                                                       "videodisc"@da ,
