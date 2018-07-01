@@ -17,10 +17,19 @@
         <Class IRI="MediumPart"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="hasDistinctPartCount"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Audition"/>
     </Declaration>
     <Declaration>
         <Class IRI="Mode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasOrder"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasNumberOfHands"/>
     </Declaration>
     <Declaration>
         <Class IRI="Concert"/>
@@ -29,7 +38,10 @@
         <ObjectProperty IRI="performanceOf"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="hasNumberOfHands"/>
+        <Class IRI="OpenMicPerformance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MasterClass"/>
     </Declaration>
     <Declaration>
         <Class IRI="ThematicCatalogNumber"/>
@@ -38,10 +50,22 @@
         <ObjectProperty IRI="inspirationFor"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="associatedWith"/>
+        <Class IRI="RismNumber"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasTonalCenter"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasPerformance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="associatedWith"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="IndividualMediumOfPerformance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="phonogramCopyrightDate"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="hasTrackNumber"/>
@@ -62,19 +86,55 @@
         <ObjectProperty IRI="hasTempo"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="createdFor"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="KeyMode"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Rehearsal"/>
+        <Class IRI="DramaticRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PerformedMedium"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasMediumOfPerformance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Ceremony"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="BenefitConcert"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="aggregatedIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MediumOfPerformance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="VideogamePlatformIdentifier"/>
     </Declaration>
     <Declaration>
         <Class IRI="Tempo"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="asMemberOf"/>
+        <Class IRI="Rehearsal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="aggregates"/>
     </Declaration>
     <Declaration>
         <Class IRI="DeclaredMedium"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="asMemberOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MusicBrainz"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasAggregatingInstance"/>
     </Declaration>
     <Declaration>
         <Class IRI="MusicPart"/>
@@ -86,10 +146,16 @@
         <Class IRI="ConcertTour"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="hasEventName"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="hasMediumPart"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasEventName"/>
+        <Class IRI="EventName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasEnsembleCount"/>
     </Declaration>
     <Declaration>
         <Class IRI="OpusNumberStatement"/>
@@ -98,7 +164,7 @@
         <ObjectProperty IRI="hasDramaticRole"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="obligato"/>
+        <Class IRI="RecordingSession"/>
     </Declaration>
     <Declaration>
         <Class IRI="EnsembleMediumOfPerformance"/>
@@ -113,12 +179,31 @@
         <Class IRI="ConcertSeries"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Discogs"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="TonalCenter"/>
     </Declaration>
+    <Declaration>
+        <Class IRI="Performance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MediumPartType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ThematicCatalogPrefix"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="LivePerformance"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasMediumPartType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasInspiration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasRequiredPerformerCount"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasMedium"/>
@@ -136,9 +221,6 @@
         <DataProperty IRI="hasPerformerCount"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Laserdisc"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="WorkComponent"/>
     </Declaration>
     <Declaration>
@@ -149,93 +231,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="OpusNumberPart"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="hasDistinctPartCount"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="hasOrder"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="OpenMicPerformance"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="MasterClass"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="RismNumber"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="hasTonalCenter"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="IndividualMediumOfPerformance"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="phonogramCopyrightDate"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="createdFor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="DramaticRole"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="PerformedMedium"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="hasMediumOfPerformance"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="BenefitConcert"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="MediumOfPerformance"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Ceremony"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="aggregatedIn"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="VideogamePlatformIdentifier"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="aggregates"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="MusicBrainz"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="hasAggregatingInstance"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="EventName"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="hasEnsembleCount"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="RecordingSession"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Discogs"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Performance"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="MediumPartType"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="ThematicCatalogPrefix"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="hasInspiration"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="hasRequiredPerformerCount"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="Audition"/>
@@ -417,16 +412,8 @@
         <ObjectProperty IRI="associatedWith"/>
     </SymmetricObjectProperty>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="asMemberOf"/>
-        <Class IRI="http://id.loc.gov/ontologies/bibframe/Contribution"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="createdFor"/>
         <Class IRI="http://id.loc.gov/ontologies/bibframe/Work"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasDramaticRole"/>
-        <Class IRI="http://id.loc.gov/ontologies/bibframe/Contribution"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasEventName"/>
@@ -441,10 +428,6 @@
         <Class IRI="http://id.loc.gov/ontologies/bibframe/Work"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasPerformance"/>
-        <Class IRI="http://id.loc.gov/ontologies/bibframe/Work"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="hasRecording"/>
         <Class IRI="http://id.loc.gov/ontologies/bibframe/Event"/>
     </ObjectPropertyDomain>
@@ -456,10 +439,6 @@
         <ObjectProperty IRI="recordingOf"/>
         <Class IRI="http://id.loc.gov/ontologies/bibframe/Work"/>
     </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="asMemberOf"/>
-        <Class IRI="http://id.loc.gov/ontologies/bibframe/Organization"/>
-    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasMediumPart"/>
         <Class IRI="MediumPart"/>
@@ -864,7 +843,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
         <IRI>Performance</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event in which a performer or group of performers present a work to an audience or in a recording studio.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event in which a performer or group of performers perform an improvisation or pre-existing work to an audience or in a recording studio.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1294,7 +1273,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
         <IRI>hasPerformance</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event that is a performance of a work</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event that is a performance, either improvised or of a pre-existing work.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1370,6 +1349,7 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
         <IRI>inspirationFor</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Work that is inspired by an event.</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>performanceOf</IRI>
