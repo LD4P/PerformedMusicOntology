@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+         
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+      <rdfs:label xml:lang="en">PMO Music Tonal Center Vocabulary</rdfs:label>
+      <dcterms:title xml:lang="en">PMO Music Tonal Center Vocabulary</dcterms:title>
+      <skos:definition xml:lang="en">The PMO Music Tonal Center Vocabulary is a controlled vocabulary for stating the central or primary pitch around which a musical work is centered.</skos:definition>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">C</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+  
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C_flat">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">C&#9837;</skos:prefLabel>
+      <skos:altLabel xml:lang="en">C-flat</skos:altLabel>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+      <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C_double_flat">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">C&#9837;&#9837;</skos:prefLabel>
+      <skos:altLabel xml:lang="en">C-double-flat</skos:altLabel>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C_sharp">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">C&#9839;</skos:prefLabel>
+      <skos:altLabel xml:lang="en">C-sharp</skos:altLabel>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C_double_sharp">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">C&#9839;&#9839;</skos:prefLabel>
+      <skos:altLabel xml:lang="en">C-double-sharp</skos:altLabel>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">D;</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D_flat">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">D&#9837;</skos:prefLabel>
+      <skos:altLabel xml:lang="en">D-flat</skos:altLabel>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+      <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D_double_flat">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">D&#9837;&#9837;</skos:prefLabel>
+      <skos:altLabel xml:lang="en">D-double-flat</skos:altLabel>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D_sharp">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">D&#9839;</skos:prefLabel>
+      <skos:altLabel xml:lang="en">D-sharp</skos:altLabel>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D_double_sharp">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">D&#9839;&#9839;</skos:prefLabel>
+      <skos:altLabel xml:lang="en">D-double-sharp</skos:altLabel>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">E</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E_flat">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">E&#9837;</skos:prefLabel>
+      <skos:altLabel xml:lang="en">E-flat</skos:altLabel>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+      <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E_double_flat">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">E&#9837;&#9837;</skos:prefLabel>
+      <skos:altLabel xml:lang="en">E-double-flat</skos:altLabel>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E_sharp">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">E&#9839;</skos:prefLabel>
+      <skos:altLabel xml:lang="en">E-sharp</skos:altLabel>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E_double_sharp">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">E&#9839;&#9839;</skos:prefLabel>
+      <skos:altLabel xml:lang="en">E-double-sharp</skos:altLabel>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">F</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F_flat">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">F&#9837;</skos:prefLabel>
+      <skos:altLabel xml:lang="en">F-flat</skos:altLabel>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F_double_flat">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">D&#9837;&#9837;</skos:prefLabel>
+      <skos:altLabel xml:lang="en">F-double-flat</skos:altLabel>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+      <skos:changeNote rdf:parseType="Resource"> 
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F_sharp">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">F&#9839;</skos:prefLabel>
+      <skos:altLabel xml:lang="en">F-sharp</skos:altLabel>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F_double_sharp">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">F&#9839;&#9839;</skos:prefLabel>
+      <skos:altLabel xml:lang="en">F-double-sharp</skos:altLabel>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">G</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G_flat">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">G&#9837;</skos:prefLabel>
+      <skos:altLabel xml:lang="en">G-flat</skos:altLabel>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value> 
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G_double_flat">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">G&#9837;&#9837;</skos:prefLabel>
+      <skos:altLabel xml:lang="en">G-double-flat</skos:altLabel>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G_sharp">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">G&#9839;</skos:prefLabel>
+      <skos:altLabel xml:lang="en">G-sharp</skos:altLabel>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G_double_sharp">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">G&#9839;&#9839;</skos:prefLabel>
+      <skos:altLabel xml:lang="en">G-double-sharp</skos:altLabel>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">A</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A_flat">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">A&#9837;</skos:prefLabel>
+      <skos:altLabel xml:lang="en">A-flat</skos:altLabel>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A_double_flat">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">A&#9837;&#9837;</skos:prefLabel>
+      <skos:altLabel xml:lang="en">A-double-flat</skos:altLabel>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A_sharp">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">A&#9839;</skos:prefLabel>
+      <skos:altLabel xml:lang="en">A-sharp</skos:altLabel>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A_double_sharp">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">A&#9839;&#9839;</skos:prefLabel>
+      <skos:altLabel xml:lang="en">A-double-sharp</skos:altLabel>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">B</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B_flat">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">B&#9837;</skos:prefLabel>
+      <skos:altLabel xml:lang="en">B-flat</skos:altLabel>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B_double_flat">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">B&#9837;&#9837;</skos:prefLabel>
+      <skos:altLabel xml:lang="en">B-double-flat</skos:altLabel>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B_sharp">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">B&#9839;</skos:prefLabel>
+      <skos:altLabel xml:lang="en">B-sharp</skos:altLabel>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+      <skos:changeNote rdf:parseType="Resource">
+		 <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B_double_sharp">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">B&#9839;&#9839;</skos:prefLabel>
+      <skos:altLabel xml:lang="en">B-double-sharp</skos:altLabel>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+</rdf:RDF>

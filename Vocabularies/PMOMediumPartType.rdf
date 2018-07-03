@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+         
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/medium_part_type/">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+      <rdfs:label xml:lang="en">PMO Medium Part Type Vocabulary</rdfs:label>
+      <dcterms:title xml:lang="en">PMO Music Tonal Center Vocabulary</dcterms:title>
+      <skos:definition xml:lang="en">The PMO Music Tonal Center Vocabulary is a controlled vocabulary for stating specialized instructions about a medium of performance (e.g., obbligato, offstage). It was developed for the Performed Music Ontology, but may be used with other ontologies.</skos:definition>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/medium_part_type/ad_lib">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">ad lib</skos:prefLabel>
+      <skos:altLabel xml:lang="en">ad libitum</skos:altLabel>
+      <skos:scopeNote xml:lang="en">For mediums of performance marked "ad lib" or "ad libitum" in a score or otherwise.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/medium_part_type/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/medium_part_type/amplified">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">amplified</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">For mediums of performance marked "amplified" in a score or otherwise.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/medium_part_type/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+  
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/medium_part_type/obbligato">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">obbligato</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">For mediums of performance marked "obbligato" in a score or otherwise.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/medium_part_type/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+ 
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/medium_part_type/offstage">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">offstage</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">A declared or performed medium that is to be performed or is performed offstage, often out of sight of the audience.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/medium_part_type/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+    
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/medium_part_type/optional">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">optional</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">For mediums of performance marked "optional" in a score or otherwise.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/medium_part_type/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+   
+   <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/medium_part_type/solo">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en">solo</skos:prefLabel>
+      <skos:scopeNote xml:lang="en">For mediums of performance marked "solo" in a score or is clearly a solo part in the context of the work, such as the oboe part in a concerto for oboe and orchestra.</skos:scopeNote>
+      <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/medium_part_type/"/>
+      <skos:changeNote rdf:parseType="Resource">
+         <rdf:value>NEW</rdf:value>
+         <dcterms:date>2018-07-01</dcterms:date>
+      </skos:changeNote>
+   </rdf:Description>
+    
+</rdf:RDF>

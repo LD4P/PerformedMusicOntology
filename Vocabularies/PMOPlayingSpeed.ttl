@@ -1,0 +1,145 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://performedmusicontology.org/ontologies/vocabularies/playing_speed/>
+  a skos:ConceptScheme ;
+  rdfs:label "PMO Playing Speed Vocabulary"@en ;
+  dc:title "PMO Playing Speed Vocabulary"@en ;
+  skos:definition "The PMO Playing Speed Vocabulary is a controlled vocabulary for playing speeds of audio recordings. Terms are derived from the MARC21 bibliographic format 007/?? codes. It was developed for the Performed Music Ontology, but may be used with other ontologies."@en .
+
+<http://performedmusicontology.org/ontologies/vocabularies/playing_speed/fpm_12>
+  a skos:Concept ;
+  skos:prefLabel "12 fpm"@en ;
+  skos:definition "Playing speed of 12 feet per minute x 10."@en ;
+  rdfs:comment "Used for piano and organ rolls."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/playing_speed/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/playing_speed/ips.9>
+  a skos:Concept ;
+  skos:prefLabel "15/16 ips"@en ;
+  skos:altLabel "Advanced Audio Recording format"@en ;
+  skos:definition "Playing speed of 15/16 inches per second."@en ;
+  rdfs:comment "Speed occurs on half-speed mini-cassettes used in small portable recorders."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/playing_speed/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/playing_speed/Ips1.8>
+  a skos:Concept ;
+  skos:prefLabel "1 7/8 ips"@en ;
+  skos:definition "Playing speed of 1 7/8 inches per second."@en ;
+  rdfs:comment "Speed occurs on audiocassettes."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/playing_speed/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/playing_speed/Ips15>
+  a skos:Concept ;
+  skos:prefLabel "15 ips"@en ;
+  skos:definition "Playing speed of 15 inches per second."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/playing_speed/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/playing_speed/Ips3.75>
+  a skos:Concept ;
+  skos:prefLabel "3.75 ips"@en ;
+  skos:definition "Playing speed of 3.75 inches per second."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/playing_speed/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:creator <http://id.loc.gov/rwo/agents/> ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/playing_speed/Ips30>
+  a skos:Concept ;
+  skos:prefLabel "30 ips"@en ;
+  skos:definition "Playing speed of 30 inches per second."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/playing_speed/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/playing_speed/Ips7.5>
+  a skos:Concept ;
+  skos:prefLabel "7.5 ips"@en ;
+  skos:definition "Playing speed of 7.5 inches per second."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/playing_speed/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/playing_speed/Mps1.4>
+  a skos:Concept ;
+  skos:prefLabel "1.4 mps"@en ;
+  skos:definition "Playing speed of 1.4 meters per second."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/playing_speed/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/playing_speed/Rpm16>
+  a skos:Concept ;
+  skos:prefLabel "16 rpm"@en ;
+  skos:definition "Playing speed of 16 revolutions per minute."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/playing_speed/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/playing_speed/Rpm33>
+  a skos:Concept ;
+  skos:prefLabel "33 rpm"@en ;
+  skos:definition "Playing speed of 33 revolutions per minute."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/playing_speed/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/playing_speed/Rpm45>
+  a skos:Concept ;
+  skos:prefLabel "45 rpm"@en ;
+  skos:definition "Playing speed of 45 revolutions per minute."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/playing_speed/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/playing_speed/Rpm78>
+  a skos:Concept ;
+  skos:prefLabel "78 rpm"@en ;
+  skos:definition "Playing speed of 78 revolutions per minute."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/playing_speed/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/playing_speed/Rpm8>
+  a skos:Concept ;
+  skos:prefLabel "8 rpm"@en ;
+  skos:definition "Playing speed of 8 revolutions per minute."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/playing_speed/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .

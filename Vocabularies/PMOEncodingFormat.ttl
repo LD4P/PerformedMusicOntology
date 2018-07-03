@@ -1,0 +1,52 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://performedmusicontology.org/ontologies/vocabularies/encoding_format/>
+  a skos:ConceptScheme ;
+  rdfs:label "PMO Encoding Format Vocabulary"@en ;
+  dc:title "PMO Encoding Format Vocabulary"@en ;
+  skos:definition "The PMO Encoding Format Vocabulary is a controlled vocabulary for stating encoding formats of audio recordings. It was developed for the Performed Music Ontology, but may be used with other ontologies."@en .
+
+<http://performedmusicontology.org/ontologies/vocabularies/encoding_format/Aac>
+  a skos:Concept ;
+  skos:prefLabel "AAC"@en ;
+  skos:altLabel "Advanced Audio Recording format"@en ;
+  skos:definition "Advanced Audio Coding format, a proprietary audio coding standard for lossy digital audio compression."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/encoding_format/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/encoding_format/Aiff>
+  a skos:Concept ;
+  skos:prefLabel "AIFF"@en ;
+  skos:definition "Standard audio file format used by Apple."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/encoding_format/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/encoding_format/Flac>
+  a skos:Concept ;
+  skos:prefLabel "FLAC"@en ;
+  skos:altLabel "Free Lossless Audio Codec"@en ;
+  skos:definition "An open audio coding format for lossless compression of digital audio."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/encoding_format/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/encoding_format/Mp3>
+  a skos:Concept ;
+  skos:prefLabel "MP3"@en ;
+  skos:definition "MPEG Layer III Audio, an audio encoding format for digital audio."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/encoding_format/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .

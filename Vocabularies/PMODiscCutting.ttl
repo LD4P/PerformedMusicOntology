@@ -1,0 +1,31 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://performedmusicontology.org/ontologies/vocabularies/disc_cutting/>
+  a skos:ConceptScheme ;
+  rdfs:label "PMO Disc Cutting Method Vocabulary"@en ;
+  dc:title "PMO Disc Cutting Method Vocabulary"@en ;
+  skos:definition "The PMO Disc Cutting Method Vocabulary is a controlled vocabulary for how a stylus cuts a phonograph record during the recording process. Terms are derived from the MARC21 bibliographic format 007/?? codes. It was developed for the Performed Music Ontology, but may be used with other ontologies."@en .
+
+<http://performedmusicontology.org/ontologies/vocabularies/disc_cutting/lateral_cut>
+  a skos:Concept ;
+  skos:prefLabel "lateral cut"@en ;
+  skos:definition "Recording process in which a stylus cuts a side-to-side groove into a phonograph record."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/disc_cutting/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/disc_cutting/vertical_cut>
+  a skos:Concept ;
+  skos:prefLabel "vertical cut"@en ;
+  skos:altLabel "hill and dale cut"@en ;
+  skos:definition "Recording process in which a stylus cuts a vertical groove into a phonograph record."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/disc_cutting/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .

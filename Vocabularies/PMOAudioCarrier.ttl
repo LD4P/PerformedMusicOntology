@@ -1,0 +1,237 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/>
+  a skos:ConceptScheme ;
+  rdfs:label "PMO Audio Carrier Vocabulary"@en ;
+  dc:title "PMO Audio Carrier Vocabulary"@en ;
+  skos:definition "The PMO Music Tonal Center Vocabulary is a controlled vocabulary for specific and colloquial terms for carriers of audio recordings. "@en .
+
+<http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/cd_audio>
+  a skos:Concept ;
+  skos:prefLabel "CD Audio"@en ;
+  skos:broader <http://rdaregistry.info/termList/RDACarrierType/1004> ;
+  skos:definition "Optical discs that use the standard compact disc format for audio. They are 12 cm (4 3/4 in.) in diameter, and encoded as 2-channel signed 16-bit Linear PCM sampled at 44,100 Hz."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/dat>
+  a skos:Concept ;
+  skos:prefLabel "DAT"@en ;
+  skos:broader <http://rdaregistry.info/termList/RDACarrierType/1007> ;
+  skos:definition "Sony's proprietary Digital Audio Tape format, characterized by magnetic media enclosed in a protective shell, with the dimensions of 8 x 6 cm, 4 mm tape or 2 7/8 x 2 1/8 in., 1/8 in. tape."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/disc_45>
+  a skos:Concept ;
+  skos:prefLabel "45 recording"@en ;
+  skos:broader <http://rdaregistry.info/termList/RDACarrierType/1004> ;
+  skos:definition "Colloquial term representing 7\" diameter vinyl audio discs with a playing speed of 45 rpm. The term does not necessarily describe the carrier accurately."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/disc_78>
+  a skos:Concept ;
+  skos:prefLabel "78 recording"@en ;
+  skos:broader <http://rdaregistry.info/termList/RDACarrierType/1004> ;
+  skos:definition "Colloquial term representing audio discs from the 78 rpm disc era with playing speeds ranging from around 60 rpm to 130 rpm. The term does not necessarily describe the carrier accurately."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/dvd_audio>
+  a skos:Concept ;
+  skos:prefLabel "DVD Audio"@en ;
+  skos:broader <http://rdaregistry.info/termList/RDACarrierType/1004> ;
+  skos:definition "DVD optical discs that use the the DVD audio format. Different bit depth/sampling rate/channel combinations can be used on a single disc."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/dvd_video>
+  a skos:Concept ;
+  skos:prefLabel "DVD Video"@en ;
+  skos:broader <http://rdaregistry.info/termList/RDACarrierType/1060> ;
+  skos:definition "DVD optical discs that use the DVD format to store digital video. From 2003, it has been the dominant consumer video format."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/eight_track>
+  a skos:Concept ;
+  skos:prefLabel "8-track"@en ;
+  skos:altLabel "eight-track"@en ;
+  skos:broader <http://rdaregistry.info/termList/RDACarrierType/1008> ;
+  skos:definition "Magnetic tape divided into 8 audio tracks that run parallel with each other, on which sound and other electro-acoustic signals are captured."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/enhanced_cd_audio>
+  a skos:Concept ;
+  skos:prefLabel "Enhanced CD Audio"@en ;
+  skos:broader <http://rdaregistry.info/termList/RDACarrierType/1004> ;
+  skos:definition ""@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/ep_record>
+  a skos:Concept ;
+  skos:prefLabel "EP record"@en ;
+  skos:altLabel "extended play record"@en ;
+  skos:broader <http://rdaregistry.info/termList/RDACarrierType/1004> ;
+  skos:definition "A music disc that contains more tracks than a single but not as many as on a typical album/LP/disc."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/full_track>
+  a skos:Concept ;
+  skos:prefLabel "full track"@en ;
+  skos:broader <http://rdaregistry.info/termList/RDACarrierType/1008> ;
+  skos:definition "Magnetic tape with 1 audio track on which sound and other electro-acoustic signals are captured."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/half_track>
+  a skos:Concept ;
+  skos:prefLabel "half track"@en ;
+  skos:altLabel "1/2 track"@en ;
+  skos:broader <http://rdaregistry.info/termList/RDACarrierType/1008> ;
+  skos:definition "Magnetic tape divided into 2 audio tracks that run parallel with each other, on which sound and other electro-acoustic signals are captured."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/hybrid_sacd>
+  a skos:Concept ;
+  skos:prefLabel "hybrid SACD"@en ;
+  skos:broader <http://rdaregistry.info/termList/RDACarrierType/1004> ;
+  skos:definition "An SACD that also is also encoded with a PCM audio layer readable by compact disc players."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/lp>
+  a skos:Concept ;
+  skos:prefLabel "LP"@en ;
+  skos:broader <http://rdaregistry.info/termList/RDACarrierType/1004> ;
+  skos:definition "Colloquial term representing 12-inch diameter vinyl audio discs with a playing speed of 33 1/3 rpm. The term does not necessarily accurately describe the carrier."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/laser_disc>
+  a skos:Concept ;
+  skos:prefLabel "laserdisc"@en ;
+  skos:broader <http://rdaregistry.info/termList/RDACarrierType/1004> ;
+  skos:definition "Home video format, with a standard diameter of 30 cm (12 in.)"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/organ_roll>
+  a skos:Concept ;
+  skos:prefLabel "organ roll"@en ;
+  skos:broader <http://rdaregistry.info/termList/RDACarrierType/1006> ;
+  skos:definition "An audio roll used to operate a player organ or reproducing organ."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/piano_roll>
+  a skos:Concept ;
+  skos:prefLabel "piano roll"@en ;
+  skos:broader <http://rdaregistry.info/termList/RDACarrierType/1006> ;
+  skos:definition "An audio roll used to operate a player piano or reproducing piano."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/quarter_track>
+  a skos:Concept ;
+  skos:prefLabel "quarter track"@en ;
+  skos:altLabel "1/4 track"@en ;
+  skos:broader <http://rdaregistry.info/termList/RDACarrierType/1008> ;
+  skos:definition "Magnetic tape divided into 4 audio tracks that run parallel with each other, in which sound and other electro-acoustic signals are captured."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/sacd>
+  a skos:Concept ;
+  skos:prefLabel "SACD"@en ;
+  skos:altLabel "Super Audio Compact Disc"@en ;
+  skos:broader <http://rdaregistry.info/termList/RDACarrierType/1004> ;
+  skos:definition "Optical audio disc with more channels and longer playing time than a conventional CD."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/sixteen_track>
+  a skos:Concept ;
+  skos:prefLabel "16-track"@en ;
+  skos:altLabel "sixteen-track"@en ;
+  skos:broader <http://rdaregistry.info/termList/RDACarrierType/1008> ;
+  skos:definition "Magnetic tape divided into 16 audio tracks that run parallel with each other, in which sound and other electro-acoustic signals are captured."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/twelve_track>
+  a skos:Concept ;
+  skos:prefLabel "12-track"@en ;
+  skos:altLabel "twelve-track"@en ;
+  skos:broader <http://rdaregistry.info/termList/RDACarrierType/1008> ;
+  skos:definition "Magnetic tape divided into 12 audio tracks that run parallel with each other, in which sound and other electro-acoustic signals are captured."@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .

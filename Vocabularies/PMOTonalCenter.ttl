@@ -1,0 +1,353 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/>
+  a skos:ConceptScheme ;
+  rdfs:label "PMO Music Tonal Center Vocabulary"@en ;
+  dc:title "PMO Music Tonal Center Vocabulary"@en ;
+  skos:definition "The PMO Music Tonal Center Vocabulary is a controlled vocabulary for stating the central or primary pitch around which a musical work is centered."@en .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C>
+  a skos:Concept ;
+  skos:prefLabel "C"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/tonal_center/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C_flat>
+  a skos:Concept ;
+  skos:prefLabel "C♭"@en ;
+  skos:altLabel "C-flat"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/tonal_center/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C_double_flat>
+  a skos:Concept ;
+  skos:prefLabel "C♭♭"@en ;
+  skos:altLabel "C-double-flat"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/tonal_center/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C_sharp>
+  a skos:Concept ;
+  skos:prefLabel "C♯"@en ;
+  skos:altLabel "C-sharp"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/tonal_center/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C_double_sharp>
+  a skos:Concept ;
+  skos:prefLabel "C♯♯"@en ;
+  skos:altLabel "C-double-sharp"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/tonal_center/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D>
+  a skos:Concept ;
+  skos:prefLabel "D;"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/tonal_center/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D_flat>
+  a skos:Concept ;
+  skos:prefLabel "D♭"@en ;
+  skos:altLabel "D-flat"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/tonal_center/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D_double_flat>
+  a skos:Concept ;
+  skos:prefLabel "D♭♭"@en ;
+  skos:altLabel "D-double-flat"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/tonal_center/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D_sharp>
+  a skos:Concept ;
+  skos:prefLabel "D♯"@en ;
+  skos:altLabel "D-sharp"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/tonal_center/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D_double_sharp>
+  a skos:Concept ;
+  skos:prefLabel "D♯♯"@en ;
+  skos:altLabel "D-double-sharp"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/tonal_center/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E>
+  a skos:Concept ;
+  skos:prefLabel "E"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/tonal_center/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E_flat>
+  a skos:Concept ;
+  skos:prefLabel "E♭"@en ;
+  skos:altLabel "E-flat"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/tonal_center/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E_double_flat>
+  a skos:Concept ;
+  skos:prefLabel "E♭♭"@en ;
+  skos:altLabel "E-double-flat"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/tonal_center/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E_sharp>
+  a skos:Concept ;
+  skos:prefLabel "E♯"@en ;
+  skos:altLabel "E-sharp"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/tonal_center/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E_double_sharp>
+  a skos:Concept ;
+  skos:prefLabel "E♯♯"@en ;
+  skos:altLabel "E-double-sharp"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/tonal_center/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F>
+  a skos:Concept ;
+  skos:prefLabel "F"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/tonal_center/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F_flat>
+  a skos:Concept ;
+  skos:prefLabel "F♭"@en ;
+  skos:altLabel "F-flat"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/tonal_center/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F_double_flat>
+  a skos:Concept ;
+  skos:prefLabel "D♭♭"@en ;
+  skos:altLabel "F-double-flat"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/tonal_center/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F_sharp>
+  a skos:Concept ;
+  skos:prefLabel "F♯"@en ;
+  skos:altLabel "F-sharp"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/tonal_center/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F_double_sharp>
+  a skos:Concept ;
+  skos:prefLabel "F♯♯"@en ;
+  skos:altLabel "F-double-sharp"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/tonal_center/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G>
+  a skos:Concept ;
+  skos:prefLabel "G"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/tonal_center/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G_flat>
+  a skos:Concept ;
+  skos:prefLabel "G♭"@en ;
+  skos:altLabel "G-flat"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/tonal_center/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G_double_flat>
+  a skos:Concept ;
+  skos:prefLabel "G♭♭"@en ;
+  skos:altLabel "G-double-flat"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/tonal_center/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G_sharp>
+  a skos:Concept ;
+  skos:prefLabel "G♯"@en ;
+  skos:altLabel "G-sharp"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/tonal_center/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G_double_sharp>
+  a skos:Concept ;
+  skos:prefLabel "G♯♯"@en ;
+  skos:altLabel "G-double-sharp"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/tonal_center/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A>
+  a skos:Concept ;
+  skos:prefLabel "A"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/tonal_center/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A_flat>
+  a skos:Concept ;
+  skos:prefLabel "A♭"@en ;
+  skos:altLabel "A-flat"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/tonal_center/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A_double_flat>
+  a skos:Concept ;
+  skos:prefLabel "A♭♭"@en ;
+  skos:altLabel "A-double-flat"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/tonal_center/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A_sharp>
+  a skos:Concept ;
+  skos:prefLabel "A♯"@en ;
+  skos:altLabel "A-sharp"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/tonal_center/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A_double_sharp>
+  a skos:Concept ;
+  skos:prefLabel "A♯♯"@en ;
+  skos:altLabel "A-double-sharp"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/tonal_center/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B>
+  a skos:Concept ;
+  skos:prefLabel "B"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/tonal_center/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B_flat>
+  a skos:Concept ;
+  skos:prefLabel "B♭"@en ;
+  skos:altLabel "B-flat"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/tonal_center/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B_double_flat>
+  a skos:Concept ;
+  skos:prefLabel "B♭♭"@en ;
+  skos:altLabel "B-double-flat"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/tonal_center/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B_sharp>
+  a skos:Concept ;
+  skos:prefLabel "B♯"@en ;
+  skos:altLabel "B-sharp"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/tonal_center/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
+
+<http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B_double_sharp>
+  a skos:Concept ;
+  skos:prefLabel "B♯♯"@en ;
+  skos:altLabel "B-double-sharp"@en ;
+  skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/tonal_center/> ;
+  skos:changeNote [
+    rdf:value "NEW" ;
+    dc:date "2018-07-01"
+  ] .
