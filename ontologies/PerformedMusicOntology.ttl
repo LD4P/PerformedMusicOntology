@@ -17,13 +17,11 @@ owl:versionIRI <http://performedmusicontology.org/ontology/> .
 ###  http://performedmusicontology.org/ontology/aggregatedIn
 :aggregatedIn rdf:type owl:ObjectProperty ;
               owl:inverseOf :aggregates ;
-              <http://www.w3.org/2004/02/skos/core#definition> "Property connecting an aggregated work to a work in which it is aggregated." .
-
-
+              <http://www.w3.org/2004/02/skos/core#definition> "Property connecting an individual aggregated Instance to the Instance in which it is aggregated." .
 ###  http://performedmusicontology.org/ontology/aggregates
 :aggregates rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf owl:topObjectProperty ;
-            <http://www.w3.org/2004/02/skos/core#definition> "Property connecting an aggregating work to a work that it aggregates." .
+            <http://www.w3.org/2004/02/skos/core#definition> "Property connecting an aggregating instance to an individual instance that it aggregates." .
 
 
 ###  http://performedmusicontology.org/ontology/asMemberOf
@@ -56,12 +54,6 @@ owl:versionIRI <http://performedmusicontology.org/ontology/> .
             rdfs:comment "Example: a laudatory motet intended to be sung at the inauguration of a pope." ;
             rdfs:label "created for" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Event for which a work is created." .
-
-
-###  http://performedmusicontology.org/ontology/hasAggregatingInstance
-:hasAggregatingInstance rdf:type owl:ObjectProperty ;
-                        rdfs:label "aggregated in" ;
-                        <http://www.w3.org/2004/02/skos/core#definition> "Property linking an aggregated work to an instance" .
 
 
 ###  http://performedmusicontology.org/ontology/hasDoublingMediumOfPerformance
