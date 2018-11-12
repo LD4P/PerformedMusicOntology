@@ -1,117 +1,319 @@
-<?xml version="1.0" encoding="UTF-8"?><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link href="/PerformedMusicOntology/css/owl.css" rel="stylesheet" type="text/css" /><link href="/PerformedMusicOntology/css/Primer.css" rel="stylesheet" type="text/css" /><link href="/PerformedMusicOntology/css/rec.css" rel="stylesheet" type="text/css" /><link href="/PerformedMusicOntology/css/extra.css" rel="stylesheet" type="text/css" /><link rel="shortcut icon" href="/PerformedMusicOntology/css/favicon.ico" /><script src="/PerformedMusicOntology/js/jquery.js"></script><script src="/PerformedMusicOntology/js/jquery.scrollTo.js"></script><script src="/PerformedMusicOntology/js/marked.min.js"></script><script>
-                $(document).ready(
-                    function () {
-                    	jQuery(".markdown").each(function(el){
-							jQuery(this).after(marked(jQuery(this).text())).remove()});
-                        var list = $('a[name="http://www.essepuntato.it/static/tmp/0"]');
-                        if (list.size() != 0) {
-                        	var element = list.first();
-                        	$.scrollTo(element);
-                        }
-                    });
-        </script></head><body><div class="head"><dl><dt>Other visualisation:</dt><dd><a href="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/PMOTonalCenter.rdf">Vocabulary source</a></dd></dl></div><hr /><div id="toc"><h2>Table of Content</h2><ol><li><a href="#classes">Classes</a></li><li><a href="#namespacedeclarations">Namespace Declarations</a></li></ol></div><div id="classes"><h2>Classes</h2><ul class="hlist"><li><a href="#A" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A"><span>a</span></a></li><li><a href="#A_double_flat" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A_double_flat"><span>a double flat</span></a></li><li><a href="#A_double_sharp" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A_double_sharp"><span>a double sharp</span></a></li><li><a href="#A_flat" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A_flat"><span>a flat</span></a></li><li><a href="#A_sharp" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A_sharp"><span>a sharp</span></a></li><li><a href="#B" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B"><span>b</span></a></li><li><a href="#B_double_flat" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B_double_flat"><span>b double flat</span></a></li><li><a href="#B_double_sharp" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B_double_sharp"><span>b double sharp</span></a></li><li><a href="#B_flat" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B_flat"><span>b flat</span></a></li><li><a href="#B_sharp" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B_sharp"><span>b sharp</span></a></li><li><a href="#C" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C"><span>c</span></a></li><li><a href="#C_double_flat" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C_double_flat"><span>c double flat</span></a></li><li><a href="#C_double_sharp" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C_double_sharp"><span>c double sharp</span></a></li><li><a href="#C_flat" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C_flat"><span>c flat</span></a></li><li><a href="#C_sharp" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C_sharp"><span>c sharp</span></a></li><li><a href="#D" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D"><span>d</span></a></li><li><a href="#D_double_flat" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D_double_flat"><span>d double flat</span></a></li><li><a href="#D_double_sharp" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D_double_sharp"><span>d double sharp</span></a></li><li><a href="#D_flat" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D_flat"><span>d flat</span></a></li><li><a href="#D_sharp" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D_sharp"><span>d sharp</span></a></li><li><a href="#E" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E"><span>e</span></a></li><li><a href="#E_double_flat" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E_double_flat"><span>e double flat</span></a></li><li><a href="#E_double_sharp" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E_double_sharp"><span>e double sharp</span></a></li><li><a href="#E_flat" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E_flat"><span>e flat</span></a></li><li><a href="#E_sharp" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E_sharp"><span>e sharp</span></a></li><li><a href="#F" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F"><span>f</span></a></li><li><a href="#F_double_flat" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F_double_flat"><span>f double flat</span></a></li><li><a href="#F_double_sharp" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F_double_sharp"><span>f double sharp</span></a></li><li><a href="#F_flat" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F_flat"><span>f flat</span></a></li><li><a href="#F_sharp" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F_sharp"><span>f sharp</span></a></li><li><a href="#G" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G"><span>g</span></a></li><li><a href="#G_double_flat" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G_double_flat"><span>g double flat</span></a></li><li><a href="#G_double_sharp" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G_double_sharp"><span>g double sharp</span></a></li><li><a href="#G_flat" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G_flat"><span>g flat</span></a></li><li><a href="#G_sharp" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G_sharp"><span>g sharp</span></a></li><li><a href="#d4e3" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/">PMO Music Tonal Center Vocabulary</a></li></ul><div id="A" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A"></a><h3>a<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A</p><dl><dt>Current version:</dt><dd>
-         NEW - 
-         2018-07-01
-      </dd></dl></div><div id="A_double_flat" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A_double_flat"></a><h3>a double flat<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A_double_flat</p><dl><dt>Current version:</dt><dd>
-         NEW - 
-         2018-07-01
-      </dd></dl><div class="comment"><span class="markdown">Variant label: A-double-flat</span></div></div><div id="A_double_sharp" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A_double_sharp"></a><h3>a double sharp<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A_double_sharp</p><dl><dt>Current version:</dt><dd>
-         NEW - 
-         2018-07-01
-      </dd></dl><div class="comment"><span class="markdown">Variant label: A-double-sharp</span></div></div><div id="A_flat" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A_flat"></a><h3>a flat<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A_flat</p><dl><dt>Current version:</dt><dd>
-         NEW - 
-         2018-07-01
-      </dd></dl><div class="comment"><span class="markdown">Variant label: A-flat</span></div></div><div id="A_sharp" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A_sharp"></a><h3>a sharp<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A_sharp</p><dl><dt>Current version:</dt><dd>
-         NEW - 
-         2018-07-01
-      </dd></dl><div class="comment"><span class="markdown">Variant label: A-sharp</span></div></div><div id="B" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B"></a><h3>b<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B</p><dl><dt>Current version:</dt><dd>
-         NEW - 
-         2018-07-01
-      </dd></dl></div><div id="B_double_flat" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B_double_flat"></a><h3>b double flat<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B_double_flat</p><dl><dt>Current version:</dt><dd>
-         NEW - 
-         2018-07-01
-      </dd></dl><div class="comment"><span class="markdown">Variant label: B-double-flat</span></div></div><div id="B_double_sharp" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B_double_sharp"></a><h3>b double sharp<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B_double_sharp</p><dl><dt>Current version:</dt><dd>
-         NEW - 
-         2018-07-01
-      </dd></dl><div class="comment"><span class="markdown">Variant label: B-double-sharp</span></div></div><div id="B_flat" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B_flat"></a><h3>b flat<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B_flat</p><dl><dt>Current version:</dt><dd>
-         NEW - 
-         2018-07-01
-      </dd></dl><div class="comment"><span class="markdown">Variant label: B-flat</span></div></div><div id="B_sharp" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B_sharp"></a><h3>b sharp<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B_sharp</p><dl><dt>Current version:</dt><dd>
-		 NEW - 
-         2018-07-01
-      </dd></dl><div class="comment"><span class="markdown">Variant label: B-sharp</span></div></div><div id="C" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C"></a><h3>c<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C</p><dl><dt>Current version:</dt><dd>
-         NEW - 
-         2018-07-01
-      </dd></dl></div><div id="C_double_flat" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C_double_flat"></a><h3>c double flat<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C_double_flat</p><dl><dt>Current version:</dt><dd>
-         NEW - 
-         2018-07-01
-      </dd></dl><div class="comment"><span class="markdown">Variant label: C-double-flat</span></div></div><div id="C_double_sharp" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C_double_sharp"></a><h3>c double sharp<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C_double_sharp</p><dl><dt>Current version:</dt><dd>
-         NEW - 
-         2018-07-01
-      </dd></dl><div class="comment"><span class="markdown">Variant label: C-double-sharp</span></div></div><div id="C_flat" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C_flat"></a><h3>c flat<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C_flat</p><dl><dt>Current version:</dt><dd>
-         NEW - 
-         2018-07-01
-      </dd></dl><div class="comment"><span class="markdown">Variant label: C-flat</span></div></div><div id="C_sharp" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C_sharp"></a><h3>c sharp<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C_sharp</p><dl><dt>Current version:</dt><dd>
-         NEW - 
-         2018-07-01
-      </dd></dl><div class="comment"><span class="markdown">Variant label: C-sharp</span></div></div><div id="D" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D"></a><h3>d<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D</p><dl><dt>Current version:</dt><dd>
-         NEW - 
-         2018-07-01
-      </dd></dl></div><div id="D_double_flat" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D_double_flat"></a><h3>d double flat<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D_double_flat</p><dl><dt>Current version:</dt><dd>
-         NEW - 
-         2018-07-01
-      </dd></dl><div class="comment"><span class="markdown">Variant label: D-double-flat</span></div></div><div id="D_double_sharp" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D_double_sharp"></a><h3>d double sharp<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D_double_sharp</p><dl><dt>Current version:</dt><dd>
-         NEW - 
-         2018-07-01
-      </dd></dl><div class="comment"><span class="markdown">Variant label: D-double-sharp</span></div></div><div id="D_flat" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D_flat"></a><h3>d flat<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D_flat</p><dl><dt>Current version:</dt><dd>
-         NEW - 
-         2018-07-01
-      </dd></dl><div class="comment"><span class="markdown">Variant label: D-flat</span></div></div><div id="D_sharp" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D_sharp"></a><h3>d sharp<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D_sharp</p><dl><dt>Current version:</dt><dd>
-         NEW - 
-         2018-07-01
-      </dd></dl><div class="comment"><span class="markdown">Variant label: D-sharp</span></div></div><div id="E" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E"></a><h3>e<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E</p><dl><dt>Current version:</dt><dd>
-         NEW - 
-         2018-07-01
-      </dd></dl></div><div id="E_double_flat" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E_double_flat"></a><h3>e double flat<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E_double_flat</p><dl><dt>Current version:</dt><dd>
-         NEW - 
-         2018-07-01
-      </dd></dl><div class="comment"><span class="markdown">Variant label: E-double-flat</span></div></div><div id="E_double_sharp" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E_double_sharp"></a><h3>e double sharp<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E_double_sharp</p><dl><dt>Current version:</dt><dd>
-         NEW - 
-         2018-07-01
-      </dd></dl><div class="comment"><span class="markdown">Variant label: E-double-sharp</span></div></div><div id="E_flat" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E_flat"></a><h3>e flat<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E_flat</p><dl><dt>Current version:</dt><dd>
-         NEW - 
-         2018-07-01
-      </dd></dl><div class="comment"><span class="markdown">Variant label: E-flat</span></div></div><div id="E_sharp" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E_sharp"></a><h3>e sharp<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E_sharp</p><dl><dt>Current version:</dt><dd>
-         NEW - 
-         2018-07-01
-      </dd></dl><div class="comment"><span class="markdown">Variant label: E-sharp</span></div></div><div id="F" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F"></a><h3>f<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F</p><dl><dt>Current version:</dt><dd>
-         NEW - 
-         2018-07-01
-      </dd></dl></div><div id="F_double_flat" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F_double_flat"></a><h3>f double flat<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F_double_flat</p><dl><dt>Current version:</dt><dd> 
-         NEW - 
-         2018-07-01
-      </dd></dl><div class="comment"><span class="markdown">Variant label: F-double-flat</span></div></div><div id="F_double_sharp" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F_double_sharp"></a><h3>f double sharp<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F_double_sharp</p><dl><dt>Current version:</dt><dd>
-         NEW - 
-         2018-07-01
-      </dd></dl><div class="comment"><span class="markdown">Variant label: F-double-sharp</span></div></div><div id="F_flat" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F_flat"></a><h3>f flat<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F_flat</p><dl><dt>Current version:</dt><dd>
-         NEW - 
-         2018-07-01
-      </dd></dl><div class="comment"><span class="markdown">Variant label: F-flat</span></div></div><div id="F_sharp" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F_sharp"></a><h3>f sharp<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F_sharp</p><dl><dt>Current version:</dt><dd>
-         NEW - 
-         2018-07-01
-      </dd></dl><div class="comment"><span class="markdown">Variant label: F-sharp</span></div></div><div id="G" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G"></a><h3>g<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G</p><dl><dt>Current version:</dt><dd>
-         NEW - 
-         2018-07-01
-      </dd></dl></div><div id="G_double_flat" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G_double_flat"></a><h3>g double flat<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G_double_flat</p><dl><dt>Current version:</dt><dd>
-         NEW - 
-         2018-07-01
-      </dd></dl><div class="comment"><span class="markdown">Variant label: G-double-flat</span></div></div><div id="G_double_sharp" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G_double_sharp"></a><h3>g double sharp<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G_double_sharp</p><dl><dt>Current version:</dt><dd>
-         NEW - 
-         2018-07-01
-      </dd></dl><div class="comment"><span class="markdown">Variant label: G-double-sharp</span></div></div><div id="G_flat" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G_flat"></a><h3>g flat<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G_flat</p><dl><dt>Current version:</dt><dd>
-         NEW -  
-         2018-07-01
-      </dd></dl><div class="comment"><span class="markdown">Variant label: G-flat</span></div></div><div id="G_sharp" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G_sharp"></a><h3>g sharp<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G_sharp</p><dl><dt>Current version:</dt><dd>
-         NEW - 
-         2018-07-01
-      </dd></dl><div class="comment"><span class="markdown">Variant label: G-sharp</span></div></div><div id="d4e3" class="entity"><a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"></a><h3>PMO Music Tonal Center Vocabulary<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span></h3><p><strong>IRI:</strong> http://performedmusicontology.org/ontologies/vocabularies/tonal_center/</p><div class="comment"><span class="markdown">The PMO Music Tonal Center Vocabulary is a controlled vocabulary for stating the central or primary pitch around which a musical work is centered.</span></div></div></div><div id="namespacedeclarations"><h2>Namespace Declarations <span class="backlink"> back to <a href="#toc">ToC</a></span></h2><dl><dt>dcterms</dt><dd>http://purl.org/dc/terms/</dd><dt>owl</dt><dd>http://www.w3.org/2002/07/owl#</dd><dt>rdf</dt><dd>http://www.w3.org/1999/02/22-rdf-syntax-ns#</dd><dt>rdfs</dt><dd>http://www.w3.org/2000/01/rdf-schema#</dd><dt>skos</dt><dd>http://www.w3.org/2004/02/skos/core#</dd><dt>tonal-center</dt><dd>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/</dd></dl></div><p class="endnote">This HTML document was obtained by processing the OWL ontology source code through <a href="http://www.essepuntato.it/lode">LODE</a>, <em>Live OWL Documentation Environment</em>, developed by <a href="http://www.essepuntato.it">Silvio Peroni</a>.</p></body></html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="/PerformedMusicOntology/css/owl.css" rel="stylesheet" type="text/css">
+<link href="/PerformedMusicOntology/css/Primer.css" rel="stylesheet" type="text/css">
+<link href="/PerformedMusicOntology/css/rec.css" rel="stylesheet" type="text/css">
+<link href="/PerformedMusicOntology/css/extra.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="/PerformedMusicOntology/css/favicon.ico">
+<script src="/PerformedMusicOntology/js/jquery.js"></script><script src="/PerformedMusicOntology/js/jquery.scrollTo.js"></script><script src="/PerformedMusicOntology/js/marked.min.js"></script><title>PMO Music Tonal Center Vocabulary</title>
+</head>
+<body>
+<div class="head">
+<h3>PMO Music Tonal Center Vocabulary</h3>
+<p>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/</p>
+<div class="comment"><span class="markdown"><p>The PMO Music Tonal Center Vocabulary is a controlled vocabulary for stating the central or primary pitch around which a musical work is centered.</p></span></div>
+<p><a href="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/PMOTonalCenter.rdf">Vocabulary source</a></p>
+<hr>
+<div id="toc">
+<h2>Table of Contents</h2>
+<ol>
+<li><a href="#classes">Classes</a></li>
+<li><a href="#namespacedeclarations">Namespace Declarations</a></li>
+</ol>
+</div>
+<div id="classes">
+<h2>Classes</h2>
+<ul class="hlist">
+<li><a href="#A" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A"><span>A</span></a></li>
+<li><a href="#A_flat" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A_flat"><span>Aâ­</span></a></li>
+<li><a href="#A_double_flat" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A_double_flat"><span>Aâ­â­</span></a></li>
+<li><a href="#A_sharp" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A_sharp"><span>Aâ¯</span></a></li>
+<li><a href="#A_double_sharp" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A_double_sharp"><span>Aâ¯â¯</span></a></li>
+<li><a href="#B" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B"><span>B</span></a></li>
+<li><a href="#B_flat" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B_flat"><span>Bâ­</span></a></li>
+<li><a href="#B_double_flat" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B_double_flat"><span>Bâ­â­</span></a></li>
+<li><a href="#B_sharp" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B_sharp"><span>Bâ¯</span></a></li>
+<li><a href="#B_double_sharp" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B_double_sharp"><span>Bâ¯â¯</span></a></li>
+<li><a href="#C" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C"><span>C</span></a></li>
+<li><a href="#C_flat" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C_flat"><span>Câ­</span></a></li>
+<li><a href="#C_double_flat" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C_double_flat"><span>Câ­â­</span></a></li>
+<li><a href="#C_sharp" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C_sharp"><span>Câ¯</span></a></li>
+<li><a href="#C_double_sharp" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C_double_sharp"><span>Câ¯â¯</span></a></li>
+<li><a href="#D" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D"><span>D;</span></a></li>
+<li><a href="#D_flat" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D_flat"><span>Dâ­</span></a></li>
+<li><a href="#F_double_flat" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F_double_flat"><span>Dâ­â­</span></a></li>
+<li><a href="#D_sharp" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D_sharp"><span>Dâ¯</span></a></li>
+<li><a href="#D_double_sharp" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D_double_sharp"><span>Dâ¯â¯</span></a></li>
+<li><a href="#E" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E"><span>E</span></a></li>
+<li><a href="#E_flat" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E_flat"><span>Eâ­</span></a></li>
+<li><a href="#E_double_flat" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E_double_flat"><span>Eâ­â­</span></a></li>
+<li><a href="#E_sharp" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E_sharp"><span>Eâ¯</span></a></li>
+<li><a href="#E_double_sharp" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E_double_sharp"><span>Eâ¯â¯</span></a></li>
+<li><a href="#F" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F"><span>F</span></a></li>
+<li><a href="#F_flat" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F_flat"><span>Fâ­</span></a></li>
+<li><a href="#F_sharp" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F_sharp"><span>Fâ¯</span></a></li>
+<li><a href="#F_double_sharp" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F_double_sharp"><span>Fâ¯â¯</span></a></li>
+<li><a href="#G" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G"><span>G</span></a></li>
+<li><a href="#G_flat" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G_flat"><span>Gâ­</span></a></li>
+<li><a href="#G_double_flat" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G_double_flat"><span>Gâ­â­</span></a></li>
+<li><a href="#G_sharp" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G_sharp"><span>Gâ¯</span></a></li>
+<li><a href="#G_double_sharp" title="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G_double_sharp"><span>Gâ¯â¯</span></a></li>
+</ul>
+</div>
+</div>
+<div id="C" class="entity">
+<a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C"></a><h3>C<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+</h3>
+<p><strong>IRI: </strong>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C</p>
+<p><strong>Current version: </strong>NEW 2018-07-01</p>
+</div>
+<div id="C_flat" class="entity">
+<a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C_flat"></a><h3>Câ­<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+</h3>
+<p><strong>IRI: </strong>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C_flat</p>
+<p><strong>Use for: </strong>C-flat</p>
+<p><strong>Current version: </strong>NEW 2018-07-01</p>
+</div>
+<div id="C_double_flat" class="entity">
+<a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C_double_flat"></a><h3>Câ­â­<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+</h3>
+<p><strong>IRI: </strong>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C_double_flat</p>
+<p><strong>Use for: </strong>C-double-flat</p>
+<p><strong>Current version: </strong>NEW 2018-07-01</p>
+</div>
+<div id="C_sharp" class="entity">
+<a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C_sharp"></a><h3>Câ¯<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+</h3>
+<p><strong>IRI: </strong>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C_sharp</p>
+<p><strong>Use for: </strong>C-sharp</p>
+<p><strong>Current version: </strong>NEW 2018-07-01</p>
+</div>
+<div id="C_double_sharp" class="entity">
+<a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C_double_sharp"></a><h3>Câ¯â¯<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+</h3>
+<p><strong>IRI: </strong>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C_double_sharp</p>
+<p><strong>Use for: </strong>C-double-sharp</p>
+<p><strong>Current version: </strong>NEW 2018-07-01</p>
+</div>
+<div id="D" class="entity">
+<a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D"></a><h3>D;<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+</h3>
+<p><strong>IRI: </strong>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D</p>
+<p><strong>Current version: </strong>NEW 2018-07-01</p>
+</div>
+<div id="D_flat" class="entity">
+<a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D_flat"></a><h3>Dâ­<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+</h3>
+<p><strong>IRI: </strong>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D_flat</p>
+<p><strong>Use for: </strong>D-flat</p>
+<p><strong>Current version: </strong>NEW 2018-07-01</p>
+</div>
+<div id="D_double_flat" class="entity">
+<a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D_double_flat"></a><h3>Dâ­â­<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+</h3>
+<p><strong>IRI: </strong>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D_double_flat</p>
+<p><strong>Use for: </strong>D-double-flat</p>
+<p><strong>Current version: </strong>NEW 2018-07-01</p>
+</div>
+<div id="D_sharp" class="entity">
+<a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D_sharp"></a><h3>Dâ¯<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+</h3>
+<p><strong>IRI: </strong>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D_sharp</p>
+<p><strong>Use for: </strong>D-sharp</p>
+<p><strong>Current version: </strong>NEW 2018-07-01</p>
+</div>
+<div id="D_double_sharp" class="entity">
+<a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D_double_sharp"></a><h3>Dâ¯â¯<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+</h3>
+<p><strong>IRI: </strong>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D_double_sharp</p>
+<p><strong>Use for: </strong>D-double-sharp</p>
+<p><strong>Current version: </strong>NEW 2018-07-01</p>
+</div>
+<div id="E" class="entity">
+<a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E"></a><h3>E<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+</h3>
+<p><strong>IRI: </strong>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E</p>
+<p><strong>Current version: </strong>NEW 2018-07-01</p>
+</div>
+<div id="E_flat" class="entity">
+<a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E_flat"></a><h3>Eâ­<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+</h3>
+<p><strong>IRI: </strong>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E_flat</p>
+<p><strong>Use for: </strong>E-flat</p>
+<p><strong>Current version: </strong>NEW 2018-07-01</p>
+</div>
+<div id="E_double_flat" class="entity">
+<a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E_double_flat"></a><h3>Eâ­â­<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+</h3>
+<p><strong>IRI: </strong>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E_double_flat</p>
+<p><strong>Use for: </strong>E-double-flat</p>
+<p><strong>Current version: </strong>NEW 2018-07-01</p>
+</div>
+<div id="E_sharp" class="entity">
+<a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E_sharp"></a><h3>Eâ¯<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+</h3>
+<p><strong>IRI: </strong>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E_sharp</p>
+<p><strong>Use for: </strong>E-sharp</p>
+<p><strong>Current version: </strong>NEW 2018-07-01</p>
+</div>
+<div id="E_double_sharp" class="entity">
+<a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E_double_sharp"></a><h3>Eâ¯â¯<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+</h3>
+<p><strong>IRI: </strong>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E_double_sharp</p>
+<p><strong>Use for: </strong>E-double-sharp</p>
+<p><strong>Current version: </strong>NEW 2018-07-01</p>
+</div>
+<div id="F" class="entity">
+<a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F"></a><h3>F<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+</h3>
+<p><strong>IRI: </strong>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F</p>
+<p><strong>Current version: </strong>NEW 2018-07-01</p>
+</div>
+<div id="F_flat" class="entity">
+<a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F_flat"></a><h3>Fâ­<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+</h3>
+<p><strong>IRI: </strong>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F_flat</p>
+<p><strong>Use for: </strong>F-flat</p>
+<p><strong>Current version: </strong>NEW 2018-07-01</p>
+</div>
+<div id="F_double_flat" class="entity">
+<a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F_double_flat"></a><h3>Dâ­â­<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+</h3>
+<p><strong>IRI: </strong>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F_double_flat</p>
+<p><strong>Use for: </strong>F-double-flat</p>
+<p><strong>Current version: </strong>NEW 2018-07-01</p>
+</div>
+<div id="F_sharp" class="entity">
+<a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F_sharp"></a><h3>Fâ¯<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+</h3>
+<p><strong>IRI: </strong>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F_sharp</p>
+<p><strong>Use for: </strong>F-sharp</p>
+<p><strong>Current version: </strong>NEW 2018-07-01</p>
+</div>
+<div id="F_double_sharp" class="entity">
+<a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F_double_sharp"></a><h3>Fâ¯â¯<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+</h3>
+<p><strong>IRI: </strong>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F_double_sharp</p>
+<p><strong>Use for: </strong>F-double-sharp</p>
+<p><strong>Current version: </strong>NEW 2018-07-01</p>
+</div>
+<div id="G" class="entity">
+<a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G"></a><h3>G<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+</h3>
+<p><strong>IRI: </strong>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G</p>
+<p><strong>Current version: </strong>NEW 2018-07-01</p>
+</div>
+<div id="G_flat" class="entity">
+<a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G_flat"></a><h3>Gâ­<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+</h3>
+<p><strong>IRI: </strong>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G_flat</p>
+<p><strong>Use for: </strong>G-flat</p>
+<p><strong>Current version: </strong>NEW 2018-07-01</p>
+</div>
+<div id="G_double_flat" class="entity">
+<a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G_double_flat"></a><h3>Gâ­â­<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+</h3>
+<p><strong>IRI: </strong>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G_double_flat</p>
+<p><strong>Use for: </strong>G-double-flat</p>
+<p><strong>Current version: </strong>NEW 2018-07-01</p>
+</div>
+<div id="G_sharp" class="entity">
+<a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G_sharp"></a><h3>Gâ¯<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+</h3>
+<p><strong>IRI: </strong>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G_sharp</p>
+<p><strong>Use for: </strong>G-sharp</p>
+<p><strong>Current version: </strong>NEW 2018-07-01</p>
+</div>
+<div id="G_double_sharp" class="entity">
+<a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G_double_sharp"></a><h3>Gâ¯â¯<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+</h3>
+<p><strong>IRI: </strong>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/G_double_sharp</p>
+<p><strong>Use for: </strong>G-double-sharp</p>
+<p><strong>Current version: </strong>NEW 2018-07-01</p>
+</div>
+<div id="A" class="entity">
+<a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A"></a><h3>A<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+</h3>
+<p><strong>IRI: </strong>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A</p>
+<p><strong>Current version: </strong>NEW 2018-07-01</p>
+</div>
+<div id="A_flat" class="entity">
+<a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A_flat"></a><h3>Aâ­<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+</h3>
+<p><strong>IRI: </strong>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A_flat</p>
+<p><strong>Use for: </strong>A-flat</p>
+<p><strong>Current version: </strong>NEW 2018-07-01</p>
+</div>
+<div id="A_double_flat" class="entity">
+<a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A_double_flat"></a><h3>Aâ­â­<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+</h3>
+<p><strong>IRI: </strong>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A_double_flat</p>
+<p><strong>Use for: </strong>A-double-flat</p>
+<p><strong>Current version: </strong>NEW 2018-07-01</p>
+</div>
+<div id="A_sharp" class="entity">
+<a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A_sharp"></a><h3>Aâ¯<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+</h3>
+<p><strong>IRI: </strong>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A_sharp</p>
+<p><strong>Use for: </strong>A-sharp</p>
+<p><strong>Current version: </strong>NEW 2018-07-01</p>
+</div>
+<div id="A_double_sharp" class="entity">
+<a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A_double_sharp"></a><h3>Aâ¯â¯<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+</h3>
+<p><strong>IRI: </strong>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/A_double_sharp</p>
+<p><strong>Use for: </strong>A-double-sharp</p>
+<p><strong>Current version: </strong>NEW 2018-07-01</p>
+</div>
+<div id="B" class="entity">
+<a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B"></a><h3>B<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+</h3>
+<p><strong>IRI: </strong>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B</p>
+<p><strong>Current version: </strong>NEW 2018-07-01</p>
+</div>
+<div id="B_flat" class="entity">
+<a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B_flat"></a><h3>Bâ­<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+</h3>
+<p><strong>IRI: </strong>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B_flat</p>
+<p><strong>Use for: </strong>B-flat</p>
+<p><strong>Current version: </strong>NEW 2018-07-01</p>
+</div>
+<div id="B_double_flat" class="entity">
+<a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B_double_flat"></a><h3>Bâ­â­<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+</h3>
+<p><strong>IRI: </strong>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B_double_flat</p>
+<p><strong>Use for: </strong>B-double-flat</p>
+<p><strong>Current version: </strong>NEW 2018-07-01</p>
+</div>
+<div id="B_sharp" class="entity">
+<a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B_sharp"></a><h3>Bâ¯<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+</h3>
+<p><strong>IRI: </strong>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B_sharp</p>
+<p><strong>Use for: </strong>B-sharp</p>
+<p><strong>Current version: </strong>NEW 2018-07-01</p>
+</div>
+<div id="B_double_sharp" class="entity">
+<a name="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B_double_sharp"></a><h3>Bâ¯â¯<sup title="class" class="type-c">c</sup><span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+</h3>
+<p><strong>IRI: </strong>http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B_double_sharp</p>
+<p><strong>Use for: </strong>B-double-sharp</p>
+<p><strong>Current version: </strong>NEW 2018-07-01</p>
+</div>
+<div id="namespacedeclarations">
+<h2>Namespace Declarations <span class="backlink"> back to <a href="#toc">ToC</a></span>
+</h2>
+<dl>
+<dt>dcterms</dt>
+<dd>http://purl.org/dc/terms/</dd>
+<dt>rdf</dt>
+<dd>http://www.w3.org/1999/02/22-rdf-syntax-ns#</dd>
+<dt>rdfs</dt>
+<dd>http://www.w3.org/2000/01/rdf-schema#</dd>
+<dt>skos</dt>
+<dd>http://www.w3.org/2004/02/skos/core#</dd>
+</dl>
+</div>
+</body>
+</html>
