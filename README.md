@@ -14,6 +14,6 @@ The ontology also includes six associated specialized vocabularies:
 For other specialized vocabularies, we encourage the use of those developed by Doremus for their FRBRoo-based ontology for music.
 
 ## Ontology
--- Human readable form
+-- Human readable form <http://performedmusicontology.org/ontologies/PerformedMusicOntology.html>
 
 
