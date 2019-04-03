@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/full_track">
+    <skos:prefLabel xml:lang="en">full track</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:broader rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1008"/>
+    <skos:changeNote rdf:nodeID="Nce407a5831c84c37bfcb29bc61bb468b"/>
+    <skos:definition xml:lang="en">Magnetic tape with 1 audio track on which sound and other electro-acoustic signals are captured.</skos:definition>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nce407a5831c84c37bfcb29bc61bb468b">
+    <dcterms:date>2018-07-01</dcterms:date>
+    <rdf:value>NEW</rdf:value>
+  </rdf:Description>
+</rdf:RDF>

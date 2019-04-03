@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/disc_45">
+    <skos:broader rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1004"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Colloquial term representing 7" diameter vinyl audio discs with a playing speed of 45 rpm. The term does not necessarily describe the carrier accurately.</skos:definition>
+    <skos:prefLabel xml:lang="en">45 recording</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/"/>
+    <skos:changeNote rdf:nodeID="Nad2508ddefa14be095d19d0b2ffaa4a0"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nad2508ddefa14be095d19d0b2ffaa4a0">
+    <rdf:value>NEW</rdf:value>
+    <dcterms:date>2018-07-01</dcterms:date>
+  </rdf:Description>
+</rdf:RDF>

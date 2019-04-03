@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/playing_speed/Ips1.8">
+    <rdfs:comment xml:lang="en">Speed occurs on audiocassettes.</rdfs:comment>
+    <skos:prefLabel xml:lang="en">1 7/8 ips</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/playing_speed/"/>
+    <skos:changeNote rdf:nodeID="N5f892a2affb84183a07d17f6973c1024"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Playing speed of 1 7/8 inches per second.</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5f892a2affb84183a07d17f6973c1024">
+    <dcterms:date>2018-07-01</dcterms:date>
+    <rdf:value>NEW</rdf:value>
+  </rdf:Description>
+</rdf:RDF>

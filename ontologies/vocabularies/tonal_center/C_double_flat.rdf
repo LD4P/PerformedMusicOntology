@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/C_double_flat">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:changeNote rdf:nodeID="Ne2c62cdf4bbc4348acabb3afb0d09bc4"/>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+    <skos:prefLabel xml:lang="en">C♭♭</skos:prefLabel>
+    <skos:altLabel xml:lang="en">C-double-flat</skos:altLabel>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne2c62cdf4bbc4348acabb3afb0d09bc4">
+    <rdf:value>NEW</rdf:value>
+    <dcterms:date>2018-07-01</dcterms:date>
+  </rdf:Description>
+</rdf:RDF>

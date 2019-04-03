@@ -1,0 +1,17 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdact: <http://rdaregistry.info/termList/RDACarrierType/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://performedmusicontology.org/ontologies/vocabularies/playing_speed/ips.9> a skos:Concept ;
+    rdfs:comment "Speed occurs on half-speed mini-cassettes used in small portable recorders."@en ;
+    skos:altLabel "Advanced Audio Recording format"@en ;
+    skos:changeNote [ dcterms:date "2018-07-01" ;
+            rdf:value "NEW" ] ;
+    skos:definition "Playing speed of 15/16 inches per second."@en ;
+    skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/playing_speed/> ;
+    skos:prefLabel "15/16 ips"@en .
+

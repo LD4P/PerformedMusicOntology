@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/ep_record">
+    <skos:definition xml:lang="en">A music disc that contains more tracks than a single but not as many as on a typical album/LP/disc.</skos:definition>
+    <skos:changeNote rdf:nodeID="Neec3325b273d40e0b643f62db5b1bc9f"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">EP record</skos:prefLabel>
+    <skos:altLabel xml:lang="en">extended play record</skos:altLabel>
+    <skos:broader rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1004"/>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Neec3325b273d40e0b643f62db5b1bc9f">
+    <rdf:value>NEW</rdf:value>
+    <dcterms:date>2018-07-01</dcterms:date>
+  </rdf:Description>
+</rdf:RDF>

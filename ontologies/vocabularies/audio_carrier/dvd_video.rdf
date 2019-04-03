@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/dvd_video">
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/"/>
+    <skos:changeNote rdf:nodeID="N7e36e5ee52e74c7ca9bd2717309781fe"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">DVD Video</skos:prefLabel>
+    <skos:definition xml:lang="en">DVD optical discs that use the DVD format to store digital video. From 2003, it has been the dominant consumer video format.</skos:definition>
+    <skos:broader rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1060"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7e36e5ee52e74c7ca9bd2717309781fe">
+    <dcterms:date>2018-07-01</dcterms:date>
+    <rdf:value>NEW</rdf:value>
+  </rdf:Description>
+</rdf:RDF>

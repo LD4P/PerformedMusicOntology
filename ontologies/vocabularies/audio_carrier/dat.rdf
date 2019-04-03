@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/dat">
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:changeNote rdf:nodeID="N0bfdda88b9da415fafb91823d2c46a89"/>
+    <skos:prefLabel xml:lang="en">DAT</skos:prefLabel>
+    <skos:broader rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1007"/>
+    <skos:definition xml:lang="en">Sony's proprietary Digital Audio Tape format, characterized by magnetic media enclosed in a protective shell, with the dimensions of 8 x 6 cm, 4 mm tape or 2 7/8 x 2 1/8 in., 1/8 in. tape.</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0bfdda88b9da415fafb91823d2c46a89">
+    <dcterms:date>2018-07-01</dcterms:date>
+    <rdf:value>NEW</rdf:value>
+  </rdf:Description>
+</rdf:RDF>

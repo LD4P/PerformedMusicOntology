@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/medium_part_type/obbligato">
+    <skos:changeNote rdf:nodeID="N828d1a02108549cdb8fa65c12c29c347"/>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/medium_part_type/"/>
+    <skos:prefLabel xml:lang="en">obbligato</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:scopeNote xml:lang="en">For mediums of performance marked "obbligato" in a score or otherwise.</skos:scopeNote>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N828d1a02108549cdb8fa65c12c29c347">
+    <rdf:value>NEW</rdf:value>
+    <dcterms:date>2018-07-01</dcterms:date>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/medium_part_type/solo">
+    <skos:scopeNote xml:lang="en">For mediums of performance marked "solo" in a score or is clearly a solo part in the context of the work, such as the oboe part in a concerto for oboe and orchestra.</skos:scopeNote>
+    <skos:prefLabel xml:lang="en">solo</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:changeNote rdf:nodeID="N62e86dc0168d415ebfd7d6a8b97eb9b6"/>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/medium_part_type/"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N62e86dc0168d415ebfd7d6a8b97eb9b6">
+    <dcterms:date>2018-07-01</dcterms:date>
+    <rdf:value>NEW</rdf:value>
+  </rdf:Description>
+</rdf:RDF>

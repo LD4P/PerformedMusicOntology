@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/piano_roll">
+    <skos:definition xml:lang="en">An audio roll used to operate a player piano or reproducing piano.</skos:definition>
+    <skos:broader rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1006"/>
+    <skos:prefLabel xml:lang="en">piano roll</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/"/>
+    <skos:changeNote rdf:nodeID="N4bc3ab6ceebd475483a52d6b472e9b4e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4bc3ab6ceebd475483a52d6b472e9b4e">
+    <rdf:value>NEW</rdf:value>
+    <dcterms:date>2018-07-01</dcterms:date>
+  </rdf:Description>
+</rdf:RDF>

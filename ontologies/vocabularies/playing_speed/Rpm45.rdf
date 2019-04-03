@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/playing_speed/Rpm45">
+    <skos:prefLabel xml:lang="en">45 rpm</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:changeNote rdf:nodeID="N2a24279592b048e48e6bd2c51d657cd8"/>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/playing_speed/"/>
+    <skos:definition xml:lang="en">Playing speed of 45 revolutions per minute.</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2a24279592b048e48e6bd2c51d657cd8">
+    <dcterms:date>2018-07-01</dcterms:date>
+    <rdf:value>NEW</rdf:value>
+  </rdf:Description>
+</rdf:RDF>

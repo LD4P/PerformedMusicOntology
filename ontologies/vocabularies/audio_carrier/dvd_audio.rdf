@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="N0d6dbfe34572423cb7371eb83e9a0967">
+    <rdf:value>NEW</rdf:value>
+    <dcterms:date>2018-07-01</dcterms:date>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/dvd_audio">
+    <skos:prefLabel xml:lang="en">DVD Audio</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:broader rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1004"/>
+    <skos:changeNote rdf:nodeID="N0d6dbfe34572423cb7371eb83e9a0967"/>
+    <skos:definition xml:lang="en">DVD optical discs that use the the DVD audio format. Different bit depth/sampling rate/channel combinations can be used on a single disc.</skos:definition>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/"/>
+  </rdf:Description>
+</rdf:RDF>

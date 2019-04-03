@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/playing_speed/ips.9">
+    <skos:definition xml:lang="en">Playing speed of 15/16 inches per second.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:comment xml:lang="en">Speed occurs on half-speed mini-cassettes used in small portable recorders.</rdfs:comment>
+    <skos:changeNote rdf:nodeID="N8c1162b9ebe94775bfbbc84d0a786eb2"/>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/playing_speed/"/>
+    <skos:altLabel xml:lang="en">Advanced Audio Recording format</skos:altLabel>
+    <skos:prefLabel xml:lang="en">15/16 ips</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8c1162b9ebe94775bfbbc84d0a786eb2">
+    <rdf:value>NEW</rdf:value>
+    <dcterms:date>2018-07-01</dcterms:date>
+  </rdf:Description>
+</rdf:RDF>

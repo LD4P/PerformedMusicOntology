@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/hybrid_sacd">
+    <skos:definition xml:lang="en">An SACD that also is also encoded with a PCM audio layer readable by compact disc players.</skos:definition>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/"/>
+    <skos:prefLabel xml:lang="en">hybrid SACD</skos:prefLabel>
+    <skos:changeNote rdf:nodeID="Nff50eaf85f6f4be2aa63d1d9946f596b"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:broader rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1004"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nff50eaf85f6f4be2aa63d1d9946f596b">
+    <dcterms:date>2018-07-01</dcterms:date>
+    <rdf:value>NEW</rdf:value>
+  </rdf:Description>
+</rdf:RDF>

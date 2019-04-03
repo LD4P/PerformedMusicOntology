@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/organ_roll">
+    <skos:prefLabel xml:lang="en">organ roll</skos:prefLabel>
+    <skos:broader rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1006"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/"/>
+    <skos:changeNote rdf:nodeID="N9e0d7b3219a34bdbb5656b3f2b0faefc"/>
+    <skos:definition xml:lang="en">An audio roll used to operate a player organ or reproducing organ.</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9e0d7b3219a34bdbb5656b3f2b0faefc">
+    <dcterms:date>2018-07-01</dcterms:date>
+    <rdf:value>NEW</rdf:value>
+  </rdf:Description>
+</rdf:RDF>

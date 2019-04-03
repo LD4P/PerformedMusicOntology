@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/encoding_format/Mp3">
+    <skos:prefLabel xml:lang="en">MP3</skos:prefLabel>
+    <skos:definition xml:lang="en">MPEG Layer III Audio, an audio encoding format for digital audio.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/encoding_format/"/>
+    <skos:changeNote rdf:nodeID="Nad1c72666c5c41f8b129a2967f5e27bb"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nad1c72666c5c41f8b129a2967f5e27bb">
+    <dcterms:date>2018-07-01</dcterms:date>
+    <rdf:value>NEW</rdf:value>
+  </rdf:Description>
+</rdf:RDF>
