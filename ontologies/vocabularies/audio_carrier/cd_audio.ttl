@@ -1,0 +1,16 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdact: <http://rdaregistry.info/termList/RDACarrierType/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/cd_audio> a skos:Concept ;
+    skos:broader <http://rdaregistry.info/termList/RDACarrierType/1004> ;
+    skos:changeNote [ dcterms:date "2018-07-01" ;
+            rdf:value "NEW" ] ;
+    skos:definition "Optical discs that use the standard compact disc format for audio. They are 12 cm (4 3/4 in.) in diameter, and encoded as 2-channel signed 16-bit Linear PCM sampled at 44,100 Hz."@en ;
+    skos:inScheme <http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/> ;
+    skos:prefLabel "CD Audio"@en .
+

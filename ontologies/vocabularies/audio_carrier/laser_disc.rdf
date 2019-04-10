@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/laser_disc">
+    <skos:definition xml:lang="en">Home video format, with a standard diameter of 30 cm (12 in.)</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">laserdisc</skos:prefLabel>
+    <skos:changeNote rdf:nodeID="N277dc0450a9449a0a27766eec5009c7a"/>
+    <skos:broader rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1004"/>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N277dc0450a9449a0a27766eec5009c7a">
+    <dcterms:date>2018-07-01</dcterms:date>
+    <rdf:value>NEW</rdf:value>
+  </rdf:Description>
+</rdf:RDF>

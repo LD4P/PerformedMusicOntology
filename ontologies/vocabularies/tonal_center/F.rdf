@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/F">
+    <skos:prefLabel xml:lang="en">F</skos:prefLabel>
+    <skos:changeNote rdf:nodeID="N4b1caadaab174a1d95c58051fe02e608"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4b1caadaab174a1d95c58051fe02e608">
+    <dcterms:date>2018-07-01</dcterms:date>
+    <rdf:value>NEW</rdf:value>
+  </rdf:Description>
+</rdf:RDF>

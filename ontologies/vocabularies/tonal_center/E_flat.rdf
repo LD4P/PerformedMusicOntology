@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="N598dfb24ccf444dca24ee79d71d84610">
+    <rdf:value>NEW</rdf:value>
+    <dcterms:date>2018-07-01</dcterms:date>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/E_flat">
+    <skos:changeNote rdf:nodeID="N598dfb24ccf444dca24ee79d71d84610"/>
+    <skos:prefLabel xml:lang="en">E♭</skos:prefLabel>
+    <skos:altLabel xml:lang="en">E-flat</skos:altLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+  </rdf:Description>
+</rdf:RDF>

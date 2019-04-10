@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="N3407295557404ae1a0777d0421fe5103">
+    <rdf:value>NEW</rdf:value>
+    <dcterms:date>2018-07-01</dcterms:date>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/medium_part_type/ad_lib">
+    <skos:prefLabel xml:lang="en">ad lib</skos:prefLabel>
+    <skos:scopeNote xml:lang="en">For mediums of performance marked "ad lib" or "ad libitum" in a score or otherwise.</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/medium_part_type/"/>
+    <skos:altLabel xml:lang="en">ad libitum</skos:altLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:changeNote rdf:nodeID="N3407295557404ae1a0777d0421fe5103"/>
+  </rdf:Description>
+</rdf:RDF>

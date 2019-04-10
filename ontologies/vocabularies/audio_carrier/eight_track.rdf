@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/eight_track">
+    <skos:broader rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1008"/>
+    <skos:prefLabel xml:lang="en">8-track</skos:prefLabel>
+    <skos:changeNote rdf:nodeID="N33d09205efce49a6831a4236eb1f347c"/>
+    <skos:altLabel xml:lang="en">eight-track</skos:altLabel>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Magnetic tape divided into 8 audio tracks that run parallel with each other, on which sound and other electro-acoustic signals are captured.</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N33d09205efce49a6831a4236eb1f347c">
+    <rdf:value>NEW</rdf:value>
+    <dcterms:date>2018-07-01</dcterms:date>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/playing_speed/Ips30">
+    <skos:prefLabel xml:lang="en">30 ips</skos:prefLabel>
+    <skos:definition xml:lang="en">Playing speed of 30 inches per second.</skos:definition>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/playing_speed/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:changeNote rdf:nodeID="Nf2d9ad334379433f867e3a7d85fe1318"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf2d9ad334379433f867e3a7d85fe1318">
+    <dcterms:date>2018-07-01</dcterms:date>
+    <rdf:value>NEW</rdf:value>
+  </rdf:Description>
+</rdf:RDF>

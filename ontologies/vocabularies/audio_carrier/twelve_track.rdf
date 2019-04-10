@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="N38d27b2e025b4d8c824e1e40462fdf1b">
+    <dcterms:date>2018-07-01</dcterms:date>
+    <rdf:value>NEW</rdf:value>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/twelve_track">
+    <skos:changeNote rdf:nodeID="N38d27b2e025b4d8c824e1e40462fdf1b"/>
+    <skos:altLabel xml:lang="en">twelve-track</skos:altLabel>
+    <skos:prefLabel xml:lang="en">12-track</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/"/>
+    <skos:broader rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1008"/>
+    <skos:definition xml:lang="en">Magnetic tape divided into 12 audio tracks that run parallel with each other, in which sound and other electro-acoustic signals are captured.</skos:definition>
+  </rdf:Description>
+</rdf:RDF>

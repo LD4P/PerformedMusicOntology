@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/D_sharp">
+    <skos:altLabel xml:lang="en">D-sharp</skos:altLabel>
+    <skos:prefLabel xml:lang="en">D♯</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+    <skos:changeNote rdf:nodeID="Ne75c019b3886427cbc5d715c89f7b832"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne75c019b3886427cbc5d715c89f7b832">
+    <dcterms:date>2018-07-01</dcterms:date>
+    <rdf:value>NEW</rdf:value>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/cd_audio">
+    <skos:definition xml:lang="en">Optical discs that use the standard compact disc format for audio. They are 12 cm (4 3/4 in.) in diameter, and encoded as 2-channel signed 16-bit Linear PCM sampled at 44,100 Hz.</skos:definition>
+    <skos:prefLabel xml:lang="en">CD Audio</skos:prefLabel>
+    <skos:changeNote rdf:nodeID="N418299a40a0c45128c04d2acf6577b75"/>
+    <skos:broader rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1004"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N418299a40a0c45128c04d2acf6577b75">
+    <rdf:value>NEW</rdf:value>
+    <dcterms:date>2018-07-01</dcterms:date>
+  </rdf:Description>
+</rdf:RDF>

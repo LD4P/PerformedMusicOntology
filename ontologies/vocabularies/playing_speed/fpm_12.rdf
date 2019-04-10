@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/playing_speed/fpm_12">
+    <skos:prefLabel xml:lang="en">12 fpm</skos:prefLabel>
+    <skos:definition xml:lang="en">Playing speed of 12 feet per minute x 10.</skos:definition>
+    <rdfs:comment xml:lang="en">Used for piano and organ rolls.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:changeNote rdf:nodeID="N1c901f1ae73145efbc5de6bc0b9faada"/>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/playing_speed/"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1c901f1ae73145efbc5de6bc0b9faada">
+    <dcterms:date>2018-07-01</dcterms:date>
+    <rdf:value>NEW</rdf:value>
+  </rdf:Description>
+</rdf:RDF>

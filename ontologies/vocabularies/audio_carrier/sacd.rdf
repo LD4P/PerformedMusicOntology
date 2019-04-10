@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/sacd">
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/"/>
+    <skos:broader rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1004"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en">Optical audio disc with more channels and longer playing time than a conventional CD.</skos:definition>
+    <skos:changeNote rdf:nodeID="N3364cf197fde4fb79f1d2a5e265dde1d"/>
+    <skos:prefLabel xml:lang="en">SACD</skos:prefLabel>
+    <skos:altLabel xml:lang="en">Super Audio Compact Disc</skos:altLabel>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3364cf197fde4fb79f1d2a5e265dde1d">
+    <rdf:value>NEW</rdf:value>
+    <dcterms:date>2018-07-01</dcterms:date>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="N48a0021dfec147bf9dca5ca95c44f094">
+    <rdf:value>NEW</rdf:value>
+    <dcterms:date>2018-07-01</dcterms:date>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/quarter_track">
+    <skos:broader rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1008"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/"/>
+    <skos:altLabel xml:lang="en">1/4 track</skos:altLabel>
+    <skos:definition xml:lang="en">Magnetic tape divided into 4 audio tracks that run parallel with each other, in which sound and other electro-acoustic signals are captured.</skos:definition>
+    <skos:prefLabel xml:lang="en">quarter track</skos:prefLabel>
+    <skos:changeNote rdf:nodeID="N48a0021dfec147bf9dca5ca95c44f094"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="N0f6c1c260e8d40159b6f6bf7f39aee2e">
+    <rdf:value>NEW</rdf:value>
+    <dcterms:date>2018-07-01</dcterms:date>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/B_double_sharp">
+    <skos:prefLabel xml:lang="en">B♯♯</skos:prefLabel>
+    <skos:altLabel xml:lang="en">B-double-sharp</skos:altLabel>
+    <skos:changeNote rdf:nodeID="N0f6c1c260e8d40159b6f6bf7f39aee2e"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/tonal_center/"/>
+  </rdf:Description>
+</rdf:RDF>

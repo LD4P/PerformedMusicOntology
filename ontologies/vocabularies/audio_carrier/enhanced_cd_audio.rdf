@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/enhanced_cd_audio">
+    <skos:prefLabel xml:lang="en">Enhanced CD Audio</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="en"></skos:definition>
+    <skos:broader rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1004"/>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/ontologies/vocabularies/audio_carrier/"/>
+    <skos:changeNote rdf:nodeID="N0100b81e7cfb4838a534954b23ad79f9"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0100b81e7cfb4838a534954b23ad79f9">
+    <dcterms:date>2018-07-01</dcterms:date>
+    <rdf:value>NEW</rdf:value>
+  </rdf:Description>
+</rdf:RDF>
