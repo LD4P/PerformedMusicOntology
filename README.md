@@ -12,7 +12,7 @@ The ontology also includes six associated specialized vocabularies:
   •	Playing speed vocabulary
   •	Tonal Center Vocabulary
   
-For other specialized vocabularies, we encourage the use of those developed by Doremus for their FRBRoo-based ontology for music.
+For other specialized vocabularies, we encourage the use of [those developed by DOREMUS](http://data.doremus.org/vocabularies/) for their FRBRoo-based ontology for music.
 Ontology
 
 -- Human readable form at: http://performedmusicontology.org/ontologies/PerformedMusicOntology.html
