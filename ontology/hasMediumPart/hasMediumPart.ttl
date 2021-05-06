@@ -1,0 +1,10 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://performedmusicontology.org/ontology/hasMediumPart> a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    rdfs:label "has Medium Part" ;
+    rdfs:comment "Examples: er hu, mixed chorus",
+        "Use with :DeclaredMedium or :PerformedMedium" ;
+    rdfs:range <http://performedmusicontology.org/ontology/MediumPart> ;
+    skos:definition "Specific element within an overall declared or performed medium." .
+

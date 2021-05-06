@@ -1,0 +1,8 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://performedmusicontology.org/ontology/Ceremony> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Ceremony" ;
+    rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Event> ;
+    skos:definition "Ritual event, performed on special occasions (e.g., death, baptism, wedding, graduation, equinox, coronation, victory)" .
+

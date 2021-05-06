@@ -1,0 +1,8 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://performedmusicontology.org/ontology/hasDoublingMediumOfPerformance> a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    rdfs:label "has Doubling Medium of Performance" ;
+    rdfs:comment "Use with MediumPart" ;
+    skos:definition "2 (or more) mediums of performance intended to be performed alternately or at the same time by a single performer" .
+

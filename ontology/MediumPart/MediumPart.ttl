@@ -1,0 +1,9 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://performedmusicontology.org/ontology/MediumPart> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Medium part" ;
+    rdfs:comment "Example: a string quartet has 3 medium parts: the violins; the viola; the cello",
+        "Use with DeclaredMedium, PerformedMedium" ;
+    skos:definition "Medium of performance, type, etc., of a specific part of the declared or performed medium." .
+

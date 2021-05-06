@@ -1,0 +1,8 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://performedmusicontology.org/ontology/LivePerformance> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Live performance" ;
+    rdfs:subClassOf <http://performedmusicontology.org/ontology/Performance> ;
+    skos:definition "Live Performance that is recorded at a public event or in a single recording session." .
+

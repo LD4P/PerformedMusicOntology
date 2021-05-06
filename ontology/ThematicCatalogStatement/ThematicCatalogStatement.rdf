@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://performedmusicontology.org/ontology/ThematicCatalogStatement">
+    <rdfs:label>Thematic catalog number statement</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+    <skos:definition>Statement about the thematic catalog number for a musical work, including both the prefix and the numeric or alphanumeric parts.</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Example: BWV 485 (Bach); TWV 52:d1 (Telemann)</rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>

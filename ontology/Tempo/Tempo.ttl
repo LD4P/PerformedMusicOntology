@@ -1,0 +1,7 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://performedmusicontology.org/ontology/Tempo> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Tempo" ;
+    skos:definition "The speed or pace of a music work, whether declared (in a score) or performed." .
+

@@ -1,0 +1,9 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://performedmusicontology.org/ontology/WorkComponent> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Work component" ;
+    rdfs:comment "Examples: A rondo from a 3-movement piano concerto; the first movement of a symphony; chapter 4 of a 10 chapter book" ;
+    rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Work> ;
+    skos:definition "A work that is an integral part of another work, even when separated from it" .
+

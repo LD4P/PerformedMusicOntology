@@ -1,0 +1,7 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://performedmusicontology.org/ontology/BenefitConcert> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:subClassOf <http://performedmusicontology.org/ontology/Concert> ;
+    skos:definition "Concert held for charitable purposes, i.e., to raise funds or awareness" .
+

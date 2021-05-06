@@ -1,0 +1,9 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://performedmusicontology.org/ontology/ThematicCatalogStatement> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Thematic catalog number statement" ;
+    rdfs:comment "Example: BWV 485 (Bach); TWV 52:d1 (Telemann)" ;
+    rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Identifier> ;
+    skos:definition "Statement about the thematic catalog number for a musical work, including both the prefix and the numeric or alphanumeric parts." .
+

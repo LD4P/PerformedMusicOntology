@@ -1,0 +1,8 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://performedmusicontology.org/ontology/hasTrackNumber> a <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+    rdfs:label "Track number" ;
+    rdfs:range rdfs:Literal ;
+    skos:definition "Track number(s) of a compiled audio work on a sound recording." .
+

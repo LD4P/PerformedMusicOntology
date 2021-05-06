@@ -1,0 +1,8 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://performedmusicontology.org/ontology/ConcertTour> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Concert tour" ;
+    rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Event> ;
+    skos:definition "Series of concerts by a performer or group of performers in different cities, countries, or locations." .
+
