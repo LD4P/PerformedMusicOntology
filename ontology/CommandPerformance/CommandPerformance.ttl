@@ -1,0 +1,8 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://performedmusicontology.org/ontology/CommandPerformance> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Command performance" ;
+    rdfs:subClassOf <http://performedmusicontology.org/ontology/Concert> ;
+    skos:definition "Concert or Performance done at the request of a monarch or other head of state." .
+

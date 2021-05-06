@@ -1,0 +1,11 @@
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://performedmusicontology.org/ontology/hasPerformance> a ns1:ObjectProperty ;
+    rdfs:label "has Performance" ;
+    rdfs:range <http://performedmusicontology.org/ontology/Performance> ;
+    rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/eventContentOf> ;
+    ns1:inverseOf <http://performedmusicontology.org/ontology/performanceOf> ;
+    skos:definition "Event that is a performance, either improvised or of a pre-existing work." .
+

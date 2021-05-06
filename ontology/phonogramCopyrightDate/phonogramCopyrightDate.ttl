@@ -1,0 +1,8 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://performedmusicontology.org/ontology/phonogramCopyrightDate> a <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+    rdfs:label "Phonogram copyright date" ;
+    rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/date> ;
+    skos:definition "Phonogram copyright date for a sound recording." .
+

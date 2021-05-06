@@ -1,0 +1,10 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://performedmusicontology.org/ontology/hasMediumPartType> a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    rdfs:label "has Medium Part Type" ;
+    rdfs:comment "Examples: solo, ad lib, optional, offstage, amplified" ;
+    rdfs:domain <http://performedmusicontology.org/ontology/MediumPart> ;
+    rdfs:subPropertyOf <http://www.w3.org/2002/07/owl#topObjectProperty> ;
+    skos:definition "Property that links a a pmo:MediumPart to a specific role or type of part." .
+

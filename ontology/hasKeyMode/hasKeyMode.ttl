@@ -1,0 +1,8 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://performedmusicontology.org/ontology/hasKeyMode> a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+    rdfs:label "has key and mode" ;
+    rdfs:comment "Example: E major, F minor" ;
+    skos:definition "Property linking a Work to a combination of a musical key and mode." .
+

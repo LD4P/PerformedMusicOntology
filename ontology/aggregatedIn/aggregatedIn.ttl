@@ -1,0 +1,7 @@
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://performedmusicontology.org/ontology/aggregatedIn> a ns1:ObjectProperty ;
+    ns1:inverseOf <http://performedmusicontology.org/ontology/aggregates> ;
+    skos:definition "Property connecting an individual aggregated Instance to the Instance in which it is aggregated." .
+

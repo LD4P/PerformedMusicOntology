@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link href="/css/owl.css" rel="stylesheet" type="text/css" />
+    <link href="/css/Primer.css" rel="stylesheet" type="text/css" />
+    <link href="/css/rec.css" rel="stylesheet" type="text/css" />
+    <link href="/css/extra.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="/css/favicon.ico" />
+  </head>
+  <body>
+  <script>
+  const unknown_page = location.pathname
+  const alt_page = `${unknown_page}/`     
+
+  // Try to retrieve page with trailing slash added
+  fetch(alt_page)
+  .then(result=>{
+    location.href = alt_page
+   })
+  .error(error => {
+    const error = document.getElementById('message')
+    error.innerHTML(`${unknown_page} not found`)
+   })
+  </script>
+    <h1>404 - Not Found</h1>
+    <p id="message"></p>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://performedmusicontology.org/ontology/associatedWith> a <http://www.w3.org/2002/07/owl#ObjectProperty>,
+        <http://www.w3.org/2002/07/owl#SymmetricProperty> ;
+    rdfs:label "associated with" ;
+    rdfs:comment "Example: the Bible used at a presidential inauguration" ;
+    rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/relatedTo> ;
+    skos:definition "Event or Work that is associated in a general way with another event or work, instance or item." .
+

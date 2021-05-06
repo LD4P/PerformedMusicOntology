@@ -1,0 +1,7 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://performedmusicontology.org/ontology/DeclaredMedium> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Declared medium" ;
+    skos:definition "Intended overall medium of performance of a musical work, as declared by the composer, a reference source, or other source." .
+

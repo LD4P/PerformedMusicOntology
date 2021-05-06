@@ -1,0 +1,8 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://performedmusicontology.org/ontology/hasPerformerCount> a <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+    rdfs:label "Number of performers" ;
+    rdfs:range rdfs:Literal ;
+    skos:definition "Actual number of individual performers performing a Declared Medium, Performed Medium, Medium Part, or Music Part." .
+

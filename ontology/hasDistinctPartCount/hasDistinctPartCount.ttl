@@ -1,0 +1,9 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://performedmusicontology.org/ontology/hasDistinctPartCount> a <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+    rdfs:label "Number of distinct parts" ;
+    rdfs:comment "Example: A work for 2 flutes has a distinct part count of 2." ;
+    rdfs:range rdfs:Literal ;
+    skos:definition "Number of distinct music parts in a Performed Medium, Declared Medium, or Medium Part that is not a named ensemble." .
+

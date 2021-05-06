@@ -1,0 +1,8 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://performedmusicontology.org/ontology/Audition> a <http://www.w3.org/2002/07/owl#Class> ;
+    rdfs:label "Audition" ;
+    rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Event> ;
+    skos:definition "Event in which a performer or actor is applying for a position in an ensemble, cast, film, etc." .
+

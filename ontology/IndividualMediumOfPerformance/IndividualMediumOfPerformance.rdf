@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://performedmusicontology.org/ontology/IndividualMediumOfPerformance">
+    <rdfs:comment>Individual musical instrument, voice, or other object used as a medium of performance.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Individual medium of performance</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://performedmusicontology.org/ontology/MediumOfPerformance"/>
+    <rdfs:comment>Examples: flute, keyboard, pi pa, typewriter</rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>

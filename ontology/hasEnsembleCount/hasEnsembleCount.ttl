@@ -1,0 +1,9 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://performedmusicontology.org/ontology/hasEnsembleCount> a <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+    rdfs:label "Number of ensembles" ;
+    rdfs:comment "Example: a work for 2 choruses and orchestra has an ensemble count of 3." ;
+    rdfs:range rdfs:Literal ;
+    skos:definition "Number of named ensembles in a specified Declared Medium, Performed Medium, or Medium Part." .
+
