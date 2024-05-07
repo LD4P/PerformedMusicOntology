@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dc1="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://performedmusicontology.org/2.0/vocabularies/event_type/concert">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Concert</skos:prefLabel>
+    <skos:definition xml:lang="en">Live musical performance of one or more works in front of an audience or in a single recording session.</skos:definition>
+    <rdfs:comment xml:lang="en">Use as type of bf:Event.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/2.0/vocabularies/event_type/"/>
+    <skos:changeNote rdf:nodeID="nf08f8aa5b5cd455ea75a71651f4af079b5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf08f8aa5b5cd455ea75a71651f4af079b7">
+    <rdf:value>NEW</rdf:value>
+    <dc1:date>2024-04-30</dc1:date>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf08f8aa5b5cd455ea75a71651f4af079b13">
+    <rdf:value>NEW</rdf:value>
+    <dc1:date>2024-04-30</dc1:date>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://performedmusicontology.org/2.0/vocabularies/event_type/open_mic_performance">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Open mic performance</skos:prefLabel>
+    <skos:definition xml:lang="en">Live performance at a coffee house, night club, or other venue by amateur performers.</skos:definition>
+    <rdfs:comment xml:lang="en">Use as type of bf:Event.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/2.0/vocabularies/event_type/"/>
+    <skos:changeNote rdf:nodeID="nf08f8aa5b5cd455ea75a71651f4af079b10"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://performedmusicontology.org/2.0/vocabularies/event_type/ceremony">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Ceremony</skos:prefLabel>
+    <skos:definition xml:lang="en">Ritual event, performed on special occasions (e.g., death, baptism, wedding, graduation, equinox, coronation, victory).</skos:definition>
+    <rdfs:comment xml:lang="en">Use as type of bf:Event.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/2.0/vocabularies/event_type/"/>
+    <skos:changeNote rdf:nodeID="nf08f8aa5b5cd455ea75a71651f4af079b3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://performedmusicontology.org/2.0/vocabularies/event_type/performance">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Performance</skos:prefLabel>
+    <skos:definition xml:lang="en">Event in which a performer or group of performers perform an improvisation or pre-existing work to an audience or in a recording studio.</skos:definition>
+    <rdfs:comment xml:lang="en">Use as type of bf:Event.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/2.0/vocabularies/event_type/"/>
+    <skos:changeNote rdf:nodeID="nf08f8aa5b5cd455ea75a71651f4af079b11"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://performedmusicontology.org/2.0/vocabularies/event_type/recording_session">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Recording session</skos:prefLabel>
+    <skos:definition xml:lang="en">Event in which one or more performances are recorded with the aim of producing a recording for issue.</skos:definition>
+    <rdfs:comment xml:lang="en">Use as type of bf:Event.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/2.0/vocabularies/event_type/"/>
+    <skos:changeNote rdf:nodeID="nf08f8aa5b5cd455ea75a71651f4af079b12"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://performedmusicontology.org/2.0/vocabularies/event_type/commmand_performance">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Command performance</skos:prefLabel>
+    <skos:definition xml:lang="en">Concert or performance done at the request of a monarch or other head of state.</skos:definition>
+    <rdfs:comment xml:lang="en">Use as type of bf:Event.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/2.0/vocabularies/event_type/"/>
+    <skos:changeNote rdf:nodeID="nf08f8aa5b5cd455ea75a71651f4af079b4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://performedmusicontology.org/2.0/vocabularies/event_type/first_performance">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">First performance</skos:prefLabel>
+    <skos:definition xml:lang="en">The first known performance of a work.</skos:definition>
+    <rdfs:comment xml:lang="en">Use as type of bf:Event.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/2.0/vocabularies/event_type/"/>
+    <skos:changeNote rdf:nodeID="nf08f8aa5b5cd455ea75a71651f4af079b8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf08f8aa5b5cd455ea75a71651f4af079b9">
+    <rdf:value>NEW</rdf:value>
+    <dc1:date>2024-04-30</dc1:date>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://performedmusicontology.org/2.0/vocabularies/event_type/rehearsal">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Rehearsal</skos:prefLabel>
+    <skos:definition xml:lang="en">Event in which a performer or group of performers prepare for a performance.</skos:definition>
+    <rdfs:comment xml:lang="en">Use as type of bf:Event.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/2.0/vocabularies/event_type/"/>
+    <skos:changeNote rdf:nodeID="nf08f8aa5b5cd455ea75a71651f4af079b13"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf08f8aa5b5cd455ea75a71651f4af079b11">
+    <rdf:value>NEW</rdf:value>
+    <dc1:date>2024-04-30</dc1:date>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf08f8aa5b5cd455ea75a71651f4af079b10">
+    <rdf:value>NEW</rdf:value>
+    <dc1:date>2024-04-30</dc1:date>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://performedmusicontology.org/2.0/vocabularies/event_type/audition">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Audition</skos:prefLabel>
+    <skos:definition xml:lang="en">Event in which a performer or actor is applying for a position in an ensemble, cast, film, etc.</skos:definition>
+    <rdfs:comment xml:lang="en">Use as type of bf:Event.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/2.0/vocabularies/event_type/"/>
+    <skos:changeNote rdf:nodeID="nf08f8aa5b5cd455ea75a71651f4af079b1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf08f8aa5b5cd455ea75a71651f4af079b4">
+    <rdf:value>NEW</rdf:value>
+    <dc1:date>2024-04-30</dc1:date>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://performedmusicontology.org/2.0/vocabularies/event_type/concert_tour">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Series of concerts by a performer or group of performers in different cities, countries, or locations.</skos:prefLabel>
+    <skos:definition xml:lang="en">An ensemble of 7 performers.</skos:definition>
+    <rdfs:comment xml:lang="en">Use as type of bf:Event.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/2.0/vocabularies/event_type/"/>
+    <skos:changeNote rdf:nodeID="nf08f8aa5b5cd455ea75a71651f4af079b7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://performedmusicontology.org/2.0/vocabularies/event_type/benefit_concert">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Benefit concert</skos:prefLabel>
+    <skos:definition xml:lang="en">Concert held for charitable purposes, i.e., to raise funds or awareness.</skos:definition>
+    <rdfs:comment xml:lang="en">Use as type of bf:Event.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/2.0/vocabularies/event_type/"/>
+    <skos:changeNote rdf:nodeID="nf08f8aa5b5cd455ea75a71651f4af079b2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://performedmusicontology.org/2.0/vocabularies/event_type/master_class">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Master class</skos:prefLabel>
+    <skos:definition xml:lang="en">Event in which a recognized performer critiques the performances of one or more other performers.</skos:definition>
+    <rdfs:comment xml:lang="en">Use as type of bf:Event.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/2.0/vocabularies/event_type/"/>
+    <skos:changeNote rdf:nodeID="nf08f8aa5b5cd455ea75a71651f4af079b9"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf08f8aa5b5cd455ea75a71651f4af079b2">
+    <rdf:value>NEW</rdf:value>
+    <dc1:date>2024-04-30</dc1:date>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf08f8aa5b5cd455ea75a71651f4af079b8">
+    <rdf:value>NEW</rdf:value>
+    <dc1:date>2024-04-30</dc1:date>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf08f8aa5b5cd455ea75a71651f4af079b6">
+    <rdf:value>NEW</rdf:value>
+    <dc1:date>2024-04-30</dc1:date>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf08f8aa5b5cd455ea75a71651f4af079b12">
+    <rdf:value>NEW</rdf:value>
+    <dc1:date>2024-04-30</dc1:date>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://performedmusicontology.org/2.0/vocabularies/event_type/concert_series">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Concert series</skos:prefLabel>
+    <skos:definition xml:lang="en">Group of concerts in the same geographic area by a single performer or brought together by a common theme, usually available for sale as a package. e.g., an orchestra concert season, a series featuring chamber ensembles.</skos:definition>
+    <rdfs:comment xml:lang="en">Use as type of bf:Event.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/2.0/vocabularies/event_type/"/>
+    <skos:changeNote rdf:nodeID="nf08f8aa5b5cd455ea75a71651f4af079b6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf08f8aa5b5cd455ea75a71651f4af079b1">
+    <rdf:value>NEW</rdf:value>
+    <dc1:date>2024-04-30</dc1:date>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf08f8aa5b5cd455ea75a71651f4af079b5">
+    <rdf:value>NEW</rdf:value>
+    <dc1:creator rdf:resource="http://id.loc.gov/rwo/agents/"/>
+    <dc1:date>2024-04-30</dc1:date>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf08f8aa5b5cd455ea75a71651f4af079b3">
+    <rdf:value>NEW</rdf:value>
+    <dc1:date>2024-04-30</dc1:date>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://performedmusicontology.org/2.0/vocabularies/event_type/">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <rdfs:label xml:lang="en">PMO Event Type Vocabulary</rdfs:label>
+    <dc1:title xml:lang="en">PMO Event Type Vocabulary</dc1:title>
+    <skos:definition xml:lang="en">The PMO Event Type Vocabulary is a controlled vocabulary that indicates the type of BIBFRAME Event being describe, e.g, Ceremony, Performance. It was developed for the Performed Music Ontology 2.0, as an extension to bf:Event, but may be used with other ontologies.</skos:definition>
+  </rdf:Description>
+</rdf:RDF>

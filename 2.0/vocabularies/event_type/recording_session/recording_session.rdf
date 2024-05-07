@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dc1="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://performedmusicontology.org/2.0/vocabularies/event_type/recording_session">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Recording session</skos:prefLabel>
+    <skos:definition xml:lang="en">Event in which one or more performances are recorded with the aim of producing a recording for issue.</skos:definition>
+    <rdfs:comment xml:lang="en">Use as type of bf:Event.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/2.0/vocabularies/event_type/"/>
+    <skos:changeNote rdf:nodeID="n37672363ccb14c02ac34399ae7baaea5b12"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n37672363ccb14c02ac34399ae7baaea5b12">
+    <rdf:value>NEW</rdf:value>
+    <dc1:date>2024-04-30</dc1:date>
+  </rdf:Description>
+</rdf:RDF>

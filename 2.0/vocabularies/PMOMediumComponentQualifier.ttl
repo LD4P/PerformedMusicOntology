@@ -13,7 +13,7 @@
   a skos:Concept ;
   skos:prefLabel "ad lib"@en ;
   skos:altLabel "ad libitum"@en ;
-  skos:definition "For medium components marked "ad lib" or "ad libitum" in a score or otherwise."@en ;
+  skos:definition """For medium components marked "ad lib" or "ad libitum" in a score or otherwise."""@en ;
   rdfs:comment "Value for: MediumComponentQualifier."@en ;
   skos:inScheme <http://performedmusicontology.org/vocabularies/medium_component_qualifier/> ;
   skos:changeNote [
@@ -24,7 +24,7 @@
 <http://performedmusicontology.org/vocabularies/medium_component_qualifier/amplified>
   a skos:Concept ;
   skos:prefLabel "amplified"@en ;
-  skos:definition "For medium components marked "amplified" in a score or otherwise."@en ;
+  skos:definition """For medium components marked "amplified" in a score or otherwise."""@en ;
   rdfs:comment "Value for: MediumComponentQualifier."@en ;
   skos:inScheme <http://performedmusicontology.org/vocabularies/medium_component_qualifier/> ;
   skos:changeNote [
@@ -35,7 +35,7 @@
 <http://performedmusicontology.org/vocabularies/medium_component_qualifier/obbligato>
   a skos:Concept ;
   skos:prefLabel "obbligato"@en ;
-  skos:definition "For medium components marked "obbligato" in a score or otherwise.."@en ;
+  skos:definition """For medium components marked "obbligato" in a score or otherwise.."""@en ;
   rdfs:comment "Value for: MediumComponentQualifier."@en ;
   skos:inScheme <http://performedmusicontology.org/vocabularies/medium_component_qualifier/> ;
   skos:changeNote [
@@ -57,7 +57,7 @@
 <http://performedmusicontology.org/vocabularies/medium_component_qualifier/optional>
   a skos:Concept ;
   skos:prefLabel "optional"@en ;
-  skos:definition "For a medium component marked "optional" in a score or otherwise."@en ;
+  skos:definition """For a medium component marked "optional" in a score or otherwise."""@en ;
   rdfs:comment "Value for: MediumComponentQualifier."@en ;
   skos:inScheme <http://performedmusicontology.org/vocabularies/medium_component_qualifier/> ;
   skos:changeNote [
@@ -69,7 +69,7 @@
 <http://performedmusicontology.org/vocabularies/medium_component_qualifier/solo>
   a skos:Concept ;
   skos:prefLabel "solo"@en ;
-  skos:definition "For a medium component marked "solo" in a score or is clearly a solo part in the context of the work, such as the oboe part in a concerto for oboe and orchestra."@en ;
+  skos:definition """For a medium component marked "solo" in a score or is clearly a solo part in the context of the work, such as the oboe part in a concerto for oboe and orchestra."""@en ;
   rdfs:comment "Value for: MediumComponentQualifier."@en ;
   skos:inScheme <http://performedmusicontology.org/vocabularies/medium_component_qualifier/> ;
   skos:changeNote [
