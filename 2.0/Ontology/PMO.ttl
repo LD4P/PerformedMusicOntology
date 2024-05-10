@@ -1,4 +1,4 @@
-@prefix : <http://performedmusicontology.org/ontology/> .
+@prefix : <http://performedmusicontology.org/2.0/ontology> .
 @prefix ns: <http://creativecommons.org/ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,10 +7,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix terms: <http://purl.org/dc/terms/> .
-@base <http://performedmusicontology.org/ontology/> .
+@base <http://performedmusicontology.org/2.0/ontology/> .
 
-<http://performedmusicontology.org/ontology/> rdf:type owl:Ontology ;
-                                               owl:versionIRI :v2 ;
+<http://http://performedmusicontology.org/2.0/ontology> rdf:type owl:Ontology ;
+                                               owl:versionIRI :2.0 ;
                                                owl:imports <http://id.loc.gov/ontologies/bibframe-2-0-1/> .
 
 #################################################################
@@ -41,7 +41,7 @@ skos:example rdf:type owl:AnnotationProperty .
 <http://id.loc.gov/ontologies/bibframe/relatedTo> rdf:type owl:ObjectProperty .
 
 
-###  http://performedmusicontology.org/ontology/aggregatedIn
+###  http://performedmusicontology.org/2.0/ontology/aggregatedIn
 :aggregatedIn rdf:type owl:ObjectProperty ;
               owl:inverseOf :aggregates ;
               rdfs:domain <http://id.loc.gov/ontologies/bibframe/Work> ;
@@ -50,7 +50,7 @@ skos:example rdf:type owl:AnnotationProperty .
               skos:definition "Relates a work to a work in which it is aggregated."^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/aggregates
+###  http://performedmusicontology.org/2.0/ontology/aggregates
 :aggregates rdf:type owl:ObjectProperty ;
             rdfs:domain <http://id.loc.gov/ontologies/bibframe/Work> ;
             rdfs:range <http://id.loc.gov/ontologies/bibframe/Work> ;
@@ -58,7 +58,7 @@ skos:example rdf:type owl:AnnotationProperty .
             skos:definition "Relates a work to a work that it aggregates."^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/asMemberOf
+###  http://performedmusicontology.org/2.0/ontology/asMemberOf
 :asMemberOf rdf:type owl:ObjectProperty ;
             rdfs:domain <http://id.loc.gov/ontologies/bibframe/Contribution> ;
             rdfs:range <http://id.loc.gov/ontologies/bibframe/Organization> ;
@@ -66,7 +66,7 @@ skos:example rdf:type owl:AnnotationProperty .
             skos:definition "Relates a contribution that is a person to an organization through which a person makes a contribution to the resource."^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/associatedWith
+###  http://performedmusicontology.org/2.0/ontology/associatedWith
 :associatedWith rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/relatedTo> ;
                 rdf:type owl:SymmetricProperty ;
@@ -76,7 +76,7 @@ skos:example rdf:type owl:AnnotationProperty .
                 skos:example "The musical work \"1812\" is associated with the event \"French invasion of Russia\""^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/createdFor
+###  http://performedmusicontology.org/2.0/ontology/createdFor
 :createdFor rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/relatedTo> ;
             rdfs:comment "Suggested use - With Agent, Event" ;
@@ -84,7 +84,7 @@ skos:example rdf:type owl:AnnotationProperty .
             skos:definition "Relates a resource to a resource for which it was created"^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/hasDramaticRole
+###  http://performedmusicontology.org/2.0/ontology/hasDramaticRole
 :hasDramaticRole rdf:type owl:ObjectProperty ;
                  rdfs:domain <http://id.loc.gov/ontologies/bibframe/Contribution> ;
                  rdfs:range :DramaticRole ;
@@ -92,7 +92,7 @@ skos:example rdf:type owl:AnnotationProperty .
                  skos:definition "Relates a contribution to a dramatic role."^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/hasEnsembleSize
+###  http://performedmusicontology.org/2.0/ontology/hasEnsembleSize
 :hasEnsembleSize rdf:type owl:ObjectProperty ;
                  rdfs:domain <http://id.loc.gov/ontologies/bibframe/Work> ;
                  rdfs:range :EnsembleSize ;
@@ -100,7 +100,7 @@ skos:example rdf:type owl:AnnotationProperty .
                  skos:definition "Relates a work to an individual ensemble size."^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/hasEventName
+###  http://performedmusicontology.org/2.0/ontology/hasEventName
 :hasEventName rdf:type owl:ObjectProperty ;
               rdfs:domain <http://id.loc.gov/ontologies/bibframe/Event> ;
               rdfs:range :EventName ;
@@ -108,7 +108,7 @@ skos:example rdf:type owl:AnnotationProperty .
               skos:definition "Relates an event to a name or title for the event."^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/hasInspiration
+###  http://performedmusicontology.org/2.0/ontology/hasInspiration
 :hasInspiration rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/relatedTo> ;
                 owl:inverseOf :inspirationFor ;
@@ -118,7 +118,7 @@ skos:example rdf:type owl:AnnotationProperty .
                 skos:definition "Relates a work to a resource that inspired the creation of the work"^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/hasKeyMode
+###  http://performedmusicontology.org/2.0/ontology/hasKeyMode
 :hasKeyMode rdf:type owl:ObjectProperty ;
             rdfs:domain <http://id.loc.gov/ontologies/bibframe/Work> ;
             rdfs:range :KeyMode ;
@@ -127,7 +127,7 @@ skos:example rdf:type owl:AnnotationProperty .
             skos:definition "Relates a work to a key and mode."^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/hasMediumComponent
+###  http://performedmusicontology.org/2.0/ontology/hasMediumComponent
 :hasMediumComponent rdf:type owl:ObjectProperty ;
                     rdfs:domain <http://id.loc.gov/ontologies/bibframe/Work> ;
                     rdfs:range :MediumComponent ;
@@ -135,7 +135,7 @@ skos:example rdf:type owl:AnnotationProperty .
                     skos:definition "Relates a work to a medium component."^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/hasMediumComponentQualifier
+###  hhttp://performedmusicontology.org/2.0/ontology/hasMediumComponentQualifier
 :hasMediumComponentQualifier rdf:type owl:ObjectProperty ;
                              rdfs:domain :MediumComponent ;
                              rdfs:range :MediumComponentQualifier ;
@@ -143,7 +143,7 @@ skos:example rdf:type owl:AnnotationProperty .
                              skos:definition "Relates a medium component to a medium component qualifier that affects the medium component."^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/hasMediumOfPerformance
+###  http://performedmusicontology.org/2.0/ontology/hasMediumOfPerformance
 :hasMediumOfPerformance rdf:type owl:ObjectProperty ;
                         rdfs:domain <http://id.loc.gov/ontologies/bibframe/Work> ;
                         rdfs:range :MediumOfPerformance ;
@@ -151,7 +151,7 @@ skos:example rdf:type owl:AnnotationProperty .
                         skos:definition "Relates a work to a medium of performance."^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/hasMode
+###  http://performedmusicontology.org/2.0/ontology/hasMode
 :hasMode rdf:type owl:ObjectProperty ;
          rdfs:domain <http://id.loc.gov/ontologies/bibframe/Work> ;
          rdfs:range :Mode ;
@@ -159,7 +159,7 @@ skos:example rdf:type owl:AnnotationProperty .
          skos:definition "Relates a work to a mode."^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/hasPerformance
+###  hhttp://performedmusicontology.org/2.0/ontology/hasPerformance
 :hasPerformance rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/eventContentOf> ;
                 owl:inverseOf :performanceOf ;
@@ -169,7 +169,7 @@ skos:example rdf:type owl:AnnotationProperty .
                 skos:definition "Relates a work to an event that is a performance."^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/hasRecording
+###  http://performedmusicontology.org/2.0/ontology/hasRecording
 :hasRecording rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/eventContent> ;
               owl:inverseOf :recordingOf ;
@@ -179,7 +179,7 @@ skos:example rdf:type owl:AnnotationProperty .
               skos:definition "Relates an event to an audio or video work that is created by recording the event."^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/hasTempo
+###  http://performedmusicontology.org/2.0/ontology/hasTempo
 :hasTempo rdf:type owl:ObjectProperty ;
           rdfs:domain <http://id.loc.gov/ontologies/bibframe/Work> ;
           rdfs:range :Tempo ;
@@ -187,7 +187,7 @@ skos:example rdf:type owl:AnnotationProperty .
           skos:definition "Relates a work to a tempo."^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/inspirationFor
+###  http://performedmusicontology.org/2.0/ontology/inspirationFor
 :inspirationFor rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/relatedTo> ;
                 rdfs:domain <http://id.loc.gov/ontologies/bibframe/Event> ;
@@ -196,7 +196,7 @@ skos:example rdf:type owl:AnnotationProperty .
                 skos:definition "Relates an event to a work that is inspired by an event."^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/performanceOf
+###  http://performedmusicontology.org/2.0/ontology/performanceOf
 :performanceOf rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/eventContent> ;
                rdfs:domain <http://id.loc.gov/ontologies/bibframe/Event> ;
@@ -205,7 +205,7 @@ skos:example rdf:type owl:AnnotationProperty .
                skos:definition "Relates an event to a work that is performed at an event."^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/recordingOf
+###  http://performedmusicontology.org/2.0/ontology/recordingOf
 :recordingOf rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/eventContentOf> ;
              rdfs:domain <http://id.loc.gov/ontologies/bibframe/Work> ;
@@ -214,7 +214,7 @@ skos:example rdf:type owl:AnnotationProperty .
              skos:definition "Relates a work to an event that is recorded to create an audio or video work."^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/remixOf
+###  http://performedmusicontology.org/2.0/ontology/remixOf
 :remixOf rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/derivativeOf> ;
          rdfs:comment "Suggested use - with Audio" ;
@@ -222,14 +222,14 @@ skos:example rdf:type owl:AnnotationProperty .
          skos:definition "Relates an audio work created by substantial editing of the audio of a work to the original work" .
 
 
-###  http://performedmusicontology.org/ontology/remixedIn
+###  http://performedmusicontology.org/2.0/ontology/remixedIn
 :remixedIn rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/hasDerivative> ;
            rdfs:label "Remixed in" ;
            skos:definition "Relates an audio work to a work created by the substantial editing of the audio of that work" .
 
 
-###  http://performedmusicontology.org/ontology/sampledBy
+###  http://performedmusicontology.org/2.0/ontology/sampledBy
 :sampledBy rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/referencedBy> ;
            owl:inverseOf :samplesFrom ;
@@ -237,14 +237,14 @@ skos:example rdf:type owl:AnnotationProperty .
            skos:definition "Relates an audio work from which audio clips are sampled to the new audio work using those samples.." .
 
 
-###  http://performedmusicontology.org/ontology/samplesFrom
+###  http://performedmusicontology.org/2.0/ontology/samplesFrom
 :samplesFrom rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/references> ;
              rdfs:label "Samples from" ;
              skos:definition "Relates an audio work that makes use of audio clips (samples) from another work to the work it samples from. The sample may or may not be manipulated in the new work." .
 
 
-###  http://performedmusicontology.org/ontology/usesMediumOfPerformance
+###  http://performedmusicontology.org/2.0/ontology/usesMediumOfPerformance
 :usesMediumOfPerformance rdf:type owl:ObjectProperty ;
                          rdfs:domain <http://id.loc.gov/ontologies/bibframe/Contribution> ;
                          rdfs:range :MediumOfPerformance ;
@@ -260,7 +260,7 @@ skos:example rdf:type owl:AnnotationProperty .
 <http://id.loc.gov/ontologies/bibframe/date> rdf:type owl:DatatypeProperty .
 
 
-###  http://performedmusicontology.org/ontology/hasMediumCount
+###  http://performedmusicontology.org/2.0/ontology/hasMediumCount
 :hasMediumCount rdf:type owl:DatatypeProperty ;
                 rdfs:domain :MediumComponent ;
                 rdfs:range xsd:integer ;
@@ -268,7 +268,7 @@ skos:example rdf:type owl:AnnotationProperty .
                 skos:definition "Relates a medium component to the count of that medium component."^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/hasNumberOfHands
+###  http://performedmusicontology.org/2.0/ontology/hasNumberOfHands
 :hasNumberOfHands rdf:type owl:DatatypeProperty ;
                   rdfs:domain :MediumComponent ;
                   rdfs:range xsd:integer ;
@@ -277,7 +277,7 @@ skos:example rdf:type owl:AnnotationProperty .
                   skos:definition "Relates a medium component to the number of hands required for performance."^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/phonogramCopyrightDate
+###  http://performedmusicontology.org/2.0/ontology/phonogramCopyrightDate
 :phonogramCopyrightDate rdf:type owl:DatatypeProperty ;
                         rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/date> ;
                         rdfs:range rdfs:Literal ;
@@ -305,28 +305,28 @@ skos:example rdf:type owl:AnnotationProperty .
 <http://id.loc.gov/ontologies/bibframe/Work> rdf:type owl:Class .
 
 
-###  http://performedmusicontology.org/ontology/AllMusicId
+###  http://performedmusicontology.org/2.0/ontology/AllMusicId
 :AllMusicId rdf:type owl:Class ;
             rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Identifier> ;
             rdfs:label "AllMusic ID"^^xsd:string ;
             skos:definition "An identifier from AllMusic"^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/DiscogsId
+###  http://performedmusicontology.org/2.0/ontology/DiscogsId
 :DiscogsId rdf:type owl:Class ;
            rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Identifier> ;
            rdfs:label "Discogs ID"^^xsd:string ;
            skos:definition "An identifier from Discogs."^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/DramaticRole
+###  http://performedmusicontology.org/2.0/ontology/DramaticRole
 :DramaticRole rdf:type owl:Class ;
               rdfs:label "Dramatic role"^^xsd:string ;
               skos:definition "A dramatic role performed by a contributing agent."^^xsd:string ;
               skos:example "Role of \"Carmen\" in the opera Carmen."^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/EnsembleSize
+###  http://performedmusicontology.org/2.0/ontology/EnsembleSize
 :EnsembleSize rdf:type owl:Class ;
               rdfs:comment "A vocabulary is provided"^^xsd:string ;
               rdfs:label "Ensemble size"^^xsd:string ;
@@ -334,27 +334,27 @@ skos:example rdf:type owl:AnnotationProperty .
               skos:example "trio (3 performers); individual or solo performer; large ensemble"^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/EventName
+###  http://performedmusicontology.org/2.0/ontology/EventName
 :EventName rdf:type owl:Class ;
            rdfs:label "Event name"^^xsd:string ;
            skos:definition "A name or title given to an event, whether formally stated or created for metadata purposes."^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/KeyMode
+###  http://performedmusicontology.org/2.0/ontology/KeyMode
 :KeyMode rdf:type owl:Class ;
          rdfs:label "Music key"^^xsd:string ;
          skos:definition "Key and mode, or key only if no mode is present, of a music work."^^xsd:string ;
          skos:example "C major; B-flat minor; D"^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/MediumComponent
+###  http://performedmusicontology.org/2.0/ontology/MediumComponent
 :MediumComponent rdf:type owl:Class ;
                  rdfs:comment "A medium component may gather together a medium of performance, medium count, number of hands, and/or medium component qualifier."^^xsd:string ;
                  rdfs:label "Medium component"^^xsd:string ;
                  skos:definition "An individual component of an overall medium of performance of a work."^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/MediumComponentQualifier
+###  http://performedmusicontology.org/2.0/ontology/MediumComponentQualifier
 :MediumComponentQualifier rdf:type owl:Class ;
                           rdfs:comment "A vocabulary is provided."^^xsd:string ;
                           rdfs:label "Medium component qualifier"^^xsd:string ;
@@ -362,28 +362,28 @@ skos:example rdf:type owl:AnnotationProperty .
                           skos:example "offstage, amplified, optional"^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/MediumOfPerformance
+###  http://performedmusicontology.org/2.0/ontology/MediumOfPerformance
 :MediumOfPerformance rdf:type owl:Class ;
                      rdfs:label "Medium of performance"^^xsd:string ;
                      skos:definition "An individual instrument, voice, ensemble, or instrumental group (e.g., percussion)."^^xsd:string ;
                      skos:example "guitar; er hu; alto voice; percussion; orchestra"^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/Mode
+###  http://performedmusicontology.org/2.0/ontology/Mode
 :Mode rdf:type owl:Class ;
       rdfs:label "Music mode"^^xsd:string ;
       skos:definition "Mode (not associated with a key) of a musical work"^^xsd:string ;
       skos:example "Dorian; Dhaivata"^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/MusicBrainzId
+###  http://performedmusicontology.org/2.0/ontology/MusicBrainzId
 :MusicBrainzId rdf:type owl:Class ;
                rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Identifier> ;
                rdfs:label "MusicBrainz ID"^^xsd:string ;
                skos:definition "An identifier from MusicBrainz"^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/OpusNumber
+###  http://performedmusicontology.org/2.0/ontology/OpusNumber
 :OpusNumber rdf:type owl:Class ;
             rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Identifier> ;
             rdfs:label "Opus number"^^xsd:string ;
@@ -391,21 +391,21 @@ skos:example rdf:type owl:AnnotationProperty .
             skos:example "Op. 45, no. 1; Op. 135a"^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/RismNumber
+###  http://performedmusicontology.org/2.0/ontology/RismNumber
 :RismNumber rdf:type owl:Class ;
             rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Identifier> ;
             rdfs:label "RISM number"^^xsd:string ;
             skos:definition "A number from the Repertoire Internationale des Sources Musicales (RISM) online version."^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/Tempo
+###  http://performedmusicontology.org/2.0/ontology/Tempo
 :Tempo rdf:type owl:Class ;
        rdfs:label "Tempo"^^xsd:string ;
        skos:definition "The speed or pace of a music work, whether declared (in a score) or performed."^^xsd:string ;
        skos:example "80 quarter notes per minute; 100 bpm; Piano roll speed=120"^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/ThematicCatalogNumber
+###  http://performedmusicontology.org/2.0/ontology/ThematicCatalogNumber
 :ThematicCatalogNumber rdf:type owl:Class ;
                        rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Identifier> ;
                        rdfs:label "Thematic catalog number"^^xsd:string ;
@@ -413,7 +413,7 @@ skos:example rdf:type owl:AnnotationProperty .
                        skos:example "BWV 485; TWV 52:d1"^^xsd:string .
 
 
-###  http://performedmusicontology.org/ontology/VideogamePlatformIdentifier
+###  http://performedmusicontology.org/2.0/ontology/VideogamePlatformIdentifier
 :VideogamePlatformIdentifier rdf:type owl:Class ;
                              rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Identifier> ;
                              rdfs:label "Videogame platform identifier"^^xsd:string ;
