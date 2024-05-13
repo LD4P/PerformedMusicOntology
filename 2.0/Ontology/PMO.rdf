@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://performedmusicontology.org/ontology/"
-     xml:base="http://performedmusicontology.org/ontology/"
+<rdf:RDF xmlns="http://performedmusicontology.org/2.0/ontology/"
+     xml:base="http://performedmusicontology.org/2.0/ontology/"
      xmlns:ns="http://creativecommons.org/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -9,8 +9,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="http://performedmusicontology.org/ontology/">
-        <owl:versionIRI rdf:resource="http://performedmusicontology.org/ontology/v2"/>
+    <owl:Ontology rdf:about="http://performedmusicontology.org/2.0/ontology/">
+        <owl:versionIRI rdf:resource="http://performedmusicontology.org/2.0/ontology/v2"/>
         <owl:imports rdf:resource="http://id.loc.gov/ontologies/bibframe-2-0-1/"/>
     </owl:Ontology>
     
@@ -22,10 +22,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <!-- http://performedmusicontology.org/ontology/aggregatedIn -->
+    <!-- http://performedmusicontology.org/2.0/ontology/aggregatedIn -->
 
-    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/aggregatedIn">
-        <owl:inverseOf rdf:resource="http://performedmusicontology.org/ontology/aggregates"/>
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/2.0/ontology/aggregatedIn">
+        <owl:inverseOf rdf:resource="http://performedmusicontology.org/2.0/ontology/aggregates"/>
         <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
         <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aggregated in</rdfs:label>
@@ -34,9 +34,9 @@
     
 
 
-    <!-- http://performedmusicontology.org/ontology/aggregates -->
+    <!-- http://performedmusicontology.org/2.0/ontology/aggregates -->
 
-    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/aggregates">
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/2.0/ontology/aggregates">
         <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
         <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aggregates</rdfs:label>
@@ -45,9 +45,9 @@
     
 
 
-    <!-- http://performedmusicontology.org/ontology/asMemberOf -->
+    <!-- http://performedmusicontology.org/2.0/ontology/asMemberOf -->
 
-    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/asMemberOf">
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/2.0/ontology/asMemberOf">
         <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
         <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">As member of</rdfs:label>
@@ -56,9 +56,9 @@
     
 
 
-    <!-- http://performedmusicontology.org/ontology/associatedWith -->
+    <!-- http://performedmusicontology.org/2.0/ontology/associatedWith -->
 
-    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/associatedWith">
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/2.0/ontology/associatedWith">
         <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sugested use - With any resource (event, work, instance, item, agent)</rdfs:comment>
@@ -69,9 +69,9 @@
     
 
 
-    <!-- http://performedmusicontology.org/ontology/createdFor -->
+    <!-- http://performedmusicontology.org/2.0/ontology/createdFor -->
 
-    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/createdFor">
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/2.0/ontology/createdFor">
         <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
         <rdfs:comment>Suggested use - With Agent, Event</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Created for</rdfs:label>
@@ -80,44 +80,44 @@
     
 
 
-    <!-- http://performedmusicontology.org/ontology/hasDramaticRole -->
+    <!-- http://performedmusicontology.org/2.0/ontology/hasDramaticRole -->
 
-    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/hasDramaticRole">
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/2.0/ontology/hasDramaticRole">
         <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
-        <rdfs:range rdf:resource="http://performedmusicontology.org/ontology/DramaticRole"/>
+        <rdfs:range rdf:resource="http://performedmusicontology.org/2.0/ontology/DramaticRole"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has dramatic role</rdfs:label>
         <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relates a contribution to a dramatic role.</skos:definition>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://performedmusicontology.org/ontology/hasEnsembleSize -->
+    <!-- http://performedmusicontology.org/2.0/ontology/hasEnsembleSize -->
 
-    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/hasEnsembleSize">
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/2.0/ontology/hasEnsembleSize">
         <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-        <rdfs:range rdf:resource="http://performedmusicontology.org/ontology/EnsembleSize"/>
+        <rdfs:range rdf:resource="http://performedmusicontology.org/2.0/ontology/EnsembleSize"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has ensemble size</rdfs:label>
         <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relates a work to an individual ensemble size.</skos:definition>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://performedmusicontology.org/ontology/hasEventName -->
+    <!-- http://performedmusicontology.org/2.0/ontology/hasEventName -->
 
-    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/hasEventName">
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/2.0/ontology/hasEventName">
         <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Event"/>
-        <rdfs:range rdf:resource="http://performedmusicontology.org/ontology/EventName"/>
+        <rdfs:range rdf:resource="http://performedmusicontology.org/2.0/ontology/EventName"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has event name</rdfs:label>
         <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relates an event to a name or title for the event.</skos:definition>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://performedmusicontology.org/ontology/hasInspiration -->
+    <!-- http://performedmusicontology.org/2.0/ontology/hasInspiration -->
 
-    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/hasInspiration">
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/2.0/ontology/hasInspiration">
         <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
-        <owl:inverseOf rdf:resource="http://performedmusicontology.org/ontology/inspirationFor"/>
+        <owl:inverseOf rdf:resource="http://performedmusicontology.org/2.0/ontology/inspirationFor"/>
         <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
         <rdfs:comment>Suggested use - Work, Event, Agent, Place, Item</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inspired by</rdfs:label>
@@ -126,11 +126,11 @@
     
 
 
-    <!-- http://performedmusicontology.org/ontology/hasKeyMode -->
+    <!-- http://performedmusicontology.org/2.0/ontology/hasKeyMode -->
 
-    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/hasKeyMode">
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/2.0/ontology/hasKeyMode">
         <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-        <rdfs:range rdf:resource="http://performedmusicontology.org/ontology/KeyMode"/>
+        <rdfs:range rdf:resource="http://performedmusicontology.org/2.0/ontology/KeyMode"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A key and mode may not be present for some works, or a key may be present without a mode. For individual named modes, use hasMode.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has key and mode</rdfs:label>
         <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relates a work to a key and mode.</skos:definition>
@@ -138,55 +138,55 @@
     
 
 
-    <!-- http://performedmusicontology.org/ontology/hasMediumComponent -->
+    <!-- http://performedmusicontology.org/2.0/ontology/hasMediumComponent -->
 
-    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/hasMediumComponent">
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/2.0/ontology/hasMediumComponent">
         <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-        <rdfs:range rdf:resource="http://performedmusicontology.org/ontology/MediumComponent"/>
+        <rdfs:range rdf:resource="http://performedmusicontology.org/2.0/ontology/MediumComponent"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has Medium component</rdfs:label>
         <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relates a work to a medium component.</skos:definition>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://performedmusicontology.org/ontology/hasMediumComponentQualifier -->
+    <!-- http://performedmusicontology.org/2.0/ontology/hasMediumComponentQualifier -->
 
-    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/hasMediumComponentQualifier">
-        <rdfs:domain rdf:resource="http://performedmusicontology.org/ontology/MediumComponent"/>
-        <rdfs:range rdf:resource="http://performedmusicontology.org/ontology/MediumComponentQualifier"/>
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/2.0/ontology/hasMediumComponentQualifier">
+        <rdfs:domain rdf:resource="http://performedmusicontology.org/2.0/ontology/MediumComponent"/>
+        <rdfs:range rdf:resource="http://performedmusicontology.org/2.0/ontology/MediumComponentQualifier"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has medium component qualifier</rdfs:label>
         <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relates a medium component to a medium component qualifier that affects the medium component.</skos:definition>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://performedmusicontology.org/ontology/hasMediumOfPerformance -->
+    <!-- http://performedmusicontology.org/2.0/ontology/hasMediumOfPerformance -->
 
-    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/hasMediumOfPerformance">
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/2.0/ontology/hasMediumOfPerformance">
         <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-        <rdfs:range rdf:resource="http://performedmusicontology.org/ontology/MediumOfPerformance"/>
+        <rdfs:range rdf:resource="http://performedmusicontology.org/2.0/ontology/MediumOfPerformance"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has medium of performance</rdfs:label>
         <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relates a work to a medium of performance.</skos:definition>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://performedmusicontology.org/ontology/hasMode -->
+    <!-- http://performedmusicontology.org/2.0/ontology/hasMode -->
 
-    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/hasMode">
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/2.0/ontology/hasMode">
         <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-        <rdfs:range rdf:resource="http://performedmusicontology.org/ontology/Mode"/>
+        <rdfs:range rdf:resource="http://performedmusicontology.org/2.0/ontology/Mode"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has mode</rdfs:label>
         <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relates a work to a mode.</skos:definition>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://performedmusicontology.org/ontology/hasPerformance -->
+    <!-- http://performedmusicontology.org/2.0/ontology/hasPerformance -->
 
-    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/hasPerformance">
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/2.0/ontology/hasPerformance">
         <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/eventContentOf"/>
-        <owl:inverseOf rdf:resource="http://performedmusicontology.org/ontology/performanceOf"/>
+        <owl:inverseOf rdf:resource="http://performedmusicontology.org/2.0/ontology/performanceOf"/>
         <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
         <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Event"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has performance</rdfs:label>
@@ -195,11 +195,11 @@
     
 
 
-    <!-- http://performedmusicontology.org/ontology/hasRecording -->
+    <!-- http://performedmusicontology.org/2.0/ontology/hasRecording -->
 
-    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/hasRecording">
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/2.0/ontology/hasRecording">
         <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/eventContent"/>
-        <owl:inverseOf rdf:resource="http://performedmusicontology.org/ontology/recordingOf"/>
+        <owl:inverseOf rdf:resource="http://performedmusicontology.org/2.0/ontology/recordingOf"/>
         <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Event"/>
         <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has recording</rdfs:label>
@@ -208,20 +208,20 @@
     
 
 
-    <!-- http://performedmusicontology.org/ontology/hasTempo -->
+    <!-- http://performedmusicontology.org/2.0/ontology/hasTempo -->
 
-    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/hasTempo">
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/2.0/ontology/hasTempo">
         <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
-        <rdfs:range rdf:resource="http://performedmusicontology.org/ontology/Tempo"/>
+        <rdfs:range rdf:resource="http://performedmusicontology.org/2.0/ontology/Tempo"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has tempo</rdfs:label>
         <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relates a work to a tempo.</skos:definition>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://performedmusicontology.org/ontology/inspirationFor -->
+    <!-- http://performedmusicontology.org/2.0/ontology/inspirationFor -->
 
-    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/inspirationFor">
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/2.0/ontology/inspirationFor">
         <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
         <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Event"/>
         <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
@@ -231,9 +231,9 @@
     
 
 
-    <!-- http://performedmusicontology.org/ontology/performanceOf -->
+    <!-- http://performedmusicontology.org/2.0/ontology/performanceOf -->
 
-    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/performanceOf">
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/2.0/ontology/performanceOf">
         <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/eventContent"/>
         <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Event"/>
         <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
@@ -243,9 +243,9 @@
     
 
 
-    <!-- http://performedmusicontology.org/ontology/recordingOf -->
+    <!-- http://performedmusicontology.org/2.0/ontology/recordingOf -->
 
-    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/recordingOf">
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/2.0/ontology/recordingOf">
         <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/eventContentOf"/>
         <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
         <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Event"/>
@@ -255,9 +255,9 @@
     
 
 
-    <!-- http://performedmusicontology.org/ontology/remixOf -->
+    <!-- http://performedmusicontology.org/2.0/ontology/remixOf -->
 
-    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/remixOf">
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/2.0/ontology/remixOf">
         <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/derivativeOf"/>
         <rdfs:comment>Suggested use - with Audio</rdfs:comment>
         <rdfs:label>Remix of</rdfs:label>
@@ -266,9 +266,9 @@
     
 
 
-    <!-- http://performedmusicontology.org/ontology/remixedIn -->
+    <!-- http://performedmusicontology.org/2.0/ontology/remixedIn -->
 
-    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/remixedIn">
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/2.0/ontology/remixedIn">
         <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/hasDerivative"/>
         <rdfs:label>Remixed in</rdfs:label>
         <skos:definition>Relates an audio work to a work created by the substantial editing of the audio of that work</skos:definition>
@@ -276,20 +276,20 @@
     
 
 
-    <!-- http://performedmusicontology.org/ontology/sampledBy -->
+    <!-- http://performedmusicontology.org/2.0/ontology/sampledBy -->
 
-    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/sampledBy">
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/2.0/ontology/sampledBy">
         <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/referencedBy"/>
-        <owl:inverseOf rdf:resource="http://performedmusicontology.org/ontology/samplesFrom"/>
+        <owl:inverseOf rdf:resource="http://performedmusicontology.org/2.0/ontology/samplesFrom"/>
         <rdfs:label>Sampled by</rdfs:label>
         <skos:definition>Relates an audio work from which audio clips are sampled to the new audio work using those samples..</skos:definition>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://performedmusicontology.org/ontology/samplesFrom -->
+    <!-- http://performedmusicontology.org/2.0/ontology/samplesFrom -->
 
-    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/samplesFrom">
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/2.0/ontology/samplesFrom">
         <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/references"/>
         <rdfs:label>Samples from</rdfs:label>
         <skos:definition>Relates an audio work that makes use of audio clips (samples) from another work to the work it samples from. The sample may or may not be manipulated in the new work.</skos:definition>
@@ -297,11 +297,11 @@
     
 
 
-    <!-- http://performedmusicontology.org/ontology/usesMediumOfPerformance -->
+    <!-- http://performedmusicontology.org/2.0/ontology/usesMediumOfPerformance -->
 
-    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/ontology/usesMediumOfPerformance">
+    <owl:ObjectProperty rdf:about="http://performedmusicontology.org/2.0/ontology/usesMediumOfPerformance">
         <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
-        <rdfs:range rdf:resource="http://performedmusicontology.org/ontology/MediumOfPerformance"/>
+        <rdfs:range rdf:resource="http://performedmusicontology.org/2.0/ontology/MediumOfPerformance"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Uses medium of performance</rdfs:label>
         <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relates a contribution to a medium of performance.</skos:definition>
     </owl:ObjectProperty>
@@ -316,10 +316,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <!-- http://performedmusicontology.org/ontology/hasMediumCount -->
+    <!-- http://performedmusicontology.org/2.0/ontology/hasMediumCount -->
 
-    <owl:DatatypeProperty rdf:about="http://performedmusicontology.org/ontology/hasMediumCount">
-        <rdfs:domain rdf:resource="http://performedmusicontology.org/ontology/MediumComponent"/>
+    <owl:DatatypeProperty rdf:about="http://performedmusicontology.org/2.0/ontology/hasMediumCount">
+        <rdfs:domain rdf:resource="http://performedmusicontology.org/2.0/ontology/MediumComponent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Has medium count</rdfs:label>
         <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relates a medium component to the count of that medium component.</skos:definition>
@@ -327,10 +327,10 @@
     
 
 
-    <!-- http://performedmusicontology.org/ontology/hasNumberOfHands -->
+    <!-- http://performedmusicontology.org/2.0/ontology/hasNumberOfHands -->
 
-    <owl:DatatypeProperty rdf:about="http://performedmusicontology.org/ontology/hasNumberOfHands">
-        <rdfs:domain rdf:resource="http://performedmusicontology.org/ontology/MediumComponent"/>
+    <owl:DatatypeProperty rdf:about="http://performedmusicontology.org/2.0/ontology/hasNumberOfHands">
+        <rdfs:domain rdf:resource="http://performedmusicontology.org/2.0/ontology/MediumComponent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Examples include works in which more than one performer shares an instrument or works in which an atypical number of hand is specified for the instrument.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Number of hands</rdfs:label>
@@ -339,9 +339,9 @@
     
 
 
-    <!-- http://performedmusicontology.org/ontology/phonogramCopyrightDate -->
+    <!-- http://performedmusicontology.org/2.0/ontology/phonogramCopyrightDate -->
 
-    <owl:DatatypeProperty rdf:about="http://performedmusicontology.org/ontology/phonogramCopyrightDate">
+    <owl:DatatypeProperty rdf:about="http://performedmusicontology.org/2.0/ontology/phonogramCopyrightDate">
         <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/date"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phonogram copyright date</rdfs:label>
@@ -359,9 +359,9 @@
      -->
 
     
-    <!-- http://performedmusicontology.org/ontology/AllMusicId -->
+    <!-- http://performedmusicontology.org/2.0/ontology/AllMusicId -->
 
-    <owl:Class rdf:about="http://performedmusicontology.org/ontology/AllMusicId">
+    <owl:Class rdf:about="http://performedmusicontology.org/2.0/ontology/AllMusicId">
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AllMusic ID</rdfs:label>
         <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An identifier from AllMusic</skos:definition>
@@ -369,9 +369,9 @@
     
 
 
-    <!-- http://performedmusicontology.org/ontology/DiscogsId -->
+    <!-- http://performedmusicontology.org/2.0/ontology/DiscogsId -->
 
-    <owl:Class rdf:about="http://performedmusicontology.org/ontology/DiscogsId">
+    <owl:Class rdf:about="http://performedmusicontology.org/2.0/ontology/DiscogsId">
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discogs ID</rdfs:label>
         <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An identifier from Discogs.</skos:definition>
@@ -379,9 +379,9 @@
     
 
 
-    <!-- http://performedmusicontology.org/ontology/DramaticRole -->
+    <!-- http://performedmusicontology.org/2.0/ontology/DramaticRole -->
 
-    <owl:Class rdf:about="http://performedmusicontology.org/ontology/DramaticRole">
+    <owl:Class rdf:about="http://performedmusicontology.org/2.0/ontology/DramaticRole">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dramatic role</rdfs:label>
         <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A dramatic role performed by a contributing agent.</skos:definition>
         <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Role of &quot;Carmen&quot; in the opera Carmen.</skos:example>
@@ -389,9 +389,9 @@
     
 
 
-    <!-- http://performedmusicontology.org/ontology/EnsembleSize -->
+    <!-- http://performedmusicontology.org/2.0/ontology/EnsembleSize -->
 
-    <owl:Class rdf:about="http://performedmusicontology.org/ontology/EnsembleSize">
+    <owl:Class rdf:about="http://performedmusicontology.org/2.0/ontology/EnsembleSize">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A vocabulary is provided</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ensemble size</rdfs:label>
         <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A designation of the size of an individual ensemble.</skos:definition>
@@ -400,18 +400,18 @@
     
 
 
-    <!-- http://performedmusicontology.org/ontology/EventName -->
+    <!-- http://performedmusicontology.org/2.0/ontology/EventName -->
 
-    <owl:Class rdf:about="http://performedmusicontology.org/ontology/EventName">
+    <owl:Class rdf:about="http://performedmusicontology.org/2.0/ontology/EventName">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Event name</rdfs:label>
         <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A name or title given to an event, whether formally stated or created for metadata purposes.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- http://performedmusicontology.org/ontology/KeyMode -->
+    <!-- http://performedmusicontology.org/2.0/ontology/KeyMode -->
 
-    <owl:Class rdf:about="http://performedmusicontology.org/ontology/KeyMode">
+    <owl:Class rdf:about="http://performedmusicontology.org/2.0/ontology/KeyMode">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Music key</rdfs:label>
         <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Key and mode, or key only if no mode is present, of a music work.</skos:definition>
         <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C major; B-flat minor; D</skos:example>
@@ -419,9 +419,9 @@
     
 
 
-    <!-- http://performedmusicontology.org/ontology/MediumComponent -->
+    <!-- http://performedmusicontology.org/2.0/ontology/MediumComponent -->
 
-    <owl:Class rdf:about="http://performedmusicontology.org/ontology/MediumComponent">
+    <owl:Class rdf:about="http://performedmusicontology.org/2.0/ontology/MediumComponent">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A medium component may gather together a medium of performance, medium count, number of hands, and/or medium component qualifier.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medium component</rdfs:label>
         <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual component of an overall medium of performance of a work.</skos:definition>
@@ -429,9 +429,9 @@
     
 
 
-    <!-- http://performedmusicontology.org/ontology/MediumComponentQualifier -->
+    <!-- http://performedmusicontology.org/2.0/ontology/MediumComponentQualifier -->
 
-    <owl:Class rdf:about="http://performedmusicontology.org/ontology/MediumComponentQualifier">
+    <owl:Class rdf:about="http://performedmusicontology.org/2.0/ontology/MediumComponentQualifier">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A vocabulary is provided.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medium component qualifier</rdfs:label>
         <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A qualifier that affects the medium component.</skos:definition>
@@ -440,9 +440,9 @@
     
 
 
-    <!-- http://performedmusicontology.org/ontology/MediumOfPerformance -->
+    <!-- http://performedmusicontology.org/2.0/ontology/MediumOfPerformance -->
 
-    <owl:Class rdf:about="http://performedmusicontology.org/ontology/MediumOfPerformance">
+    <owl:Class rdf:about="http://performedmusicontology.org/2.0/ontology/MediumOfPerformance">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medium of performance</rdfs:label>
         <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual instrument, voice, ensemble, or instrumental group (e.g., percussion).</skos:definition>
         <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">guitar; er hu; alto voice; percussion; orchestra</skos:example>
@@ -450,9 +450,9 @@
     
 
 
-    <!-- http://performedmusicontology.org/ontology/Mode -->
+    <!-- http://performedmusicontology.org/2.0/ontology/Mode -->
 
-    <owl:Class rdf:about="http://performedmusicontology.org/ontology/Mode">
+    <owl:Class rdf:about="http://performedmusicontology.org/2.0/ontology/Mode">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Music mode</rdfs:label>
         <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mode (not associated with a key) of a musical work</skos:definition>
         <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dorian; Dhaivata</skos:example>
@@ -460,9 +460,9 @@
     
 
 
-    <!-- http://performedmusicontology.org/ontology/MusicBrainzId -->
+    <!-- http://performedmusicontology.org/2.0/ontology/MusicBrainzId -->
 
-    <owl:Class rdf:about="http://performedmusicontology.org/ontology/MusicBrainzId">
+    <owl:Class rdf:about="http://performedmusicontology.org/2.0/ontology/MusicBrainzId">
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MusicBrainz ID</rdfs:label>
         <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An identifier from MusicBrainz</skos:definition>
@@ -470,9 +470,9 @@
     
 
 
-    <!-- http://performedmusicontology.org/ontology/OpusNumber -->
+    <!-- http://performedmusicontology.org/2.0/ontology/OpusNumber -->
 
-    <owl:Class rdf:about="http://performedmusicontology.org/ontology/OpusNumber">
+    <owl:Class rdf:about="http://performedmusicontology.org/2.0/ontology/OpusNumber">
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Opus number</rdfs:label>
         <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An opus number assigned to a musical work.</skos:definition>
@@ -481,9 +481,9 @@
     
 
 
-    <!-- http://performedmusicontology.org/ontology/RismNumber -->
+    <!-- http://performedmusicontology.org/2.0/ontology/RismNumber -->
 
-    <owl:Class rdf:about="http://performedmusicontology.org/ontology/RismNumber">
+    <owl:Class rdf:about="http://performedmusicontology.org/2.0/ontology/RismNumber">
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RISM number</rdfs:label>
         <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A number from the Repertoire Internationale des Sources Musicales (RISM) online version.</skos:definition>
@@ -491,9 +491,9 @@
     
 
 
-    <!-- http://performedmusicontology.org/ontology/Tempo -->
+    <!-- http://performedmusicontology.org/2.0/ontology/Tempo -->
 
-    <owl:Class rdf:about="http://performedmusicontology.org/ontology/Tempo">
+    <owl:Class rdf:about="http://performedmusicontology.org/2.0/ontology/Tempo">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tempo</rdfs:label>
         <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The speed or pace of a music work, whether declared (in a score) or performed.</skos:definition>
         <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">80 quarter notes per minute; 100 bpm; Piano roll speed=120</skos:example>
@@ -501,9 +501,9 @@
     
 
 
-    <!-- http://performedmusicontology.org/ontology/ThematicCatalogNumber -->
+    <!-- http://performedmusicontology.org/2.0/ontology/ThematicCatalogNumber -->
 
-    <owl:Class rdf:about="http://performedmusicontology.org/ontology/ThematicCatalogNumber">
+    <owl:Class rdf:about="http://performedmusicontology.org/2.0/ontology/ThematicCatalogNumber">
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thematic catalog number</rdfs:label>
         <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A numeric or alphanumeric designation of a musical work as found in a thematic index or catalog.</skos:definition>
@@ -512,9 +512,9 @@
     
 
 
-    <!-- http://performedmusicontology.org/ontology/VideogamePlatformIdentifier -->
+    <!-- http://performedmusicontology.org/2.0/ontology/VideogamePlatformIdentifier -->
 
-    <owl:Class rdf:about="http://performedmusicontology.org/ontology/VideogamePlatformIdentifier">
+    <owl:Class rdf:about="http://performedmusicontology.org/2.0/ontology/VideogamePlatformIdentifier">
         <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Videogame platform identifier</rdfs:label>
         <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An identifier assigned to a video game platform.</skos:definition>
