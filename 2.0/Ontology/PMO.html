@@ -1,0 +1,4385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="/css/owl.css" rel="stylesheet" type="text/css" />
+    <link href="/css/Primer.css" rel="stylesheet" type="text/css" />
+    <link href="/css/rec.css" rel="stylesheet" type="text/css" />
+    <link href="/css/extra.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="/css/favicon.ico" />
+    <script src="/js/jquery.js"></script>
+    <script src="/js/jquery.scrollTo.js"></script>
+    <script src="/PerformedMusicOntology/js/marked.min.js"></script>
+    <script>
+      $(document).ready(
+            function () {
+                jQuery(".markdown").each(function(el){
+                    jQuery(this).after(marked(jQuery(this).text())).remove()});
+                var list = $('a[name="http://www.essepuntato.it/static/tmp/0"]');
+                if (list.size() != 0) {
+                    var element = list.first();
+                    $.scrollTo(element);
+                }
+        });
+    </script>
+  </head>
+  <body>
+    <div class="head">
+      <h1>Performed Music Ontology 2.0</h1>
+      <dl>
+        <dt>IRI:</dt>
+        <dd>http://performedmusicontology.org/2.0/ontology/</dd>
+        <dt>Version IRI:</dt>
+        <dd>http://performedmusicontology.org/2.0/ontology/</dd>
+       </dl>
+       <dl>
+         <dt>Other visualisation:</dt>
+         <dd><a href="http://performedmusicontology.org/2.0/ontology/PerformedMusicOntology.rdf">Ontology source</a></dd>
+        </dl>
+     </div>
+     <hr />
+     <div id="toc">
+       <h2>Table of Content</h2>
+       <ol>
+          <li><a href="#classes">Classes</a></li>
+          <li><a href="#objectproperties">Object Properties</a></li>
+          <li><a href="#dataproperties">Data Properties</a></li>
+          <li><a href="#namespacedeclarations">Namespace Declarations</a></li>
+        </ol>
+     </div>
+     <div id="classes">
+        <h2>Classes</h2>
+        <ul class="hlist">
+          
+            <li>
+              <a href="#Event" title="http://id.loc.gov/ontologies/bibframe/Event">
+                <span>Event</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#Identifier" title="http://id.loc.gov/ontologies/bibframe/Identifier">
+                <span>Identifier</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#SoundCharacteristic" title="http://id.loc.gov/ontologies/bibframe/SoundCharacteristic">
+                <span>SoundCharacteristic</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#Work" title="http://id.loc.gov/ontologies/bibframe/Work">
+                <span>Work</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#AllMusicId" title="http://performedmusicontology.org/ontology/AllMusicId">
+                <span>AllMusic ID</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#DiscogsId" title="http://performedmusicontology.org/ontology/DiscogsId">
+                <span>Discogs ID</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#DramaticRole" title="http://performedmusicontology.org/ontology/DramaticRole">
+                <span>Dramatic role</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#EnsembleSize" title="http://performedmusicontology.org/ontology/EnsembleSize">
+                <span>Ensemble size</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#EventName" title="http://performedmusicontology.org/ontology/EventName">
+                <span>Event name</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#KeyMode" title="http://performedmusicontology.org/ontology/KeyMode">
+                <span>Music key</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#MediumComponent" title="http://performedmusicontology.org/ontology/MediumComponent">
+                <span>Medium component</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#MediumComponentQualifier" title="http://performedmusicontology.org/ontology/MediumComponentQualifier">
+                <span>Medium component qualifier</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#MediumOfPerformance" title="http://performedmusicontology.org/ontology/MediumOfPerformance">
+                <span>Medium of performance</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#Mode" title="http://performedmusicontology.org/ontology/Mode">
+                <span>Music mode</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#MusicBrainzId" title="http://performedmusicontology.org/ontology/MusicBrainzId">
+                <span>MusicBrainz ID</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#OpusNumber" title="http://performedmusicontology.org/ontology/OpusNumber">
+                <span>Opus number</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#RismNumber" title="http://performedmusicontology.org/ontology/RismNumber">
+                <span>RISM number</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#Tempo" title="http://performedmusicontology.org/ontology/Tempo">
+                <span>Tempo</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#ThematicCatalogNumber" title="http://performedmusicontology.org/ontology/ThematicCatalogNumber">
+                <span>Thematic catalog number</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#VideogamePlatformIdentifier" title="http://performedmusicontology.org/ontology/VideogamePlatformIdentifier">
+                <span>Videogame platform identifier</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#AllMusicId" title="http://performedmusicontology.org/2.0/ontology/AllMusicId">
+                <span>AllMusic ID</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#DiscogsId" title="http://performedmusicontology.org/2.0/ontology/DiscogsId">
+                <span>Discogs ID</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#DramaticRole" title="http://performedmusicontology.org/2.0/ontology/DramaticRole">
+                <span>Dramatic role</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#EnsembleSize" title="http://performedmusicontology.org/2.0/ontology/EnsembleSize">
+                <span>Ensemble size</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#EventName" title="http://performedmusicontology.org/2.0/ontology/EventName">
+                <span>Event name</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#KeyMode" title="http://performedmusicontology.org/2.0/ontology/KeyMode">
+                <span>Music key</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#MediumComponent" title="http://performedmusicontology.org/2.0/ontology/MediumComponent">
+                <span>Medium component</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#MediumComponentQualifier" title="http://performedmusicontology.org/2.0/ontology/MediumComponentQualifier">
+                <span>Medium component qualifier</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#MediumOfPerformance" title="http://performedmusicontology.org/2.0/ontology/MediumOfPerformance">
+                <span>Medium of performance</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#Mode" title="http://performedmusicontology.org/2.0/ontology/Mode">
+                <span>Music mode</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#MusicBrainzId" title="http://performedmusicontology.org/2.0/ontology/MusicBrainzId">
+                <span>MusicBrainz ID</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#OpusNumber" title="http://performedmusicontology.org/2.0/ontology/OpusNumber">
+                <span>Opus number</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#RismNumber" title="http://performedmusicontology.org/2.0/ontology/RismNumber">
+                <span>RISM number</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#Tempo" title="http://performedmusicontology.org/2.0/ontology/Tempo">
+                <span>Tempo</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#ThematicCatalogNumber" title="http://performedmusicontology.org/2.0/ontology/ThematicCatalogNumber">
+                <span>Thematic catalog number</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#VideogamePlatformIdentifier" title="http://performedmusicontology.org/2.0/ontology/VideogamePlatformIdentifier">
+                <span>Videogame platform identifier</span>
+              </a>
+            </li>
+          
+        </ul>
+        
+        <div id="Event" class="entity">
+          <a name="http://id.loc.gov/ontologies/bibframe/Event"></a>
+          <h3>
+           Event<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://id.loc.gov/ontologies/bibframe/Event</p>
+          <div class="comment">
+           
+           
+          </div>
+          
+        </div>
+        
+        <div id="Identifier" class="entity">
+          <a name="http://id.loc.gov/ontologies/bibframe/Identifier"></a>
+          <h3>
+           Identifier<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://id.loc.gov/ontologies/bibframe/Identifier</p>
+          <div class="comment">
+           
+           
+          </div>
+          
+           <dl class="description">
+           
+           
+            <dt>has sub-classes</dt>
+            
+            <dd>
+               <a href="http://id.loc.gov/ontologies/bibframe/Identifier">identifier</a>
+               <sup title="class" class="type-c">c</sup>
+            </dd>
+            
+           
+           </dl>
+          
+        </div>
+        
+        <div id="SoundCharacteristic" class="entity">
+          <a name="http://id.loc.gov/ontologies/bibframe/SoundCharacteristic"></a>
+          <h3>
+           SoundCharacteristic<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://id.loc.gov/ontologies/bibframe/SoundCharacteristic</p>
+          <div class="comment">
+           
+           
+          </div>
+          
+        </div>
+        
+        <div id="Work" class="entity">
+          <a name="http://id.loc.gov/ontologies/bibframe/Work"></a>
+          <h3>
+           Work<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://id.loc.gov/ontologies/bibframe/Work</p>
+          <div class="comment">
+           
+           
+          </div>
+          
+        </div>
+        
+        <div id="AllMusicId" class="entity">
+          <a name="http://performedmusicontology.org/ontology/AllMusicId"></a>
+          <h3>
+           AllMusic ID<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://performedmusicontology.org/ontology/AllMusicId</p>
+          <div class="comment">
+           
+            <span class="markdown">An identifier from AllMusic</span>
+           
+           
+          </div>
+          
+           <dl class="description">
+           
+             <dt>has super-classes</dt>
+             
+             <dd>
+               <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Identifier">identifier</span>
+             </dd>
+             
+           
+           
+           </dl>
+          
+        </div>
+        
+        <div id="DiscogsId" class="entity">
+          <a name="http://performedmusicontology.org/ontology/DiscogsId"></a>
+          <h3>
+           Discogs ID<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://performedmusicontology.org/ontology/DiscogsId</p>
+          <div class="comment">
+           
+            <span class="markdown">An identifier from Discogs.</span>
+           
+           
+          </div>
+          
+           <dl class="description">
+           
+             <dt>has super-classes</dt>
+             
+             <dd>
+               <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Identifier">identifier</span>
+             </dd>
+             
+           
+           
+           </dl>
+          
+        </div>
+        
+        <div id="DramaticRole" class="entity">
+          <a name="http://performedmusicontology.org/ontology/DramaticRole"></a>
+          <h3>
+           Dramatic role<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://performedmusicontology.org/ontology/DramaticRole</p>
+          <div class="comment">
+           
+            <span class="markdown">A dramatic role performed by a contributing agent.</span>
+           
+           
+            
+            <span class="markdown">Role of "Carmen" in the opera Carmen.</span>
+            
+           
+          </div>
+          
+        </div>
+        
+        <div id="EnsembleSize" class="entity">
+          <a name="http://performedmusicontology.org/ontology/EnsembleSize"></a>
+          <h3>
+           Ensemble size<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://performedmusicontology.org/ontology/EnsembleSize</p>
+          <div class="comment">
+           
+            <span class="markdown">A designation of the size of an individual ensemble.</span>
+           
+           
+            
+            <span class="markdown">trio (3 performers); individual or solo performer; large ensemble</span>
+            
+           
+          </div>
+          
+        </div>
+        
+        <div id="EventName" class="entity">
+          <a name="http://performedmusicontology.org/ontology/EventName"></a>
+          <h3>
+           Event name<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://performedmusicontology.org/ontology/EventName</p>
+          <div class="comment">
+           
+            <span class="markdown">A name or title given to an event, whether formally stated or created for metadata purposes.</span>
+           
+           
+          </div>
+          
+        </div>
+        
+        <div id="KeyMode" class="entity">
+          <a name="http://performedmusicontology.org/ontology/KeyMode"></a>
+          <h3>
+           Music key<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://performedmusicontology.org/ontology/KeyMode</p>
+          <div class="comment">
+           
+            <span class="markdown">Key and mode, or key only if no mode is present, of a music work.</span>
+           
+           
+            
+            <span class="markdown">C major; B-flat minor; D</span>
+            
+           
+          </div>
+          
+        </div>
+        
+        <div id="MediumComponent" class="entity">
+          <a name="http://performedmusicontology.org/ontology/MediumComponent"></a>
+          <h3>
+           Medium component<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://performedmusicontology.org/ontology/MediumComponent</p>
+          <div class="comment">
+           
+            <span class="markdown">An individual component of an overall medium of performance of a work.</span>
+           
+           
+          </div>
+          
+        </div>
+        
+        <div id="MediumComponentQualifier" class="entity">
+          <a name="http://performedmusicontology.org/ontology/MediumComponentQualifier"></a>
+          <h3>
+           Medium component qualifier<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://performedmusicontology.org/ontology/MediumComponentQualifier</p>
+          <div class="comment">
+           
+            <span class="markdown">A qualifier that affects the medium component.</span>
+           
+           
+            
+            <span class="markdown">offstage, amplified, optional</span>
+            
+           
+          </div>
+          
+        </div>
+        
+        <div id="MediumOfPerformance" class="entity">
+          <a name="http://performedmusicontology.org/ontology/MediumOfPerformance"></a>
+          <h3>
+           Medium of performance<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://performedmusicontology.org/ontology/MediumOfPerformance</p>
+          <div class="comment">
+           
+            <span class="markdown">An individual instrument, voice, ensemble, or instrumental group (e.g., percussion).</span>
+           
+           
+            
+            <span class="markdown">guitar; er hu; alto voice; percussion; orchestra</span>
+            
+           
+          </div>
+          
+        </div>
+        
+        <div id="Mode" class="entity">
+          <a name="http://performedmusicontology.org/ontology/Mode"></a>
+          <h3>
+           Music mode<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://performedmusicontology.org/ontology/Mode</p>
+          <div class="comment">
+           
+            <span class="markdown">Mode (not associated with a key) of a musical work</span>
+           
+           
+            
+            <span class="markdown">Dorian; Dhaivata</span>
+            
+           
+          </div>
+          
+        </div>
+        
+        <div id="MusicBrainzId" class="entity">
+          <a name="http://performedmusicontology.org/ontology/MusicBrainzId"></a>
+          <h3>
+           MusicBrainz ID<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://performedmusicontology.org/ontology/MusicBrainzId</p>
+          <div class="comment">
+           
+            <span class="markdown">An identifier from MusicBrainz</span>
+           
+           
+          </div>
+          
+           <dl class="description">
+           
+             <dt>has super-classes</dt>
+             
+             <dd>
+               <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Identifier">identifier</span>
+             </dd>
+             
+           
+           
+           </dl>
+          
+        </div>
+        
+        <div id="OpusNumber" class="entity">
+          <a name="http://performedmusicontology.org/ontology/OpusNumber"></a>
+          <h3>
+           Opus number<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://performedmusicontology.org/ontology/OpusNumber</p>
+          <div class="comment">
+           
+            <span class="markdown">An opus number assigned to a musical work.</span>
+           
+           
+            
+            <span class="markdown">Op. 45, no. 1; Op. 135a</span>
+            
+           
+          </div>
+          
+           <dl class="description">
+           
+             <dt>has super-classes</dt>
+             
+             <dd>
+               <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Identifier">identifier</span>
+             </dd>
+             
+           
+           
+           </dl>
+          
+        </div>
+        
+        <div id="RismNumber" class="entity">
+          <a name="http://performedmusicontology.org/ontology/RismNumber"></a>
+          <h3>
+           RISM number<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://performedmusicontology.org/ontology/RismNumber</p>
+          <div class="comment">
+           
+            <span class="markdown">A number from the Repertoire Internationale des Sources Musicales (RISM) online version.</span>
+           
+           
+          </div>
+          
+           <dl class="description">
+           
+             <dt>has super-classes</dt>
+             
+             <dd>
+               <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Identifier">identifier</span>
+             </dd>
+             
+           
+           
+           </dl>
+          
+        </div>
+        
+        <div id="Tempo" class="entity">
+          <a name="http://performedmusicontology.org/ontology/Tempo"></a>
+          <h3>
+           Tempo<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://performedmusicontology.org/ontology/Tempo</p>
+          <div class="comment">
+           
+            <span class="markdown">The speed or pace of a music work, whether declared (in a score) or performed.</span>
+           
+           
+            
+            <span class="markdown">80 quarter notes per minute; 100 bpm; Piano roll speed=120</span>
+            
+           
+          </div>
+          
+        </div>
+        
+        <div id="ThematicCatalogNumber" class="entity">
+          <a name="http://performedmusicontology.org/ontology/ThematicCatalogNumber"></a>
+          <h3>
+           Thematic catalog number<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://performedmusicontology.org/ontology/ThematicCatalogNumber</p>
+          <div class="comment">
+           
+            <span class="markdown">A numeric or alphanumeric designation of a musical work as found in a thematic index or catalog.</span>
+           
+           
+            
+            <span class="markdown">BWV 485; TWV 52:d1</span>
+            
+           
+          </div>
+          
+           <dl class="description">
+           
+             <dt>has super-classes</dt>
+             
+             <dd>
+               <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Identifier">identifier</span>
+             </dd>
+             
+           
+           
+           </dl>
+          
+        </div>
+        
+        <div id="VideogamePlatformIdentifier" class="entity">
+          <a name="http://performedmusicontology.org/ontology/VideogamePlatformIdentifier"></a>
+          <h3>
+           Videogame platform identifier<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://performedmusicontology.org/ontology/VideogamePlatformIdentifier</p>
+          <div class="comment">
+           
+            <span class="markdown">An identifier assigned to a video game platform.</span>
+           
+           
+            
+            <span class="markdown">CUSA 54321 (a PlayStation 4 number)</span>
+            
+           
+          </div>
+          
+           <dl class="description">
+           
+             <dt>has super-classes</dt>
+             
+             <dd>
+               <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Identifier">identifier</span>
+             </dd>
+             
+           
+           
+           </dl>
+          
+        </div>
+        
+        <div id="AllMusicId" class="entity">
+          <a name="http://performedmusicontology.org/2.0/ontology/AllMusicId"></a>
+          <h3>
+           AllMusic ID<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://performedmusicontology.org/2.0/ontology/AllMusicId</p>
+          <div class="comment">
+           
+            <span class="markdown">An identifier from AllMusic</span>
+           
+           
+          </div>
+          
+           <dl class="description">
+           
+             <dt>has super-classes</dt>
+             
+             <dd>
+               <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Identifier">identifier</span>
+             </dd>
+             
+           
+           
+           </dl>
+          
+        </div>
+        
+        <div id="DiscogsId" class="entity">
+          <a name="http://performedmusicontology.org/2.0/ontology/DiscogsId"></a>
+          <h3>
+           Discogs ID<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://performedmusicontology.org/2.0/ontology/DiscogsId</p>
+          <div class="comment">
+           
+            <span class="markdown">An identifier from Discogs.</span>
+           
+           
+          </div>
+          
+           <dl class="description">
+           
+             <dt>has super-classes</dt>
+             
+             <dd>
+               <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Identifier">identifier</span>
+             </dd>
+             
+           
+           
+           </dl>
+          
+        </div>
+        
+        <div id="DramaticRole" class="entity">
+          <a name="http://performedmusicontology.org/2.0/ontology/DramaticRole"></a>
+          <h3>
+           Dramatic role<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://performedmusicontology.org/2.0/ontology/DramaticRole</p>
+          <div class="comment">
+           
+            <span class="markdown">A dramatic role performed by a contributing agent.</span>
+           
+           
+            
+            <span class="markdown">Role of "Carmen" in the opera Carmen.</span>
+            
+           
+          </div>
+          
+        </div>
+        
+        <div id="EnsembleSize" class="entity">
+          <a name="http://performedmusicontology.org/2.0/ontology/EnsembleSize"></a>
+          <h3>
+           Ensemble size<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://performedmusicontology.org/2.0/ontology/EnsembleSize</p>
+          <div class="comment">
+           
+            <span class="markdown">A designation of the size of an individual ensemble.</span>
+           
+           
+            
+            <span class="markdown">trio (3 performers); individual or solo performer; large ensemble</span>
+            
+           
+          </div>
+          
+        </div>
+        
+        <div id="EventName" class="entity">
+          <a name="http://performedmusicontology.org/2.0/ontology/EventName"></a>
+          <h3>
+           Event name<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://performedmusicontology.org/2.0/ontology/EventName</p>
+          <div class="comment">
+           
+            <span class="markdown">A name or title given to an event, whether formally stated or created for metadata purposes.</span>
+           
+           
+          </div>
+          
+        </div>
+        
+        <div id="KeyMode" class="entity">
+          <a name="http://performedmusicontology.org/2.0/ontology/KeyMode"></a>
+          <h3>
+           Music key<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://performedmusicontology.org/2.0/ontology/KeyMode</p>
+          <div class="comment">
+           
+            <span class="markdown">Key and mode, or key only if no mode is present, of a music work.</span>
+           
+           
+            
+            <span class="markdown">C major; B-flat minor; D</span>
+            
+           
+          </div>
+          
+        </div>
+        
+        <div id="MediumComponent" class="entity">
+          <a name="http://performedmusicontology.org/2.0/ontology/MediumComponent"></a>
+          <h3>
+           Medium component<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://performedmusicontology.org/2.0/ontology/MediumComponent</p>
+          <div class="comment">
+           
+            <span class="markdown">An individual component of an overall medium of performance of a work.</span>
+           
+           
+          </div>
+          
+        </div>
+        
+        <div id="MediumComponentQualifier" class="entity">
+          <a name="http://performedmusicontology.org/2.0/ontology/MediumComponentQualifier"></a>
+          <h3>
+           Medium component qualifier<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://performedmusicontology.org/2.0/ontology/MediumComponentQualifier</p>
+          <div class="comment">
+           
+            <span class="markdown">A qualifier that affects the medium component.</span>
+           
+           
+            
+            <span class="markdown">offstage, amplified, optional</span>
+            
+           
+          </div>
+          
+        </div>
+        
+        <div id="MediumOfPerformance" class="entity">
+          <a name="http://performedmusicontology.org/2.0/ontology/MediumOfPerformance"></a>
+          <h3>
+           Medium of performance<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://performedmusicontology.org/2.0/ontology/MediumOfPerformance</p>
+          <div class="comment">
+           
+            <span class="markdown">An individual instrument, voice, ensemble, or instrumental group (e.g., percussion).</span>
+           
+           
+            
+            <span class="markdown">guitar; er hu; alto voice; percussion; orchestra</span>
+            
+           
+          </div>
+          
+        </div>
+        
+        <div id="Mode" class="entity">
+          <a name="http://performedmusicontology.org/2.0/ontology/Mode"></a>
+          <h3>
+           Music mode<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://performedmusicontology.org/2.0/ontology/Mode</p>
+          <div class="comment">
+           
+            <span class="markdown">Mode (not associated with a key) of a musical work</span>
+           
+           
+            
+            <span class="markdown">Dorian; Dhaivata</span>
+            
+           
+          </div>
+          
+        </div>
+        
+        <div id="MusicBrainzId" class="entity">
+          <a name="http://performedmusicontology.org/2.0/ontology/MusicBrainzId"></a>
+          <h3>
+           MusicBrainz ID<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://performedmusicontology.org/2.0/ontology/MusicBrainzId</p>
+          <div class="comment">
+           
+            <span class="markdown">An identifier from MusicBrainz</span>
+           
+           
+          </div>
+          
+           <dl class="description">
+           
+             <dt>has super-classes</dt>
+             
+             <dd>
+               <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Identifier">identifier</span>
+             </dd>
+             
+           
+           
+           </dl>
+          
+        </div>
+        
+        <div id="OpusNumber" class="entity">
+          <a name="http://performedmusicontology.org/2.0/ontology/OpusNumber"></a>
+          <h3>
+           Opus number<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://performedmusicontology.org/2.0/ontology/OpusNumber</p>
+          <div class="comment">
+           
+            <span class="markdown">An opus number assigned to a musical work.</span>
+           
+           
+            
+            <span class="markdown">Op. 45, no. 1; Op. 135a</span>
+            
+           
+          </div>
+          
+           <dl class="description">
+           
+             <dt>has super-classes</dt>
+             
+             <dd>
+               <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Identifier">identifier</span>
+             </dd>
+             
+           
+           
+           </dl>
+          
+        </div>
+        
+        <div id="RismNumber" class="entity">
+          <a name="http://performedmusicontology.org/2.0/ontology/RismNumber"></a>
+          <h3>
+           RISM number<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://performedmusicontology.org/2.0/ontology/RismNumber</p>
+          <div class="comment">
+           
+            <span class="markdown">A number from the Repertoire Internationale des Sources Musicales (RISM) online version.</span>
+           
+           
+          </div>
+          
+           <dl class="description">
+           
+             <dt>has super-classes</dt>
+             
+             <dd>
+               <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Identifier">identifier</span>
+             </dd>
+             
+           
+           
+           </dl>
+          
+        </div>
+        
+        <div id="Tempo" class="entity">
+          <a name="http://performedmusicontology.org/2.0/ontology/Tempo"></a>
+          <h3>
+           Tempo<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://performedmusicontology.org/2.0/ontology/Tempo</p>
+          <div class="comment">
+           
+            <span class="markdown">The speed or pace of a music work, whether declared (in a score) or performed.</span>
+           
+           
+            
+            <span class="markdown">80 quarter notes per minute; 100 bpm; Piano roll speed=120</span>
+            
+           
+          </div>
+          
+        </div>
+        
+        <div id="ThematicCatalogNumber" class="entity">
+          <a name="http://performedmusicontology.org/2.0/ontology/ThematicCatalogNumber"></a>
+          <h3>
+           Thematic catalog number<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://performedmusicontology.org/2.0/ontology/ThematicCatalogNumber</p>
+          <div class="comment">
+           
+            <span class="markdown">A numeric or alphanumeric designation of a musical work as found in a thematic index or catalog.</span>
+           
+           
+            
+            <span class="markdown">BWV 485; TWV 52:d1</span>
+            
+           
+          </div>
+          
+           <dl class="description">
+           
+             <dt>has super-classes</dt>
+             
+             <dd>
+               <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Identifier">identifier</span>
+             </dd>
+             
+           
+           
+           </dl>
+          
+        </div>
+        
+        <div id="VideogamePlatformIdentifier" class="entity">
+          <a name="http://performedmusicontology.org/2.0/ontology/VideogamePlatformIdentifier"></a>
+          <h3>
+           Videogame platform identifier<sup title="class" class="type-c">c</sup>
+           <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+          </h3>
+          <p><strong>IRI: </strong>http://performedmusicontology.org/2.0/ontology/VideogamePlatformIdentifier</p>
+          <div class="comment">
+           
+            <span class="markdown">An identifier assigned to a video game platform.</span>
+           
+           
+            
+            <span class="markdown">CUSA 54321 (a PlayStation 4 number)</span>
+            
+           
+          </div>
+          
+           <dl class="description">
+           
+             <dt>has super-classes</dt>
+             
+             <dd>
+               <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Identifier">identifier</span>
+             </dd>
+             
+           
+           
+           </dl>
+          
+        </div>
+        
+        <div id="objectproperties">
+          <h2>Object Properties</h2>
+          <ul class="hlist">
+           
+            <li>
+               <a href="#eventContent" title="http://id.loc.gov/ontologies/bibframe/eventContent">
+                 <span>eventContent</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#eventContentOf" title="http://id.loc.gov/ontologies/bibframe/eventContentOf">
+                 <span>eventContentOf</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#relatedTo" title="http://id.loc.gov/ontologies/bibframe/relatedTo">
+                 <span>relatedTo</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#aggregatedIn" title="http://performedmusicontology.org/ontology/aggregatedIn">
+                 <span>Aggregated in</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#aggregates" title="http://performedmusicontology.org/ontology/aggregates">
+                 <span>Aggregates</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#asMemberOf" title="http://performedmusicontology.org/ontology/asMemberOf">
+                 <span>As member of</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#associatedWith" title="http://performedmusicontology.org/ontology/associatedWith">
+                 <span>Associated with</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#createdFor" title="http://performedmusicontology.org/ontology/createdFor">
+                 <span>Created for</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#hasDramaticRole" title="http://performedmusicontology.org/ontology/hasDramaticRole">
+                 <span>Has dramatic role</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#hasEnsembleSize" title="http://performedmusicontology.org/ontology/hasEnsembleSize">
+                 <span>Has ensemble size</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#hasEventName" title="http://performedmusicontology.org/ontology/hasEventName">
+                 <span>Has event name</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#hasInspiration" title="http://performedmusicontology.org/ontology/hasInspiration">
+                 <span>Inspired by</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#hasKeyMode" title="http://performedmusicontology.org/ontology/hasKeyMode">
+                 <span>Has key and mode</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#hasMediumComponent" title="http://performedmusicontology.org/ontology/hasMediumComponent">
+                 <span>has Medium component</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#hasMediumComponentQualifier" title="http://performedmusicontology.org/ontology/hasMediumComponentQualifier">
+                 <span>Has medium component qualifier</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#hasMediumOfPerformance" title="http://performedmusicontology.org/ontology/hasMediumOfPerformance">
+                 <span>Has medium of performance</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#hasMode" title="http://performedmusicontology.org/ontology/hasMode">
+                 <span>Has mode</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#hasPerformance" title="http://performedmusicontology.org/ontology/hasPerformance">
+                 <span>Has performance</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#hasRecording" title="http://performedmusicontology.org/ontology/hasRecording">
+                 <span>Has recording</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#hasTempo" title="http://performedmusicontology.org/ontology/hasTempo">
+                 <span>Has tempo</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#inspirationFor" title="http://performedmusicontology.org/ontology/inspirationFor">
+                 <span>Inspiration for</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#performanceOf" title="http://performedmusicontology.org/ontology/performanceOf">
+                 <span>Performance of</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#recordingOf" title="http://performedmusicontology.org/ontology/recordingOf">
+                 <span>Recording of</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#remixOf" title="http://performedmusicontology.org/ontology/remixOf">
+                 <span>Remix of</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#remixedIn" title="http://performedmusicontology.org/ontology/remixedIn">
+                 <span>Remixed in</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#sampledBy" title="http://performedmusicontology.org/ontology/sampledBy">
+                 <span>Sampled by</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#samplesFrom" title="http://performedmusicontology.org/ontology/samplesFrom">
+                 <span>Samples from</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#usesMediumOfPerformance" title="http://performedmusicontology.org/ontology/usesMediumOfPerformance">
+                 <span>Uses medium of performance</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#aggregatedIn" title="http://performedmusicontology.org/2.0/ontology/aggregatedIn">
+                 <span>Aggregated in</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#aggregates" title="http://performedmusicontology.org/2.0/ontology/aggregates">
+                 <span>Aggregates</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#asMemberOf" title="http://performedmusicontology.org/2.0/ontology/asMemberOf">
+                 <span>As member of</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#associatedWith" title="http://performedmusicontology.org/2.0/ontology/associatedWith">
+                 <span>Associated with</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#createdFor" title="http://performedmusicontology.org/2.0/ontology/createdFor">
+                 <span>Created for</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#hasDramaticRole" title="http://performedmusicontology.org/2.0/ontology/hasDramaticRole">
+                 <span>Has dramatic role</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#hasEnsembleSize" title="http://performedmusicontology.org/2.0/ontology/hasEnsembleSize">
+                 <span>Has ensemble size</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#hasEventName" title="http://performedmusicontology.org/2.0/ontology/hasEventName">
+                 <span>Has event name</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#hasInspiration" title="http://performedmusicontology.org/2.0/ontology/hasInspiration">
+                 <span>Inspired by</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#hasKeyMode" title="http://performedmusicontology.org/2.0/ontology/hasKeyMode">
+                 <span>Has key and mode</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#hasMediumComponent" title="http://performedmusicontology.org/2.0/ontology/hasMediumComponent">
+                 <span>has Medium component</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#hasMediumComponentQualifier" title="http://performedmusicontology.org/2.0/ontology/hasMediumComponentQualifier">
+                 <span>Has medium component qualifier</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#hasMediumOfPerformance" title="http://performedmusicontology.org/2.0/ontology/hasMediumOfPerformance">
+                 <span>Has medium of performance</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#hasMode" title="http://performedmusicontology.org/2.0/ontology/hasMode">
+                 <span>Has mode</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#hasPerformance" title="http://performedmusicontology.org/2.0/ontology/hasPerformance">
+                 <span>Has performance</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#hasRecording" title="http://performedmusicontology.org/2.0/ontology/hasRecording">
+                 <span>Has recording</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#hasTempo" title="http://performedmusicontology.org/2.0/ontology/hasTempo">
+                 <span>Has tempo</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#inspirationFor" title="http://performedmusicontology.org/2.0/ontology/inspirationFor">
+                 <span>Inspiration for</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#performanceOf" title="http://performedmusicontology.org/2.0/ontology/performanceOf">
+                 <span>Performance of</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#recordingOf" title="http://performedmusicontology.org/2.0/ontology/recordingOf">
+                 <span>Recording of</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#remixOf" title="http://performedmusicontology.org/2.0/ontology/remixOf">
+                 <span>Remix of</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#remixedIn" title="http://performedmusicontology.org/2.0/ontology/remixedIn">
+                 <span>Remixed in</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#sampledBy" title="http://performedmusicontology.org/2.0/ontology/sampledBy">
+                 <span>Sampled by</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#samplesFrom" title="http://performedmusicontology.org/2.0/ontology/samplesFrom">
+                 <span>Samples from</span>
+               </a>
+            </li>
+           
+            <li>
+               <a href="#usesMediumOfPerformance" title="http://performedmusicontology.org/2.0/ontology/usesMediumOfPerformance">
+                 <span>Uses medium of performance</span>
+               </a>
+            </li>
+           
+          </ul>
+         
+          <div id="eventContent" class="entity">
+            <a name="http://id.loc.gov/ontologies/bibframe/eventContent"></a>
+            <h3>
+            eventContent <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://id.loc.gov/ontologies/bibframe/eventContent
+            </p>
+            <div class="comment">
+               
+               
+            </div>
+            
+          </div>
+         
+          <div id="eventContentOf" class="entity">
+            <a name="http://id.loc.gov/ontologies/bibframe/eventContentOf"></a>
+            <h3>
+            eventContentOf <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://id.loc.gov/ontologies/bibframe/eventContentOf
+            </p>
+            <div class="comment">
+               
+               
+            </div>
+            
+          </div>
+         
+          <div id="relatedTo" class="entity">
+            <a name="http://id.loc.gov/ontologies/bibframe/relatedTo"></a>
+            <h3>
+            relatedTo <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://id.loc.gov/ontologies/bibframe/relatedTo
+            </p>
+            <div class="comment">
+               
+               
+            </div>
+            
+          </div>
+         
+          <div id="aggregatedIn" class="entity">
+            <a name="http://performedmusicontology.org/ontology/aggregatedIn"></a>
+            <h3>
+            Aggregated in <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/ontology/aggregatedIn
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates a work to a work in which it is aggregated.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Work">
+                    work
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Work">
+                    work
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>is inverse of</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/ontology/aggregates">
+                    <a href="#aggregates" title="http://performedmusicontology.org/ontology/aggregates">Aggregates</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="aggregates" class="entity">
+            <a name="http://performedmusicontology.org/ontology/aggregates"></a>
+            <h3>
+            Aggregates <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/ontology/aggregates
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates a work to a work that it aggregates.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Work">
+                    work
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Work">
+                    work
+                  </span>
+                </dd>  
+                
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="asMemberOf" class="entity">
+            <a name="http://performedmusicontology.org/ontology/asMemberOf"></a>
+            <h3>
+            As member of <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/ontology/asMemberOf
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates a contribution that is a person to an organization through which a person makes a contribution to the resource.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Contribution">
+                    contribution
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Organization">
+                    organization
+                  </span>
+                </dd>  
+                
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="associatedWith" class="entity">
+            <a name="http://performedmusicontology.org/ontology/associatedWith"></a>
+            <h3>
+            Associated with <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/ontology/associatedWith
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates a resource to another resource with which it is associated in a general way.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+               <dt>has super-properties</dt>
+               
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/relatedTo">
+                    related to
+                  </span>
+                </dd>
+               
+              
+              
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="createdFor" class="entity">
+            <a name="http://performedmusicontology.org/ontology/createdFor"></a>
+            <h3>
+            Created for <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/ontology/createdFor
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates a resource to a resource for which it was created</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+               <dt>has super-properties</dt>
+               
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/relatedTo">
+                    related to
+                  </span>
+                </dd>
+               
+              
+              
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="hasDramaticRole" class="entity">
+            <a name="http://performedmusicontology.org/ontology/hasDramaticRole"></a>
+            <h3>
+            Has dramatic role <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/ontology/hasDramaticRole
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates a contribution to a dramatic role.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Contribution">
+                    contribution
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/ontology/DramaticRole">
+                    <a href="#DramaticRole" title="http://performedmusicontology.org/ontology/DramaticRole">Dramatic role</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="hasEnsembleSize" class="entity">
+            <a name="http://performedmusicontology.org/ontology/hasEnsembleSize"></a>
+            <h3>
+            Has ensemble size <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/ontology/hasEnsembleSize
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates a work to an individual ensemble size.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Work">
+                    work
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/ontology/EnsembleSize">
+                    <a href="#EnsembleSize" title="http://performedmusicontology.org/ontology/EnsembleSize">Ensemble size</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="hasEventName" class="entity">
+            <a name="http://performedmusicontology.org/ontology/hasEventName"></a>
+            <h3>
+            Has event name <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/ontology/hasEventName
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates an event to a name or title for the event.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Event">
+                    event
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/ontology/EventName">
+                    <a href="#EventName" title="http://performedmusicontology.org/ontology/EventName">Event name</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="hasInspiration" class="entity">
+            <a name="http://performedmusicontology.org/ontology/hasInspiration"></a>
+            <h3>
+            Inspired by <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/ontology/hasInspiration
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates a work to a resource that inspired the creation of the work</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+               <dt>has super-properties</dt>
+               
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/relatedTo">
+                    related to
+                  </span>
+                </dd>
+               
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Work">
+                    work
+                  </span>
+                </dd>  
+                
+              
+              
+              
+                <dt>is inverse of</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/ontology/inspirationFor">
+                    <a href="#inspirationFor" title="http://performedmusicontology.org/ontology/inspirationFor">Inspiration for</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="hasKeyMode" class="entity">
+            <a name="http://performedmusicontology.org/ontology/hasKeyMode"></a>
+            <h3>
+            Has key and mode <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/ontology/hasKeyMode
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates a work to a key and mode.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Work">
+                    work
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/ontology/KeyMode">
+                    <a href="#KeyMode" title="http://performedmusicontology.org/ontology/KeyMode">Music key</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="hasMediumComponent" class="entity">
+            <a name="http://performedmusicontology.org/ontology/hasMediumComponent"></a>
+            <h3>
+            has Medium component <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/ontology/hasMediumComponent
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates a work to a medium component.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Work">
+                    work
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/ontology/MediumComponent">
+                    <a href="#MediumComponent" title="http://performedmusicontology.org/ontology/MediumComponent">Medium component</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="hasMediumComponentQualifier" class="entity">
+            <a name="http://performedmusicontology.org/ontology/hasMediumComponentQualifier"></a>
+            <h3>
+            Has medium component qualifier <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/ontology/hasMediumComponentQualifier
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates a medium component to a medium component qualifier that affects the medium component.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/ontology/MediumComponent">
+                    <a href="#MediumComponent" title="http://performedmusicontology.org/ontology/MediumComponent">Medium component</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/ontology/MediumComponentQualifier">
+                    <a href="#MediumComponentQualifier" title="http://performedmusicontology.org/ontology/MediumComponentQualifier">Medium component qualifier</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="hasMediumOfPerformance" class="entity">
+            <a name="http://performedmusicontology.org/ontology/hasMediumOfPerformance"></a>
+            <h3>
+            Has medium of performance <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/ontology/hasMediumOfPerformance
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates a work to a medium of performance.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Work">
+                    work
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/ontology/MediumOfPerformance">
+                    <a href="#MediumOfPerformance" title="http://performedmusicontology.org/ontology/MediumOfPerformance">Medium of performance</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="hasMode" class="entity">
+            <a name="http://performedmusicontology.org/ontology/hasMode"></a>
+            <h3>
+            Has mode <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/ontology/hasMode
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates a work to a mode.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Work">
+                    work
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/ontology/Mode">
+                    <a href="#Mode" title="http://performedmusicontology.org/ontology/Mode">Music mode</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="hasPerformance" class="entity">
+            <a name="http://performedmusicontology.org/ontology/hasPerformance"></a>
+            <h3>
+            Has performance <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/ontology/hasPerformance
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates a work to an event that is a performance.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+               <dt>has super-properties</dt>
+               
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/eventContentOf">
+                    event content of
+                  </span>
+                </dd>
+               
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Work">
+                    work
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Event">
+                    event
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>is inverse of</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/ontology/performanceOf">
+                    <a href="#performanceOf" title="http://performedmusicontology.org/ontology/performanceOf">Performance of</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="hasRecording" class="entity">
+            <a name="http://performedmusicontology.org/ontology/hasRecording"></a>
+            <h3>
+            Has recording <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/ontology/hasRecording
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates an event to an audio or video work that is created by recording the event.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+               <dt>has super-properties</dt>
+               
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/eventContent">
+                    event content
+                  </span>
+                </dd>
+               
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Event">
+                    event
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Work">
+                    work
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>is inverse of</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/ontology/recordingOf">
+                    <a href="#recordingOf" title="http://performedmusicontology.org/ontology/recordingOf">Recording of</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="hasTempo" class="entity">
+            <a name="http://performedmusicontology.org/ontology/hasTempo"></a>
+            <h3>
+            Has tempo <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/ontology/hasTempo
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates a work to a tempo.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Work">
+                    work
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/ontology/Tempo">
+                    <a href="#Tempo" title="http://performedmusicontology.org/ontology/Tempo">Tempo</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="inspirationFor" class="entity">
+            <a name="http://performedmusicontology.org/ontology/inspirationFor"></a>
+            <h3>
+            Inspiration for <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/ontology/inspirationFor
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates an event to a work that is inspired by an event.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+               <dt>has super-properties</dt>
+               
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/relatedTo">
+                    related to
+                  </span>
+                </dd>
+               
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Event">
+                    event
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Work">
+                    work
+                  </span>
+                </dd>  
+                
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="performanceOf" class="entity">
+            <a name="http://performedmusicontology.org/ontology/performanceOf"></a>
+            <h3>
+            Performance of <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/ontology/performanceOf
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates an event to a work that is performed at an event.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+               <dt>has super-properties</dt>
+               
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/eventContent">
+                    event content
+                  </span>
+                </dd>
+               
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Event">
+                    event
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Work">
+                    work
+                  </span>
+                </dd>  
+                
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="recordingOf" class="entity">
+            <a name="http://performedmusicontology.org/ontology/recordingOf"></a>
+            <h3>
+            Recording of <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/ontology/recordingOf
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates a work to an event that is recorded to create an audio or video work.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+               <dt>has super-properties</dt>
+               
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/eventContentOf">
+                    event content of
+                  </span>
+                </dd>
+               
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Work">
+                    work
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Event">
+                    event
+                  </span>
+                </dd>  
+                
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="remixOf" class="entity">
+            <a name="http://performedmusicontology.org/ontology/remixOf"></a>
+            <h3>
+            Remix of <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/ontology/remixOf
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates an audio work created by substantial editing of the audio of a work to the original work</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+               <dt>has super-properties</dt>
+               
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/derivativeOf">
+                    derivative of
+                  </span>
+                </dd>
+               
+              
+              
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="remixedIn" class="entity">
+            <a name="http://performedmusicontology.org/ontology/remixedIn"></a>
+            <h3>
+            Remixed in <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/ontology/remixedIn
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates an audio work to a work created by the substantial editing of the audio of that work</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+               <dt>has super-properties</dt>
+               
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/hasDerivative">
+                    has derivative
+                  </span>
+                </dd>
+               
+              
+              
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="sampledBy" class="entity">
+            <a name="http://performedmusicontology.org/ontology/sampledBy"></a>
+            <h3>
+            Sampled by <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/ontology/sampledBy
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates an audio work from which audio clips are sampled to the new audio work using those samples..</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+               <dt>has super-properties</dt>
+               
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/referencedBy">
+                    referenced by
+                  </span>
+                </dd>
+               
+              
+              
+              
+              
+                <dt>is inverse of</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/ontology/samplesFrom">
+                    <a href="#samplesFrom" title="http://performedmusicontology.org/ontology/samplesFrom">Samples from</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="samplesFrom" class="entity">
+            <a name="http://performedmusicontology.org/ontology/samplesFrom"></a>
+            <h3>
+            Samples from <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/ontology/samplesFrom
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates an audio work that makes use of audio clips (samples) from another work to the work it samples from. The sample may or may not be manipulated in the new work.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+               <dt>has super-properties</dt>
+               
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/references">
+                    references
+                  </span>
+                </dd>
+               
+              
+              
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="usesMediumOfPerformance" class="entity">
+            <a name="http://performedmusicontology.org/ontology/usesMediumOfPerformance"></a>
+            <h3>
+            Uses medium of performance <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/ontology/usesMediumOfPerformance
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates a contribution to a medium of performance.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Contribution">
+                    contribution
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/ontology/MediumOfPerformance">
+                    <a href="#MediumOfPerformance" title="http://performedmusicontology.org/ontology/MediumOfPerformance">Medium of performance</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="aggregatedIn" class="entity">
+            <a name="http://performedmusicontology.org/2.0/ontology/aggregatedIn"></a>
+            <h3>
+            Aggregated in <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/2.0/ontology/aggregatedIn
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates a work to a work in which it is aggregated.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Work">
+                    work
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Work">
+                    work
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>is inverse of</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/2.0/ontology/aggregates">
+                    <a href="#aggregates" title="http://performedmusicontology.org/2.0/ontology/aggregates">Aggregates</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="aggregates" class="entity">
+            <a name="http://performedmusicontology.org/2.0/ontology/aggregates"></a>
+            <h3>
+            Aggregates <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/2.0/ontology/aggregates
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates a work to a work that it aggregates.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Work">
+                    work
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Work">
+                    work
+                  </span>
+                </dd>  
+                
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="asMemberOf" class="entity">
+            <a name="http://performedmusicontology.org/2.0/ontology/asMemberOf"></a>
+            <h3>
+            As member of <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/2.0/ontology/asMemberOf
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates a contribution that is a person to an organization through which a person makes a contribution to the resource.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Contribution">
+                    contribution
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Organization">
+                    organization
+                  </span>
+                </dd>  
+                
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="associatedWith" class="entity">
+            <a name="http://performedmusicontology.org/2.0/ontology/associatedWith"></a>
+            <h3>
+            Associated with <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/2.0/ontology/associatedWith
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates a resource to another resource with which it is associated in a general way.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+               <dt>has super-properties</dt>
+               
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/relatedTo">
+                    related to
+                  </span>
+                </dd>
+               
+              
+              
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="createdFor" class="entity">
+            <a name="http://performedmusicontology.org/2.0/ontology/createdFor"></a>
+            <h3>
+            Created for <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/2.0/ontology/createdFor
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates a resource to a resource for which it was created</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+               <dt>has super-properties</dt>
+               
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/relatedTo">
+                    related to
+                  </span>
+                </dd>
+               
+              
+              
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="hasDramaticRole" class="entity">
+            <a name="http://performedmusicontology.org/2.0/ontology/hasDramaticRole"></a>
+            <h3>
+            Has dramatic role <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/2.0/ontology/hasDramaticRole
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates a contribution to a dramatic role.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Contribution">
+                    contribution
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/2.0/ontology/DramaticRole">
+                    <a href="#DramaticRole" title="http://performedmusicontology.org/2.0/ontology/DramaticRole">Dramatic role</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="hasEnsembleSize" class="entity">
+            <a name="http://performedmusicontology.org/2.0/ontology/hasEnsembleSize"></a>
+            <h3>
+            Has ensemble size <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/2.0/ontology/hasEnsembleSize
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates a work to an individual ensemble size.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Work">
+                    work
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/2.0/ontology/EnsembleSize">
+                    <a href="#EnsembleSize" title="http://performedmusicontology.org/2.0/ontology/EnsembleSize">Ensemble size</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="hasEventName" class="entity">
+            <a name="http://performedmusicontology.org/2.0/ontology/hasEventName"></a>
+            <h3>
+            Has event name <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/2.0/ontology/hasEventName
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates an event to a name or title for the event.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Event">
+                    event
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/2.0/ontology/EventName">
+                    <a href="#EventName" title="http://performedmusicontology.org/2.0/ontology/EventName">Event name</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="hasInspiration" class="entity">
+            <a name="http://performedmusicontology.org/2.0/ontology/hasInspiration"></a>
+            <h3>
+            Inspired by <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/2.0/ontology/hasInspiration
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates a work to a resource that inspired the creation of the work</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+               <dt>has super-properties</dt>
+               
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/relatedTo">
+                    related to
+                  </span>
+                </dd>
+               
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Work">
+                    work
+                  </span>
+                </dd>  
+                
+              
+              
+              
+                <dt>is inverse of</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/2.0/ontology/inspirationFor">
+                    <a href="#inspirationFor" title="http://performedmusicontology.org/2.0/ontology/inspirationFor">Inspiration for</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="hasKeyMode" class="entity">
+            <a name="http://performedmusicontology.org/2.0/ontology/hasKeyMode"></a>
+            <h3>
+            Has key and mode <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/2.0/ontology/hasKeyMode
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates a work to a key and mode.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Work">
+                    work
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/2.0/ontology/KeyMode">
+                    <a href="#KeyMode" title="http://performedmusicontology.org/2.0/ontology/KeyMode">Music key</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="hasMediumComponent" class="entity">
+            <a name="http://performedmusicontology.org/2.0/ontology/hasMediumComponent"></a>
+            <h3>
+            has Medium component <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/2.0/ontology/hasMediumComponent
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates a work to a medium component.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Work">
+                    work
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/2.0/ontology/MediumComponent">
+                    <a href="#MediumComponent" title="http://performedmusicontology.org/2.0/ontology/MediumComponent">Medium component</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="hasMediumComponentQualifier" class="entity">
+            <a name="http://performedmusicontology.org/2.0/ontology/hasMediumComponentQualifier"></a>
+            <h3>
+            Has medium component qualifier <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/2.0/ontology/hasMediumComponentQualifier
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates a medium component to a medium component qualifier that affects the medium component.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/2.0/ontology/MediumComponent">
+                    <a href="#MediumComponent" title="http://performedmusicontology.org/2.0/ontology/MediumComponent">Medium component</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/2.0/ontology/MediumComponentQualifier">
+                    <a href="#MediumComponentQualifier" title="http://performedmusicontology.org/2.0/ontology/MediumComponentQualifier">Medium component qualifier</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="hasMediumOfPerformance" class="entity">
+            <a name="http://performedmusicontology.org/2.0/ontology/hasMediumOfPerformance"></a>
+            <h3>
+            Has medium of performance <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/2.0/ontology/hasMediumOfPerformance
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates a work to a medium of performance.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Work">
+                    work
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/2.0/ontology/MediumOfPerformance">
+                    <a href="#MediumOfPerformance" title="http://performedmusicontology.org/2.0/ontology/MediumOfPerformance">Medium of performance</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="hasMode" class="entity">
+            <a name="http://performedmusicontology.org/2.0/ontology/hasMode"></a>
+            <h3>
+            Has mode <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/2.0/ontology/hasMode
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates a work to a mode.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Work">
+                    work
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/2.0/ontology/Mode">
+                    <a href="#Mode" title="http://performedmusicontology.org/2.0/ontology/Mode">Music mode</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="hasPerformance" class="entity">
+            <a name="http://performedmusicontology.org/2.0/ontology/hasPerformance"></a>
+            <h3>
+            Has performance <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/2.0/ontology/hasPerformance
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates a work to an event that is a performance.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+               <dt>has super-properties</dt>
+               
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/eventContentOf">
+                    event content of
+                  </span>
+                </dd>
+               
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Work">
+                    work
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Event">
+                    event
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>is inverse of</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/2.0/ontology/performanceOf">
+                    <a href="#performanceOf" title="http://performedmusicontology.org/2.0/ontology/performanceOf">Performance of</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="hasRecording" class="entity">
+            <a name="http://performedmusicontology.org/2.0/ontology/hasRecording"></a>
+            <h3>
+            Has recording <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/2.0/ontology/hasRecording
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates an event to an audio or video work that is created by recording the event.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+               <dt>has super-properties</dt>
+               
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/eventContent">
+                    event content
+                  </span>
+                </dd>
+               
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Event">
+                    event
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Work">
+                    work
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>is inverse of</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/2.0/ontology/recordingOf">
+                    <a href="#recordingOf" title="http://performedmusicontology.org/2.0/ontology/recordingOf">Recording of</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="hasTempo" class="entity">
+            <a name="http://performedmusicontology.org/2.0/ontology/hasTempo"></a>
+            <h3>
+            Has tempo <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/2.0/ontology/hasTempo
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates a work to a tempo.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Work">
+                    work
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/2.0/ontology/Tempo">
+                    <a href="#Tempo" title="http://performedmusicontology.org/2.0/ontology/Tempo">Tempo</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="inspirationFor" class="entity">
+            <a name="http://performedmusicontology.org/2.0/ontology/inspirationFor"></a>
+            <h3>
+            Inspiration for <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/2.0/ontology/inspirationFor
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates an event to a work that is inspired by an event.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+               <dt>has super-properties</dt>
+               
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/relatedTo">
+                    related to
+                  </span>
+                </dd>
+               
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Event">
+                    event
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Work">
+                    work
+                  </span>
+                </dd>  
+                
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="performanceOf" class="entity">
+            <a name="http://performedmusicontology.org/2.0/ontology/performanceOf"></a>
+            <h3>
+            Performance of <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/2.0/ontology/performanceOf
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates an event to a work that is performed at an event.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+               <dt>has super-properties</dt>
+               
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/eventContent">
+                    event content
+                  </span>
+                </dd>
+               
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Event">
+                    event
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Work">
+                    work
+                  </span>
+                </dd>  
+                
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="recordingOf" class="entity">
+            <a name="http://performedmusicontology.org/2.0/ontology/recordingOf"></a>
+            <h3>
+            Recording of <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/2.0/ontology/recordingOf
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates a work to an event that is recorded to create an audio or video work.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+               <dt>has super-properties</dt>
+               
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/eventContentOf">
+                    event content of
+                  </span>
+                </dd>
+               
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Work">
+                    work
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Event">
+                    event
+                  </span>
+                </dd>  
+                
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="remixOf" class="entity">
+            <a name="http://performedmusicontology.org/2.0/ontology/remixOf"></a>
+            <h3>
+            Remix of <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/2.0/ontology/remixOf
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates an audio work created by substantial editing of the audio of a work to the original work</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+               <dt>has super-properties</dt>
+               
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/derivativeOf">
+                    derivative of
+                  </span>
+                </dd>
+               
+              
+              
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="remixedIn" class="entity">
+            <a name="http://performedmusicontology.org/2.0/ontology/remixedIn"></a>
+            <h3>
+            Remixed in <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/2.0/ontology/remixedIn
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates an audio work to a work created by the substantial editing of the audio of that work</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+               <dt>has super-properties</dt>
+               
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/hasDerivative">
+                    has derivative
+                  </span>
+                </dd>
+               
+              
+              
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="sampledBy" class="entity">
+            <a name="http://performedmusicontology.org/2.0/ontology/sampledBy"></a>
+            <h3>
+            Sampled by <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/2.0/ontology/sampledBy
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates an audio work from which audio clips are sampled to the new audio work using those samples..</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+               <dt>has super-properties</dt>
+               
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/referencedBy">
+                    referenced by
+                  </span>
+                </dd>
+               
+              
+              
+              
+              
+                <dt>is inverse of</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/2.0/ontology/samplesFrom">
+                    <a href="#samplesFrom" title="http://performedmusicontology.org/2.0/ontology/samplesFrom">Samples from</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="samplesFrom" class="entity">
+            <a name="http://performedmusicontology.org/2.0/ontology/samplesFrom"></a>
+            <h3>
+            Samples from <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/2.0/ontology/samplesFrom
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates an audio work that makes use of audio clips (samples) from another work to the work it samples from. The sample may or may not be manipulated in the new work.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+               <dt>has super-properties</dt>
+               
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/references">
+                    references
+                  </span>
+                </dd>
+               
+              
+              
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+          <div id="usesMediumOfPerformance" class="entity">
+            <a name="http://performedmusicontology.org/2.0/ontology/usesMediumOfPerformance"></a>
+            <h3>
+            Uses medium of performance <sup title="object property" class="type-op">op</sup>
+             <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a></span>
+            </h3>
+            <p>
+               <strong>IRI:</strong>
+               http://performedmusicontology.org/2.0/ontology/usesMediumOfPerformance
+            </p>
+            <div class="comment">
+               
+                
+                 <span class="markdown">Relates a contribution to a medium of performance.</span>
+                
+               
+               
+            </div>
+            
+            <div class="description">
+              <dl>
+              
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Contribution">
+                    contribution
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/2.0/ontology/MediumOfPerformance">
+                    <a href="#MediumOfPerformance" title="http://performedmusicontology.org/2.0/ontology/MediumOfPerformance">Medium of performance</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              
+              </dl>
+            </div>
+            
+          </div>
+         
+         <div id="dataproperties">
+           <h2>Data Properties</h2>
+           <ul class="hlist">
+           
+            <li>
+              <a href="#date" title="http://id.loc.gov/ontologies/bibframe/date">date</a>
+            </li>
+           
+            <li>
+              <a href="#hasMediumCount" title="http://performedmusicontology.org/ontology/hasMediumCount">Has medium count</a>
+            </li>
+           
+            <li>
+              <a href="#hasNumberOfHands" title="http://performedmusicontology.org/ontology/hasNumberOfHands">Number of hands</a>
+            </li>
+           
+            <li>
+              <a href="#phonogramCopyrightDate" title="http://performedmusicontology.org/ontology/phonogramCopyrightDate">Phonogram copyright date</a>
+            </li>
+           
+            <li>
+              <a href="#hasMediumCount" title="http://performedmusicontology.org/2.0/ontology/hasMediumCount">Has medium count</a>
+            </li>
+           
+            <li>
+              <a href="#hasNumberOfHands" title="http://performedmusicontology.org/2.0/ontology/hasNumberOfHands">Number of hands</a>
+            </li>
+           
+            <li>
+              <a href="#phonogramCopyrightDate" title="http://performedmusicontology.org/2.0/ontology/phonogramCopyrightDate">Phonogram copyright date</a>
+            </li>
+           
+           </ul>
+           
+           <div id="date" class="entity">
+            <a name="http://id.loc.gov/ontologies/bibframe/date"></a>
+            <h3>
+            date
+            <sup title="data property" class="type-dp">dp</sup>
+            <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span>
+            </h3>
+            <p>
+              <strong>IRI:</strong>
+               http://id.loc.gov/ontologies/bibframe/date
+            </p>        
+             
+             
+             
+              <div class="description">
+             
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Contribution">
+                    contribution
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/2.0/ontology/MediumOfPerformance">
+                    <a href="#MediumOfPerformance" title="http://performedmusicontology.org/2.0/ontology/MediumOfPerformance">Medium of performance</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              
+              </div>
+             
+           </div>
+           
+           <div id="hasMediumCount" class="entity">
+            <a name="http://performedmusicontology.org/ontology/hasMediumCount"></a>
+            <h3>
+            Has medium count
+            <sup title="data property" class="type-dp">dp</sup>
+            <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span>
+            </h3>
+            <p>
+              <strong>IRI:</strong>
+               http://performedmusicontology.org/ontology/hasMediumCount
+            </p>        
+             
+               <div class="comment">
+               
+                 <p><span class="markdown">Relates a medium component to the count of that medium component.</span></p>
+               
+               </div>
+             
+             
+             
+              <div class="description">
+             
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Contribution">
+                    contribution
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/2.0/ontology/MediumOfPerformance">
+                    <a href="#MediumOfPerformance" title="http://performedmusicontology.org/2.0/ontology/MediumOfPerformance">Medium of performance</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              
+              </div>
+             
+           </div>
+           
+           <div id="hasNumberOfHands" class="entity">
+            <a name="http://performedmusicontology.org/ontology/hasNumberOfHands"></a>
+            <h3>
+            Number of hands
+            <sup title="data property" class="type-dp">dp</sup>
+            <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span>
+            </h3>
+            <p>
+              <strong>IRI:</strong>
+               http://performedmusicontology.org/ontology/hasNumberOfHands
+            </p>        
+             
+               <div class="comment">
+               
+                 <p><span class="markdown">Relates a medium component to the number of hands required for performance.</span></p>
+               
+               </div>
+             
+             
+                <div class="comment">
+                
+                 <p><span class="markdown">Examples include works in which more than one performer shares an instrument or works in which an atypical number of hand is specified for the instrument.</span></p>
+                
+                </div>
+             
+             
+              <div class="description">
+             
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Contribution">
+                    contribution
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/2.0/ontology/MediumOfPerformance">
+                    <a href="#MediumOfPerformance" title="http://performedmusicontology.org/2.0/ontology/MediumOfPerformance">Medium of performance</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              
+              </div>
+             
+           </div>
+           
+           <div id="phonogramCopyrightDate" class="entity">
+            <a name="http://performedmusicontology.org/ontology/phonogramCopyrightDate"></a>
+            <h3>
+            Phonogram copyright date
+            <sup title="data property" class="type-dp">dp</sup>
+            <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span>
+            </h3>
+            <p>
+              <strong>IRI:</strong>
+               http://performedmusicontology.org/ontology/phonogramCopyrightDate
+            </p>        
+             
+               <div class="comment">
+               
+                 <p><span class="markdown">Relates a work to a phonogram copyright date for a work that is a audio recording.</span></p>
+               
+               </div>
+             
+             
+             
+              <div class="description">
+             
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Contribution">
+                    contribution
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/2.0/ontology/MediumOfPerformance">
+                    <a href="#MediumOfPerformance" title="http://performedmusicontology.org/2.0/ontology/MediumOfPerformance">Medium of performance</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              
+              </div>
+             
+           </div>
+           
+           <div id="hasMediumCount" class="entity">
+            <a name="http://performedmusicontology.org/2.0/ontology/hasMediumCount"></a>
+            <h3>
+            Has medium count
+            <sup title="data property" class="type-dp">dp</sup>
+            <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span>
+            </h3>
+            <p>
+              <strong>IRI:</strong>
+               http://performedmusicontology.org/2.0/ontology/hasMediumCount
+            </p>        
+             
+               <div class="comment">
+               
+                 <p><span class="markdown">Relates a medium component to the count of that medium component.</span></p>
+               
+               </div>
+             
+             
+             
+              <div class="description">
+             
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Contribution">
+                    contribution
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/2.0/ontology/MediumOfPerformance">
+                    <a href="#MediumOfPerformance" title="http://performedmusicontology.org/2.0/ontology/MediumOfPerformance">Medium of performance</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              
+              </div>
+             
+           </div>
+           
+           <div id="hasNumberOfHands" class="entity">
+            <a name="http://performedmusicontology.org/2.0/ontology/hasNumberOfHands"></a>
+            <h3>
+            Number of hands
+            <sup title="data property" class="type-dp">dp</sup>
+            <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span>
+            </h3>
+            <p>
+              <strong>IRI:</strong>
+               http://performedmusicontology.org/2.0/ontology/hasNumberOfHands
+            </p>        
+             
+               <div class="comment">
+               
+                 <p><span class="markdown">Relates a medium component to the number of hands required for performance.</span></p>
+               
+               </div>
+             
+             
+                <div class="comment">
+                
+                 <p><span class="markdown">Examples include works in which more than one performer shares an instrument or works in which an atypical number of hand is specified for the instrument.</span></p>
+                
+                </div>
+             
+             
+              <div class="description">
+             
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Contribution">
+                    contribution
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/2.0/ontology/MediumOfPerformance">
+                    <a href="#MediumOfPerformance" title="http://performedmusicontology.org/2.0/ontology/MediumOfPerformance">Medium of performance</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              
+              </div>
+             
+           </div>
+           
+           <div id="phonogramCopyrightDate" class="entity">
+            <a name="http://performedmusicontology.org/2.0/ontology/phonogramCopyrightDate"></a>
+            <h3>
+            Phonogram copyright date
+            <sup title="data property" class="type-dp">dp</sup>
+            <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span>
+            </h3>
+            <p>
+              <strong>IRI:</strong>
+               http://performedmusicontology.org/2.0/ontology/phonogramCopyrightDate
+            </p>        
+             
+               <div class="comment">
+               
+                 <p><span class="markdown">Relates a work to a phonogram copyright date for a work that is a audio recording.</span></p>
+               
+               </div>
+             
+             
+             
+              <div class="description">
+             
+              
+                <dt>has domain</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://id.loc.gov/ontologies/bibframe/Contribution">
+                    contribution
+                  </span>
+                </dd>  
+                
+              
+              
+                <dt>has range</dt>
+                
+                <dd>
+                  <span class="dotted" title="http://performedmusicontology.org/2.0/ontology/MediumOfPerformance">
+                    <a href="#MediumOfPerformance" title="http://performedmusicontology.org/2.0/ontology/MediumOfPerformance">Medium of performance</a>
+    <sup title="object property" class="type-op">op</sup>
+                  </span>
+                </dd>  
+                
+              
+              
+              </div>
+             
+           </div>
+           
+         </div>
+        </div>
+      </div>
+      <div id="namespacedeclarations">
+        <h2>Namespace Declarations <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+        <dl>
+          <dt><em>default namespace</em></dt>
+            <dd>http://performedmusicontology.org/ontology/</dd>
+          <dt>bibframe</dt>
+            <dd>http://id.loc.gov/ontologies/bibframe/</dd>
+          <dt>dc</dt>
+            <dd>http://purl.org/dc/elements/1.1/</dd>
+          <dt>efrbroo</dt>
+            <dd>http://erlangen-crm.org/efrbroo/</dd>
+          <dt>owl</dt>
+            <dd>http://www.w3.org/2002/07/owl#</dd>
+          <dt>rdf</dt>
+            <dd>http://www.w3.org/1999/02/22-rdf-syntax-ns#</dd>
+          <dt>rdfs</dt>
+            <dd>http://www.w3.org/2000/01/rdf-schema#</dd>
+          <dt>regap</dt>
+            <dd>http://metadataregistry.org/uri/profile/regap/</dd>
+          <dt>skos</dt>
+            <dd>http://www.w3.org/2004/02/skos/core#</dd>
+          <dt>xsd</dt>
+            <dd>http://www.w3.org/2001/XMLSchema#</dd>
+        </dl>
+    </div>
+   </body>
+</html>
