@@ -1,79 +1,60 @@
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<http://performedmusicontology.org/vocabularies/medium_component_qualifier/>
-  a skos:ConceptScheme ;
-  rdfs:label "PMO Medium Component Qualifier Vocabulary"@en ;
-  dc:title "PMO Medium Component Qualifier Vocabulary"@en ;
-  skos:definition "The PMO Medium Component Qualifier Vocabulary is a controlled vocabulary that provides a qualifying description for a medium of performance, e.g., amplified, obbligato, offstage. It was developed for the Performed Music Ontology 2.0, specifically the Medium component qualifier class, but may be used with other ontologies."@en .
+<http://performedmusicontology.org/2.0/vocabularies/medium_component_qualifier/ad_lib> a skos:Concept ;
+    rdfs:comment "Value for: MediumComponentQualifier."@en ;
+    skos:altLabel "ad libitum"@en ;
+    skos:changeNote [ dc1:date "2024-04-30" ;
+            rdf:value "NEW" ] ;
+    skos:definition "For medium components marked \"ad lib\" or \"ad libitum\" in a score or otherwise."@en ;
+    skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/medium_component_qualifier/> ;
+    skos:prefLabel "ad lib"@en .
 
-<http://performedmusicontology.org/vocabularies/medium_component_qualifier/ad_lib>
-  a skos:Concept ;
-  skos:prefLabel "ad lib"@en ;
-  skos:altLabel "ad libitum"@en ;
-  skos:definition """For medium components marked "ad lib" or "ad libitum" in a score or otherwise."""@en ;
-  rdfs:comment "Value for: MediumComponentQualifier."@en ;
-  skos:inScheme <http://performedmusicontology.org/vocabularies/medium_component_qualifier/> ;
-  skos:changeNote [
-    rdf:value "NEW" ;
-    dc:date "2024-04-30"
-  ] .
+<http://performedmusicontology.org/2.0/vocabularies/medium_component_qualifier/amplified> a skos:Concept ;
+    rdfs:comment "Value for: MediumComponentQualifier."@en ;
+    skos:changeNote [ dc1:date "2024-04-30" ;
+            rdf:value "NEW" ] ;
+    skos:definition "For medium components marked \"amplified\" in a score or otherwise."@en ;
+    skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/medium_component_qualifier/> ;
+    skos:prefLabel "amplified"@en .
 
-<http://performedmusicontology.org/vocabularies/medium_component_qualifier/amplified>
-  a skos:Concept ;
-  skos:prefLabel "amplified"@en ;
-  skos:definition """For medium components marked "amplified" in a score or otherwise."""@en ;
-  rdfs:comment "Value for: MediumComponentQualifier."@en ;
-  skos:inScheme <http://performedmusicontology.org/vocabularies/medium_component_qualifier/> ;
-  skos:changeNote [
-    rdf:value "NEW" ;
-    dc:date "2024-04-30"
-  ] .
+<http://performedmusicontology.org/2.0/vocabularies/medium_component_qualifier/obbligato> a skos:Concept ;
+    rdfs:comment "Value for: MediumComponentQualifier."@en ;
+    skos:changeNote [ dc1:date "2024-04-30" ;
+            rdf:value "NEW" ] ;
+    skos:definition "For medium components marked \"obbligato\" in a score or otherwise.."@en ;
+    skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/medium_component_qualifier/> ;
+    skos:prefLabel "obbligato"@en .
 
-<http://performedmusicontology.org/vocabularies/medium_component_qualifier/obbligato>
-  a skos:Concept ;
-  skos:prefLabel "obbligato"@en ;
-  skos:definition """For medium components marked "obbligato" in a score or otherwise.."""@en ;
-  rdfs:comment "Value for: MediumComponentQualifier."@en ;
-  skos:inScheme <http://performedmusicontology.org/vocabularies/medium_component_qualifier/> ;
-  skos:changeNote [
-    rdf:value "NEW" ;
-    dc:date "2024-04-30"
-  ] .
+<http://performedmusicontology.org/2.0/vocabularies/medium_component_qualifier/offstage> a skos:Concept ;
+    rdfs:comment "Value for: MediumComponentQualifier."@en ;
+    skos:changeNote [ dc1:date "2024-04-30" ;
+            rdf:value "NEW" ] ;
+    skos:definition "For a  medium component that is marked to be performed or is performed offstage, often out of sight of the audience."@en ;
+    skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/medium_component_qualifier/> ;
+    skos:prefLabel "offstage"@en .
 
-<http://performedmusicontology.org/vocabularies/medium_component_qualifier/offstage>
-  a skos:Concept ;
-  skos:prefLabel "offstage"@en ;
-  skos:definition "For a  medium component that is marked to be performed or is performed offstage, often out of sight of the audience."@en ;
-  rdfs:comment "Value for: MediumComponentQualifier."@en ;
-  skos:inScheme <http://performedmusicontology.org/vocabularies/medium_component_qualifier/> ;
-  skos:changeNote [
-    rdf:value "NEW" ;
-    dc:date "2024-04-30"
-  ] .
+<http://performedmusicontology.org/2.0/vocabularies/medium_component_qualifier/optional> a skos:Concept ;
+    rdfs:comment "Value for: MediumComponentQualifier."@en ;
+    skos:changeNote [ dc1:creator <http://id.loc.gov/rwo/agents/> ;
+            dc1:date "2024-04-30" ;
+            rdf:value "NEW" ] ;
+    skos:definition "For a medium component marked \"optional\" in a score or otherwise."@en ;
+    skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/medium_component_qualifier/> ;
+    skos:prefLabel "optional"@en .
 
-<http://performedmusicontology.org/vocabularies/medium_component_qualifier/optional>
-  a skos:Concept ;
-  skos:prefLabel "optional"@en ;
-  skos:definition """For a medium component marked "optional" in a score or otherwise."""@en ;
-  rdfs:comment "Value for: MediumComponentQualifier."@en ;
-  skos:inScheme <http://performedmusicontology.org/vocabularies/medium_component_qualifier/> ;
-  skos:changeNote [
-    rdf:value "NEW" ;
-    dc:creator <http://id.loc.gov/rwo/agents/> ;
-    dc:date "2024-04-30"
-  ] .
+<http://performedmusicontology.org/2.0/vocabularies/medium_component_qualifier/solo> a skos:Concept ;
+    rdfs:comment "Value for: MediumComponentQualifier."@en ;
+    skos:changeNote [ dc1:date "2024-04-30" ;
+            rdf:value "NEW" ] ;
+    skos:definition "For a medium component marked \"solo\" in a score or is clearly a solo part in the context of the work, such as the oboe part in a concerto for oboe and orchestra."@en ;
+    skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/medium_component_qualifier/> ;
+    skos:prefLabel "solo"@en .
 
-<http://performedmusicontology.org/vocabularies/medium_component_qualifier/solo>
-  a skos:Concept ;
-  skos:prefLabel "solo"@en ;
-  skos:definition """For a medium component marked "solo" in a score or is clearly a solo part in the context of the work, such as the oboe part in a concerto for oboe and orchestra."""@en ;
-  rdfs:comment "Value for: MediumComponentQualifier."@en ;
-  skos:inScheme <http://performedmusicontology.org/vocabularies/medium_component_qualifier/> ;
-  skos:changeNote [
-    rdf:value "NEW" ;
-    dc:date "2024-04-30"
-  ] .
+<http://performedmusicontology.org/2.0/vocabularies/medium_component_qualifier/> a skos:ConceptScheme ;
+    rdfs:label "PMO Medium Component Qualifier Vocabulary"@en ;
+    dc1:title "PMO Medium Component Qualifier Vocabulary"@en ;
+    skos:definition "The PMO Medium Component Qualifier Vocabulary is a controlled vocabulary that provides a qualifying description for a medium of performance, e.g., amplified, obbligato, offstage. It was developed for the Performed Music Ontology 2.0, specifically the Medium component qualifier class, but may be used with other ontologies."@en .
 

@@ -11,9 +11,9 @@
     <skos:definition xml:lang="en">An ensemble of 8 performers.</skos:definition>
     <rdfs:comment xml:lang="en">Value for: MediumType.</rdfs:comment>
     <skos:inScheme rdf:resource="http://performedmusicontology.org/2.0/vocabularies/ensemble_size/"/>
-    <skos:changeNote rdf:nodeID="n88870e44e6714afb85bbc4cf5105a155b8"/>
+    <skos:changeNote rdf:nodeID="n95b9154cfc24437d8e0b26ee4b2b8a27b8"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n88870e44e6714afb85bbc4cf5105a155b8">
+  <rdf:Description rdf:nodeID="n95b9154cfc24437d8e0b26ee4b2b8a27b8">
     <rdf:value>NEW</rdf:value>
     <dc1:date>2024-04-30</dc1:date>
   </rdf:Description>

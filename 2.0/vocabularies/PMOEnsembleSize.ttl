@@ -1,134 +1,100 @@
-
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<http://performedmusicontology.org/2.0/vocabularies/ensemble_size/>
-  a skos:ConceptScheme ;
-  rdfs:label "PMO Ensemble Size Vocabulary"@en ;
-  dc:title "PMO Ensemble Size Vocabulary"@en ;
-  skos:definition "The PMO Ensemble Size Vocabulary is a controlled vocabulary that indicates the size of a music ensemble, from solo performer to large ensemble. It was developed for the Performed Music Ontology 2.0, specifically the Medium type class, but may be used with other ontologies."@en .
+<http://performedmusicontology.org/2.0/vocabularies/ensemble_size/duo> a skos:Concept ;
+    rdfs:comment "Value for: MediumType."@en ;
+    skos:altLabel "duet"@en ;
+    skos:changeNote [ dc1:date "2024-04-30" ;
+            rdf:value "NEW" ] ;
+    skos:definition "An ensemble of 2 performers."@en ;
+    skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/ensemble_size/> ;
+    skos:prefLabel "duo"@en .
 
-<http://performedmusicontology.org/2.0/vocabularies/ensemble_size/solo_or_individual>
-  a skos:Concept ;
-  skos:prefLabel "solo or individual"@en ;
-  skos:definition "A solo or individual performer. May be accompanied by a larger ensemble."@en ;
-  rdfs:comment "Value for: MediumType."@en ;
-  skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/ensemble_size/> ;
-  skos:changeNote [
-    rdf:value "NEW" ;
-    dc:date "2024-04-30"
-  ] .
+<http://performedmusicontology.org/2.0/vocabularies/ensemble_size/large_ensemble> a skos:Concept ;
+    rdfs:comment "Value for: MediumType."@en ;
+    skos:changeNote [ dc1:date "2024-04-30" ;
+            rdf:value "NEW" ] ;
+    skos:definition "An ensemble of more than 9 performers."@en ;
+    skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/ensemble_size/> ;
+    skos:prefLabel "large ensemble"@en .
 
-<http://performedmusicontology.org/2.0/vocabularies/ensemble_size/duo>
-  a skos:Concept ;
-  skos:prefLabel "duo"@en ;
-  skos:altLabel "duet"@en ;
-  skos:definition "An ensemble of 2 performers."@en ;
-  rdfs:comment "Value for: MediumType."@en ;
-  skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/ensemble_size/> ;
-  skos:changeNote [
-    rdf:value "NEW" ;
-    dc:date "2024-04-30"
-  ] .
+<http://performedmusicontology.org/2.0/vocabularies/ensemble_size/nonet> a skos:Concept ;
+    rdfs:comment "Value for: MediumType."@en ;
+    skos:changeNote [ dc1:date "2024-04-30" ;
+            rdf:value "NEW" ] ;
+    skos:definition "An ensemble of 9 performers."@en ;
+    skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/ensemble_size/> ;
+    skos:prefLabel "nonet"@en .
 
-<http://performedmusicontology.org/2.0/vocabularies/ensemble_size/trio>
-  a skos:Concept ;
-  skos:prefLabel "trio"@en ;
-  skos:definition "An ensemble of 3 performers."@en ;
-  rdfs:comment "Value for: MediumType."@en ;
-  skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/ensemble_size/> ;
-  skos:changeNote [
-    rdf:value "NEW" ;
-    dc:date "2024-04-30"
-  ] .
+<http://performedmusicontology.org/2.0/vocabularies/ensemble_size/octet> a skos:Concept ;
+    rdfs:comment "Value for: MediumType."@en ;
+    skos:changeNote [ dc1:date "2024-04-30" ;
+            rdf:value "NEW" ] ;
+    skos:definition "An ensemble of 8 performers."@en ;
+    skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/ensemble_size/> ;
+    skos:prefLabel "octet"@en .
 
-<http://performedmusicontology.org/2.0/vocabularies/ensemble_size/quartet>
-  a skos:Concept ;
-  skos:prefLabel "quartet"@en ;
-  skos:definition "An ensemble of 4 performers."@en ;
-  rdfs:comment "Value for: MediumType."@en ;
-  skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/ensemble_size/> ;
-  skos:changeNote [
-    rdf:value "NEW" ;
-    dc:date "2024-04-30"
-  ] .
+<http://performedmusicontology.org/2.0/vocabularies/ensemble_size/quartet> a skos:Concept ;
+    rdfs:comment "Value for: MediumType."@en ;
+    skos:changeNote [ dc1:date "2024-04-30" ;
+            rdf:value "NEW" ] ;
+    skos:definition "An ensemble of 4 performers."@en ;
+    skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/ensemble_size/> ;
+    skos:prefLabel "quartet"@en .
 
-<http://performedmusicontology.org/2.0/vocabularies/ensemble_size/quintet>
-  a skos:Concept ;
-  skos:prefLabel "quintet"@en ;
-  skos:definition "An ensemble of 5 performers."@en ;
-  rdfs:comment "Value for: MediumType."@en ;
-  skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/ensemble_size/> ;
-  skos:changeNote [
-    rdf:value "NEW" ;
-    dc:creator <http://id.loc.gov/rwo/agents/> ;
-    dc:date "2024-04-30"
-  ] .
+<http://performedmusicontology.org/2.0/vocabularies/ensemble_size/quintet> a skos:Concept ;
+    rdfs:comment "Value for: MediumType."@en ;
+    skos:changeNote [ dc1:creator <http://id.loc.gov/rwo/agents/> ;
+            dc1:date "2024-04-30" ;
+            rdf:value "NEW" ] ;
+    skos:definition "An ensemble of 5 performers."@en ;
+    skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/ensemble_size/> ;
+    skos:prefLabel "quintet"@en .
 
-<http://performedmusicontology.org/2.0/vocabularies/ensemble_size/sextet>
-  a skos:Concept ;
-  skos:prefLabel "sextet"@en ;
-  skos:definition "An ensemble of 6 performers."@en ;
-  rdfs:comment "Value for: MediumType."@en ;
-  skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/ensemble_size/> ;
-  skos:changeNote [
-    rdf:value "NEW" ;
-    dc:date "2024-04-30"
-  ] .
+<http://performedmusicontology.org/2.0/vocabularies/ensemble_size/septet> a skos:Concept ;
+    rdfs:comment "Value for: MediumType."@en ;
+    skos:changeNote [ dc1:date "2024-04-30" ;
+            rdf:value "NEW" ] ;
+    skos:definition "An ensemble of 7 performers."@en ;
+    skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/ensemble_size/> ;
+    skos:prefLabel "septet"@en .
 
-<http://performedmusicontology.org/2.0/vocabularies/ensemble_size/septet>
-  a skos:Concept ;
-  skos:prefLabel "septet"@en ;
-  skos:definition "An ensemble of 7 performers."@en ;
-  rdfs:comment "Value for: MediumType."@en ;
-  skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/ensemble_size/> ;
-  skos:changeNote [
-    rdf:value "NEW" ;
-    dc:date "2024-04-30"
-  ] .
+<http://performedmusicontology.org/2.0/vocabularies/ensemble_size/sextet> a skos:Concept ;
+    rdfs:comment "Value for: MediumType."@en ;
+    skos:changeNote [ dc1:date "2024-04-30" ;
+            rdf:value "NEW" ] ;
+    skos:definition "An ensemble of 6 performers."@en ;
+    skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/ensemble_size/> ;
+    skos:prefLabel "sextet"@en .
 
-<http://performedmusicontology.org/2.0/vocabularies/ensemble_size/octet>
-  a skos:Concept ;
-  skos:prefLabel "octet"@en ;
-  skos:definition "An ensemble of 8 performers."@en ;
-  rdfs:comment "Value for: MediumType."@en ;
-  skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/ensemble_size/> ;
-  skos:changeNote [
-    rdf:value "NEW" ;
-    dc:date "2024-04-30"
-  ] .
+<http://performedmusicontology.org/2.0/vocabularies/ensemble_size/small_ensemble> a skos:Concept ;
+    rdfs:comment "Value for: MediumType."@en ;
+    skos:changeNote [ dc1:date "2024-04-30" ;
+            rdf:value "NEW" ] ;
+    skos:definition "An unspecified ensemble of fewer than 10 performers."@en ;
+    skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/ensemble_size/> ;
+    skos:prefLabel "small ensemble"@en .
 
-<http://performedmusicontology.org/2.0/vocabularies/ensemble_size/nonet>
-  a skos:Concept ;
-  skos:prefLabel "nonet"@en ;
-  skos:definition "An ensemble of 9 performers."@en ;
-  rdfs:comment "Value for: MediumType."@en ;
-  skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/ensemble_size/> ;
-  skos:changeNote [
-    rdf:value "NEW" ;
-    dc:date "2024-04-30"
-  ] .
+<http://performedmusicontology.org/2.0/vocabularies/ensemble_size/solo_or_individual> a skos:Concept ;
+    rdfs:comment "Value for: MediumType."@en ;
+    skos:changeNote [ dc1:date "2024-04-30" ;
+            rdf:value "NEW" ] ;
+    skos:definition "A solo or individual performer. May be accompanied by a larger ensemble."@en ;
+    skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/ensemble_size/> ;
+    skos:prefLabel "solo or individual"@en .
 
-<http://performedmusicontology.org/2.0/vocabularies/ensemble_size/small_ensemble>
-  a skos:Concept ;
-  skos:prefLabel "small ensemble"@en ;
-  skos:definition "An unspecified ensemble of fewer than 10 performers."@en ;
-  rdfs:comment "Value for: MediumType."@en ;
-  skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/ensemble_size/> ;
-  skos:changeNote [
-    rdf:value "NEW" ;
-    dc:date "2024-04-30"
-  ] .
+<http://performedmusicontology.org/2.0/vocabularies/ensemble_size/trio> a skos:Concept ;
+    rdfs:comment "Value for: MediumType."@en ;
+    skos:changeNote [ dc1:date "2024-04-30" ;
+            rdf:value "NEW" ] ;
+    skos:definition "An ensemble of 3 performers."@en ;
+    skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/ensemble_size/> ;
+    skos:prefLabel "trio"@en .
 
-<http://performedmusicontology.org/2.0/vocabularies/ensemble_size/large_ensemble>
-  a skos:Concept ;
-  skos:prefLabel "large ensemble"@en ;
-  skos:definition "An ensemble of more than 9 performers."@en ;
-  rdfs:comment "Value for: MediumType."@en ;
-  skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/ensemble_size/> ;
-  skos:changeNote [
-    rdf:value "NEW" ;
-    dc:date "2024-04-30"
-  ] .
+<http://performedmusicontology.org/2.0/vocabularies/ensemble_size/> a skos:ConceptScheme ;
+    rdfs:label "PMO Ensemble Size Vocabulary"@en ;
+    dc1:title "PMO Ensemble Size Vocabulary"@en ;
+    skos:definition "The PMO Ensemble Size Vocabulary is a controlled vocabulary that indicates the size of a music ensemble, from solo performer to large ensemble. It was developed for the Performed Music Ontology 2.0, specifically the Medium type class, but may be used with other ontologies."@en .
+

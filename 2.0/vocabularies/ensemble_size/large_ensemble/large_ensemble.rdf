@@ -5,16 +5,16 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:nodeID="n88870e44e6714afb85bbc4cf5105a155b11">
-    <rdf:value>NEW</rdf:value>
-    <dc1:date>2024-04-30</dc1:date>
-  </rdf:Description>
   <rdf:Description rdf:about="http://performedmusicontology.org/2.0/vocabularies/ensemble_size/large_ensemble">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:prefLabel xml:lang="en">large ensemble</skos:prefLabel>
     <skos:definition xml:lang="en">An ensemble of more than 9 performers.</skos:definition>
     <rdfs:comment xml:lang="en">Value for: MediumType.</rdfs:comment>
     <skos:inScheme rdf:resource="http://performedmusicontology.org/2.0/vocabularies/ensemble_size/"/>
-    <skos:changeNote rdf:nodeID="n88870e44e6714afb85bbc4cf5105a155b11"/>
+    <skos:changeNote rdf:nodeID="n95b9154cfc24437d8e0b26ee4b2b8a27b11"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n95b9154cfc24437d8e0b26ee4b2b8a27b11">
+    <rdf:value>NEW</rdf:value>
+    <dc1:date>2024-04-30</dc1:date>
   </rdf:Description>
 </rdf:RDF>

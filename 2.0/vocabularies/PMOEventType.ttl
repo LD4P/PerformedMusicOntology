@@ -1,155 +1,115 @@
-
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc1: <http://purl.org/dc/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<http://performedmusicontology.org/2.0/vocabularies/event_type/>
-  a skos:ConceptScheme ;
-  rdfs:label "PMO Event Type Vocabulary"@en ;
-  dc:title "PMO Event Type Vocabulary"@en ;
-  skos:definition "The PMO Event Type Vocabulary is a controlled vocabulary that indicates the type of BIBFRAME Event being describe, e.g, Ceremony, Performance. It was developed for the Performed Music Ontology 2.0, as an extension to bf:Event, but may be used with other ontologies."@en .
+<http://performedmusicontology.org/2.0/vocabularies/event_type/audition> a skos:Concept ;
+    rdfs:comment "Use as type of bf:Event."@en ;
+    skos:changeNote [ dc1:date "2024-04-30" ;
+            rdf:value "NEW" ] ;
+    skos:definition "Event in which a performer or actor is applying for a position in an ensemble, cast, film, etc."@en ;
+    skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/event_type/> ;
+    skos:prefLabel "Audition"@en .
 
-<http://performedmusicontology.org/2.0/vocabularies/event_type/audition>
-  a skos:Concept ;
-  skos:prefLabel "Audition"@en ;
-  skos:definition "Event in which a performer or actor is applying for a position in an ensemble, cast, film, etc."@en ;
-  rdfs:comment "Use as type of bf:Event."@en ;
-  skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/event_type/> ;
-  skos:changeNote [
-    rdf:value "NEW" ;
-    dc:date "2024-04-30"
-  ] .
+<http://performedmusicontology.org/2.0/vocabularies/event_type/benefit_concert> a skos:Concept ;
+    rdfs:comment "Use as type of bf:Event."@en ;
+    skos:changeNote [ dc1:date "2024-04-30" ;
+            rdf:value "NEW" ] ;
+    skos:definition "Concert held for charitable purposes, i.e., to raise funds or awareness."@en ;
+    skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/event_type/> ;
+    skos:prefLabel "Benefit concert"@en .
 
-<http://performedmusicontology.org/2.0/vocabularies/event_type/benefit_concert>
-  a skos:Concept ;
-  skos:prefLabel "Benefit concert"@en ;
-  skos:definition "Concert held for charitable purposes, i.e., to raise funds or awareness."@en ;
-  rdfs:comment "Use as type of bf:Event."@en ;
-  skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/event_type/> ;
-  skos:changeNote [
-    rdf:value "NEW" ;
-    dc:date "2024-04-30"
-  ] .
+<http://performedmusicontology.org/2.0/vocabularies/event_type/ceremony> a skos:Concept ;
+    rdfs:comment "Use as type of bf:Event."@en ;
+    skos:changeNote [ dc1:date "2024-04-30" ;
+            rdf:value "NEW" ] ;
+    skos:definition "Ritual event, performed on special occasions (e.g., death, baptism, wedding, graduation, equinox, coronation, victory)."@en ;
+    skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/event_type/> ;
+    skos:prefLabel "Ceremony"@en .
 
-<http://performedmusicontology.org/2.0/vocabularies/event_type/ceremony>
-  a skos:Concept ;
-  skos:prefLabel "Ceremony"@en ;
-  skos:definition "Ritual event, performed on special occasions (e.g., death, baptism, wedding, graduation, equinox, coronation, victory)."@en ;
-  rdfs:comment "Use as type of bf:Event."@en ;
-  skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/event_type/> ;
-  skos:changeNote [
-    rdf:value "NEW" ;
-    dc:date "2024-04-30"
-  ] .
+<http://performedmusicontology.org/2.0/vocabularies/event_type/commmand_performance> a skos:Concept ;
+    rdfs:comment "Use as type of bf:Event."@en ;
+    skos:changeNote [ dc1:date "2024-04-30" ;
+            rdf:value "NEW" ] ;
+    skos:definition "Concert or performance done at the request of a monarch or other head of state."@en ;
+    skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/event_type/> ;
+    skos:prefLabel "Command performance"@en .
 
-<http://performedmusicontology.org/2.0/vocabularies/event_type/commmand_performance>
-  a skos:Concept ;
-  skos:prefLabel "Command performance"@en ;
-  skos:definition "Concert or performance done at the request of a monarch or other head of state."@en ;
-  rdfs:comment "Use as type of bf:Event."@en ;
-  skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/event_type/> ;
-  skos:changeNote [
-    rdf:value "NEW" ;
-    dc:date "2024-04-30"
-  ] .
+<http://performedmusicontology.org/2.0/vocabularies/event_type/concert> a skos:Concept ;
+    rdfs:comment "Use as type of bf:Event."@en ;
+    skos:changeNote [ dc1:creator <http://id.loc.gov/rwo/agents/> ;
+            dc1:date "2024-04-30" ;
+            rdf:value "NEW" ] ;
+    skos:definition "Live musical performance of one or more works in front of an audience or in a single recording session."@en ;
+    skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/event_type/> ;
+    skos:prefLabel "Concert"@en .
 
-<http://performedmusicontology.org/2.0/vocabularies/event_type/concert>
-  a skos:Concept ;
-  skos:prefLabel "Concert"@en ;
-  skos:definition "Live musical performance of one or more works in front of an audience or in a single recording session."@en ;
-  rdfs:comment "Use as type of bf:Event."@en ;
-  skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/event_type/> ;
-  skos:changeNote [
-    rdf:value "NEW" ;
-    dc:creator <http://id.loc.gov/rwo/agents/> ;
-    dc:date "2024-04-30"
-  ] .
+<http://performedmusicontology.org/2.0/vocabularies/event_type/concert_series> a skos:Concept ;
+    rdfs:comment "Use as type of bf:Event."@en ;
+    skos:changeNote [ dc1:date "2024-04-30" ;
+            rdf:value "NEW" ] ;
+    skos:definition "Group of concerts in the same geographic area by a single performer or brought together by a common theme, usually available for sale as a package. e.g., an orchestra concert season, a series featuring chamber ensembles."@en ;
+    skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/event_type/> ;
+    skos:prefLabel "Concert series"@en .
 
-<http://performedmusicontology.org/2.0/vocabularies/event_type/concert_series>
-  a skos:Concept ;
-  skos:prefLabel "Concert series"@en ;
-  skos:definition "Group of concerts in the same geographic area by a single performer or brought together by a common theme, usually available for sale as a package. e.g., an orchestra concert season, a series featuring chamber ensembles."@en ;
-  rdfs:comment "Use as type of bf:Event."@en ;
-  skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/event_type/> ;
-  skos:changeNote [
-    rdf:value "NEW" ;
-    dc:date "2024-04-30"
-  ] .
+<http://performedmusicontology.org/2.0/vocabularies/event_type/concert_tour> a skos:Concept ;
+    rdfs:comment "Use as type of bf:Event."@en ;
+    skos:changeNote [ dc1:date "2024-04-30" ;
+            rdf:value "NEW" ] ;
+    skos:definition "An ensemble of 7 performers."@en ;
+    skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/event_type/> ;
+    skos:prefLabel "Series of concerts by a performer or group of performers in different cities, countries, or locations."@en .
 
-<http://performedmusicontology.org/2.0/vocabularies/event_type/concert_tour>
-  a skos:Concept ;
-  skos:prefLabel "Series of concerts by a performer or group of performers in different cities, countries, or locations."@en ;
-  skos:definition "An ensemble of 7 performers."@en ;
-  rdfs:comment "Use as type of bf:Event."@en ;
-  skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/event_type/> ;
-  skos:changeNote [
-    rdf:value "NEW" ;
-    dc:date "2024-04-30"
-  ] .
+<http://performedmusicontology.org/2.0/vocabularies/event_type/first_performance> a skos:Concept ;
+    rdfs:comment "Use as type of bf:Event."@en ;
+    skos:changeNote [ dc1:date "2024-04-30" ;
+            rdf:value "NEW" ] ;
+    skos:definition "The first known performance of a work."@en ;
+    skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/event_type/> ;
+    skos:prefLabel "First performance"@en .
 
-<http://performedmusicontology.org/2.0/vocabularies/event_type/first_performance>
-  a skos:Concept ;
-  skos:prefLabel "First performance"@en ;
-  skos:definition "The first known performance of a work."@en ;
-  rdfs:comment "Use as type of bf:Event."@en ;
-  skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/event_type/> ;
-  skos:changeNote [
-    rdf:value "NEW" ;
-    dc:date "2024-04-30"
-  ] .
+<http://performedmusicontology.org/2.0/vocabularies/event_type/master_class> a skos:Concept ;
+    rdfs:comment "Use as type of bf:Event."@en ;
+    skos:changeNote [ dc1:date "2024-04-30" ;
+            rdf:value "NEW" ] ;
+    skos:definition "Event in which a recognized performer critiques the performances of one or more other performers."@en ;
+    skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/event_type/> ;
+    skos:prefLabel "Master class"@en .
 
-<http://performedmusicontology.org/2.0/vocabularies/event_type/master_class>
-  a skos:Concept ;
-  skos:prefLabel "Master class"@en ;
-  skos:definition "Event in which a recognized performer critiques the performances of one or more other performers."@en ;
-  rdfs:comment "Use as type of bf:Event."@en ;
-  skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/event_type/> ;
-  skos:changeNote [
-    rdf:value "NEW" ;
-    dc:date "2024-04-30"
-  ] .
+<http://performedmusicontology.org/2.0/vocabularies/event_type/open_mic_performance> a skos:Concept ;
+    rdfs:comment "Use as type of bf:Event."@en ;
+    skos:changeNote [ dc1:date "2024-04-30" ;
+            rdf:value "NEW" ] ;
+    skos:definition "Live performance at a coffee house, night club, or other venue by amateur performers."@en ;
+    skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/event_type/> ;
+    skos:prefLabel "Open mic performance"@en .
 
-<http://performedmusicontology.org/2.0/vocabularies/event_type/open_mic_performance>
-  a skos:Concept ;
-  skos:prefLabel "Open mic performance"@en ;
-  skos:definition "Live performance at a coffee house, night club, or other venue by amateur performers."@en ;
-  rdfs:comment "Use as type of bf:Event."@en ;
-  skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/event_type/> ;
-  skos:changeNote [
-    rdf:value "NEW" ;
-    dc:date "2024-04-30"
-  ] .
+<http://performedmusicontology.org/2.0/vocabularies/event_type/performance> a skos:Concept ;
+    rdfs:comment "Use as type of bf:Event."@en ;
+    skos:changeNote [ dc1:date "2024-04-30" ;
+            rdf:value "NEW" ] ;
+    skos:definition "Event in which a performer or group of performers perform an improvisation or pre-existing work to an audience or in a recording studio."@en ;
+    skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/event_type/> ;
+    skos:prefLabel "Performance"@en .
 
-<http://performedmusicontology.org/2.0/vocabularies/event_type/performance>
-  a skos:Concept ;
-  skos:prefLabel "Performance"@en ;
-  skos:definition "Event in which a performer or group of performers perform an improvisation or pre-existing work to an audience or in a recording studio."@en ;
-  rdfs:comment "Use as type of bf:Event."@en ;
-  skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/event_type/> ;
-  skos:changeNote [
-    rdf:value "NEW" ;
-    dc:date "2024-04-30"
-  ] .
+<http://performedmusicontology.org/2.0/vocabularies/event_type/recording_session> a skos:Concept ;
+    rdfs:comment "Use as type of bf:Event."@en ;
+    skos:changeNote [ dc1:date "2024-04-30" ;
+            rdf:value "NEW" ] ;
+    skos:definition "Event in which one or more performances are recorded with the aim of producing a recording for issue."@en ;
+    skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/event_type/> ;
+    skos:prefLabel "Recording session"@en .
 
-<http://performedmusicontology.org/2.0/vocabularies/event_type/recording_session>
-  a skos:Concept ;
-  skos:prefLabel "Recording session"@en ;
-  skos:definition "Event in which one or more performances are recorded with the aim of producing a recording for issue."@en ;
-  rdfs:comment "Use as type of bf:Event."@en ;
-  skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/event_type/> ;
-  skos:changeNote [
-    rdf:value "NEW" ;
-    dc:date "2024-04-30"
-  ] .
+<http://performedmusicontology.org/2.0/vocabularies/event_type/rehearsal> a skos:Concept ;
+    rdfs:comment "Use as type of bf:Event."@en ;
+    skos:changeNote [ dc1:date "2024-04-30" ;
+            rdf:value "NEW" ] ;
+    skos:definition "Event in which a performer or group of performers prepare for a performance."@en ;
+    skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/event_type/> ;
+    skos:prefLabel "Rehearsal"@en .
 
-<http://performedmusicontology.org/2.0/vocabularies/event_type/rehearsal>
-  a skos:Concept ;
-  skos:prefLabel "Rehearsal"@en ;
-  skos:definition "Event in which a performer or group of performers prepare for a performance."@en ;
-  rdfs:comment "Use as type of bf:Event."@en ;
-  skos:inScheme <http://performedmusicontology.org/2.0/vocabularies/event_type/> ;
-  skos:changeNote [
-    rdf:value "NEW" ;
-    dc:date "2024-04-30"
-  ] .
+<http://performedmusicontology.org/2.0/vocabularies/event_type/> a skos:ConceptScheme ;
+    rdfs:label "PMO Event Type Vocabulary"@en ;
+    dc1:title "PMO Event Type Vocabulary"@en ;
+    skos:definition "The PMO Event Type Vocabulary is a controlled vocabulary that indicates the type of BIBFRAME Event being describe, e.g, Ceremony, Performance. It was developed for the Performed Music Ontology 2.0, as an extension to bf:Event, but may be used with other ontologies."@en .
+
