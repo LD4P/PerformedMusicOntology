@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dc1="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://performedmusicontology.org/2.0/vocabularies/medium_component_qualifier/solo">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">solo</skos:prefLabel>
+    <skos:definition xml:lang="en">For a medium component marked "solo" in a score or is clearly a solo part in the context of the work, such as the oboe part in a concerto for oboe and orchestra.</skos:definition>
+    <rdfs:comment xml:lang="en">Value for: MediumComponentQualifier.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/2.0/vocabularies/medium_component_qualifier/"/>
+    <skos:changeNote rdf:nodeID="n20df83d033e54739be8eb256a2375632b6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n20df83d033e54739be8eb256a2375632b2">
+    <rdf:value>NEW</rdf:value>
+    <dc1:date>2024-04-30</dc1:date>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://performedmusicontology.org/2.0/vocabularies/medium_component_qualifier/amplified">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">amplified</skos:prefLabel>
+    <skos:definition xml:lang="en">For medium components marked "amplified" in a score or otherwise.</skos:definition>
+    <rdfs:comment xml:lang="en">Value for: MediumComponentQualifier.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/2.0/vocabularies/medium_component_qualifier/"/>
+    <skos:changeNote rdf:nodeID="n20df83d033e54739be8eb256a2375632b2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://performedmusicontology.org/2.0/vocabularies/medium_component_qualifier/ad_lib">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">ad lib</skos:prefLabel>
+    <skos:altLabel xml:lang="en">ad libitum</skos:altLabel>
+    <skos:definition xml:lang="en">For medium components marked "ad lib" or "ad libitum" in a score or otherwise.</skos:definition>
+    <rdfs:comment xml:lang="en">Value for: MediumComponentQualifier.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/2.0/vocabularies/medium_component_qualifier/"/>
+    <skos:changeNote rdf:nodeID="n20df83d033e54739be8eb256a2375632b1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://performedmusicontology.org/2.0/vocabularies/medium_component_qualifier/offstage">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">offstage</skos:prefLabel>
+    <skos:definition xml:lang="en">For a  medium component that is marked to be performed or is performed offstage, often out of sight of the audience.</skos:definition>
+    <rdfs:comment xml:lang="en">Value for: MediumComponentQualifier.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/2.0/vocabularies/medium_component_qualifier/"/>
+    <skos:changeNote rdf:nodeID="n20df83d033e54739be8eb256a2375632b4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n20df83d033e54739be8eb256a2375632b3">
+    <rdf:value>NEW</rdf:value>
+    <dc1:date>2024-04-30</dc1:date>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n20df83d033e54739be8eb256a2375632b5">
+    <rdf:value>NEW</rdf:value>
+    <dc1:creator rdf:resource="http://id.loc.gov/rwo/agents/"/>
+    <dc1:date>2024-04-30</dc1:date>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://performedmusicontology.org/2.0/vocabularies/medium_component_qualifier/obbligato">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">obbligato</skos:prefLabel>
+    <skos:definition xml:lang="en">For medium components marked "obbligato" in a score or otherwise..</skos:definition>
+    <rdfs:comment xml:lang="en">Value for: MediumComponentQualifier.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/2.0/vocabularies/medium_component_qualifier/"/>
+    <skos:changeNote rdf:nodeID="n20df83d033e54739be8eb256a2375632b3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://performedmusicontology.org/2.0/vocabularies/medium_component_qualifier/optional">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">optional</skos:prefLabel>
+    <skos:definition xml:lang="en">For a medium component marked "optional" in a score or otherwise.</skos:definition>
+    <rdfs:comment xml:lang="en">Value for: MediumComponentQualifier.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/2.0/vocabularies/medium_component_qualifier/"/>
+    <skos:changeNote rdf:nodeID="n20df83d033e54739be8eb256a2375632b5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n20df83d033e54739be8eb256a2375632b6">
+    <rdf:value>NEW</rdf:value>
+    <dc1:date>2024-04-30</dc1:date>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://performedmusicontology.org/2.0/vocabularies/medium_component_qualifier/">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <rdfs:label xml:lang="en">PMO Medium Component Qualifier Vocabulary</rdfs:label>
+    <dc1:title xml:lang="en">PMO Medium Component Qualifier Vocabulary</dc1:title>
+    <skos:definition xml:lang="en">The PMO Medium Component Qualifier Vocabulary is a controlled vocabulary that provides a qualifying description for a medium of performance, e.g., amplified, obbligato, offstage. It was developed for the Performed Music Ontology 2.0, specifically the Medium component qualifier class, but may be used with other ontologies.</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n20df83d033e54739be8eb256a2375632b4">
+    <rdf:value>NEW</rdf:value>
+    <dc1:date>2024-04-30</dc1:date>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n20df83d033e54739be8eb256a2375632b1">
+    <rdf:value>NEW</rdf:value>
+    <dc1:date>2024-04-30</dc1:date>
+  </rdf:Description>
+</rdf:RDF>
