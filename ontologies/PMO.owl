@@ -1,0 +1,958 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://performedmusicontology.org/ontology/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://performedmusicontology.org/ontology/"
+     versionIRI="http://performedmusicontology.org/ontology/2.0">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://id.loc.gov/ontologies/bibframe-2-0-1/</Import>
+    <Declaration>
+        <Class IRI="AllMusicId"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DiscogsId"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DramaticRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="EnsembleSize"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="EventName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="KeyMode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MediumComponent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MediumComponentQualifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MediumOfPerformance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Mode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MusicBrainzId"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="OpusNumber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="RismNumber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Tempo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ThematicCatalogNumber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="VideogamePlatformIdentifier"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="aggregatedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="aggregates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="asMemberOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="associatedWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="createdFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasDramaticRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasEnsembleSize"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasEventName"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasInspiration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasKeyMode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasMediumComponent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasMediumComponentQualifier"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasMediumOfPerformance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasMode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPerformance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasRecording"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasTempo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="inspirationFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="performanceOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="recordingOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="remixOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="remixedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="sampledBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="samplesFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="usesMediumOfPerformance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasMediumCount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasNumberOfHands"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="phonogramCopyrightDate"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="AllMusicId"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DiscogsId"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MusicBrainzId"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OpusNumber"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="RismNumber"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ThematicCatalogNumber"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="VideogamePlatformIdentifier"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="associatedWith"/>
+        <ObjectProperty IRI="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="createdFor"/>
+        <ObjectProperty IRI="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasInspiration"/>
+        <ObjectProperty IRI="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasPerformance"/>
+        <ObjectProperty IRI="http://id.loc.gov/ontologies/bibframe/eventContentOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasRecording"/>
+        <ObjectProperty IRI="http://id.loc.gov/ontologies/bibframe/eventContent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="inspirationFor"/>
+        <ObjectProperty IRI="http://id.loc.gov/ontologies/bibframe/relatedTo"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="performanceOf"/>
+        <ObjectProperty IRI="http://id.loc.gov/ontologies/bibframe/eventContent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="recordingOf"/>
+        <ObjectProperty IRI="http://id.loc.gov/ontologies/bibframe/eventContentOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="remixOf"/>
+        <ObjectProperty IRI="http://id.loc.gov/ontologies/bibframe/derivativeOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="remixedIn"/>
+        <ObjectProperty IRI="http://id.loc.gov/ontologies/bibframe/hasDerivative"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="sampledBy"/>
+        <ObjectProperty IRI="http://id.loc.gov/ontologies/bibframe/referencedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="samplesFrom"/>
+        <ObjectProperty IRI="http://id.loc.gov/ontologies/bibframe/references"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="aggregatedIn"/>
+        <ObjectProperty IRI="aggregates"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasInspiration"/>
+        <ObjectProperty IRI="inspirationFor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasPerformance"/>
+        <ObjectProperty IRI="performanceOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasRecording"/>
+        <ObjectProperty IRI="recordingOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="sampledBy"/>
+        <ObjectProperty IRI="samplesFrom"/>
+    </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="associatedWith"/>
+    </SymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="aggregatedIn"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="aggregates"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="asMemberOf"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasDramaticRole"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasEnsembleSize"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasEventName"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasInspiration"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasKeyMode"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasMediumComponent"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasMediumComponentQualifier"/>
+        <Class IRI="MediumComponent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasMediumOfPerformance"/>
+        <Class IRI="MediumComponent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasMode"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPerformance"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasRecording"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasTempo"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="inspirationFor"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="performanceOf"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="recordingOf"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="usesMediumOfPerformance"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="aggregatedIn"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="aggregates"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="asMemberOf"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasDramaticRole"/>
+        <Class IRI="DramaticRole"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasEnsembleSize"/>
+        <Class IRI="EnsembleSize"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasEventName"/>
+        <Class IRI="EventName"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasKeyMode"/>
+        <Class IRI="KeyMode"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasMediumComponent"/>
+        <Class IRI="MediumComponent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasMediumComponentQualifier"/>
+        <Class IRI="MediumComponentQualifier"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasMode"/>
+        <Class IRI="Mode"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPerformance"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasRecording"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasTempo"/>
+        <Class IRI="Tempo"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="inspirationFor"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="performanceOf"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="recordingOf"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="usesMediumOfPerformance"/>
+        <Class IRI="MediumOfPerformance"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="phonogramCopyrightDate"/>
+        <DataProperty IRI="http://id.loc.gov/ontologies/bibframe/date"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasMediumCount"/>
+        <Class IRI="MediumComponent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasNumberOfHands"/>
+        <Class IRI="MediumComponent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="phonogramCopyrightDate"/>
+        <Class IRI="http://id.loc.gov/ontologies/bibframe/Work"/>
+    </DataPropertyDomain>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AllMusicId</IRI>
+        <Literal>AllMusic ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>AllMusicId</IRI>
+        <Literal>An identifier from AllMusic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DiscogsId</IRI>
+        <Literal>Discogs ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>DiscogsId</IRI>
+        <Literal>An identifier from Discogs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DramaticRole</IRI>
+        <Literal>Dramatic role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>DramaticRole</IRI>
+        <Literal>A dramatic role performed by a contributing agent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>DramaticRole</IRI>
+        <Literal>Role of &quot;Carmen&quot; in the opera Carmen.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>EnsembleSize</IRI>
+        <Literal>A vocabulary is provided</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>EnsembleSize</IRI>
+        <Literal>Ensemble size</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>EnsembleSize</IRI>
+        <Literal>A designation of the size of an individual ensemble.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>EnsembleSize</IRI>
+        <Literal>trio (3 performers); individual or solo performer; large ensemble</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>EventName</IRI>
+        <Literal>Event name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>EventName</IRI>
+        <Literal>A name or title given to an event, whether formally stated or created for metadata purposes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>KeyMode</IRI>
+        <Literal>Music key</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>KeyMode</IRI>
+        <Literal>Key and mode, or key only if no mode is present, of a music work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>KeyMode</IRI>
+        <Literal>C major; B-flat minor; D</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>MediumComponent</IRI>
+        <Literal>A medium component may gather together a medium of performance, medium count, number of hands, and/or medium component qualifier.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MediumComponent</IRI>
+        <Literal>Medium component</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>MediumComponent</IRI>
+        <Literal>An individual component of an overall medium of performance of a work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>MediumComponentQualifier</IRI>
+        <Literal>A vocabulary is provided.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MediumComponentQualifier</IRI>
+        <Literal>Medium component qualifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>MediumComponentQualifier</IRI>
+        <Literal>A qualifier that affects the medium component.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>MediumComponentQualifier</IRI>
+        <Literal>offstage, amplified, optional</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MediumOfPerformance</IRI>
+        <Literal>Medium of performance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>MediumOfPerformance</IRI>
+        <Literal>An individual instrument, voice, ensemble, or instrumental group (e.g., percussion).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>MediumOfPerformance</IRI>
+        <Literal>guitar; er hu; alto voice; percussion; orchestra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Mode</IRI>
+        <Literal>Music mode</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>Mode</IRI>
+        <Literal>Mode (not associated with a key) of a musical work</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>Mode</IRI>
+        <Literal>Dorian; Dhaivata</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MusicBrainzId</IRI>
+        <Literal>MusicBrainz ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>MusicBrainzId</IRI>
+        <Literal>An identifier from MusicBrainz</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>OpusNumber</IRI>
+        <Literal>Opus number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>OpusNumber</IRI>
+        <Literal>An opus number assigned to a musical work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>OpusNumber</IRI>
+        <Literal>Op. 45, no. 1; Op. 135a</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>RismNumber</IRI>
+        <Literal>RISM number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>RismNumber</IRI>
+        <Literal>A number from the Repertoire Internationale des Sources Musicales (RISM) online version.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Tempo</IRI>
+        <Literal>Tempo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>Tempo</IRI>
+        <Literal>The speed or pace of a music work, whether declared (in a score) or performed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>Tempo</IRI>
+        <Literal>80 quarter notes per minute; 100 bpm; Piano roll speed=120</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ThematicCatalogNumber</IRI>
+        <Literal>Thematic catalog number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>ThematicCatalogNumber</IRI>
+        <Literal>A numeric or alphanumeric designation of a musical work as found in a thematic index or catalog.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>ThematicCatalogNumber</IRI>
+        <Literal>BWV 485; TWV 52:d1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>VideogamePlatformIdentifier</IRI>
+        <Literal>Videogame platform identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>VideogamePlatformIdentifier</IRI>
+        <Literal>An identifier assigned to a video game platform.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>VideogamePlatformIdentifier</IRI>
+        <Literal>CUSA 54321 (a PlayStation 4 number)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>aggregatedIn</IRI>
+        <Literal>Aggregated in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>aggregatedIn</IRI>
+        <Literal>Relates a work to a work in which it is aggregated.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>aggregates</IRI>
+        <Literal>Aggregates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>aggregates</IRI>
+        <Literal>Relates a work to a work that it aggregates.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>asMemberOf</IRI>
+        <Literal>As member of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>asMemberOf</IRI>
+        <Literal>Relates a contribution that is a person to an organization through which a person makes a contribution to the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>associatedWith</IRI>
+        <Literal>Sugested use - With any resource (event, work, instance, item, agent)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>associatedWith</IRI>
+        <Literal>Associated with</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>associatedWith</IRI>
+        <Literal>Relates a resource to another resource with which it is associated in a general way.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#example"/>
+        <IRI>associatedWith</IRI>
+        <Literal>The musical work &quot;1812&quot; is associated with the event &quot;French invasion of Russia&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>createdFor</IRI>
+        <Literal>Suggested use - With Agent, Event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>createdFor</IRI>
+        <Literal>Created for</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>createdFor</IRI>
+        <Literal>Relates a resource to a resource for which it was created</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasDramaticRole</IRI>
+        <Literal>Has dramatic role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>hasDramaticRole</IRI>
+        <Literal>Relates a contribution to a dramatic role.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasEnsembleSize</IRI>
+        <Literal>Has ensemble size</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>hasEnsembleSize</IRI>
+        <Literal>Relates a work to an individual ensemble size.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasEventName</IRI>
+        <Literal>Has event name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>hasEventName</IRI>
+        <Literal>Relates an event to a name or title for the event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasInspiration</IRI>
+        <Literal>Suggested use - Work, Event, Agent, Place, Item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasInspiration</IRI>
+        <Literal>Inspired by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>hasInspiration</IRI>
+        <Literal>Relates a work to a resource that inspired the creation of the work</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasKeyMode</IRI>
+        <Literal>A key and mode may not be present for some works, or a key may be present without a mode. For individual named modes, use hasMode.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasKeyMode</IRI>
+        <Literal>Has key and mode</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>hasKeyMode</IRI>
+        <Literal>Relates a work to a key and mode.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasMediumComponent</IRI>
+        <Literal>has Medium component</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>hasMediumComponent</IRI>
+        <Literal>Relates a work to a medium component.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasMediumComponentQualifier</IRI>
+        <Literal>Has medium component qualifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>hasMediumComponentQualifier</IRI>
+        <Literal>Relates a medium component to a medium component qualifier that affects the medium component.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasMediumCount</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Has medium count</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>hasMediumCount</IRI>
+        <Literal>Relates a medium component to the count of that medium component.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasMediumOfPerformance</IRI>
+        <Literal>Has medium of performance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>hasMediumOfPerformance</IRI>
+        <Literal>Relates a work to a medium of performance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasMode</IRI>
+        <Literal>Has mode</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>hasMode</IRI>
+        <Literal>Relates a work to a mode.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasNumberOfHands</IRI>
+        <Literal>Examples include works in which more than one performer shares an instrument or works in which an atypical number of hand is specified for the instrument.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasNumberOfHands</IRI>
+        <Literal>Number of hands</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>hasNumberOfHands</IRI>
+        <Literal>Relates a medium component to the number of hands required for performance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasPerformance</IRI>
+        <Literal>Has performance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>hasPerformance</IRI>
+        <Literal>Relates a work to an event that is a performance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasRecording</IRI>
+        <Literal>Has recording</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>hasRecording</IRI>
+        <Literal>Relates an event to an audio or video work that is created by recording the event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasTempo</IRI>
+        <Literal>Has tempo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>hasTempo</IRI>
+        <Literal>Relates a work to a tempo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>inspirationFor</IRI>
+        <Literal>Inspiration for</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>inspirationFor</IRI>
+        <Literal>Relates an event to a work that is inspired by an event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>performanceOf</IRI>
+        <Literal>Performance of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>performanceOf</IRI>
+        <Literal>Relates an event to a work that is performed at an event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>phonogramCopyrightDate</IRI>
+        <Literal>Phonogram copyright date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>phonogramCopyrightDate</IRI>
+        <Literal>Relates a work to a phonogram copyright date for a work that is a audio recording.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>recordingOf</IRI>
+        <Literal>Recording of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>recordingOf</IRI>
+        <Literal>Relates a work to an event that is recorded to create an audio or video work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>remixOf</IRI>
+        <Literal>Suggested use - with Audio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>remixOf</IRI>
+        <Literal>Remix of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>remixOf</IRI>
+        <Literal>Relates an audio work created by substantial editing of the audio of a work to the original work</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>remixedIn</IRI>
+        <Literal>Remixed in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>remixedIn</IRI>
+        <Literal>Relates an audio work to a work created by the substantial editing of the audio of that work</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>sampledBy</IRI>
+        <Literal>Sampled by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>sampledBy</IRI>
+        <Literal>Relates an audio work from which audio clips are sampled to the new audio work using those samples..</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>samplesFrom</IRI>
+        <Literal>Samples from</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>samplesFrom</IRI>
+        <Literal>Relates an audio work that makes use of audio clips (samples) from another work to the work it samples from. The sample may or may not be manipulated in the new work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>usesMediumOfPerformance</IRI>
+        <Literal>Uses medium of performance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>usesMediumOfPerformance</IRI>
+        <Literal>Relates a contribution to a medium of performance.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
