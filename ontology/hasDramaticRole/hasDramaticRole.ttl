@@ -1,8 +1,0 @@
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-
-<http://performedmusicontology.org/ontology/hasDramaticRole> a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
-    rdfs:label "has Dramatic Role" ;
-    rdfs:comment "Example: the role of Carmen in the opera Carmen." ;
-    skos:definition "Property connecting a Contribution to the character of a performer in a dramatic work, such as an opera, play, or film." .
-

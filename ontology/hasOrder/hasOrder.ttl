@@ -1,8 +1,0 @@
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-
-<http://performedmusicontology.org/ontology/hasOrder> a <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
-    rdfs:label "Order in sequence" ;
-    rdfs:range rdfs:Literal ;
-    skos:definition "Order an aggregated instance appears in an aggregating instance, or the order a work component appears in a work." .
-

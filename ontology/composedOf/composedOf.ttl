@@ -1,8 +1,0 @@
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-
-<http://performedmusicontology.org/ontology/composedOf> a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
-    rdfs:label "composed of" ;
-    rdfs:comment "Use with Thematic Identifer Statement, Opus Number Statement" ;
-    skos:definition "Portion of a multi-level identifier, such as a prefix or part number" .
-

@@ -1,8 +1,0 @@
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-
-<http://performedmusicontology.org/ontology/MusicPart> a <http://www.w3.org/2002/07/owl#Class> ;
-    rdfs:label "Music part" ;
-    rdfs:comment "Use with MediumPart" ;
-    skos:definition "Specific element within an overall declared or performed medium, e.g., Violin 1, Trumpet 2." .
-
