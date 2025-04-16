@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block head_title %}
+<title>{{ vocab.title }}</title>
+{% endblock %}
+
+{% block main %}
+<div class="head">
+  <h3>{{ vocab.title }}</h3>
+  <p>{{ vocab.url }}</p>
+  <div class="comment">
+    <span class="markdown">
+      <p>{{ vocab.definition }}</p>
+    </span>
+   <p><a href="{{ vocab.url }}.rdf">Vocabulary source</a></p>
+</div>
+<hr>
+<div id="toc">
+  <h2>Table of Contents</h2>
+  <ol>
+    <li><a href="#classes">Classes</a></li>
+    <li><a href="#namespacedeclarations">Namespace Declarations</a></li>
+  </ol>
+</div>
+<div id="classes">
+  <h2>Classes</h2>
+  <ul class="hlist">
+  {% for class_ in classes %}
+    <li>
+      <a href="#{{ class_.id }}" title="{{ class_.url }}">
+        <span>{{ class_.prefLabel }}</span>
+      </a>
+     </li>
+   {% endfor %}
+   </ul>
+  </div>
+</div>
+{% for class_ in classes %}
+<div id="{{ class_.id }}" class="entity">
+  <a name="{{ class_.url }}"></a>
+  <h3>
+   {{ class_.prefLabel }}<sup title="class" class="type-c">c</sup>
+   <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+  </h3>
+  <p><strong>IRI: </strong>{{ class_.url }}</p>
+  {% if class_.altLabel %}
+  <p><strong>Use for: </strong>{{ class_.altLabel }}</p>
+  {% endif %}
+  <p><strong>Scope note: </strong>{{ class_.definition }}</p>
+  <p><strong>Current version: </strong>{{ class_.changeNote }}</p>
+</div>
+{% endfor %}
+<div id="namespacedeclarations">
+  <h2>Namespace Declarations <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+    <dl>
+    <dt>dcterms</dt>
+    <dd>http://purl.org/dc/terms/</dd>
+    <dt>rdf</dt>
+    <dd>http://www.w3.org/1999/02/22-rdf-syntax-ns#</dd>
+    <dt>rdfs</dt>
+    <dd>http://www.w3.org/2000/01/rdf-schema#</dd>
+    <dt>skos</dt>
+    <dd>http://www.w3.org/2004/02/skos/core#</dd>
+    </dl>
+</div>
+{% endblock %}

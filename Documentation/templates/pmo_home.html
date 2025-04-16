@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block head_js %}
+<script>
+    $(document).ready(
+          function () {
+              jQuery(".markdown").each(function(el){
+                  jQuery(this).after(marked(jQuery(this).text())).remove()});
+              var list = $('a[name="http://www.essepuntato.it/static/tmp/0"]');
+              if (list.size() != 0) {
+                  var element = list.first();
+                  $.scrollTo(element);
+              }
+      });
+  </script>
+{% endblock %}
+
+{% block head_title %}<title>Performed Music Ontology</title>{% endblock %}
+
+
+{% block main %}
+<div class="head">
+  <h1>Performed Music Ontology</h1>
+  <dl>
+    <dt>IRI:</dt>
+    <dd>http://performedmusicontology.org/ontology/</dd>
+    <dt>Version IRI:</dt>
+    <dd>http://performedmusicontology.org/ontology/</dd>
+    </dl>
+    <dl>
+    <dt>Other visualisation:</dt>
+    <dd><a href="http://performedmusicontology.org/ontology/PerformedMusicOntology.rdf">Ontology source</a></dd>
+  </dl>
+</div>
+<hr>
+<div id="toc">
+  <h2>Table of Content</h2>
+  <ol>
+    <li><a href="#classes">Classes</a></li>
+    <li><a href="#objectproperties">Object Properties</a></li>
+    <li><a href="#dataproperties">Data Properties</a></li>
+    <li><a href="#namespacedeclarations">Namespace Declarations</a></li>
+  </ol>
+</div>
+{% include 'pmo_home_classes.html' %}
+{% include 'pmo_home_objectproperties.html' %}
+{% include 'pmo_home_dataproperties.html' %}
+<div id="namespacedeclarations">
+  <h2>Namespace Declarations <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+  <dl>
+    <dt><em>default namespace</em></dt>
+      <dd>http://performedmusicontology.org/ontology/</dd>
+    <dt>bibframe</dt>
+      <dd>http://id.loc.gov/ontologies/bibframe/</dd>
+    <dt>dc</dt>
+      <dd>http://purl.org/dc/elements/1.1/</dd>
+    <dt>efrbroo</dt>
+      <dd>http://erlangen-crm.org/efrbroo/</dd>
+    <dt>owl</dt>
+      <dd>http://www.w3.org/2002/07/owl#</dd>
+    <dt>rdf</dt>
+      <dd>http://www.w3.org/1999/02/22-rdf-syntax-ns#</dd>
+    <dt>rdfs</dt>
+      <dd>http://www.w3.org/2000/01/rdf-schema#</dd>
+    <dt>regap</dt>
+      <dd>http://metadataregistry.org/uri/profile/regap/</dd>
+    <dt>skos</dt>
+      <dd>http://www.w3.org/2004/02/skos/core#</dd>
+    <dt>xsd</dt>
+      <dd>http://www.w3.org/2001/XMLSchema#</dd>
+  </dl>
+</div>
+{% endblock %}
+
+
+    
+
