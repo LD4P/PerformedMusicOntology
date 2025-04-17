@@ -1,0 +1,10 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://performedmusicontology.org/ontology/remixOf> a owl:ObjectProperty ;
+    rdfs:label "Remix of" ;
+    rdfs:comment "Suggested use - with Audio" ;
+    rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/derivativeOf> ;
+    skos:definition "Relates an audio work created by substantial editing of the audio of a work to the original work" .
+

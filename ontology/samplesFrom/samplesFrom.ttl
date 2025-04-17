@@ -1,0 +1,9 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://performedmusicontology.org/ontology/samplesFrom> a owl:ObjectProperty ;
+    rdfs:label "Samples from" ;
+    rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/references> ;
+    skos:definition "Relates an audio work that makes use of audio clips (samples) from another work to the work it samples from. The sample may or may not be manipulated in the new work." .
+

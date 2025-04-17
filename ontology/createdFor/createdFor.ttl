@@ -1,0 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://performedmusicontology.org/ontology/createdFor> a owl:ObjectProperty ;
+    rdfs:label "Created for"^^xsd:string ;
+    rdfs:comment "Suggested use - With Agent, Event" ;
+    rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/relatedTo> ;
+    skos:definition "Relates a resource to a resource for which it was created"^^xsd:string .
+
