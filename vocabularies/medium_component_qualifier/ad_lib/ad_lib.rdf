@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dc1="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="naaf4a0bc78bc4213918eac6619fa134eb1">
+    <rdf:value>NEW</rdf:value>
+    <dc1:date>2024-04-30</dc1:date>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://performedmusicontology.org/vocabularies/medium_component_qualifier/ad_lib">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">ad lib</skos:prefLabel>
+    <skos:altLabel xml:lang="en">ad libitum</skos:altLabel>
+    <skos:definition xml:lang="en">For medium components marked "ad lib" or "ad libitum" in a score or otherwise.</skos:definition>
+    <rdfs:comment xml:lang="en">Value for: MediumComponentQualifier.</rdfs:comment>
+    <skos:inScheme rdf:resource="http://performedmusicontology.org/vocabularies/medium_component_qualifier/"/>
+    <skos:changeNote rdf:nodeID="naaf4a0bc78bc4213918eac6619fa134eb1"/>
+  </rdf:Description>
+</rdf:RDF>

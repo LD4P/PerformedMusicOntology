@@ -1,0 +1,14 @@
+@prefix dc1: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://performedmusicontology.org/vocabularies/event_type/concert> a skos:Concept ;
+    rdfs:comment "Use as type of bf:Event."@en ;
+    skos:changeNote [ dc1:creator <http://id.loc.gov/rwo/agents/> ;
+            dc1:date "2024-04-30" ;
+            rdf:value "NEW" ] ;
+    skos:definition "Live musical performance of one or more works in front of an audience or in a single recording session."@en ;
+    skos:inScheme <http://performedmusicontology.org/vocabularies/event_type/> ;
+    skos:prefLabel "Concert"@en .
+
