@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
   <rdf:Description rdf:about="http://performedmusicontology.org/ontology/hasEventName">
-    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Event"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    <rdfs:label>has Event Name</rdfs:label>
-    <skos:definition>Name of an event, whether formal or created for metadata purposes</skos:definition>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Event"/>
+    <rdfs:range rdf:resource="http://performedmusicontology.org/ontology/EventName"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has event name</rdfs:label>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relates an event to a name or title for the event.</skos:definition>
   </rdf:Description>
 </rdf:RDF>

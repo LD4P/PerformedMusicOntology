@@ -1,8 +1,0 @@
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-
-<http://performedmusicontology.org/ontology/ConcertSeries> a <http://www.w3.org/2002/07/owl#Class> ;
-    rdfs:label "Concert series" ;
-    rdfs:subClassOf <http://id.loc.gov/ontologies/bibframe/Event> ;
-    skos:definition "Group of concerts in the same geographic area by a single performer or brought together by a common theme, usually available for sale as a package. e.g., an orchestra concert season, a series featuring chamber ensembles." .
-

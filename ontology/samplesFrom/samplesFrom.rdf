@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://performedmusicontology.org/ontology/samplesFrom">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/references"/>
+    <rdfs:label>Samples from</rdfs:label>
+    <skos:definition>Relates an audio work that makes use of audio clips (samples) from another work to the work it samples from. The sample may or may not be manipulated in the new work.</skos:definition>
+  </rdf:Description>
+</rdf:RDF>

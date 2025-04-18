@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -7,7 +7,8 @@
   <rdf:Description rdf:about="http://performedmusicontology.org/ontology/phonogramCopyrightDate">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:subPropertyOf rdf:resource="http://id.loc.gov/ontologies/bibframe/date"/>
-    <rdfs:label>Phonogram copyright date</rdfs:label>
-    <skos:definition>Phonogram copyright date for a sound recording.</skos:definition>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phonogram copyright date</rdfs:label>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relates a work to a phonogram copyright date for a work that is a audio recording.</skos:definition>
   </rdf:Description>
 </rdf:RDF>

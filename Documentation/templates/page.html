@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block head_title %}<title>{{ label }}</title>{% endblock %}
+
+
+{% block main %}
+<h1>{{label}}</h1>
+<p>
+    Documentation at <a href='{{ doc_home }}#{{name}}'>{{label}}</a>.
+    Other versions:
+    <ul>
+        <li><a href="{{ page_path }}/{{name}}.rdf">RDF XML</a></li>
+        <li><a href="{{ page_path }}/{{name}}.ttl">Turtle</a></li>
+    </ul>
+</p>
+{% endblock %}

@@ -1,0 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://performedmusicontology.org/ontology/hasMediumComponentQualifier> a owl:ObjectProperty ;
+    rdfs:label "Has medium component qualifier"^^xsd:string ;
+    rdfs:domain <http://performedmusicontology.org/ontology/MediumComponent> ;
+    rdfs:range <http://performedmusicontology.org/ontology/MediumComponentQualifier> ;
+    skos:definition "Relates a medium component to a medium component qualifier that affects the medium component."^^xsd:string .
+

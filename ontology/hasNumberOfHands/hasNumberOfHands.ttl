@@ -1,8 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://performedmusicontology.org/ontology/hasNumberOfHands> a <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
-    rdfs:label "Number of hands" ;
-    rdfs:range rdfs:Literal ;
-    skos:definition "Number of hands required for performance in works where more than one performer shares an instrument, such as piano, 4 hands, or where an atypical number of hands is specified, such as viola, 1 hand." .
+<http://performedmusicontology.org/ontology/hasNumberOfHands> a owl:DatatypeProperty ;
+    rdfs:label "Number of hands"^^xsd:string ;
+    rdfs:comment "Examples include works in which more than one performer shares an instrument or works in which an atypical number of hand is specified for the instrument."^^xsd:string ;
+    rdfs:domain <http://performedmusicontology.org/ontology/MediumComponent> ;
+    skos:definition "Relates a medium component to the number of hands required for performance."^^xsd:string .
 

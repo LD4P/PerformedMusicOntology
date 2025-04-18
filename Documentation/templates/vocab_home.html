@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block head_title %}<title>{{ label }}</title>{% endblock %}
+
+{% block main %}
+<h1>{{ label }}</h1>
+<p>
+  Documentation at <a href="/vocabularies/{{ html_doc_file }}.html">{{ label }}</a>.
+</p>
+<ul>
+{{ entities_list|safe }}
+</ul>
+{% endblock %}

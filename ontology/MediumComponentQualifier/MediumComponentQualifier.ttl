@@ -1,0 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://performedmusicontology.org/ontology/MediumComponentQualifier> a owl:Class ;
+    rdfs:label "Medium component qualifier"^^xsd:string ;
+    rdfs:comment "A vocabulary is provided."^^xsd:string ;
+    skos:definition "A qualifier that affects the medium component."^^xsd:string ;
+    skos:example "offstage, amplified, optional"^^xsd:string .
+

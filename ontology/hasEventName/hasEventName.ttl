@@ -1,9 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://performedmusicontology.org/ontology/hasEventName> a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
-    rdfs:label "has Event Name" ;
+<http://performedmusicontology.org/ontology/hasEventName> a owl:ObjectProperty ;
+    rdfs:label "Has event name"^^xsd:string ;
     rdfs:domain <http://id.loc.gov/ontologies/bibframe/Event> ;
-    rdfs:subPropertyOf <http://www.w3.org/2002/07/owl#topObjectProperty> ;
-    skos:definition "Name of an event, whether formal or created for metadata purposes" .
+    rdfs:range <http://performedmusicontology.org/ontology/EventName> ;
+    skos:definition "Relates an event to a name or title for the event."^^xsd:string .
 

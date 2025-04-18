@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -6,7 +6,8 @@
 >
   <rdf:Description rdf:about="http://performedmusicontology.org/ontology/MediumOfPerformance">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <skos:definition>Instruments, voices, ensembles, choruses, and other participants (actors, dancers, etc.) required for, or performing in, an event or work, including electronics, computers, installations, etc.</skos:definition>
-    <rdfs:label>Medium of performance</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medium of performance</rdfs:label>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual instrument, voice, ensemble, or instrumental group (e.g., percussion).</skos:definition>
+    <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">guitar; er hu; alto voice; percussion; orchestra</skos:example>
   </rdf:Description>
 </rdf:RDF>

@@ -1,7 +1,9 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://performedmusicontology.org/ontology/EventName> a <http://www.w3.org/2002/07/owl#Class> ;
-    rdfs:label "Event name" ;
-    skos:definition "Name given to an event." .
+<http://performedmusicontology.org/ontology/EventName> a owl:Class ;
+    rdfs:label "Event name"^^xsd:string ;
+    skos:definition "A name or title given to an event, whether formally stated or created for metadata purposes."^^xsd:string .
 

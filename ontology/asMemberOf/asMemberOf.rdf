@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -6,8 +6,9 @@
 >
   <rdf:Description rdf:about="http://performedmusicontology.org/ontology/asMemberOf">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <skos:definition>Organization through which a person makes a contribution to a work or instance.</skos:definition>
-    <rdfs:label>as Member of</rdfs:label>
-    <rdfs:comment>Use with bf:Contribution</rdfs:comment>
+    <rdfs:domain rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+    <rdfs:range rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">As member of</rdfs:label>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relates a contribution that is a person to an organization through which a person makes a contribution to the resource.</skos:definition>
   </rdf:Description>
 </rdf:RDF>

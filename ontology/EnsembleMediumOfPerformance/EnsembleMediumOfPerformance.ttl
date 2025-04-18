@@ -1,9 +1,0 @@
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-
-<http://performedmusicontology.org/ontology/EnsembleMediumOfPerformance> a <http://www.w3.org/2002/07/owl#Class> ;
-    rdfs:label "Ensemble type" ;
-    rdfs:comment "Examples: orchestra, jazz combo, string quartet, percussion ensemble" ;
-    rdfs:subClassOf <http://performedmusicontology.org/ontology/MediumOfPerformance> ;
-    skos:definition "Named group of like or unlike mediums of performance intended to be played by multiple performers." .
-

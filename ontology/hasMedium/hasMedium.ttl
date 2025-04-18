@@ -1,7 +1,0 @@
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-
-<http://performedmusicontology.org/ontology/hasMedium> a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
-    rdfs:label "has Medium" ;
-    skos:definition "Property that links a Work or Performance to the Declared or Performed Medium." .
-

@@ -1,8 +1,10 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://performedmusicontology.org/ontology/KeyMode> a <http://www.w3.org/2002/07/owl#Class> ;
-    rdfs:label "Music key and mode" ;
-    rdfs:comment "Examples: C major; B-flat minor" ;
-    skos:definition "Key and mode of a music work when used in combination." .
+<http://performedmusicontology.org/ontology/KeyMode> a owl:Class ;
+    rdfs:label "Music key"^^xsd:string ;
+    skos:definition "Key and mode, or key only if no mode is present, of a music work."^^xsd:string ;
+    skos:example "C major; B-flat minor; D"^^xsd:string .
 

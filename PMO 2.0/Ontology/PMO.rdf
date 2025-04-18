@@ -10,7 +10,7 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://performedmusicontology.org/ontology/">
-        <owl:versionIRI rdf:resource="http://performedmusicontology.org/ontology/2.0"/>
+        <owl:versionIRI rdf:resource="http://performedmusicontology.org/ontology/"/>
         <owl:imports rdf:resource="http://id.loc.gov/ontologies/bibframe-2-0-1/"/>
     </owl:Ontology>
     

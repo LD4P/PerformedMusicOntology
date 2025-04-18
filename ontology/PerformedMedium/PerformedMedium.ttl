@@ -1,7 +1,0 @@
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-
-<http://performedmusicontology.org/ontology/PerformedMedium> a <http://www.w3.org/2002/07/owl#Class> ;
-    rdfs:label "Performed medium" ;
-    skos:definition "The overall medium of performance used in the performance of a musical work. This may or may not be the same as the declared medium of performance." .
-

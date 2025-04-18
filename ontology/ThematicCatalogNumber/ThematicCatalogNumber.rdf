@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
   <rdf:Description rdf:about="http://performedmusicontology.org/ontology/ThematicCatalogNumber">
-    <skos:definition>Numeric or alphanumeric designation of a musical work as found in a thematic index for the composer (without the identifying prefix).</skos:definition>
-    <rdfs:label>Thematic catalog number</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment>Example: 485 from BWV 485; 52:d1 from TWV 52:d1</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://id.loc.gov/ontologies/bibframe/Identifier"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thematic catalog number</rdfs:label>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A numeric or alphanumeric designation of a musical work as found in a thematic index or catalog.</skos:definition>
+    <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BWV 485; TWV 52:d1</skos:example>
   </rdf:Description>
 </rdf:RDF>

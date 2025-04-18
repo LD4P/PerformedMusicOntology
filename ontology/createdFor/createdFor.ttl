@@ -1,10 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://performedmusicontology.org/ontology/createdFor> a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
-    rdfs:label "created for" ;
-    rdfs:comment "Example: a laudatory motet intended to be sung at the inauguration of a pope." ;
-    rdfs:domain <http://id.loc.gov/ontologies/bibframe/Work> ;
+<http://performedmusicontology.org/ontology/createdFor> a owl:ObjectProperty ;
+    rdfs:label "Created for"^^xsd:string ;
+    rdfs:comment "Suggested use - With Agent, Event" ;
     rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/relatedTo> ;
-    skos:definition "Event for which a work is created." .
+    skos:definition "Relates a resource to a resource for which it was created"^^xsd:string .
 

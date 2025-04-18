@@ -1,10 +1,13 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://performedmusicontology.org/ontology/associatedWith> a <http://www.w3.org/2002/07/owl#ObjectProperty>,
-        <http://www.w3.org/2002/07/owl#SymmetricProperty> ;
-    rdfs:label "associated with" ;
-    rdfs:comment "Example: the Bible used at a presidential inauguration" ;
+<http://performedmusicontology.org/ontology/associatedWith> a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:label "Associated with"^^xsd:string ;
+    rdfs:comment "Sugested use - With any resource (event, work, instance, item, agent)"^^xsd:string ;
     rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/relatedTo> ;
-    skos:definition "Event or Work that is associated in a general way with another event or work, instance or item." .
+    skos:definition "Relates a resource to another resource with which it is associated in a general way."^^xsd:string ;
+    skos:example "The musical work \"1812\" is associated with the event \"French invasion of Russia\""^^xsd:string .
 

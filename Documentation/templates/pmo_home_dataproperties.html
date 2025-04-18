@@ -1,0 +1,82 @@
+<div id="dataproperties">
+<h2>Data Properties</h2>
+<ul class="hlist">
+{% for data_type in data_types %}
+    <li>
+    <a href="#{{ data_type.id }}" title="{{ data_type.uri }}">{{ data_type.label }}</a>
+    </li>
+{% endfor %}
+</ul>
+{% for data_type in data_types %}
+<div id="{{ data_type.id }}" class="entity">
+    <a name="{{ data_type.uri }}"></a>
+    <h3>
+    {{ data_type.label }}
+    <sup title="data property" class="type-dp">dp</sup>
+    <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a></span>
+    </h3>
+    <p>
+    <strong>IRI:</strong>
+    {{ data_type.uri }}
+    </p>        
+    {% if data_type.definition %}
+    <div class="comment">
+    {% for def in data_type.definition %}
+        <p><span class="markdown">{{ def }}</span></p>
+    {% endfor %}
+    </div>
+    {% endif %}
+    {% if data_type.comments %}
+    <div class="comment">
+    {% for comment in data_type.comments %}
+    <p><span class="markdown">{{ comment }}</span></p>
+    {% endfor %}
+    </div>
+    {% endif %}
+    {% if data_type.has_description %}
+    <div class="description">
+    {% if data_type.super_properties|length > 0 %}
+        <dt>has super-properties</dt>
+      {% for row in data_type.super_properties %}
+        <dd>
+        <span class="dotted" title="{{ row.uri }}">
+            {{ row.label|safe }}
+        </span>
+        </dd>
+      {% endfor %}
+    {% endif %}
+    {% if data_type.domain|length > 0 %}
+        <dt>has domain</dt>
+        {% for row in data_type.domain %}
+        <dd>
+        <span class="dotted" title="{{ row.uri }}">
+            {{ row.label|safe }}
+        </span>
+        </dd>  
+        {% endfor %}
+    {% endif %}
+    {% if data_type.range|length > 0 %}
+        <dt>has range</dt>
+        {% for row in data_type.range %}
+        <dd>
+        <span class="dotted" title="{{ row.uri }}">
+            {{ row.label|safe }}
+        </span>
+        </dd>  
+        {% endfor %}
+    {% endif %}
+    {% if data_type.inverse_of|length > 0 %}
+        <dt>is inverse of</dt>
+        {% for row in data_type.inverse_of %}
+        <dd>
+        <span class="dotted" title="{{ row.uri }}">
+            {{ row.label|safe }}
+        </span>
+        </dd>  
+        {% endfor %}
+    {% endif %}
+    </div>
+    {% endif %}
+</div>
+{% endfor %}
+</div>

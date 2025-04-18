@@ -1,0 +1,10 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://performedmusicontology.org/ontology/MediumComponent> a owl:Class ;
+    rdfs:label "Medium component"^^xsd:string ;
+    rdfs:comment "A medium component may gather together a medium of performance, medium count, number of hands, and/or medium component qualifier."^^xsd:string ;
+    skos:definition "An individual component of an overall medium of performance of a work."^^xsd:string .
+

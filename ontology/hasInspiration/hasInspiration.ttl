@@ -1,10 +1,13 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://performedmusicontology.org/ontology/hasInspiration> a ns1:ObjectProperty ;
-    rdfs:label "has as Inspiration" ;
+<http://performedmusicontology.org/ontology/hasInspiration> a owl:ObjectProperty ;
+    rdfs:label "Inspired by"^^xsd:string ;
+    rdfs:comment "Suggested use - Work, Event, Agent, Place, Item" ;
+    rdfs:domain <http://id.loc.gov/ontologies/bibframe/Work> ;
     rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/relatedTo> ;
-    ns1:inverseOf <http://performedmusicontology.org/ontology/inspirationFor> ;
-    skos:definition "Event that inspired the creation of a work." .
+    owl:inverseOf <http://performedmusicontology.org/ontology/inspirationFor> ;
+    skos:definition "Relates a work to a resource that inspired the creation of the work"^^xsd:string .
 

@@ -1,0 +1,53 @@
+<div id="classes">
+<h2>Classes</h2>
+<ul class="hlist">
+    {% for class_ in classes %}
+    <li>
+        <a href="#{{ class_.id }}" title="{{ class_.uri }}">
+        <span>{{ class_.label }}</span>
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+{% for class_ in classes %}
+<div id="{{ class_.id }}" class="entity">
+    <a name="{{ class_.uri }}"></a>
+    <h3>
+        {{ class_.label }}<sup title="class" class="type-c">c</sup>
+        <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a></span>
+    </h3>
+    <p><strong>IRI: </strong>{{ class_.uri }}</p>
+    <div class="comment">
+        {% if class_.definition %}
+        <span class="markdown">{{ class_.definition }}</span>
+        {% endif %}
+        {% if class_.example %}
+        {% for example in class_.example %}
+        <span class="markdown">{{ example }}</span>
+        {% endfor %}
+        {% endif %}
+        </div>
+        {% if class_.superClass or class_.children %}
+        <dl class="description">
+        {% if class_.superClass %}
+        <dt>has super-classes</dt>
+        {% for row in class_.superClass %}
+        <dd>
+            <span class="dotted" title="{{ row.uri }}">{{ row.label }}</span>
+        </dd>
+        {% endfor %}
+        {% endif %}
+        {% if class_.children %}
+        <dt>has sub-classes</dt>
+        {% for child in class_.children %}
+        <dd>
+            <a href="{{ child.uri }}">{{ child.label }}</a>
+            <sup title="class" class="type-c">c</sup>{% if not loop.last %},{% endif %}
+        </dd>
+        {% endfor %}
+        {% endif %}
+        </dl>
+    {% endif %}
+</div>
+{% endfor %}
+</div>

@@ -1,0 +1,9 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://performedmusicontology.org/ontology/remixedIn> a owl:ObjectProperty ;
+    rdfs:label "Remixed in" ;
+    rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/hasDerivative> ;
+    skos:definition "Relates an audio work to a work created by the substantial editing of the audio of that work" .
+

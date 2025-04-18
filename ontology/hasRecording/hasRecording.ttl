@@ -1,12 +1,13 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://performedmusicontology.org/ontology/hasRecording> a ns1:ObjectProperty ;
-    rdfs:label "has Recording" ;
+<http://performedmusicontology.org/ontology/hasRecording> a owl:ObjectProperty ;
+    rdfs:label "Has recording"^^xsd:string ;
     rdfs:domain <http://id.loc.gov/ontologies/bibframe/Event> ;
     rdfs:range <http://id.loc.gov/ontologies/bibframe/Work> ;
     rdfs:subPropertyOf <http://id.loc.gov/ontologies/bibframe/eventContent> ;
-    ns1:inverseOf <http://performedmusicontology.org/ontology/recordingOf> ;
-    skos:definition "Audio or video work created from the recording of event content." .
+    owl:inverseOf <http://performedmusicontology.org/ontology/recordingOf> ;
+    skos:definition "Relates an event to an audio or video work that is created by recording the event."^^xsd:string .
 

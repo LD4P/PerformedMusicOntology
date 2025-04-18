@@ -1,7 +1,12 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://performedmusicontology.org/ontology/aggregatedIn> a ns1:ObjectProperty ;
-    ns1:inverseOf <http://performedmusicontology.org/ontology/aggregates> ;
-    skos:definition "Property connecting an individual aggregated Instance to the Instance in which it is aggregated." .
+<http://performedmusicontology.org/ontology/aggregatedIn> a owl:ObjectProperty ;
+    rdfs:label "Aggregated in"^^xsd:string ;
+    rdfs:domain <http://id.loc.gov/ontologies/bibframe/Work> ;
+    rdfs:range <http://id.loc.gov/ontologies/bibframe/Work> ;
+    owl:inverseOf <http://performedmusicontology.org/ontology/aggregates> ;
+    skos:definition "Relates a work to a work in which it is aggregated."^^xsd:string .
 

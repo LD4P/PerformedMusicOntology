@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
   <rdf:Description rdf:about="http://performedmusicontology.org/ontology/Mode">
-    <skos:definition>Musical mode of a music work.</skos:definition>
-    <rdfs:label>Music mode</rdfs:label>
-    <rdfs:comment>Examples: Dorian, Dhaivata</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Music mode</rdfs:label>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mode (not associated with a key) of a musical work</skos:definition>
+    <skos:example rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dorian; Dhaivata</skos:example>
   </rdf:Description>
 </rdf:RDF>

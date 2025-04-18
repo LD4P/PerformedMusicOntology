@@ -1,9 +1,0 @@
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-
-<http://performedmusicontology.org/ontology/Performance> a <http://www.w3.org/2002/07/owl#Class> ;
-    rdfs:label "Performance" ;
-    rdfs:subClassOf <http://erlangen-crm.org/efrbroo/F31_Performance>,
-        <http://id.loc.gov/ontologies/bibframe/Event> ;
-    skos:definition "Event in which a performer or group of performers perform an improvisation or pre-existing work to an audience or in a recording studio." .
-

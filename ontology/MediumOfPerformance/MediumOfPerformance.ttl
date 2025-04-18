@@ -1,7 +1,10 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://performedmusicontology.org/ontology/MediumOfPerformance> a <http://www.w3.org/2002/07/owl#Class> ;
-    rdfs:label "Medium of performance" ;
-    skos:definition "Instruments, voices, ensembles, choruses, and other participants (actors, dancers, etc.) required for, or performing in, an event or work, including electronics, computers, installations, etc." .
+<http://performedmusicontology.org/ontology/MediumOfPerformance> a owl:Class ;
+    rdfs:label "Medium of performance"^^xsd:string ;
+    skos:definition "An individual instrument, voice, ensemble, or instrumental group (e.g., percussion)."^^xsd:string ;
+    skos:example "guitar; er hu; alto voice; percussion; orchestra"^^xsd:string .
 

@@ -1,8 +1,10 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://performedmusicontology.org/ontology/DramaticRole> a <http://www.w3.org/2002/07/owl#Class> ;
-    rdfs:label "Dramatic role" ;
-    rdfs:comment "Example: the role of Carmen in the opera Carmen." ;
-    skos:definition "Character of a performer in a dramatic work, such as an opera or play, as realized in a sound recording, a video, in text, etc." .
+<http://performedmusicontology.org/ontology/DramaticRole> a owl:Class ;
+    rdfs:label "Dramatic role"^^xsd:string ;
+    skos:definition "A dramatic role performed by a contributing agent."^^xsd:string ;
+    skos:example "Role of \"Carmen\" in the opera Carmen."^^xsd:string .
 

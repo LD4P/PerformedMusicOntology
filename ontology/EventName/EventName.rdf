@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -6,7 +6,7 @@
 >
   <rdf:Description rdf:about="http://performedmusicontology.org/ontology/EventName">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <skos:definition>Name given to an event.</skos:definition>
-    <rdfs:label>Event name</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Event name</rdfs:label>
+    <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A name or title given to an event, whether formally stated or created for metadata purposes.</skos:definition>
   </rdf:Description>
 </rdf:RDF>
